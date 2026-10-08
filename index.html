@@ -148,8 +148,9 @@ function when(ev){const d=new Date(ev.datum+"T00:00"),t=new Date();t.setHours(0,
  const diff=Math.round((d-t)/864e5),r=rel(diff),dag=DAG[d.getDay()]+" "+d.getDate()+"/"+(d.getMonth()+1)+(d.getFullYear()!==t.getFullYear()?" "+d.getFullYear():"");
  if(ev.slut&&diff<=0){const s=new Date(ev.slut+"T00:00");return"Pågår till "+s.getDate()+"/"+(s.getMonth()+1)}
  return (diff<=1?r+", "+dag:dag+" ("+r+")")+(ev.tid?" "+ev.tid:"")}
-const priceTxt=p=>p===0?"Gratis":p==null?"Se pris":p+" kr";
-const price=p=>p===0?'<span class="chip free">Gratis</span>':`<span class="chip">${priceTxt(p)}</span>`;
+// Priset saknas hos de flesta källor. Då visas ingen pris-lapp, i stället för en tom "Se pris".
+const priceTxt=p=>p===0?"Gratis":p==null?"Okänt pris":p+" kr";
+const price=p=>p===0?'<span class="chip free">Gratis</span>':p==null?"":`<span class="chip">${p} kr</span>`;
 
 // Väder från Open-Meteo (gratis, ingen nyckel). Prognos finns för ca 14 dagar framåt.
 const WMO=[[0,"☀️","Klart"],[2,"🌤️","Lätt molnigt"],[3,"☁️","Mulet"],[48,"🌫️","Dimma"],[57,"🌦️","Duggregn"],[67,"🌧️","Regn"],[77,"🌨️","Snö"],[82,"🌧️","Skurar"],[86,"🌨️","Snöbyar"],[99,"⛈️","Åska"]];
@@ -217,7 +218,7 @@ $("#btn-no").onclick=()=>queue[0]&&decide(queue[0],false,$("#deck .card:last-chi
 document.addEventListener("keydown",e=>{if($("#v-start").hidden)return;if(e.key==="ArrowRight")$("#btn-yes").click();if(e.key==="ArrowLeft")$("#btn-no").click()});
 
 // Lista (Sök + Sparade)
-const row=ev=>`<div class="row" data-id="${esc(ev.id)}">${pic(ev,"e")}<div><b>${esc(ev.t)}</b><small>${esc(when(ev))} · ${priceTxt(ev.pris)} · ${kmTxt(ev)}</small></div></div>`;
+const row=ev=>`<div class="row" data-id="${esc(ev.id)}">${pic(ev,"e")}<div><b>${esc(ev.t)}</b><small>${esc(when(ev))}${ev.pris!=null?" · "+priceTxt(ev.pris):""} · ${kmTxt(ev)}</small></div></div>`;
 function bindRows(el){el.querySelectorAll(".row").forEach(r=>r.onclick=()=>openDetail(EVENTS.find(e=>e.id===r.dataset.id)))}
 // Sök: filter på pris, sortering och "bäst träff"
 let maxPris="",sortBy="near";
@@ -264,7 +265,7 @@ function updateCount(){const c=$("#count");c.textContent=saved.length;c.hidden=!
 function openDetail(ev){
  const d=$("#v-detail");
  d.innerHTML=`<button class="back" id="back">‹ Tillbaka</button>${pic(ev,"pic")}<h2>${esc(ev.t)}</h2>
- <dl><dt>När</dt><dd>${esc(when(ev))}</dd><dt>Plats</dt><dd>${esc(ev.plats)}</dd><dt>Avstånd</dt><dd>${kmTxt(ev)} från ${esc(me.namn)}</dd><dt>Pris</dt><dd>${priceTxt(ev.pris)}</dd><dt>Väder</dt><dd id="dw">Hämtar…</dd></dl>
+ <dl><dt>När</dt><dd>${esc(when(ev))}</dd><dt>Plats</dt><dd>${esc(ev.plats)}</dd><dt>Avstånd</dt><dd>${kmTxt(ev)} från ${esc(me.namn)}</dd><dt>Pris</dt><dd>${ev.pris==null?(ev.url?`<a href="${esc(ev.url)}" target="_blank" rel="noopener">Står på eventets sida ↗</a>`:"Okänt"):priceTxt(ev.pris)}</dd><dt>Väder</dt><dd id="dw">Hämtar…</dd></dl>
  ${ev.url?`<a class="cta ghost" href="${esc(ev.url)}" target="_blank" rel="noopener">Till eventets sida på ${esc(host(ev.url))} ↗</a>`:""}
  <button class="cta" id="save">${saved.includes(ev)?"Sparad ♥":"Spara ♥"}</button>`;
  weather(ev).then(w=>{const el=$("#dw");if(el)el.textContent=w||"Ingen prognos just nu (finns ca 2 veckor framåt)"});
