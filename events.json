@@ -1,5 +1,5 @@
 {
-  "uppdaterad": "2026-10-08T18:31:25.244Z",
+  "uppdaterad": "2026-10-08T18:39:33.643Z",
   "kalla": "Ticketmaster + Visit Stockholm",
   "exempel": false,
   "events": [
@@ -571,7 +571,7 @@
       "plats": "ThirdPlace ArtCafe’ & SoberBar, Stockholm",
       "lat": 59.34393354578866,
       "lon": 18.035357207866948,
-      "pris": null,
+      "pris": 50,
       "tags": [
         "guidade turer & föreläsningar",
         "nätverkande",
