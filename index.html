@@ -194,8 +194,8 @@ function show(v){
 }
 document.querySelectorAll("nav button").forEach(b=>b.onclick=()=>show(b.dataset.v));
 
-// Närmast först, sedan tidigast
-function sortNear(list){return [...list].sort((a,b)=>Math.round(km(me,a)/5)-Math.round(km(me,b)/5)||(a.datum+a.tid).localeCompare(b.datum+b.tid))}
+// Event med känt pris först, sedan närmast och tidigast
+function sortNear(list){return [...list].sort((a,b)=>(a.pris==null)-(b.pris==null)||Math.round(km(me,a)/5)-Math.round(km(me,b)/5)||(a.datum+a.tid).localeCompare(b.datum+b.tid))}
 
 // Start: swipe-kort
 function renderDeck(){
