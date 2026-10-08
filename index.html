@@ -127,6 +127,7 @@ function rel(diff){
  const m=Math.round(diff/30.4);return`om ${m} ${m===1?"månad":"månader"}`}
 function when(ev){const d=new Date(ev.datum+"T00:00"),t=new Date();t.setHours(0,0,0,0);
  const diff=Math.round((d-t)/864e5),r=rel(diff),dag=DAG[d.getDay()]+" "+d.getDate()+"/"+(d.getMonth()+1)+(d.getFullYear()!==t.getFullYear()?" "+d.getFullYear():"");
+ if(ev.slut&&diff<=0){const s=new Date(ev.slut+"T00:00");return"Pågår till "+s.getDate()+"/"+(s.getMonth()+1)}
  return (diff<=1?r+", "+dag:dag+" ("+r+")")+(ev.tid?" "+ev.tid:"")}
 const priceTxt=p=>p===0?"Gratis":p==null?"Se pris":p+" kr";
 const price=p=>p===0?'<span class="chip free">Gratis</span>':`<span class="chip">${priceTxt(p)}</span>`;

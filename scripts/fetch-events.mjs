@@ -66,7 +66,48 @@ async function ticketmaster() {
   return out;
 }
 
-const SOURCES = { "Egna event": egnaEvent, Ticketmaster: ticketmaster };
+// Visit Stockholm: öppet API (robots.txt tillåter det). Ca 50 sidor à 16 event,
+// hämtas långsamt med paus mellan anropen för att inte belasta deras server.
+const VS = "https://www.visitstockholm.se";
+const VS_EMOJI = { exhibitions: "🖼️", "stage-film": "🎭", music: "🎵", "food-drink": "🍽️", sports: "⚽", family: "🎈", "networking-community": "🤝", nightlife: "🪩", shopping: "🛍️", outdoors: "🌲" };
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+const FREE = /gratis|fri entré|fritt inträde|free admission|free entry/i;
+
+async function visitStockholm() {
+  const out = [];
+  for (let page = 1; page <= 80; page++) {
+    const res = await fetch(`${VS}/api/v1/singulareventdates/?page=${page}`, {
+      headers: { "user-agent": "AnknytningBot/0.1 (+https://github.com/fungusflip/Anknytning)", accept: "application/json" },
+    });
+    if (!res.ok) throw new Error(`Visit Stockholm svarade ${res.status} på sida ${page}`);
+    const data = await res.json();
+    for (const e of data.results ?? []) {
+      const lat = e.location?.latitude, lon = e.location?.longitude;
+      if (!Number.isFinite(lat) || !Number.isFinite(lon)) continue;
+      const pågår = e.start_date < today && e.end_date >= today;
+      const img = e.image?.renditions?.small?.src ?? e.image?.url;
+      out.push({
+        id: `vs-${e.id}`,
+        t: e.title,
+        e: VS_EMOJI[e.category?.slug] ?? "✨",
+        img: img ? new URL(img, VS).href : null,
+        datum: pågår ? today : e.start_date,
+        slut: e.end_date && e.end_date !== e.start_date ? e.end_date : null,
+        tid: null,
+        plats: [e.venue_name, e.city].filter(Boolean).join(", ") || e.address,
+        lat, lon,
+        pris: FREE.test(e.description ?? "") ? 0 : null,
+        tags: [...new Set([...(e.categories ?? []), e.subcategory?.title].filter(Boolean).map(t => t.toLowerCase()))],
+        url: e.external_website_url || e.href,
+      });
+    }
+    if (!data.next) break;
+    await sleep(700);
+  }
+  return out;
+}
+
+const SOURCES = { "Egna event": egnaEvent, Ticketmaster: ticketmaster, "Visit Stockholm": visitStockholm };
 
 const events = [], used = [];
 for (const [name, fn] of Object.entries(SOURCES)) {
