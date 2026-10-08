@@ -56,6 +56,14 @@ nav .n{display:inline-block;min-width:18px;padding:0 5px;border-radius:9px;backg
 .row b{display:block}
 .row small{color:var(--muted)}
 .hint{color:var(--muted);font-size:13px}
+.filter{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin:8px 0}
+.filter b{font-size:12px;color:var(--muted);width:48px}
+.seg{border:1px solid var(--line);background:none;color:var(--fg);border-radius:999px;padding:4px 10px;cursor:pointer;font:13px var(--font)}
+.seg.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.go{width:100%;margin:6px 0 4px;padding:12px;border:0;border-radius:12px;background:var(--accent);color:#fff;font:600 15px var(--font);cursor:pointer}
+.go:disabled{opacity:.4;cursor:default}
+.mode{display:flex;justify-content:space-between;align-items:center;gap:8px;background:var(--chip);border-radius:12px;padding:6px 12px;margin-bottom:8px;font-size:13px}
+.mode[hidden]{display:none}
 /* detail */
 .detail .big{font-size:96px;text-align:center;padding:16px 0}
 .detail h2{margin:0 0 8px}
@@ -83,6 +91,7 @@ nav .n{display:inline-block;min-width:18px;padding:0 5px;border-radius:9px;backg
   <p class="source" id="source"></p>
   <main>
     <section class="view" id="v-start">
+      <div class="mode" id="mode" hidden><span id="mode-txt"></span><button class="back" id="mode-clear">Visa alla</button></div>
       <div class="deck" id="deck"></div>
       <div class="actions">
         <button id="btn-no" aria-label="Nästa">✕</button>
@@ -92,6 +101,13 @@ nav .n{display:inline-block;min-width:18px;padding:0 5px;border-radius:9px;backg
     <section class="view" id="v-sok" hidden>
       <input class="search" id="q" placeholder="Sök med intresseord, t.ex. gaming" autocomplete="off">
       <div class="tags" id="tags"></div>
+      <div class="filter" id="f-pris"><b>Pris</b>
+        <button class="seg on" data-max="">Alla</button><button class="seg" data-max="0">Gratis</button><button class="seg" data-max="200">Max 200 kr</button><button class="seg" data-max="500">Max 500 kr</button>
+      </div>
+      <div class="filter" id="f-sort"><b>Sortera</b>
+        <button class="seg on" data-s="near">Närmast</button><button class="seg" data-s="best">Bäst träff</button><button class="seg" data-s="soon">Snarast</button>
+      </div>
+      <button class="go" id="swipe-hits">Swipea träffarna</button>
       <div id="results"></div>
     </section>
     <section class="view" id="v-int" hidden>
@@ -171,7 +187,7 @@ function sortNear(list){return [...list].sort((a,b)=>Math.round(km(me,a)/5)-Math
 function renderDeck(){
  const d=$("#deck");d.innerHTML="";
  if(!EVENTS.length){d.innerHTML='<div class="empty">Inga event att visa just nu.<br>Nya event hämtas varje måndag.</div>';return}
- if(!queue.length){d.innerHTML='<div class="empty">Inga fler event just nu.<br><br><button class="back" id="again">Visa igen</button></div>';$("#again").onclick=()=>{queue=sortNear(EVENTS.filter(e=>!saved.includes(e)));renderDeck()};return}
+ if(!queue.length){d.innerHTML='<div class="empty">Inga fler event här.<br><br><button class="back" id="again">Visa alla event</button></div>';$("#again").onclick=()=>$("#mode-clear").onclick();return}
  queue.slice(0,2).reverse().forEach((ev,i,arr)=>{
   const c=document.createElement("div");c.className="card";
   c.innerHTML=`<div class="stamp yes">GÅ DIT</div><div class="stamp no">NÄSTA</div>${pic(ev,"img")}<div class="info"><h2>${esc(ev.t)}</h2>${facts(ev)}</div>`;
@@ -199,13 +215,37 @@ document.addEventListener("keydown",e=>{if($("#v-start").hidden)return;if(e.key=
 // Lista (Sök + Sparade)
 const row=ev=>`<div class="row" data-id="${esc(ev.id)}">${pic(ev,"e")}<div><b>${esc(ev.t)}</b><small>${esc(when(ev))} · ${priceTxt(ev.pris)} · ${kmTxt(ev)}</small></div></div>`;
 function bindRows(el){el.querySelectorAll(".row").forEach(r=>r.onclick=()=>openDetail(EVENTS.find(e=>e.id===r.dataset.id)))}
+// Sök: filter på pris, sortering och "bäst träff"
+let maxPris="",sortBy="near";
+function score(e,words){let p=0;const t=e.t.toLowerCase(),pl=e.plats.toLowerCase();
+ for(const w of words){if(t.includes(w))p+=3;if(e.tags.some(x=>x===w))p+=3;else if(e.tags.some(x=>x.includes(w)))p+=2;if(pl.includes(w))p+=1}
+ return p}
+function hitsNow(){
+ const q=$("#q").value.trim().toLowerCase(),words=q.split(/\s+/).filter(Boolean);
+ let list=EVENTS.map(e=>({e,p:words.length?score(e,words):1})).filter(x=>x.p>0);
+ if(maxPris!=="")list=list.filter(x=>x.e.pris!=null&&x.e.pris<=+maxPris);
+ const near=(a,b)=>km(me,a.e)-km(me,b.e),soon=(a,b)=>(a.e.datum+(a.e.tid||"")).localeCompare(b.e.datum+(b.e.tid||""));
+ list.sort(sortBy==="best"?(a,b)=>b.p-a.p||near(a,b):sortBy==="soon"?(a,b)=>soon(a,b)||near(a,b):(a,b)=>near(a,b)||soon(a,b));
+ return {q,hits:list.map(x=>x.e)};
+}
 function search(){
- const q=$("#q").value.trim().toLowerCase();
- const hits=sortNear(q?EVENTS.filter(e=>e.tags.some(t=>t.includes(q))||e.t.toLowerCase().includes(q)||e.plats.toLowerCase().includes(q)):EVENTS);
- const r=$("#results");
- r.innerHTML=hits.length?hits.slice(0,60).map(row).join(""):EVENTS.length?'<p class="hint">Inga träffar. Här är närmaste event:</p>'+row(sortNear(EVENTS)[0]):'<p class="hint">Inga event att söka bland just nu.</p>';
+ const {q,hits}=hitsNow(),r=$("#results"),b=$("#swipe-hits");
+ b.textContent=hits.length?`Swipea ${hits.length} ${hits.length===1?"träff":"träffar"} →`:"Inga träffar att swipea";b.disabled=!hits.length;
+ const unknown=maxPris!==""?EVENTS.filter(e=>e.pris==null).length:0;
+ r.innerHTML=(hits.length?hits.slice(0,60).map(row).join(""):EVENTS.length?'<p class="hint">Inga träffar. Här är närmaste event:</p>'+row(sortNear(EVENTS)[0]):'<p class="hint">Inga event att söka bland just nu.</p>')
+  +(unknown?`<p class="hint">${unknown} event saknar pris från arrangören och visas inte med prisfilter.</p>`:"");
  bindRows(r);
 }
+function segs(id,cb){document.querySelectorAll(`#${id} .seg`).forEach(b=>b.onclick=()=>{document.querySelectorAll(`#${id} .seg`).forEach(x=>x.classList.toggle("on",x===b));cb(b);search()})}
+segs("f-pris",b=>maxPris=b.dataset.max);
+segs("f-sort",b=>sortBy=b.dataset.s);
+$("#swipe-hits").onclick=()=>{const {q,hits}=hitsNow();
+ queue=hits.filter(e=>!saved.includes(e));
+ const pris=maxPris===""?"":maxPris==="0"?"gratis":`max ${maxPris} kr`;
+ const sort={near:"närmast först",best:"bäst träff först",soon:"snarast först"}[sortBy];
+ $("#mode-txt").textContent=[q&&`"${q}"`,pris,sort].filter(Boolean).join(" · ");
+ $("#mode").hidden=false;renderDeck();show("start")};
+$("#mode-clear").onclick=()=>{$("#mode").hidden=true;queue=sortNear(EVENTS.filter(e=>!saved.includes(e)));renderDeck()};
 $("#q").oninput=search;
 function renderTags(){
  const count={};EVENTS.forEach(e=>e.tags.forEach(t=>count[t]=(count[t]||0)+1));
@@ -230,7 +270,7 @@ function openDetail(ev){
 }
 
 // Plats
-function refresh(){queue=sortNear(EVENTS.filter(e=>!saved.includes(e)));renderDeck();search();$("#where").textContent="Nära "+me.namn}
+function refresh(){queue=($("#mode").hidden?sortNear(EVENTS):hitsNow().hits).filter(e=>!saved.includes(e));renderDeck();search();$("#where").textContent="Nära "+me.namn}
 function locate(){
  if(!navigator.geolocation){note("Din webbläsare kan inte dela plats");return}
  $("#where").textContent="Hämtar plats…";

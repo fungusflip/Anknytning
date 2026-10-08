@@ -72,6 +72,13 @@ const VS = "https://www.visitstockholm.se";
 const VS_EMOJI = { exhibitions: "🖼️", "stage-film": "🎭", music: "🎵", "food-drink": "🍽️", sports: "⚽", family: "🎈", "networking-community": "🤝", nightlife: "🪩", shopping: "🛍️", outdoors: "🌲" };
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 const FREE = /gratis|fri entré|fritt inträde|free admission|free entry/i;
+// Pris står ibland i beskrivningen, t.ex. "Biljett 150 kr" eller "Pris: 95 SEK". Ta det lägsta.
+function vsPris(html = "") {
+  const txt = html.replace(/<[^>]+>/g, " ");
+  if (FREE.test(txt)) return 0;
+  const tal = [...txt.matchAll(/(\d{2,4})(?:[:,]-)?\s?(?:kr|sek)\b/gi)].map(m => +m[1]).filter(n => n >= 20 && n <= 5000);
+  return tal.length ? Math.min(...tal) : null;
+}
 
 async function visitStockholm() {
   const out = [];
@@ -96,7 +103,7 @@ async function visitStockholm() {
         tid: null,
         plats: [e.venue_name, e.city].filter(Boolean).join(", ") || e.address,
         lat, lon,
-        pris: FREE.test(e.description ?? "") ? 0 : null,
+        pris: vsPris(e.description),
         tags: [...new Set([...(e.categories ?? []), e.subcategory?.title].filter(Boolean).map(t => t.toLowerCase()))],
         url: e.external_website_url || e.href,
       });
