@@ -19,12 +19,12 @@
 html,body{height:100%;margin:0}
 body{background:var(--bg);color:var(--fg);font-family:var(--font);display:flex;justify-content:center;align-items:center;padding:16px}
 .phone{width:100%;max-width:390px;height:min(800px,100%);background:var(--phone);border-radius:28px;box-shadow:0 20px 60px rgba(0,0,0,.18);display:flex;flex-direction:column;overflow:hidden;position:relative}
-header{padding:18px 20px 8px;display:flex;justify-content:space-between;align-items:baseline}
-header h1{font-size:22px;margin:0;letter-spacing:-.02em}
-header h1 span{color:var(--accent)}
+header{padding:12px 14px 4px;display:flex;justify-content:space-between;align-items:center}
+header h1{font-size:15px;font-weight:600;margin:0}
 header small{color:var(--muted)}
 main{flex:1;position:relative;overflow:hidden}
 .view{position:absolute;inset:0;padding:8px 16px 16px;overflow-y:auto}
+#v-start{padding:4px 6px 8px}
 .view[hidden]{display:none}
 nav{display:flex;border-top:1px solid var(--line)}
 nav button{flex:1;padding:12px 4px 14px;background:none;border:0;color:var(--muted);font:600 13px var(--font);cursor:pointer}
@@ -34,18 +34,20 @@ nav .n{display:inline-block;min-width:18px;padding:0 5px;border-radius:9px;backg
 #v-start{display:flex;flex-direction:column}
 #v-start[hidden]{display:none}
 .deck{position:relative;flex:1;min-height:0}
-.card{position:absolute;inset:0;border-radius:20px;overflow:hidden;background:var(--phone);border:1px solid var(--line);box-shadow:0 8px 24px rgba(0,0,0,.12);touch-action:none;user-select:none;cursor:grab;display:flex;flex-direction:column}
+.card{position:absolute;inset:0;border-radius:18px;overflow:hidden;background:#222;box-shadow:0 8px 24px rgba(0,0,0,.12);touch-action:none;user-select:none;cursor:grab;display:flex;flex-direction:column}
 .card img{pointer-events:none;-webkit-user-drag:none;user-select:none}
-.card .img{flex:1;display:flex;align-items:center;justify-content:center;font-size:84px}
-.card .info{padding:14px 16px 16px;display:grid;gap:8px}
-.card h2{margin:0;font-size:20px}
+.card .img{position:absolute!important;inset:0;display:flex;align-items:center;justify-content:center;font-size:84px;padding-bottom:30%}
+.card .info{position:relative;margin-top:auto;padding:60px 14px 14px;display:grid;gap:8px;color:#fff;background:linear-gradient(transparent,rgba(0,0,0,.55) 35%,rgba(0,0,0,.8))}
+.card .info .chip{background:rgba(255,255,255,.18);backdrop-filter:blur(6px)}
+.card .info .chip.free{background:var(--ok)}
+.card h2{margin:0;font-size:20px;text-shadow:0 1px 4px rgba(0,0,0,.4)}
 .facts{display:flex;flex-wrap:wrap;gap:6px}
 .chip{background:var(--chip);border-radius:999px;padding:4px 10px;font-size:13px}
 .chip.free{background:var(--ok);color:#fff;font-weight:700}
 .stamp{z-index:2;position:absolute;top:20px;padding:6px 12px;border:3px solid;border-radius:8px;font-weight:800;font-size:20px;opacity:0;transform:rotate(-12deg)}
 .stamp.yes{left:20px;color:var(--ok)} .stamp.no{right:20px;color:var(--accent);transform:rotate(12deg)}
-.actions{display:flex;justify-content:center;gap:24px;padding-top:14px;flex:none}
-.actions button{width:56px;height:56px;border-radius:50%;border:1px solid var(--line);background:var(--phone);font-size:24px;cursor:pointer;box-shadow:0 4px 12px rgba(0,0,0,.08)}
+.actions{display:flex;justify-content:center;gap:24px;padding-top:8px;flex:none}
+.actions button{width:50px;height:50px;color:var(--fg);border-radius:50%;border:1px solid var(--line);background:var(--phone);font-size:24px;cursor:pointer;box-shadow:0 4px 12px rgba(0,0,0,.08)}
 .empty{text-align:center;color:var(--muted);padding-top:120px}
 /* list */
 .search{width:100%;padding:12px 14px;border-radius:12px;border:1px solid var(--line);background:var(--chip);color:var(--fg);font:16px var(--font)}
@@ -77,7 +79,7 @@ nav .n{display:inline-block;min-width:18px;padding:0 5px;border-radius:9px;backg
 .note.show{opacity:1}
 .where{background:var(--chip);border:0;border-radius:999px;padding:6px 12px;color:var(--fg);font:600 13px var(--font);cursor:pointer}
 .where::before{content:"📍 "}
-.source{margin:0;padding:0 20px 6px;color:var(--muted);font-size:12px}
+.source{margin:0;padding:0 14px 2px;color:var(--muted);font-size:12px}
 .card .img{position:relative;overflow:hidden;color:#fff;text-shadow:0 4px 18px rgba(0,0,0,.25)}
 .card .img img,.detail .pic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .detail .pic{position:relative;overflow:hidden;border-radius:16px;margin:10px 0;aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;font-size:72px}
@@ -88,7 +90,7 @@ nav .n{display:inline-block;min-width:18px;padding:0 5px;border-radius:9px;backg
 </head>
 <body>
 <div class="phone">
-  <header><h1>Ank<span>nytning</span></h1><button class="where" id="where" title="Använd min plats">Nära Bro</button></header>
+  <header><h1>anknytning</h1><button class="where" id="where" title="Använd min plats">Nära Bro</button></header>
   <p class="source" id="source"></p>
   <main>
     <section class="view" id="v-start">
