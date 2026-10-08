@@ -9,6 +9,14 @@ import { readFile, writeFile } from "node:fs/promises";
 
 const ROOT = new URL("../", import.meta.url);
 const today = new Date().toISOString().slice(0, 10);
+// Mittpunkt mellan Stockholm och Bro. Event längre bort än MAX_KM tas bort
+// (vissa källor har fel koordinater, t.ex. event som egentligen ligger i Halmstad).
+const CENTER = { lat: 59.45, lon: 17.85 }, MAX_KM = 55;
+function km(a, b) {
+  const r = x => x * Math.PI / 180, dLat = r(b.lat - a.lat), dLon = r(b.lon - a.lon);
+  const h = Math.sin(dLat / 2) ** 2 + Math.cos(r(a.lat)) * Math.cos(r(b.lat)) * Math.sin(dLon / 2) ** 2;
+  return 2 * 6371 * Math.asin(Math.sqrt(h));
+}
 
 async function egnaEvent() {
   const list = JSON.parse(await readFile(new URL("egna-event.json", ROOT), "utf8"));
@@ -63,7 +71,7 @@ const SOURCES = { "Egna event": egnaEvent, Ticketmaster: ticketmaster };
 const events = [], used = [];
 for (const [name, fn] of Object.entries(SOURCES)) {
   try {
-    const list = (await fn()).filter(e => e.datum && e.datum >= today && Number.isFinite(e.lat));
+    const list = (await fn()).filter(e => e.datum && e.datum >= today && Number.isFinite(e.lat) && km(CENTER, e) <= MAX_KM);
     console.log(`${name}: ${list.length} event`);
     if (list.length) used.push(name);
     for (const e of list) if (!events.some(x => x.t === e.t && x.datum === e.datum)) events.push(e);

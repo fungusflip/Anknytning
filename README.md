@@ -14,7 +14,7 @@ Varje event länkar till sin egen sida (Ticketmaster, Facebook, arrangörens web
 
 - **Start:** dra kortet åt höger (intresserad) eller vänster (nästa).
 - **Sök:** sök med intresseord.
-- **Intresserade:** dina högerswipes.
+- **Sparade:** dina högerswipes.
 - **Eventdetalj:** tryck på ett event för pris, tid, plats och väder.
 
 ## Var eventen kommer ifrån
