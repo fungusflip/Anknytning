@@ -126,7 +126,7 @@ const unent = s => s.replace(/&(#x?[0-9a-f]+|\w+);/gi, (m, c) =>
 const strip = s => unent(unent(s.replace(/<[^>]+>/g, " "))).replace(/\s+/g, " ").trim();
 const sthlm = (iso, opt) => new Date(iso).toLocaleString("sv-SE", { timeZone: "Europe/Stockholm", ...opt });
 // Riktar sig till unga vuxna, så event bara för seniorer eller små barn hoppas över
-const INTE_FOR_UNGA = /(?<![\wåäö])(senior|seniorer|65\+|55\+|pension|pensionär|bebis|baby|babyrytmik|barnrytmik|sagostund|småbarn|förskola|knytte|(?:[0-9]|1[0-2])\s?[-–]\s?(?:[0-9]|1[0-2])\s?år)(?![\wåäö])/i;
+const INTE_FOR_UNGA = /(?<![\wåäö])(senior\w*|65\+|55\+|pension\w*|spf|bebis|baby\w*|babyrytmik|barnrytmik|sagostund|högläsning\w*|läxhjälp|småbarn|förskola|knytte|(?:[0-9]|1[0-2])\s?[-–]\s?(?:[0-9]|1[0-2])\s?år)(?![\wåäö])/i;
 
 async function nacka() {
   const base = "https://www.nacka.se";
@@ -203,7 +203,7 @@ async function kommunKalender(k) {
         const res = await fetch(t.sidUrl, { headers: { "user-agent": UA } });
         const html = res.ok ? await res.text() : "";
         sidinfo.set(t.sidUrl, { titel: unent(meta(html, "og:title") ?? html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/)?.[1]?.replace(/<[^>]+>/g, "") ?? "").replace(/\s*[|–-]\s*(Haninge|Lidingö)[^|]*$/i, "").trim(),
-          bild: meta(html, "og:image"), text: strip(meta(html, "og:description") ?? "") + " " + strip(html.match(/<main[\s\S]*?<\/main>/i)?.[0]?.slice(0, 20000) ?? ""),
+          bild: /logo/i.test(meta(html, "og:image") ?? "") ? null : meta(html, "og:image"), text: strip(meta(html, "og:description") ?? "") + " " + strip(html.match(/<main[\s\S]*?<\/main>/i)?.[0]?.slice(0, 20000) ?? ""),
           tid: html.match(/(?:kl\.?|klockan|tid:?)\s*(\d{1,2})[.:](\d{2})/i) });
       } catch { sidinfo.set(t.sidUrl, null); }
       await sleep(1000);
@@ -217,7 +217,7 @@ async function kommunKalender(k) {
       datum: t.datum,
       tid: t.tid ?? (info.tid ? `${info.tid[1].padStart(2, "0")}:${info.tid[2]}` : null),
       plats: k.namn, lat: k.lat, lon: k.lon,
-      pris: /gratis|fri entré|fritt inträde|kostnadsfri/i.test(info.text) ? 0 : null,
+      pris: null, // hittas av prisläsaren på eventets egen sida
       tags: [k.namn.toLowerCase()],
       url: t.lankUrl,
     });

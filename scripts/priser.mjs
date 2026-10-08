@@ -64,11 +64,10 @@ function hittaPris(html) {
   const text = html.replace(/<(script|style)[\s\S]*?<\/\1>/gi, " ").replace(/<[^>]+>/g, " ")
     .replace(/&nbsp;|&#160;/g, " ").replace(/&amp;/g, "&").replace(/\s+/g, " ");
   const priser = [];
-  for (const m of text.matchAll(/(pris|biljett|entré|inträde|kostnad|avgift|ticket|price)[^.!?]{0,80}/gi)) {
+  for (const m of text.matchAll(/[^.!?]{0,25}(pris|biljett|entré|inträde|kostnad|avgift|ticket|price)[^.!?]{0,80}/gi)) {
     if (GRATIS.test(m[0])) priser.push(0);
     for (const k of m[0].matchAll(/(?:fr(?:\.|ån)?\s*)?(\d{2,5})(?:[,.]\d{2})?\s*(?::-|kr\b|sek\b|kronor)/gi)) priser.push(+k[1]);
   }
-  if (!priser.length && GRATIS.test(text.slice(0, 20000))) priser.push(0);
   const ok = priser.filter(n => n === 0 || (n >= 20 && n <= 5000));
   return ok.length ? Math.min(...ok) : null;
 }
