@@ -1,6 +1,6 @@
 // Engångsverktyg: skriver ut en förkortad version av svaret från några adresser.
 const UA = "AnknytningBot/0.1 (+https://github.com/fungusflip/Anknytning)";
-const MAX = +(process.env.PROBE_MAX ?? 2500);
+const MAX = +(process.env.PROBE_MAX ?? 4000);
 for (const arg of process.argv.slice(2)) {
   // "adress#@text" skriver ut från första förekomsten av text
   const [url, fran] = arg.split("#@");
@@ -17,7 +17,7 @@ for (const arg of process.argv.slice(2)) {
   if (!out && fran?.startsWith("~")) {
     // "#@~regex": visa ett utdrag runt de första träffarna, för att se hur en listrad ser ut
     const re = new RegExp(decodeURIComponent(fran.slice(1)), "gi"), bitar = [];
-    for (const m of text.matchAll(re)) { bitar.push(text.slice(Math.max(0, m.index - 700), m.index + 700)); if (bitar.length >= 3) break; }
+    for (const m of text.matchAll(re)) { bitar.push(text.slice(Math.max(0, m.index - 1500), m.index + 1500)); if (bitar.length >= 1) break; }
     text = bitar.join("\n=====\n") || "(ingen träff)";
   } else if (!out && fran) { const i = text.indexOf(decodeURIComponent(fran)); if (i > 0) text = text.slice(i); }
   else if (!out) { const i = text.search(/<main[\s>]/i); if (i > 0) text = text.slice(i); }
