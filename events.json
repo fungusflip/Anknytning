@@ -1,5 +1,5 @@
 {
-  "uppdaterad": "2026-10-08T19:12:38.157Z",
+  "uppdaterad": "2026-10-08T19:23:24.202Z",
   "kalla": "Ticketmaster + Visit Stockholm + Nacka + Haninge + Lidingö",
   "exempel": false,
   "events": [
@@ -32,7 +32,7 @@
       "plats": "Debaser Nova, Stockholm",
       "lat": 59.31394613751992,
       "lon": 18.03390323113166,
-      "pris": null,
+      "pris": 195,
       "tags": [
         "musik",
         "hårdrock & metal"
@@ -143,7 +143,7 @@
       "plats": "Judiska museet, Stockholm",
       "lat": 59.323868136538124,
       "lon": 18.072973041829187,
-      "pris": null,
+      "pris": 0,
       "tags": [
         "musik"
       ],
@@ -405,7 +405,7 @@
       "plats": "Big Ben Pub, Stockholm",
       "lat": 59.315583295801474,
       "lon": 18.083352436350367,
-      "pris": 0,
+      "pris": null,
       "tags": [
         "scen & film",
         "standup & spoken word"
@@ -533,7 +533,7 @@
       "plats": "Kulturhuset Stadsteatern, Stockholm",
       "lat": 59.3323872,
       "lon": 18.0652583,
-      "pris": null,
+      "pris": 200,
       "tags": [
         "utställningar",
         "guidade turer & föreläsningar",
@@ -552,7 +552,7 @@
       "plats": "Presentmakeriet, Stockholm",
       "lat": 59.31406185464658,
       "lon": 18.076889402268876,
-      "pris": null,
+      "pris": 450,
       "tags": [
         "mat & dryck",
         "familj",
@@ -600,7 +600,7 @@
       "id": "haninge-utstallning-forbjudna-nobelpristagare-2026-10-08",
       "t": "Utställning: Förbjudna nobelpristagare",
       "e": "📍",
-      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "img": null,
       "datum": "2026-10-08",
       "tid": null,
       "plats": "Haninge",
@@ -611,54 +611,6 @@
         "haninge"
       ],
       "url": "https://www.haninge.se/evenemang-och-aktiviteter/utstallning-forbjudna-nobelpristagare/?d=2026-10-08"
-    },
-    {
-      "id": "haninge-laxhjalp-2026-10-08",
-      "t": "Läxhjälp",
-      "e": "📍",
-      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
-      "datum": "2026-10-08",
-      "tid": null,
-      "plats": "Haninge",
-      "lat": 59.1684,
-      "lon": 18.144,
-      "pris": null,
-      "tags": [
-        "haninge"
-      ],
-      "url": "https://www.haninge.se/evenemang-och-aktiviteter/laxhjalp/?d=2026-10-08"
-    },
-    {
-      "id": "lidingö-seniorservice-2026-10-08",
-      "t": "Seniorservice",
-      "e": "📍",
-      "img": "https://lidingo.se/wp-content/uploads/2026/09/Fixarjonas-bild-2026.jpg",
-      "datum": "2026-10-08",
-      "tid": "10:00",
-      "plats": "Lidingö",
-      "lat": 59.3663,
-      "lon": 18.15,
-      "pris": 0,
-      "tags": [
-        "lidingö"
-      ],
-      "url": "https://lidingo.se/kultur-fritid/evenemangskalendern/seniorservice/?startDate=2026-10-08_10:00"
-    },
-    {
-      "id": "haninge-sopplunch-pa-spf-runstenens-traffpunkt--2026-10-08",
-      "t": "Sopplunch på SPF Runstenens träffpunkt",
-      "e": "📍",
-      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
-      "datum": "2026-10-08",
-      "tid": "11:30",
-      "plats": "Haninge",
-      "lat": 59.1684,
-      "lon": 18.144,
-      "pris": 50,
-      "tags": [
-        "haninge"
-      ],
-      "url": "https://www.haninge.se/evenemang-och-aktiviteter/sopplunch-pa-spf-runstenens-traffpunkt-/?d=2026-10-08"
     },
     {
       "id": "nacka-konstruktion-och-bild-2026-09-19",
@@ -712,22 +664,6 @@
         "lidingö"
       ],
       "url": "https://lidingo.se/kultur-fritid/evenemangskalendern/tva-blickar-mots-i-ljuset-ett-samtal-mellan-form-tid-och-stillhet/?startDate=2026-10-08_15:00"
-    },
-    {
-      "id": "haninge-hoglasningsdags-2026-10-08",
-      "t": "Högläsningsdags",
-      "e": "📍",
-      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
-      "datum": "2026-10-08",
-      "tid": "16:00",
-      "plats": "Haninge",
-      "lat": 59.1684,
-      "lon": 18.144,
-      "pris": null,
-      "tags": [
-        "haninge"
-      ],
-      "url": "https://www.haninge.se/evenemang-och-aktiviteter/hoglasningsdags/?d=2026-10-08"
     },
     {
       "id": "lidingö-booktok-bookhype-bokfika-2026-10-08",
@@ -829,7 +765,7 @@
       "plats": "Biocafé Tellus, Stockholm",
       "lat": 59.301979383128696,
       "lon": 18.007640297528184,
-      "pris": null,
+      "pris": 25,
       "tags": [
         "musik",
         "jazz & blues"
@@ -921,7 +857,7 @@
       "plats": "Stockholmsmässan, Älvsjö",
       "lat": 59.277487735478964,
       "lon": 18.015170396423326,
-      "pris": 0,
+      "pris": null,
       "tags": [
         "utställningar",
         "mässor",
@@ -959,7 +895,7 @@
       "plats": "Gallerian, Stockholm",
       "lat": 59.3312202,
       "lon": 18.0674676,
-      "pris": null,
+      "pris": 30,
       "tags": [
         "klubbar & fester",
         "familj",
@@ -1053,7 +989,7 @@
       "plats": "Kulturhuset Stadsteatern, Stockholm",
       "lat": 59.332033560108854,
       "lon": 18.064930738067613,
-      "pris": null,
+      "pris": 295,
       "tags": [
         "musik",
         "scen & film",
@@ -1158,7 +1094,7 @@
       "id": "haninge-utstallning-forbjudna-nobelpristagare-2026-10-09",
       "t": "Utställning: Förbjudna nobelpristagare",
       "e": "📍",
-      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "img": null,
       "datum": "2026-10-09",
       "tid": null,
       "plats": "Haninge",
@@ -1206,13 +1142,13 @@
       "id": "haninge-usm-for-pojkar-fodda-2012-2026-10-09",
       "t": "USM för Pojkar födda 2012",
       "e": "📍",
-      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "img": null,
       "datum": "2026-10-09",
       "tid": null,
       "plats": "Haninge",
       "lat": 59.1684,
       "lon": 18.144,
-      "pris": 0,
+      "pris": null,
       "tags": [
         "haninge"
       ],
@@ -1276,13 +1212,13 @@
       "id": "haninge-gratis-nattfotboll-i-jordbro-for-dig-13-15-ar3-2026-10-09",
       "t": "Gratis nattfotboll i Jordbro för dig 13–15 år",
       "e": "📍",
-      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "img": null,
       "datum": "2026-10-09",
       "tid": "18:30",
       "plats": "Haninge",
       "lat": 59.1684,
       "lon": 18.144,
-      "pris": 0,
+      "pris": null,
       "tags": [
         "haninge"
       ],
@@ -1292,13 +1228,13 @@
       "id": "haninge-gratis-nattfotboll-i-brandbergen-for-dig-13-20-ar3-2026-10-09",
       "t": "Gratis nattfotboll i Brandbergen",
       "e": "📍",
-      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "img": null,
       "datum": "2026-10-09",
       "tid": "18:30",
       "plats": "Haninge",
       "lat": 59.1684,
       "lon": 18.144,
-      "pris": 0,
+      "pris": null,
       "tags": [
         "haninge"
       ],
@@ -1308,13 +1244,13 @@
       "id": "haninge-gratis-spontaninnebandy-i-handen-for-dig-13-20-ar-2026-10-09",
       "t": "Gratis spontaninnebandy i Handen",
       "e": "📍",
-      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "img": null,
       "datum": "2026-10-09",
       "tid": "18:30",
       "plats": "Haninge",
       "lat": 59.1684,
       "lon": 18.144,
-      "pris": 0,
+      "pris": null,
       "tags": [
         "haninge"
       ],
@@ -1324,13 +1260,13 @@
       "id": "haninge-gratis-nattfotboll-i-jordbro-for-dig-16-20-ar-2026-10-09",
       "t": "Gratis nattfotboll i Jordbro för dig 16–20 år",
       "e": "📍",
-      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "img": null,
       "datum": "2026-10-09",
       "tid": "18:30",
       "plats": "Haninge",
       "lat": 59.1684,
       "lon": 18.144,
-      "pris": 0,
+      "pris": null,
       "tags": [
         "haninge"
       ],
@@ -1488,7 +1424,7 @@
       "plats": "Debaser Nova, Stockholm",
       "lat": 59.31394613751992,
       "lon": 18.03390323113166,
-      "pris": null,
+      "pris": 280,
       "tags": [
         "musik",
         "traditionell musik, folk & country"
@@ -1506,7 +1442,7 @@
       "plats": "Debaser Strand, Stockholm",
       "lat": 59.31394613751992,
       "lon": 18.03390323113166,
-      "pris": null,
+      "pris": 325,
       "tags": [
         "musik",
         "pop"
@@ -1788,7 +1724,7 @@
       "plats": "Nalen, Stockholm",
       "lat": 59.33707030459172,
       "lon": 18.067513573014878,
-      "pris": 350,
+      "pris": 0,
       "tags": [
         "mat & dryck",
         "musik"
@@ -2100,7 +2036,7 @@
       "id": "haninge-utstallning-forbjudna-nobelpristagare-2026-10-10",
       "t": "Utställning: Förbjudna nobelpristagare",
       "e": "📍",
-      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "img": null,
       "datum": "2026-10-10",
       "tid": null,
       "plats": "Haninge",
@@ -2122,7 +2058,7 @@
       "plats": "Haninge",
       "lat": 59.1684,
       "lon": 18.144,
-      "pris": 0,
+      "pris": null,
       "tags": [
         "haninge"
       ],
@@ -2148,7 +2084,7 @@
       "id": "haninge-hostkonsert-i-dalaro-kyrka2-2026-10-10",
       "t": "Höstkonsert i Dalarö kyrka",
       "e": "📍",
-      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "img": null,
       "datum": "2026-10-10",
       "tid": null,
       "plats": "Haninge",
@@ -2180,13 +2116,13 @@
       "id": "haninge-usm-for-pojkar-fodda-2012-2026-10-10",
       "t": "USM för Pojkar födda 2012",
       "e": "📍",
-      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "img": null,
       "datum": "2026-10-10",
       "tid": null,
       "plats": "Haninge",
       "lat": 59.1684,
       "lon": 18.144,
-      "pris": 0,
+      "pris": null,
       "tags": [
         "haninge"
       ],
@@ -2374,13 +2310,13 @@
       "id": "haninge-gratis-nattfotboll-i-jordbro-for-dig-13-15-ar3-2026-10-10",
       "t": "Gratis nattfotboll i Jordbro för dig 13–15 år",
       "e": "📍",
-      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "img": null,
       "datum": "2026-10-10",
       "tid": "18:30",
       "plats": "Haninge",
       "lat": 59.1684,
       "lon": 18.144,
-      "pris": 0,
+      "pris": null,
       "tags": [
         "haninge"
       ],
@@ -2390,13 +2326,13 @@
       "id": "haninge-gratis-nattfotboll-i-brandbergen-for-dig-13-20-ar3-2026-10-10",
       "t": "Gratis nattfotboll i Brandbergen",
       "e": "📍",
-      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "img": null,
       "datum": "2026-10-10",
       "tid": "18:30",
       "plats": "Haninge",
       "lat": 59.1684,
       "lon": 18.144,
-      "pris": 0,
+      "pris": null,
       "tags": [
         "haninge"
       ],
@@ -2406,13 +2342,13 @@
       "id": "haninge-gratis-nattfotboll-i-jordbro-for-dig-16-20-ar-2026-10-10",
       "t": "Gratis nattfotboll i Jordbro för dig 16–20 år",
       "e": "📍",
-      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "img": null,
       "datum": "2026-10-10",
       "tid": "18:30",
       "plats": "Haninge",
       "lat": 59.1684,
       "lon": 18.144,
-      "pris": 0,
+      "pris": null,
       "tags": [
         "haninge"
       ],
@@ -2518,7 +2454,7 @@
       "plats": "Debaser Nova, Stockholm",
       "lat": 59.31394613751992,
       "lon": 18.03390323113166,
-      "pris": null,
+      "pris": 300,
       "tags": [
         "musik",
         "rock"
@@ -2536,7 +2472,7 @@
       "plats": "Debaser Strand, Stockholm",
       "lat": 59.31394613751992,
       "lon": 18.03390323113166,
-      "pris": null,
+      "pris": 333,
       "tags": [
         "musik",
         "traditionell musik, folk & country"
@@ -2829,7 +2765,7 @@
       "plats": "Haninge",
       "lat": 59.1684,
       "lon": 18.144,
-      "pris": 0,
+      "pris": 275,
       "tags": [
         "haninge"
       ],
@@ -2845,7 +2781,7 @@
       "plats": "Haninge",
       "lat": 59.1684,
       "lon": 18.144,
-      "pris": 0,
+      "pris": null,
       "tags": [
         "haninge"
       ],
@@ -2855,7 +2791,7 @@
       "id": "haninge-utstallning-forbjudna-nobelpristagare-2026-10-11",
       "t": "Utställning: Förbjudna nobelpristagare",
       "e": "📍",
-      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "img": null,
       "datum": "2026-10-11",
       "tid": null,
       "plats": "Haninge",
@@ -2871,7 +2807,7 @@
       "id": "haninge-knatteridning2-2026-10-11",
       "t": "Knatteridning",
       "e": "📍",
-      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "img": null,
       "datum": "2026-10-11",
       "tid": null,
       "plats": "Haninge",
@@ -2887,13 +2823,13 @@
       "id": "haninge-usm-for-pojkar-fodda-2012-2026-10-11",
       "t": "USM för Pojkar födda 2012",
       "e": "📍",
-      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "img": null,
       "datum": "2026-10-11",
       "tid": null,
       "plats": "Haninge",
       "lat": 59.1684,
       "lon": 18.144,
-      "pris": 0,
+      "pris": null,
       "tags": [
         "haninge"
       ],
@@ -3025,6 +2961,24 @@
       "url": "https://www.ticketmaster.se/event/garderobsavgift-forkopsrabatt-kop-nu-biljetter/1086548584"
     },
     {
+      "id": "vs-15137",
+      "t": "London Symphonic Rock Orchestra",
+      "e": "🎵",
+      "img": "https://www.visitstockholm.se/media/images/london-symphonic-rock-orchestra.width-768.jpg",
+      "datum": "2026-10-12",
+      "slut": null,
+      "tid": null,
+      "plats": "Göta Lejon, Stockholm",
+      "lat": 59.313838523478985,
+      "lon": 18.073808849906907,
+      "pris": null,
+      "tags": [
+        "musik",
+        "rock"
+      ],
+      "url": "https://www.gotalejon.se/all-events/london-symphonic-rock-orchestra-tickets-ae1465481"
+    },
+    {
       "id": "vs-17776",
       "t": "Jazzkroki",
       "e": "🎵",
@@ -3116,7 +3070,7 @@
       "id": "haninge-det-tysta-arvet-2026-10-12",
       "t": "Utställningen Det tysta arvet",
       "e": "📍",
-      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "img": null,
       "datum": "2026-10-12",
       "tid": null,
       "plats": "Haninge",
@@ -3132,7 +3086,7 @@
       "id": "haninge-skolbio-for-ak-9-och-gymnasiet--taikon-2026-10-12",
       "t": "Skolbio för åk 9 och gymnasiet – Taikon",
       "e": "📍",
-      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "img": null,
       "datum": "2026-10-12",
       "tid": null,
       "plats": "Haninge",
@@ -3180,7 +3134,7 @@
       "id": "haninge-kommunfullmaktige-sammantrader6-2026-10-12",
       "t": "Kommunfullmäktige sammanträder",
       "e": "📍",
-      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "img": null,
       "datum": "2026-10-12",
       "tid": null,
       "plats": "Haninge",
@@ -3244,7 +3198,7 @@
     },
     {
       "id": "tm-Z698xZq2Z1ko9kAAZ",
-      "t": "London Symphonic Rock Orchestra",
+      "t": "London Symphonic Rock Orchestra - INSTÄLLT",
       "e": "🎵",
       "img": "https://s1.ticketm.net/dam/a/780/98309a4b-5764-4ce5-ae9e-817a49282780_RETINA_PORTRAIT_16_9.jpg",
       "datum": "2026-10-12",
@@ -3258,7 +3212,7 @@
         "rock",
         "pop"
       ],
-      "url": "https://www.ticketmaster.se/event/london-symphonic-rock-orchestra-biljetter/457185140"
+      "url": "https://www.ticketmaster.se/event/london-symphonic-rock-orchestra-installt-biljetter/457185140"
     },
     {
       "id": "vs-15795",
@@ -3271,7 +3225,7 @@
       "plats": "Debaser Nova, Stockholm",
       "lat": 59.31394613751992,
       "lon": 18.03390323113166,
-      "pris": null,
+      "pris": 395,
       "tags": [
         "musik",
         "hårdrock & metal"
@@ -3388,7 +3342,7 @@
       "id": "haninge-det-tysta-arvet-2026-10-13",
       "t": "Utställningen Det tysta arvet",
       "e": "📍",
-      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "img": null,
       "datum": "2026-10-13",
       "tid": null,
       "plats": "Haninge",
@@ -3404,7 +3358,7 @@
       "id": "haninge-samisk-kultur-och-det-samiska-sprakets-historia-2026-10-13",
       "t": "Samisk kultur och det samiska språkets historia",
       "e": "📍",
-      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "img": null,
       "datum": "2026-10-13",
       "tid": null,
       "plats": "Haninge",
@@ -3436,7 +3390,7 @@
       "id": "haninge-invigningstal-minoritetsveckan-2026-10-13",
       "t": "Invigningstal minoritetsveckan",
       "e": "📍",
-      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "img": null,
       "datum": "2026-10-13",
       "tid": null,
       "plats": "Haninge",
@@ -3468,7 +3422,7 @@
       "id": "haninge-samhallshjalp-2026-10-13",
       "t": "Samhällshjälp",
       "e": "📍",
-      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "img": null,
       "datum": "2026-10-13",
       "tid": null,
       "plats": "Haninge",
@@ -3500,7 +3454,7 @@
       "id": "haninge-handarbetscafe-i-vega-2026-10-13",
       "t": "Handarbetscafé i Vega",
       "e": "📍",
-      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "img": null,
       "datum": "2026-10-13",
       "tid": null,
       "plats": "Haninge",
@@ -3664,7 +3618,7 @@
       "plats": "Debaser Nova, Stockholm",
       "lat": 59.31394613751992,
       "lon": 18.03390323113166,
-      "pris": null,
+      "pris": 270,
       "tags": [
         "musik",
         "traditionell musik, folk & country"
@@ -3872,7 +3826,7 @@
       "id": "haninge-det-tysta-arvet-2026-10-14",
       "t": "Utställningen Det tysta arvet",
       "e": "📍",
-      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "img": null,
       "datum": "2026-10-14",
       "tid": null,
       "plats": "Haninge",
@@ -3904,7 +3858,7 @@
       "id": "haninge-samisk-kultur-och-det-samiska-sprakets-historia-2026-10-14",
       "t": "Samisk kultur och det samiska språkets historia",
       "e": "📍",
-      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "img": null,
       "datum": "2026-10-14",
       "tid": null,
       "plats": "Haninge",
@@ -3917,26 +3871,10 @@
       "url": "https://www.haninge.se/evenemang-och-aktiviteter/samisk-kultur-och-det-samiska-sprakets-historia/?d=2026-10-14"
     },
     {
-      "id": "haninge-filmvisning-pa-tallhojden--kalevala-2026-10-14",
-      "t": "Filmvisning på Tallhöjden – ”Kalevala”",
-      "e": "📍",
-      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
-      "datum": "2026-10-14",
-      "tid": null,
-      "plats": "Haninge",
-      "lat": 59.1684,
-      "lon": 18.144,
-      "pris": null,
-      "tags": [
-        "haninge"
-      ],
-      "url": "https://www.haninge.se/evenemang-och-aktiviteter/filmvisning-pa-tallhojden--kalevala/?d=2026-10-14"
-    },
-    {
       "id": "haninge-pyssel-med-samiskt-tema-2026-10-14",
       "t": "Pyssel med samiskt tema",
       "e": "📍",
-      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "img": null,
       "datum": "2026-10-14",
       "tid": null,
       "plats": "Haninge",
@@ -3958,7 +3896,7 @@
       "plats": "Haninge",
       "lat": 59.1684,
       "lon": 18.144,
-      "pris": 0,
+      "pris": null,
       "tags": [
         "haninge"
       ],
@@ -3968,7 +3906,7 @@
       "id": "haninge-bibblans-vip-klubb---for-dig-pa-lagstadiet-2026-10-14",
       "t": "Bibblans VIP-klubb - för dig på lågstadiet.",
       "e": "📍",
-      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "img": null,
       "datum": "2026-10-14",
       "tid": null,
       "plats": "Haninge",
@@ -4016,13 +3954,13 @@
       "id": "haninge-gratis-kvallsklattring-i-brandbergen-for-dig-13-20-ar2-2026-10-14",
       "t": "Gratis kvällsklättring i Brandbergen",
       "e": "📍",
-      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "img": null,
       "datum": "2026-10-14",
       "tid": null,
       "plats": "Haninge",
       "lat": 59.1684,
       "lon": 18.144,
-      "pris": 0,
+      "pris": null,
       "tags": [
         "haninge"
       ],
@@ -4086,7 +4024,7 @@
       "id": "haninge-skrivarklubben-2026-10-14",
       "t": "Skrivarklubben",
       "e": "📍",
-      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "img": null,
       "datum": "2026-10-14",
       "tid": "15:00",
       "plats": "Haninge",
@@ -4097,23 +4035,6 @@
         "haninge"
       ],
       "url": "https://www.haninge.se/evenemang-och-aktiviteter/skrivarklubben/?d=2026-10-14"
-    },
-    {
-      "id": "nacka-laxhjalp-studiestod-spraktraning-2026-10-14",
-      "t": "Läxhjälp, studiestöd & språkträning",
-      "e": "📍",
-      "img": "https://www.nacka.se/filtered/311752/rszww400h200-90/laxhjalp-ext-kal-a--440917605-rszww400h200-90.png",
-      "datum": "2026-10-14",
-      "slut": null,
-      "tid": "16:00",
-      "plats": "Älta bibliotek, Nacka",
-      "lat": 59.2561243,
-      "lon": 18.1776164,
-      "pris": null,
-      "tags": [
-        "nacka"
-      ],
-      "url": "https://www.nacka.se/pa-gang-i-nacka/laxhjalp-studiestod-spraktraning/?occurrence=202610141400-202610141600"
     },
     {
       "id": "nacka-mediyoga-for-anhoriga-2026-10-14",
@@ -4181,7 +4102,7 @@
       "plats": "Debaser Nova, Stockholm",
       "lat": 59.31394613751992,
       "lon": 18.03390323113166,
-      "pris": null,
+      "pris": 335,
       "tags": [
         "musik",
         "rock"
@@ -4254,7 +4175,7 @@
       "plats": "Sturehof, Stockholm",
       "lat": 59.33565745099244,
       "lon": 18.073312425088744,
-      "pris": 0,
+      "pris": null,
       "tags": [
         "klubbar & fester",
         "mat & dryck"
@@ -4391,7 +4312,7 @@
       "id": "haninge-det-tysta-arvet-2026-10-15",
       "t": "Utställningen Det tysta arvet",
       "e": "📍",
-      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "img": null,
       "datum": "2026-10-15",
       "tid": null,
       "plats": "Haninge",
@@ -4423,7 +4344,7 @@
       "id": "haninge-samisk-kultur-och-det-samiska-sprakets-historia-2026-10-15",
       "t": "Samisk kultur och det samiska språkets historia",
       "e": "📍",
-      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "img": null,
       "datum": "2026-10-15",
       "tid": null,
       "plats": "Haninge",
@@ -4450,22 +4371,6 @@
         "haninge"
       ],
       "url": "https://www.haninge.se/evenemang-och-aktiviteter/naringslivsdagen-2026/?d=2026-10-15"
-    },
-    {
-      "id": "haninge-laxhjalp-2026-10-15",
-      "t": "Läxhjälp",
-      "e": "📍",
-      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
-      "datum": "2026-10-15",
-      "tid": null,
-      "plats": "Haninge",
-      "lat": 59.1684,
-      "lon": 18.144,
-      "pris": null,
-      "tags": [
-        "haninge"
-      ],
-      "url": "https://www.haninge.se/evenemang-och-aktiviteter/laxhjalp/?d=2026-10-15"
     },
     {
       "id": "haninge-starta-eget-kurs-del-2-av-2-2026-10-15",
@@ -4500,22 +4405,6 @@
       "url": "https://www.haninge.se/evenemang-och-aktiviteter/ivar-lo-museet-pa-mariaberget-i-stockholm-visas---valkommen-att-hanga-med/?d=2026-10-15"
     },
     {
-      "id": "haninge-sopplunch-pa-spf-runstenens-traffpunkt--2026-10-15",
-      "t": "Sopplunch på SPF Runstenens träffpunkt",
-      "e": "📍",
-      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
-      "datum": "2026-10-15",
-      "tid": "11:30",
-      "plats": "Haninge",
-      "lat": 59.1684,
-      "lon": 18.144,
-      "pris": 50,
-      "tags": [
-        "haninge"
-      ],
-      "url": "https://www.haninge.se/evenemang-och-aktiviteter/sopplunch-pa-spf-runstenens-traffpunkt-/?d=2026-10-15"
-    },
-    {
       "id": "haninge-minoritetsveckan-12-17-oktober-2026-10-15",
       "t": "Minoritetsveckan 12–17 oktober",
       "e": "📍",
@@ -4530,22 +4419,6 @@
         "haninge"
       ],
       "url": "https://www.haninge.se/evenemang-och-aktiviteter/minoritetsveckan-12-17-oktober/?d=2026-10-15"
-    },
-    {
-      "id": "haninge-hoglasningsdags-2026-10-15",
-      "t": "Högläsningsdags",
-      "e": "📍",
-      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
-      "datum": "2026-10-15",
-      "tid": "16:00",
-      "plats": "Haninge",
-      "lat": 59.1684,
-      "lon": 18.144,
-      "pris": null,
-      "tags": [
-        "haninge"
-      ],
-      "url": "https://www.haninge.se/evenemang-och-aktiviteter/hoglasningsdags/?d=2026-10-15"
     },
     {
       "id": "nacka-vad-hander-i-orminge-2026-10-15",
@@ -4794,7 +4667,7 @@
       "plats": "Debaser Strand, Stockholm",
       "lat": 59.31394613751992,
       "lon": 18.03390323113166,
-      "pris": null,
+      "pris": 350,
       "tags": [
         "musik",
         "hårdrock & metal"
@@ -4987,7 +4860,7 @@
       "id": "haninge-det-tysta-arvet-2026-10-16",
       "t": "Utställningen Det tysta arvet",
       "e": "📍",
-      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "img": null,
       "datum": "2026-10-16",
       "tid": null,
       "plats": "Haninge",
@@ -5000,26 +4873,10 @@
       "url": "https://www.haninge.se/evenemang-och-aktiviteter/det-tysta-arvet/?d=2026-10-16"
     },
     {
-      "id": "haninge-karelska-piroger-till-forsaljning-pa-brandbergens-seniorcentrum-2026-10-16",
-      "t": "Karelska piroger till försäljning på Brandbergens seniorcentrum",
-      "e": "📍",
-      "img": "https://www.haninge.se/contentassets/b7012c827e874873a5491e797f8a1c8b/karelska-piroger.jpg",
-      "datum": "2026-10-16",
-      "tid": null,
-      "plats": "Haninge",
-      "lat": 59.1684,
-      "lon": 18.144,
-      "pris": null,
-      "tags": [
-        "haninge"
-      ],
-      "url": "https://www.haninge.se/evenemang-och-aktiviteter/karelska-piroger-till-forsaljning-pa-brandbergens-seniorcentrum/?d=2026-10-16"
-    },
-    {
       "id": "haninge-samisk-kultur-och-det-samiska-sprakets-historia-2026-10-16",
       "t": "Samisk kultur och det samiska språkets historia",
       "e": "📍",
-      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "img": null,
       "datum": "2026-10-16",
       "tid": null,
       "plats": "Haninge",
@@ -5073,7 +4930,7 @@
       "plats": "Haninge",
       "lat": 59.1684,
       "lon": 18.144,
-      "pris": 0,
+      "pris": null,
       "tags": [
         "haninge"
       ],
@@ -5101,7 +4958,7 @@
       "id": "haninge-bio-tittelitut-tittar-pa-minoriteter-fran-3-ar-2026-10-16",
       "t": "Bio Tittelitut tittar på minoriteter (från 3 år)",
       "e": "📍",
-      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "img": null,
       "datum": "2026-10-16",
       "tid": "10:00",
       "plats": "Haninge",
@@ -5186,13 +5043,13 @@
       "id": "haninge-gratis-nattfotboll-i-jordbro-for-dig-13-15-ar3-2026-10-16",
       "t": "Gratis nattfotboll i Jordbro för dig 13–15 år",
       "e": "📍",
-      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "img": null,
       "datum": "2026-10-16",
       "tid": "18:30",
       "plats": "Haninge",
       "lat": 59.1684,
       "lon": 18.144,
-      "pris": 0,
+      "pris": null,
       "tags": [
         "haninge"
       ],
@@ -5202,13 +5059,13 @@
       "id": "haninge-gratis-nattfotboll-i-brandbergen-for-dig-13-20-ar3-2026-10-16",
       "t": "Gratis nattfotboll i Brandbergen",
       "e": "📍",
-      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "img": null,
       "datum": "2026-10-16",
       "tid": "18:30",
       "plats": "Haninge",
       "lat": 59.1684,
       "lon": 18.144,
-      "pris": 0,
+      "pris": null,
       "tags": [
         "haninge"
       ],
@@ -5218,13 +5075,13 @@
       "id": "haninge-gratis-spontaninnebandy-i-handen-for-dig-13-20-ar-2026-10-16",
       "t": "Gratis spontaninnebandy i Handen",
       "e": "📍",
-      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "img": null,
       "datum": "2026-10-16",
       "tid": "18:30",
       "plats": "Haninge",
       "lat": 59.1684,
       "lon": 18.144,
-      "pris": 0,
+      "pris": null,
       "tags": [
         "haninge"
       ],
@@ -5234,13 +5091,13 @@
       "id": "haninge-gratis-nattfotboll-i-jordbro-for-dig-16-20-ar-2026-10-16",
       "t": "Gratis nattfotboll i Jordbro för dig 16–20 år",
       "e": "📍",
-      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "img": null,
       "datum": "2026-10-16",
       "tid": "18:30",
       "plats": "Haninge",
       "lat": 59.1684,
       "lon": 18.144,
-      "pris": 0,
+      "pris": null,
       "tags": [
         "haninge"
       ],
@@ -5770,7 +5627,7 @@
       "id": "haninge-det-tysta-arvet-2026-10-17",
       "t": "Utställningen Det tysta arvet",
       "e": "📍",
-      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "img": null,
       "datum": "2026-10-17",
       "tid": null,
       "plats": "Haninge",
@@ -5786,7 +5643,7 @@
       "id": "haninge-samisk-kultur-och-det-samiska-sprakets-historia-2026-10-17",
       "t": "Samisk kultur och det samiska språkets historia",
       "e": "📍",
-      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "img": null,
       "datum": "2026-10-17",
       "tid": null,
       "plats": "Haninge",
@@ -5808,7 +5665,7 @@
       "plats": "Haninge",
       "lat": 59.1684,
       "lon": 18.144,
-      "pris": 0,
+      "pris": null,
       "tags": [
         "haninge"
       ],
@@ -5818,7 +5675,7 @@
       "id": "haninge-kom-och-pyssla-och-gor-samiska-kator-pa-jordbro-bibliotek2-2026-10-17",
       "t": "Kom och pyssla och gör samiska kåtor på Brandbergens bibliotek",
       "e": "📍",
-      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "img": null,
       "datum": "2026-10-17",
       "tid": null,
       "plats": "Haninge",
@@ -5850,7 +5707,7 @@
       "id": "haninge-temadag-om-vara-nationella-minoriteter-2026-10-17",
       "t": "Temadag om våra nationella minoriteter",
       "e": "📍",
-      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "img": null,
       "datum": "2026-10-17",
       "tid": null,
       "plats": "Haninge",
@@ -5904,7 +5761,7 @@
       "plats": "Haninge",
       "lat": 59.1684,
       "lon": 18.144,
-      "pris": 0,
+      "pris": null,
       "tags": [
         "haninge"
       ],
@@ -6075,13 +5932,13 @@
       "id": "haninge-gratis-nattfotboll-i-jordbro-for-dig-13-15-ar3-2026-10-17",
       "t": "Gratis nattfotboll i Jordbro för dig 13–15 år",
       "e": "📍",
-      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "img": null,
       "datum": "2026-10-17",
       "tid": "18:30",
       "plats": "Haninge",
       "lat": 59.1684,
       "lon": 18.144,
-      "pris": 0,
+      "pris": null,
       "tags": [
         "haninge"
       ],
@@ -6091,13 +5948,13 @@
       "id": "haninge-gratis-nattfotboll-i-brandbergen-for-dig-13-20-ar3-2026-10-17",
       "t": "Gratis nattfotboll i Brandbergen",
       "e": "📍",
-      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "img": null,
       "datum": "2026-10-17",
       "tid": "18:30",
       "plats": "Haninge",
       "lat": 59.1684,
       "lon": 18.144,
-      "pris": 0,
+      "pris": null,
       "tags": [
         "haninge"
       ],
@@ -6107,13 +5964,13 @@
       "id": "haninge-gratis-nattfotboll-i-jordbro-for-dig-16-20-ar-2026-10-17",
       "t": "Gratis nattfotboll i Jordbro för dig 16–20 år",
       "e": "📍",
-      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "img": null,
       "datum": "2026-10-17",
       "tid": "18:30",
       "plats": "Haninge",
       "lat": 59.1684,
       "lon": 18.144,
-      "pris": 0,
+      "pris": null,
       "tags": [
         "haninge"
       ],
@@ -6396,7 +6253,7 @@
       "plats": "Haninge",
       "lat": 59.1684,
       "lon": 18.144,
-      "pris": 0,
+      "pris": 275,
       "tags": [
         "haninge"
       ],
@@ -6412,7 +6269,7 @@
       "plats": "Haninge",
       "lat": 59.1684,
       "lon": 18.144,
-      "pris": 0,
+      "pris": null,
       "tags": [
         "haninge"
       ],
@@ -6428,7 +6285,7 @@
       "plats": "Haninge",
       "lat": 59.1684,
       "lon": 18.144,
-      "pris": 0,
+      "pris": null,
       "tags": [
         "haninge"
       ],
@@ -6642,7 +6499,7 @@
       "plats": "Börsen (Hamburger Börs), Stockholm",
       "lat": 59.3305489,
       "lon": 18.0695397,
-      "pris": 75,
+      "pris": 0,
       "tags": [
         "mässor",
         "sport & hälsa",
@@ -6732,7 +6589,7 @@
       "plats": "Kulturhuset Stadsteatern, Stockholm",
       "lat": 59.3323872,
       "lon": 18.0652583,
-      "pris": null,
+      "pris": 175,
       "tags": [
         "scen & film",
         "nätverkande",
@@ -6769,7 +6626,7 @@
       "plats": "Kungliga Operan, Stockholm",
       "lat": 59.329565567583586,
       "lon": 18.069623549501244,
-      "pris": 0,
+      "pris": null,
       "tags": [
         "musik",
         "scen & film",
@@ -6838,7 +6695,7 @@
       "id": "haninge-bibliotekarierna-boktipsar2-2026-10-20",
       "t": "Bibliotekarierna boktipsar",
       "e": "📍",
-      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "img": null,
       "datum": "2026-10-20",
       "tid": null,
       "plats": "Haninge",
@@ -6854,7 +6711,7 @@
       "id": "haninge-samhallshjalp-2026-10-20",
       "t": "Samhällshjälp",
       "e": "📍",
-      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "img": null,
       "datum": "2026-10-20",
       "tid": null,
       "plats": "Haninge",
@@ -6870,7 +6727,7 @@
       "id": "haninge-handarbetscafe-i-vega-2026-10-20",
       "t": "Handarbetscafé i Vega",
       "e": "📍",
-      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "img": null,
       "datum": "2026-10-20",
       "tid": null,
       "plats": "Haninge",
@@ -6929,7 +6786,7 @@
       "plats": "Haninge",
       "lat": 59.1684,
       "lon": 18.144,
-      "pris": 0,
+      "pris": null,
       "tags": [
         "haninge"
       ],
@@ -7038,7 +6895,7 @@
       "plats": "Kulturhuset Stadsteatern, Stockholm",
       "lat": 59.3323872,
       "lon": 18.0652583,
-      "pris": null,
+      "pris": 120,
       "tags": [
         "scen & film",
         "nätverkande",
@@ -7185,7 +7042,7 @@
       "plats": "Haninge",
       "lat": 59.1684,
       "lon": 18.144,
-      "pris": 0,
+      "pris": null,
       "tags": [
         "haninge"
       ],
@@ -7195,13 +7052,13 @@
       "id": "haninge-gratis-kvallsklattring-i-brandbergen-for-dig-13-20-ar2-2026-10-21",
       "t": "Gratis kvällsklättring i Brandbergen",
       "e": "📍",
-      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "img": null,
       "datum": "2026-10-21",
       "tid": null,
       "plats": "Haninge",
       "lat": 59.1684,
       "lon": 18.144,
-      "pris": 0,
+      "pris": null,
       "tags": [
         "haninge"
       ],
@@ -7267,7 +7124,7 @@
       "id": "haninge-skrivarklubben-2026-10-21",
       "t": "Skrivarklubben",
       "e": "📍",
-      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "img": null,
       "datum": "2026-10-21",
       "tid": "15:00",
       "plats": "Haninge",
@@ -7278,23 +7135,6 @@
         "haninge"
       ],
       "url": "https://www.haninge.se/evenemang-och-aktiviteter/skrivarklubben/?d=2026-10-21"
-    },
-    {
-      "id": "nacka-laxhjalp-studiestod-spraktraning-2026-10-21",
-      "t": "Läxhjälp, studiestöd & språkträning",
-      "e": "📍",
-      "img": "https://www.nacka.se/filtered/311752/rszww400h200-90/laxhjalp-ext-kal-a--440917605-rszww400h200-90.png",
-      "datum": "2026-10-21",
-      "slut": null,
-      "tid": "16:00",
-      "plats": "Älta bibliotek, Nacka",
-      "lat": 59.2561243,
-      "lon": 18.1776164,
-      "pris": null,
-      "tags": [
-        "nacka"
-      ],
-      "url": "https://www.nacka.se/pa-gang-i-nacka/laxhjalp-studiestod-spraktraning/?occurrence=202610211400-202610211600"
     },
     {
       "id": "nacka-mediyoga-for-anhoriga-2026-10-21",
@@ -7453,7 +7293,7 @@
       "plats": "Debaser Strand, Stockholm",
       "lat": 59.31394613751992,
       "lon": 18.03390323113166,
-      "pris": null,
+      "pris": 300,
       "tags": [
         "musik",
         "hip hop, soul & rnb"
@@ -7471,7 +7311,7 @@
       "plats": "Debaser Nova, Stockholm",
       "lat": 59.31394613751992,
       "lon": 18.03390323113166,
-      "pris": null,
+      "pris": 295,
       "tags": [
         "musik",
         "pop"
@@ -7607,22 +7447,6 @@
       "url": "https://dinos.se/products/dinos-stockholm-tickets"
     },
     {
-      "id": "haninge-laxhjalp-2026-10-22",
-      "t": "Läxhjälp",
-      "e": "📍",
-      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
-      "datum": "2026-10-22",
-      "tid": null,
-      "plats": "Haninge",
-      "lat": 59.1684,
-      "lon": 18.144,
-      "pris": null,
-      "tags": [
-        "haninge"
-      ],
-      "url": "https://www.haninge.se/evenemang-och-aktiviteter/laxhjalp/?d=2026-10-22"
-    },
-    {
       "id": "haninge-forfattarbesok-av-malin-haawind-2026-10-22",
       "t": "Författarbesök av Malin Haawind",
       "e": "📍",
@@ -7639,38 +7463,6 @@
       "url": "https://www.haninge.se/evenemang-och-aktiviteter/forfattarbesok-av-malin-haawind/?d=2026-10-22"
     },
     {
-      "id": "haninge-sopplunch-pa-spf-runstenens-traffpunkt--2026-10-22",
-      "t": "Sopplunch på SPF Runstenens träffpunkt",
-      "e": "📍",
-      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
-      "datum": "2026-10-22",
-      "tid": "11:30",
-      "plats": "Haninge",
-      "lat": 59.1684,
-      "lon": 18.144,
-      "pris": 50,
-      "tags": [
-        "haninge"
-      ],
-      "url": "https://www.haninge.se/evenemang-och-aktiviteter/sopplunch-pa-spf-runstenens-traffpunkt-/?d=2026-10-22"
-    },
-    {
-      "id": "haninge-hoglasningsdags-2026-10-22",
-      "t": "Högläsningsdags",
-      "e": "📍",
-      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
-      "datum": "2026-10-22",
-      "tid": "16:00",
-      "plats": "Haninge",
-      "lat": 59.1684,
-      "lon": 18.144,
-      "pris": null,
-      "tags": [
-        "haninge"
-      ],
-      "url": "https://www.haninge.se/evenemang-och-aktiviteter/hoglasningsdags/?d=2026-10-22"
-    },
-    {
       "id": "haninge-prova-skrivande---pa-ett-lekfullt-och-kreativt-satt-2026-10-22",
       "t": "Prova skrivande - på ett lekfullt och kreativt sätt",
       "e": "📍",
@@ -7680,7 +7472,7 @@
       "plats": "Haninge",
       "lat": 59.1684,
       "lon": 18.144,
-      "pris": 0,
+      "pris": null,
       "tags": [
         "haninge"
       ],
@@ -7726,7 +7518,7 @@
       "id": "haninge-soppa--surr5-2026-10-22",
       "t": "Soppa & Surr",
       "e": "📍",
-      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "img": null,
       "datum": "2026-10-22",
       "tid": "18:00",
       "plats": "Haninge",
@@ -7986,7 +7778,7 @@
       "plats": "Kulturhuset Stadsteatern, Fri scen, Stockholm",
       "lat": 59.33235649999999,
       "lon": 18.0645449,
-      "pris": null,
+      "pris": 175,
       "tags": [
         "scen & film",
         "teater"
@@ -8103,13 +7895,13 @@
       "id": "haninge-gratis-nattfotboll-i-jordbro-for-dig-13-15-ar3-2026-10-23",
       "t": "Gratis nattfotboll i Jordbro för dig 13–15 år",
       "e": "📍",
-      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "img": null,
       "datum": "2026-10-23",
       "tid": "18:30",
       "plats": "Haninge",
       "lat": 59.1684,
       "lon": 18.144,
-      "pris": 0,
+      "pris": null,
       "tags": [
         "haninge"
       ],
@@ -8289,7 +8081,7 @@
       "plats": "Debaser Strand, Stockholm",
       "lat": 59.31394613751992,
       "lon": 18.03390323113166,
-      "pris": null,
+      "pris": 370,
       "tags": [
         "musik",
         "pop"
@@ -8344,7 +8136,7 @@
       "plats": "Allhelgonakyrkan, Stockholm",
       "lat": 59.31042947308646,
       "lon": 18.07081403120924,
-      "pris": 170,
+      "pris": 0,
       "tags": [
         "musik",
         "klassiskt & konstmusik"
@@ -8744,7 +8536,7 @@
       "plats": "Moderna Museet, Stockholm",
       "lat": 59.32591579357438,
       "lon": 18.084134635554676,
-      "pris": 140,
+      "pris": 0,
       "tags": [
         "familj"
       ],
@@ -8991,7 +8783,7 @@
       "plats": "Debaser Strand, Stockholm",
       "lat": 59.31394613751992,
       "lon": 18.03390323113166,
-      "pris": null,
+      "pris": 395,
       "tags": [
         "musik",
         "hip hop, soul & rnb"
@@ -9246,7 +9038,7 @@
       "plats": "Kulturhuset Stadsteatern, Stockholm",
       "lat": 59.3323872,
       "lon": 18.0652583,
-      "pris": null,
+      "pris": 175,
       "tags": [
         "scen & film",
         "nätverkande",
@@ -9526,7 +9318,7 @@
       "plats": "Skärholmen, Stockholm",
       "lat": 59.27591779999999,
       "lon": 17.904494,
-      "pris": 0,
+      "pris": null,
       "tags": [
         "familj",
         "festivaler",
@@ -9726,7 +9518,7 @@
       "plats": "Debaser Strand, Stockholm",
       "lat": 59.31394613751992,
       "lon": 18.03390323113166,
-      "pris": null,
+      "pris": 365,
       "tags": [
         "musik",
         "indie & punk"
@@ -9744,7 +9536,7 @@
       "plats": "Debaser Nova, Stockholm",
       "lat": 59.31394613751992,
       "lon": 18.03390323113166,
-      "pris": null,
+      "pris": 210,
       "tags": [
         "musik",
         "pop"
@@ -9798,7 +9590,7 @@
       "plats": "Södermalm, Stockholm",
       "lat": 59.3186185,
       "lon": 18.0732852,
-      "pris": 150,
+      "pris": 75,
       "tags": [
         "familj",
         "guidade turer & föreläsningar"
@@ -9946,7 +9738,7 @@
       "plats": "Debaser Nova, Stockholm",
       "lat": 59.31394613751992,
       "lon": 18.03390323113166,
-      "pris": null,
+      "pris": 260,
       "tags": [
         "musik",
         "traditionell musik, folk & country"
@@ -10215,7 +10007,7 @@
       "plats": "Debaser Strand, Stockholm",
       "lat": 59.31394613751992,
       "lon": 18.03390323113166,
-      "pris": null,
+      "pris": 300,
       "tags": [
         "musik",
         "dans & elektroniskt"
@@ -10233,7 +10025,7 @@
       "plats": "Debaser Nova, Stockholm",
       "lat": 59.31394613751992,
       "lon": 18.03390323113166,
-      "pris": null,
+      "pris": 270,
       "tags": [
         "musik",
         "indie & punk"
@@ -10597,7 +10389,7 @@
       "plats": "Debaser Strand, Stockholm",
       "lat": 59.31394613751992,
       "lon": 18.03390323113166,
-      "pris": null,
+      "pris": 375,
       "tags": [
         "musik",
         "rock"
@@ -10615,7 +10407,7 @@
       "plats": "Debaser Nova, Stockholm",
       "lat": 59.31394613751992,
       "lon": 18.03390323113166,
-      "pris": null,
+      "pris": 295,
       "tags": [
         "musik",
         "pop"
@@ -10652,7 +10444,7 @@
       "plats": "Kollektivet Livet Bar och Scen, Stockholm",
       "lat": 59.31915,
       "lon": 18.078513,
-      "pris": null,
+      "pris": 0,
       "tags": [
         "klubbar & fester",
         "musik",
@@ -10671,7 +10463,7 @@
       "plats": "Annexet, Johanneshov",
       "lat": 59.29315760196665,
       "lon": 18.0818277145792,
-      "pris": null,
+      "pris": 175,
       "tags": [
         "klubbar & fester"
       ],
@@ -10724,7 +10516,7 @@
       "plats": "Hjorthagens Kulturhus, Stockholm",
       "lat": 59.35560099999999,
       "lon": 18.0993459,
-      "pris": null,
+      "pris": 150,
       "tags": [
         "scen & film",
         "teater"
@@ -10742,7 +10534,7 @@
       "plats": "Hobo Stockholm, Stockholm",
       "lat": 59.330859062881615,
       "lon": 18.066927929440027,
-      "pris": 0,
+      "pris": null,
       "tags": [
         "klubbar & fester"
       ],
@@ -11136,7 +10928,7 @@
       "plats": "Debaser Nova, Stockholm",
       "lat": 59.31394613751992,
       "lon": 18.03390323113166,
-      "pris": null,
+      "pris": 290,
       "tags": [
         "musik",
         "rock"
@@ -11347,7 +11139,7 @@
       "plats": "Debaser Nova, Stockholm",
       "lat": 59.31394613751992,
       "lon": 18.03390323113166,
-      "pris": null,
+      "pris": 250,
       "tags": [
         "musik",
         "indie & punk"
@@ -11494,7 +11286,7 @@
       "plats": "Kulturhuset Stadsteatern, Stockholm",
       "lat": 59.3323872,
       "lon": 18.0652583,
-      "pris": null,
+      "pris": 120,
       "tags": [
         "scen & film",
         "nätverkande",
@@ -11531,7 +11323,7 @@
       "plats": "Debaser Strand, Stockholm",
       "lat": 59.31394613751992,
       "lon": 18.03390323113166,
-      "pris": null,
+      "pris": 395,
       "tags": [
         "musik",
         "jazz & blues"
@@ -11591,23 +11383,6 @@
         "musik/konsert"
       ],
       "url": "https://www.nacka.se/pa-gang-i-nacka/jazziorerna-i-boo-folkets-hus/?occurrence=202611041000-202611041200"
-    },
-    {
-      "id": "nacka-laxhjalp-studiestod-spraktraning-2026-11-04",
-      "t": "Läxhjälp, studiestöd & språkträning",
-      "e": "📍",
-      "img": "https://www.nacka.se/filtered/311752/rszww400h200-90/laxhjalp-ext-kal-a--440917605-rszww400h200-90.png",
-      "datum": "2026-11-04",
-      "slut": null,
-      "tid": "16:00",
-      "plats": "Älta bibliotek, Nacka",
-      "lat": 59.2561243,
-      "lon": 18.1776164,
-      "pris": null,
-      "tags": [
-        "nacka"
-      ],
-      "url": "https://www.nacka.se/pa-gang-i-nacka/laxhjalp-studiestod-spraktraning/?occurrence=202611041500-202611041700"
     },
     {
       "id": "tm-Z698xZq2Z1k8V4oFs",
@@ -11708,7 +11483,7 @@
       "plats": "Debaser Strand, Stockholm",
       "lat": 59.31394613751992,
       "lon": 18.03390323113166,
-      "pris": null,
+      "pris": 395,
       "tags": [
         "musik",
         "traditionell musik, folk & country"
@@ -11744,7 +11519,7 @@
       "plats": "Kulturhuset Stadsteatern, Stockholm",
       "lat": 59.3323872,
       "lon": 18.0652583,
-      "pris": null,
+      "pris": 120,
       "tags": [
         "scen & film",
         "nätverkande",
@@ -11800,7 +11575,7 @@
       "plats": "Postmuseum, Stockholm",
       "lat": 59.32410454811719,
       "lon": 18.068059067273538,
-      "pris": null,
+      "pris": 290,
       "tags": [
         "nätverkande"
       ],
@@ -11817,7 +11592,7 @@
       "plats": "Judiska museet, Stockholm",
       "lat": 59.323868136538124,
       "lon": 18.072973041829187,
-      "pris": null,
+      "pris": 0,
       "tags": [
         "guidade turer & föreläsningar"
       ],
@@ -11978,7 +11753,7 @@
       "plats": "Debaser Strand, Stockholm",
       "lat": 59.31394613751992,
       "lon": 18.03390323113166,
-      "pris": null,
+      "pris": 395,
       "tags": [
         "musik",
         "traditionell musik, folk & country"
@@ -11996,7 +11771,7 @@
       "plats": "Debaser Nova, Stockholm",
       "lat": 59.31394613751992,
       "lon": 18.03390323113166,
-      "pris": null,
+      "pris": 250,
       "tags": [
         "musik",
         "pop"
@@ -12305,7 +12080,7 @@
       "plats": "Debaser Strand, Stockholm",
       "lat": 59.31394613751992,
       "lon": 18.03390323113166,
-      "pris": null,
+      "pris": 280,
       "tags": [
         "musik",
         "pop"
@@ -12449,7 +12224,7 @@
       "plats": "Dieselverkstaden, Nacka",
       "lat": 59.3052383,
       "lon": 18.1210463,
-      "pris": 450,
+      "pris": 225,
       "tags": [
         "nacka",
         "dieselverkstaden",
@@ -12794,7 +12569,7 @@
       "plats": "Kungliga Operan, Stockholm",
       "lat": 59.329565567583586,
       "lon": 18.069623549501244,
-      "pris": 0,
+      "pris": null,
       "tags": [
         "musik",
         "scen & film",
@@ -13062,7 +12837,7 @@
       "plats": "Debaser Strand, Stockholm",
       "lat": 59.31394613751992,
       "lon": 18.03390323113166,
-      "pris": null,
+      "pris": 295,
       "tags": [
         "musik",
         "traditionell musik, folk & country"
@@ -13177,23 +12952,6 @@
         "musik/konsert"
       ],
       "url": "https://www.nacka.se/pa-gang-i-nacka/jazziorerna-i-boo-folkets-hus/?occurrence=202611111000-202611111200"
-    },
-    {
-      "id": "nacka-laxhjalp-studiestod-spraktraning-2026-11-11",
-      "t": "Läxhjälp, studiestöd & språkträning",
-      "e": "📍",
-      "img": "https://www.nacka.se/filtered/311752/rszww400h200-90/laxhjalp-ext-kal-a--440917605-rszww400h200-90.png",
-      "datum": "2026-11-11",
-      "slut": null,
-      "tid": "16:00",
-      "plats": "Älta bibliotek, Nacka",
-      "lat": 59.2561243,
-      "lon": 18.1776164,
-      "pris": null,
-      "tags": [
-        "nacka"
-      ],
-      "url": "https://www.nacka.se/pa-gang-i-nacka/laxhjalp-studiestod-spraktraning/?occurrence=202611111500-202611111700"
     },
     {
       "id": "tm-Z698xZq2Z16vGtFOa9",
@@ -13332,7 +13090,7 @@
       "plats": "Debaser Nova, Stockholm",
       "lat": 59.31394613751992,
       "lon": 18.03390323113166,
-      "pris": null,
+      "pris": 295,
       "tags": [
         "musik",
         "pop"
@@ -13386,7 +13144,7 @@
       "plats": "Spårvägsmuseet, Stockholm",
       "lat": 59.35815854433838,
       "lon": 18.091995351990676,
-      "pris": 0,
+      "pris": null,
       "tags": [
         "guidade turer & föreläsningar"
       ],
@@ -13583,7 +13341,7 @@
       "plats": "Debaser Strand, Stockholm",
       "lat": 59.31394613751992,
       "lon": 18.03390323113166,
-      "pris": null,
+      "pris": 555,
       "tags": [
         "musik",
         "rock"
@@ -13619,7 +13377,7 @@
       "plats": "Chisel Studios, Spånga",
       "lat": 59.39314249999999,
       "lon": 17.9291384,
-      "pris": 0,
+      "pris": null,
       "tags": [
         "utställningar",
         "nätverkande",
@@ -14340,7 +14098,7 @@
       "plats": "Allhelgonakyrkan, Stockholm",
       "lat": 59.310409,
       "lon": 18.0709199,
-      "pris": 170,
+      "pris": 0,
       "tags": [
         "musik",
         "klassiskt & konstmusik"
@@ -14556,7 +14314,7 @@
       "plats": "Debaser Strand, Stockholm",
       "lat": 59.31394613751992,
       "lon": 18.03390323113166,
-      "pris": null,
+      "pris": 425,
       "tags": [
         "musik",
         "pop"
@@ -14637,23 +14395,6 @@
         "träffpunkt/kafé"
       ],
       "url": "https://www.nacka.se/pa-gang-i-nacka/drop-in-anhorigstod/?occurrence=202611181200-202611181400"
-    },
-    {
-      "id": "nacka-laxhjalp-studiestod-spraktraning-2026-11-18",
-      "t": "Läxhjälp, studiestöd & språkträning",
-      "e": "📍",
-      "img": "https://www.nacka.se/filtered/311752/rszww400h200-90/laxhjalp-ext-kal-a--440917605-rszww400h200-90.png",
-      "datum": "2026-11-18",
-      "slut": null,
-      "tid": "16:00",
-      "plats": "Älta bibliotek, Nacka",
-      "lat": 59.2561243,
-      "lon": 18.1776164,
-      "pris": null,
-      "tags": [
-        "nacka"
-      ],
-      "url": "https://www.nacka.se/pa-gang-i-nacka/laxhjalp-studiestod-spraktraning/?occurrence=202611181500-202611181700"
     },
     {
       "id": "tm-Z698xZq2Z1kQAGf-6",
@@ -15026,7 +14767,7 @@
       "plats": "Debaser Strand, Stockholm",
       "lat": 59.31394613751992,
       "lon": 18.03390323113166,
-      "pris": null,
+      "pris": 345,
       "tags": [
         "musik",
         "hip hop, soul & rnb"
@@ -15328,7 +15069,7 @@
       "plats": "Katarina församlingshus, Stockholm",
       "lat": 59.3169611,
       "lon": 18.0759874,
-      "pris": 170,
+      "pris": 0,
       "tags": [
         "familj",
         "musik"
@@ -15635,7 +15376,7 @@
       "plats": "Debaser Nova, Stockholm",
       "lat": 59.31394613751992,
       "lon": 18.03390323113166,
-      "pris": null,
+      "pris": 195,
       "tags": [
         "musik",
         "traditionell musik, folk & country"
@@ -15815,7 +15556,7 @@
       "plats": "Kulturhuset Stadsteatern, Stockholm",
       "lat": 59.3323872,
       "lon": 18.0652583,
-      "pris": null,
+      "pris": 120,
       "tags": [
         "nätverkande"
       ],
@@ -15977,7 +15718,7 @@
       "plats": "Kura Stockholm, Stockholm",
       "lat": 59.334712391409425,
       "lon": 18.0692491298864,
-      "pris": 0,
+      "pris": null,
       "tags": [
         "mat & dryck",
         "jul & nyår"
@@ -16037,23 +15778,6 @@
         "musik/konsert"
       ],
       "url": "https://www.nacka.se/pa-gang-i-nacka/jazziorerna-i-boo-folkets-hus/?occurrence=202611251000-202611251200"
-    },
-    {
-      "id": "nacka-laxhjalp-studiestod-spraktraning-2026-11-25",
-      "t": "Läxhjälp, studiestöd & språkträning",
-      "e": "📍",
-      "img": "https://www.nacka.se/filtered/311752/rszww400h200-90/laxhjalp-ext-kal-a--440917605-rszww400h200-90.png",
-      "datum": "2026-11-25",
-      "slut": null,
-      "tid": "16:00",
-      "plats": "Älta bibliotek, Nacka",
-      "lat": 59.2561243,
-      "lon": 18.1776164,
-      "pris": null,
-      "tags": [
-        "nacka"
-      ],
-      "url": "https://www.nacka.se/pa-gang-i-nacka/laxhjalp-studiestod-spraktraning/?occurrence=202611251500-202611251700"
     },
     {
       "id": "tm-Z698xZq2Z16vJ6JFr6",
@@ -16120,7 +15844,7 @@
       "plats": "Debaser Nova, Stockholm",
       "lat": 59.31394613751992,
       "lon": 18.03390323113166,
-      "pris": null,
+      "pris": 245,
       "tags": [
         "musik",
         "indie & punk"
@@ -16391,7 +16115,7 @@
       "plats": "Debaser Strand, Stockholm",
       "lat": 59.31394613751992,
       "lon": 18.03390323113166,
-      "pris": null,
+      "pris": 295,
       "tags": [
         "musik",
         "indie & punk"
@@ -16592,7 +16316,7 @@
       "plats": "Debaser Nova, Stockholm",
       "lat": 59.31394613751992,
       "lon": 18.03390323113166,
-      "pris": null,
+      "pris": 250,
       "tags": [
         "musik",
         "dans & elektroniskt"
@@ -16628,7 +16352,7 @@
       "plats": "Debaser Strand, Stockholm",
       "lat": 59.31394613751992,
       "lon": 18.03390323113166,
-      "pris": null,
+      "pris": 395,
       "tags": [
         "musik",
         "indie & punk"
@@ -16664,7 +16388,7 @@
       "plats": "Biocafé Tellus, Stockholm",
       "lat": 59.301979383128696,
       "lon": 18.007640297528184,
-      "pris": null,
+      "pris": 185,
       "tags": [
         "musik",
         "jazz & blues"
@@ -17119,7 +16843,7 @@
       "plats": "Debaser Nova, Stockholm",
       "lat": 59.31394613751992,
       "lon": 18.03390323113166,
-      "pris": null,
+      "pris": 325,
       "tags": [
         "musik",
         "hårdrock & metal"
@@ -17137,7 +16861,7 @@
       "plats": "Skärgårdens Kanotcenter, Vaxholm",
       "lat": 59.41742019235036,
       "lon": 18.314395825524997,
-      "pris": null,
+      "pris": 1390,
       "tags": [
         "guidade turer & föreläsningar",
         "sport & hälsa",
@@ -17156,7 +16880,7 @@
       "plats": "Sturehof, Stockholm",
       "lat": 59.33565745099244,
       "lon": 18.073312425088744,
-      "pris": 0,
+      "pris": null,
       "tags": [
         "mat & dryck",
         "jul & nyår"
@@ -17283,7 +17007,7 @@
       "plats": "Debaser Nova, Stockholm",
       "lat": 59.31394613751992,
       "lon": 18.03390323113166,
-      "pris": null,
+      "pris": 270,
       "tags": [
         "musik",
         "rock"
@@ -17362,23 +17086,6 @@
         "musik/konsert"
       ],
       "url": "https://www.nacka.se/pa-gang-i-nacka/jazziorerna-i-boo-folkets-hus/?occurrence=202612021000-202612021200"
-    },
-    {
-      "id": "nacka-laxhjalp-studiestod-spraktraning-2026-12-02",
-      "t": "Läxhjälp, studiestöd & språkträning",
-      "e": "📍",
-      "img": "https://www.nacka.se/filtered/311752/rszww400h200-90/laxhjalp-ext-kal-a--440917605-rszww400h200-90.png",
-      "datum": "2026-12-02",
-      "slut": null,
-      "tid": "16:00",
-      "plats": "Älta bibliotek, Nacka",
-      "lat": 59.2561243,
-      "lon": 18.1776164,
-      "pris": null,
-      "tags": [
-        "nacka"
-      ],
-      "url": "https://www.nacka.se/pa-gang-i-nacka/laxhjalp-studiestod-spraktraning/?occurrence=202612021500-202612021700"
     },
     {
       "id": "tm-Z698xZq2Z1kvtofaO",
@@ -17481,7 +17188,7 @@
       "plats": "Debaser Strand, Stockholm",
       "lat": 59.3143864,
       "lon": 18.0326629,
-      "pris": null,
+      "pris": 495,
       "tags": [
         "musik",
         "indie & punk"
@@ -17499,7 +17206,7 @@
       "plats": "Strawberry Arena, Solna",
       "lat": 59.37227351588852,
       "lon": 18.00354253789324,
-      "pris": null,
+      "pris": 195,
       "tags": [
         "mässor",
         "familj",
@@ -17591,7 +17298,7 @@
       "plats": "Debaser Nova, Stockholm",
       "lat": 59.31394613751992,
       "lon": 18.03390323113166,
-      "pris": null,
+      "pris": 270,
       "tags": [
         "musik",
         "traditionell musik, folk & country"
@@ -17609,7 +17316,7 @@
       "plats": "Debaser Strand, Stockholm",
       "lat": 59.31394613751992,
       "lon": 18.03390323113166,
-      "pris": null,
+      "pris": 360,
       "tags": [
         "musik",
         "indie & punk"
@@ -17750,7 +17457,7 @@
       "plats": "Debaser Nova, Stockholm",
       "lat": 59.31394613751992,
       "lon": 18.03390323113166,
-      "pris": null,
+      "pris": 295,
       "tags": [
         "musik",
         "traditionell musik, folk & country"
@@ -17768,7 +17475,7 @@
       "plats": "Debaser Strand, Stockholm",
       "lat": 59.31394613751992,
       "lon": 18.03390323113166,
-      "pris": null,
+      "pris": 325,
       "tags": [
         "musik",
         "rock"
@@ -17786,7 +17493,7 @@
       "plats": "Allhelgonakyrkan, Stockholm",
       "lat": 59.31042947308646,
       "lon": 18.07081403120924,
-      "pris": 170,
+      "pris": 0,
       "tags": [
         "musik",
         "klassiskt & konstmusik"
@@ -18057,7 +17764,7 @@
       "plats": "Debaser Strand, Stockholm",
       "lat": 59.31394613751992,
       "lon": 18.03390323113166,
-      "pris": null,
+      "pris": 295,
       "tags": [
         "musik",
         "hårdrock & metal"
@@ -18218,7 +17925,7 @@
       "plats": "Kulturhuset Stadsteatern, Stockholm",
       "lat": 59.3323872,
       "lon": 18.0652583,
-      "pris": null,
+      "pris": 120,
       "tags": [
         "nätverkande"
       ],
@@ -18272,7 +17979,7 @@
       "plats": "Intiman, Stockholm",
       "lat": 59.34206269185154,
       "lon": 18.04829261174811,
-      "pris": null,
+      "pris": 520,
       "tags": [
         "familj",
         "musik",
@@ -18329,7 +18036,7 @@
       "plats": "Skansen, Stockholm",
       "lat": 59.32442360526156,
       "lon": 18.100980249280553,
-      "pris": 0,
+      "pris": null,
       "tags": [
         "musik",
         "jul & nyår"
@@ -18390,23 +18097,6 @@
         "träffpunkt/kafé"
       ],
       "url": "https://www.nacka.se/pa-gang-i-nacka/drop-in-anhorigstod/?occurrence=202612091200-202612091400"
-    },
-    {
-      "id": "nacka-laxhjalp-studiestod-spraktraning-2026-12-09",
-      "t": "Läxhjälp, studiestöd & språkträning",
-      "e": "📍",
-      "img": "https://www.nacka.se/filtered/311752/rszww400h200-90/laxhjalp-ext-kal-a--440917605-rszww400h200-90.png",
-      "datum": "2026-12-09",
-      "slut": null,
-      "tid": "16:00",
-      "plats": "Älta bibliotek, Nacka",
-      "lat": 59.2561243,
-      "lon": 18.1776164,
-      "pris": null,
-      "tags": [
-        "nacka"
-      ],
-      "url": "https://www.nacka.se/pa-gang-i-nacka/laxhjalp-studiestod-spraktraning/?occurrence=202612091500-202612091700"
     },
     {
       "id": "nacka-torsdagsforelasningar-for-anhoriga-2026-12-10",
@@ -18527,7 +18217,7 @@
       "plats": "Kulturhuset Stadsteatern, Stockholm",
       "lat": 59.3323872,
       "lon": 18.0652583,
-      "pris": null,
+      "pris": 0,
       "tags": [
         "festivaler",
         "musik",
@@ -18729,7 +18419,7 @@
       "plats": "Debaser Strand, Stockholm",
       "lat": 59.31394613751992,
       "lon": 18.03390323113166,
-      "pris": null,
+      "pris": 495,
       "tags": [
         "musik",
         "jazz & blues"
@@ -18765,7 +18455,7 @@
       "plats": "Debaser Nova, Stockholm",
       "lat": 59.31394613751992,
       "lon": 18.03390323113166,
-      "pris": null,
+      "pris": 200,
       "tags": [
         "musik",
         "hip hop, soul & rnb"
@@ -19274,23 +18964,6 @@
       "url": "https://shop.showtic.se/sv/fzevy1rw1fb4mf8/selectevent?c=u8gudpr"
     },
     {
-      "id": "nacka-laxhjalp-studiestod-spraktraning-2026-12-16",
-      "t": "Läxhjälp, studiestöd & språkträning",
-      "e": "📍",
-      "img": "https://www.nacka.se/filtered/311752/rszww400h200-90/laxhjalp-ext-kal-a--440917605-rszww400h200-90.png",
-      "datum": "2026-12-16",
-      "slut": null,
-      "tid": "16:00",
-      "plats": "Älta bibliotek, Nacka",
-      "lat": 59.2561243,
-      "lon": 18.1776164,
-      "pris": null,
-      "tags": [
-        "nacka"
-      ],
-      "url": "https://www.nacka.se/pa-gang-i-nacka/laxhjalp-studiestod-spraktraning/?occurrence=202612161500-202612161700"
-    },
-    {
       "id": "tm-Z698xZq2Z1kFP4E43",
       "t": "RITSCH RATSCH på Vasan",
       "e": "🎵",
@@ -19355,7 +19028,7 @@
       "plats": "Debaser Strand, Stockholm",
       "lat": 59.31394613751992,
       "lon": 18.03390323113166,
-      "pris": null,
+      "pris": 350,
       "tags": [
         "musik",
         "indie & punk"
@@ -20732,7 +20405,7 @@
       "plats": "Debaser Strand, Stockholm",
       "lat": 59.31394613751992,
       "lon": 18.03390323113166,
-      "pris": null,
+      "pris": 495,
       "tags": [
         "musik",
         "hårdrock & metal"
@@ -20819,7 +20492,7 @@
       "plats": "Debaser Nova, Stockholm",
       "lat": 59.3143864,
       "lon": 18.0326629,
-      "pris": null,
+      "pris": 250,
       "tags": [
         "musik",
         "hårdrock & metal"
@@ -21177,7 +20850,7 @@
       "plats": "Debaser Strand, Stockholm",
       "lat": 59.31394613751992,
       "lon": 18.03390323113166,
-      "pris": null,
+      "pris": 350,
       "tags": [
         "musik",
         "rock"
@@ -21321,7 +20994,7 @@
       "plats": "Debaser Strand, Stockholm",
       "lat": 59.3143864,
       "lon": 18.0326629,
-      "pris": null,
+      "pris": 295,
       "tags": [
         "musik",
         "indie & punk"
@@ -21411,7 +21084,7 @@
       "plats": "Debaser Strand, Stockholm",
       "lat": 59.31394613751992,
       "lon": 18.03390323113166,
-      "pris": null,
+      "pris": 395,
       "tags": [
         "musik",
         "rock"
@@ -21575,7 +21248,7 @@
       "plats": "Debaser Strand, Stockholm",
       "lat": 59.31394613751992,
       "lon": 18.03390323113166,
-      "pris": null,
+      "pris": 395,
       "tags": [
         "musik",
         "hårdrock & metal"
@@ -21665,7 +21338,7 @@
       "plats": "Debaser Nova, Stockholm",
       "lat": 59.31394613751992,
       "lon": 18.03390323113166,
-      "pris": null,
+      "pris": 295,
       "tags": [
         "musik",
         "indie & punk"
@@ -21683,7 +21356,7 @@
       "plats": "Debaser Strand, Stockholm",
       "lat": 59.31394613751992,
       "lon": 18.03390323113166,
-      "pris": null,
+      "pris": 495,
       "tags": [
         "musik",
         "rock"
@@ -21737,7 +21410,7 @@
       "plats": "Debaser Nova, Stockholm",
       "lat": 59.31394613751992,
       "lon": 18.03390323113166,
-      "pris": null,
+      "pris": 395,
       "tags": [
         "musik",
         "rock"
@@ -21773,7 +21446,7 @@
       "plats": "Debaser Strand, Stockholm",
       "lat": 59.31394613751992,
       "lon": 18.03390323113166,
-      "pris": null,
+      "pris": 320,
       "tags": [
         "musik",
         "rock"
@@ -21791,7 +21464,7 @@
       "plats": "Nalen, Stockholm",
       "lat": 59.3370317,
       "lon": 18.0676434,
-      "pris": 350,
+      "pris": 0,
       "tags": [
         "musik",
         "jazz & blues"
@@ -21934,7 +21607,7 @@
       "plats": "Debaser Strand, Stockholm",
       "lat": 59.31394613751992,
       "lon": 18.03390323113166,
-      "pris": null,
+      "pris": 360,
       "tags": [
         "musik",
         "hip hop, soul & rnb"
@@ -21952,7 +21625,7 @@
       "plats": "Debaser Nova, Stockholm",
       "lat": 59.31394613751992,
       "lon": 18.03390323113166,
-      "pris": null,
+      "pris": 395,
       "tags": [
         "musik",
         "rock"
@@ -22006,7 +21679,7 @@
       "plats": "Debaser Strand, Stockholm",
       "lat": 59.31394613751992,
       "lon": 18.03390323113166,
-      "pris": null,
+      "pris": 400,
       "tags": [
         "musik",
         "pop"
@@ -22024,7 +21697,7 @@
       "plats": "Debaser Strand, Stockholm",
       "lat": 59.3143864,
       "lon": 18.0326629,
-      "pris": null,
+      "pris": 395,
       "tags": [
         "musik",
         "hårdrock & metal"
@@ -22078,7 +21751,7 @@
       "plats": "Debaser Nova, Stockholm",
       "lat": 59.31394613751992,
       "lon": 18.03390323113166,
-      "pris": null,
+      "pris": 250,
       "tags": [
         "musik",
         "rock"
@@ -22170,7 +21843,7 @@
       "plats": "Debaser Strand, Stockholm",
       "lat": 59.31394613751992,
       "lon": 18.03390323113166,
-      "pris": null,
+      "pris": 360,
       "tags": [
         "musik",
         "traditionell musik, folk & country"
@@ -22334,7 +22007,7 @@
       "plats": "Debaser Nova, Stockholm",
       "lat": 59.31394613751992,
       "lon": 18.03390323113166,
-      "pris": null,
+      "pris": 275,
       "tags": [
         "musik",
         "traditionell musik, folk & country"
