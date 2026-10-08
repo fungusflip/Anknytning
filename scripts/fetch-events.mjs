@@ -4,9 +4,12 @@
 // Källor:
 //  1. egna-event.json  – lokala event du lägger in för hand
 //  2. Ticketmaster     – kräver repo-secret TICKETMASTER_KEY (gratis: developer.ticketmaster.com)
+//  3. Visit Stockholm  – öppet API
+//  4. Nacka kommun     – "På gång i Nacka"
 // Fler källor (t.ex. kommunernas evenemangskalendrar) läggs till som nya funktioner i SOURCES.
 import { readFile, writeFile } from "node:fs/promises";
 
+const UA = "AnknytningBot/0.1 (+https://github.com/fungusflip/Anknytning)";
 const ROOT = new URL("../", import.meta.url);
 const today = new Date().toISOString().slice(0, 10);
 // Mittpunkt mellan Stockholm och Bro. Event längre bort än MAX_KM tas bort
@@ -114,7 +117,59 @@ async function visitStockholm() {
   return out;
 }
 
-const SOURCES = { "Egna event": egnaEvent, Ticketmaster: ticketmaster, "Visit Stockholm": visitStockholm };
+// Nacka kommun: "På gång i Nacka" (robots.txt tillåter). Kartvyn innehåller alla event
+// som JSON med koordinater, så en enda sidhämtning räcker.
+const ENT = { quot: '"', amp: "&", lt: "<", gt: ">", apos: "'", nbsp: " " };
+const unent = s => s.replace(/&(#x?[0-9a-f]+|\w+);/gi, (m, c) =>
+  c[0] === "#" ? String.fromCodePoint(c[1] === "x" || c[1] === "X" ? parseInt(c.slice(2), 16) : +c.slice(1)) : ENT[c] ?? m);
+const strip = s => unent(unent(s.replace(/<[^>]+>/g, " "))).replace(/\s+/g, " ").trim();
+const sthlm = (iso, opt) => new Date(iso).toLocaleString("sv-SE", { timeZone: "Europe/Stockholm", ...opt });
+// Riktar sig till unga vuxna, så event bara för seniorer eller små barn hoppas över
+const INTE_FOR_UNGA = /\b(senior|seniorer|65\+|55\+|pension|bebis|småbarn|förskola|knytte)\b/i;
+
+async function nacka() {
+  const base = "https://www.nacka.se";
+  const res = await fetch(`${base}/pa-gang-i-nacka/?panel=map`, { headers: { "user-agent": UA } });
+  if (!res.ok) throw new Error(`Nacka svarade ${res.status}`);
+  const html = await res.text();
+  const start = html.indexOf("{&quot;markers&quot;");
+  if (start < 0) throw new Error("hittade ingen kartdata hos Nacka");
+  const { markers } = JSON.parse(unent(html.slice(start, html.indexOf("<", start))));
+  const out = [];
+  for (const m of markers ?? []) {
+    const c = m.content ?? "";
+    const a = c.match(/<a[^>]*href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/);
+    const times = [...c.matchAll(/datetime="([^"]+)"/g)].map(x => x[1]);
+    if (!a || !times.length || !Number.isFinite(m.position?.lat)) continue;
+    const meta = [...c.matchAll(/<li[^>]*>([\s\S]*?)<\/li>/g)].map(x => strip(x[1]));
+    const tags = [...c.matchAll(/\?type=([^"&]+)/g)].map(x => decodeURIComponent(x[1]).toLowerCase());
+    const text = strip(c);
+    if (INTE_FOR_UNGA.test(text) || tags.some(t => INTE_FOR_UNGA.test(t))) continue;
+    const startDag = sthlm(times[0], { year: "numeric", month: "2-digit", day: "2-digit" });
+    const slut = times[1] ? sthlm(times[1], { year: "numeric", month: "2-digit", day: "2-digit" }) : null;
+    const tid = meta.find(x => /^Tid:/.test(x))?.match(/\d{1,2}[:.]\d{2}/)?.[0]?.replace(".", ":") ?? null;
+    const plats = meta.find(x => /^Plats:/.test(x))?.replace(/^Plats:\s*/, "");
+    const img = c.match(/<img[^>]*src="([^"]+)"/)?.[1];
+    const url = new URL(unent(a[1]), base).href;
+    out.push({
+      id: `nacka-${new URL(url).pathname.split("/").filter(Boolean).at(-1)}-${startDag}`,
+      t: strip(a[2]),
+      e: tags.some(t => /musik|konsert/.test(t)) ? "🎵" : tags.some(t => /teater/.test(t)) ? "🎭" : tags.some(t => /konst|utst/.test(t)) ? "🖼️" : "📍",
+      img: img ? new URL(unent(img), base).href : null,
+      datum: slut && startDag < today && slut >= today ? today : startDag,
+      slut: slut && slut !== startDag ? slut : null,
+      tid,
+      plats: plats ? `${plats}, Nacka` : "Nacka",
+      lat: m.position.lat, lon: m.position.lng,
+      pris: /gratis|fri entré|fritt inträde|kostnadsfri/i.test(text) ? 0 : null,
+      tags: [...new Set(["nacka", ...tags])],
+      url,
+    });
+  }
+  return out;
+}
+
+const SOURCES = { "Egna event": egnaEvent, Ticketmaster: ticketmaster, "Visit Stockholm": visitStockholm, Nacka: nacka };
 
 const events = [], used = [];
 for (const [name, fn] of Object.entries(SOURCES)) {
