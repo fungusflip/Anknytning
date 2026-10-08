@@ -44,10 +44,14 @@ Exempel på ett eget event (t.ex. från en Facebook-sida, med länk tillbaka dit
     "lon": 17.7516,
     "pris": 0,
     "tags": ["spel"],
+    "img": "bilder/bradspelskvall.jpg",
     "url": "https://www.facebook.com/events/..."
   }
 ]
 ```
+
+Bilden är valfri, se [bilder/LASMIG.md](bilder/LASMIG.md). Event utan bild får en färgbakgrund efter kategori.
+Ticketmaster-event får sin bild automatiskt.
 
 Koordinater (`lat`, `lon`) hittar du genom att högerklicka på platsen i Google Maps.
 Facebook och Meetup går inte att hämta automatiskt: Facebook har inget öppet event-API och

@@ -41,7 +41,7 @@ nav .n{display:inline-block;min-width:18px;padding:0 5px;border-radius:9px;backg
 .facts{display:flex;flex-wrap:wrap;gap:6px}
 .chip{background:var(--chip);border-radius:999px;padding:4px 10px;font-size:13px}
 .chip.free{background:var(--ok);color:#fff;font-weight:700}
-.stamp{position:absolute;top:20px;padding:6px 12px;border:3px solid;border-radius:8px;font-weight:800;font-size:20px;opacity:0;transform:rotate(-12deg)}
+.stamp{z-index:2;position:absolute;top:20px;padding:6px 12px;border:3px solid;border-radius:8px;font-weight:800;font-size:20px;opacity:0;transform:rotate(-12deg)}
 .stamp.yes{left:20px;color:var(--ok)} .stamp.no{right:20px;color:var(--accent);transform:rotate(12deg)}
 .actions{display:flex;justify-content:center;gap:24px;padding-top:14px;flex:none}
 .actions button{width:56px;height:56px;border-radius:50%;border:1px solid var(--line);background:var(--phone);font-size:24px;cursor:pointer;box-shadow:0 4px 12px rgba(0,0,0,.08)}
@@ -52,7 +52,7 @@ nav .n{display:inline-block;min-width:18px;padding:0 5px;border-radius:9px;backg
 .tags button{border:1px solid var(--line);background:none;color:var(--fg);border-radius:999px;padding:4px 10px;cursor:pointer;font:13px var(--font)}
 .row{display:flex;gap:12px;align-items:center;padding:10px;border-radius:14px;cursor:pointer}
 .row:hover{background:var(--chip)}
-.row .e{font-size:30px;width:52px;height:52px;border-radius:12px;background:var(--chip);display:flex;align-items:center;justify-content:center;flex:none}
+.row .e{position:relative;overflow:hidden;font-size:30px;width:52px;height:52px;border-radius:12px;background:var(--chip);display:flex;align-items:center;justify-content:center;flex:none}
 .row b{display:block}
 .row small{color:var(--muted)}
 .hint{color:var(--muted);font-size:13px}
@@ -69,7 +69,9 @@ nav .n{display:inline-block;min-width:18px;padding:0 5px;border-radius:9px;backg
 .where{background:var(--chip);border:0;border-radius:999px;padding:6px 12px;color:var(--fg);font:600 13px var(--font);cursor:pointer}
 .where::before{content:"📍 "}
 .source{margin:0;padding:0 20px 6px;color:var(--muted);font-size:12px}
-.card .img{background:var(--chip) center/cover no-repeat}
+.card .img{position:relative;overflow:hidden;color:#fff;text-shadow:0 4px 18px rgba(0,0,0,.25)}
+.card .img img,.detail .pic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.detail .pic{position:relative;overflow:hidden;border-radius:16px;margin:10px 0;aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;font-size:72px}
 .detail .hero{width:100%;border-radius:16px;margin:10px 0;aspect-ratio:16/9;object-fit:cover}
 .link{display:block;text-align:center;margin:0 0 12px;color:var(--accent2);font-weight:600}
 @media (prefers-reduced-motion: reduce){*{transition:none!important}}
@@ -148,6 +150,12 @@ function weather(ev){
 function fillWeather(root){root.querySelectorAll("[data-w]").forEach(el=>{const ev=EVENTS.find(e=>e.id===el.dataset.w);
  weather(ev).then(w=>{if(w){el.textContent=w;el.hidden=false}})})}
 
+// Bild: eventets egen bild om den finns, annars en färgbakgrund som hör till eventets kategori
+const PALETT=[["#ff7a59","#ff3d71"],["#7b61ff","#3b5bdb"],["#00b4d8","#0077b6"],["#2bb673","#0b8a5f"],["#ffb347","#ff7a00"],["#ff6fb5","#b5179e"],["#5ad1c8","#2a9d8f"]];
+function art(ev){const k=(ev.tags[0]||ev.t);let h=0;for(const ch of k)h=(h*31+ch.charCodeAt(0))>>>0;
+ const [a,b]=PALETT[h%PALETT.length];return `background:linear-gradient(135deg,${a},${b})`}
+const pic=(ev,cls)=>`<div class="${cls}" style="${art(ev)}">${ev.e}${ev.img?`<img src="${esc(ev.img)}" alt="" loading="lazy" onerror="this.remove()">`:""}</div>`;
+
 const facts=ev=>`<div class="facts">${price(ev.pris)}<span class="chip">🕒 ${esc(when(ev))}</span><span class="chip">📍 ${esc(ev.plats)} · ${kmTxt(ev)}</span><span class="chip" data-w="${esc(ev.id)}" hidden></span></div>`;
 
 function note(msg){const n=$("#note");n.textContent=msg;n.classList.add("show");clearTimeout(n._t);n._t=setTimeout(()=>n.classList.remove("show"),1600)}
@@ -169,8 +177,7 @@ function renderDeck(){
  if(!queue.length){d.innerHTML='<div class="empty">Inga fler event just nu.<br><br><button class="back" id="again">Visa igen</button></div>';$("#again").onclick=()=>{queue=sortNear(EVENTS.filter(e=>!saved.includes(e)));renderDeck()};return}
  queue.slice(0,2).reverse().forEach((ev,i,arr)=>{
   const c=document.createElement("div");c.className="card";
-  const pic=ev.img?`<div class="img" style="background-image:url('${esc(ev.img)}')"></div>`:`<div class="img">${ev.e}</div>`;
-  c.innerHTML=`<div class="stamp yes">GÅ DIT</div><div class="stamp no">NÄSTA</div>${pic}<div class="info"><h2>${esc(ev.t)}</h2>${facts(ev)}</div>`;
+  c.innerHTML=`<div class="stamp yes">GÅ DIT</div><div class="stamp no">NÄSTA</div>${pic(ev,"img")}<div class="info"><h2>${esc(ev.t)}</h2>${facts(ev)}</div>`;
   if(i===arr.length-1)drag(c,ev);
   d.appendChild(c);
  });
@@ -193,7 +200,7 @@ $("#btn-no").onclick=()=>queue[0]&&decide(queue[0],false,$("#deck .card:last-chi
 document.addEventListener("keydown",e=>{if($("#v-start").hidden)return;if(e.key==="ArrowRight")$("#btn-yes").click();if(e.key==="ArrowLeft")$("#btn-no").click()});
 
 // Lista (Sök + Intresserade)
-const row=ev=>`<div class="row" data-id="${esc(ev.id)}"><div class="e">${ev.e}</div><div><b>${esc(ev.t)}</b><small>${esc(when(ev))} · ${priceTxt(ev.pris)} · ${kmTxt(ev)}</small></div></div>`;
+const row=ev=>`<div class="row" data-id="${esc(ev.id)}">${pic(ev,"e")}<div><b>${esc(ev.t)}</b><small>${esc(when(ev))} · ${priceTxt(ev.pris)} · ${kmTxt(ev)}</small></div></div>`;
 function bindRows(el){el.querySelectorAll(".row").forEach(r=>r.onclick=()=>openDetail(EVENTS.find(e=>e.id===r.dataset.id)))}
 function search(){
  const q=$("#q").value.trim().toLowerCase();
@@ -215,8 +222,7 @@ function updateCount(){const c=$("#count");c.textContent=saved.length;c.hidden=!
 // Eventdetalj
 function openDetail(ev){
  const d=$("#v-detail");
- const pic=ev.img?`<img class="hero" src="${esc(ev.img)}" alt="">`:`<div class="big">${ev.e}</div>`;
- d.innerHTML=`<button class="back" id="back">‹ Tillbaka</button>${pic}<h2>${esc(ev.t)}</h2>
+ d.innerHTML=`<button class="back" id="back">‹ Tillbaka</button>${pic(ev,"pic")}<h2>${esc(ev.t)}</h2>
  <dl><dt>När</dt><dd>${esc(when(ev))}</dd><dt>Plats</dt><dd>${esc(ev.plats)}</dd><dt>Avstånd</dt><dd>${kmTxt(ev)} från ${esc(me.namn)}</dd><dt>Pris</dt><dd>${priceTxt(ev.pris)}</dd><dt>Väder</dt><dd id="dw">Hämtar…</dd></dl>
  ${ev.url?`<a class="link" href="${esc(ev.url)}" target="_blank" rel="noopener">Mer info och biljetter ↗</a>`:""}
  <button class="cta" id="save">${saved.includes(ev)?"Sparad ♥":"Jag är intresserad ♥"}</button>`;
