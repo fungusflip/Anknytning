@@ -8,6 +8,7 @@
 //  4. Nacka kommun     – "På gång i Nacka"
 // Fler källor (t.ex. kommunernas evenemangskalendrar) läggs till som nya funktioner i SOURCES.
 import { readFile, writeFile } from "node:fs/promises";
+import { fyllPriser } from "./priser.mjs";
 
 const UA = "AnknytningBot/0.1 (+https://github.com/fungusflip/Anknytning)";
 const ROOT = new URL("../", import.meta.url);
@@ -187,6 +188,8 @@ if (!events.length) {
   console.log("Inga riktiga event hittades, behåller nuvarande events.json.");
   process.exit(0);
 }
+
+await fyllPriser(events, new URL("priser.json", ROOT));
 
 events.sort((a, b) => (a.datum + (a.tid ?? "")).localeCompare(b.datum + (b.tid ?? "")));
 const out = { uppdaterad: new Date().toISOString(), kalla: used.join(" + "), exempel: false, events };
