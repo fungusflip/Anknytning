@@ -159,8 +159,18 @@ const wCache={};
 function weather(ev){
  const k=ev.lat.toFixed(2)+","+ev.lon.toFixed(2);
  wCache[k]??=fetch(`https://api.open-meteo.com/v1/forecast?latitude=${ev.lat}&longitude=${ev.lon}&daily=weathercode,temperature_2m_max,precipitation_probability_max&timezone=Europe%2FStockholm&forecast_days=16`).then(r=>r.ok?r.json():null).catch(()=>null);
- return wCache[k].then(d=>{if(!d?.daily)return null;const i=d.daily.time.indexOf(ev.datum);if(i<0)return null;
+ return wCache[k].then(d=>{const i=d?.daily?d.daily.time.indexOf(ev.datum):-1;if(i<0)return normal(ev);
   const [,ic,txt]=wmo(d.daily.weathercode[i]);return `${ic} ${Math.round(d.daily.temperature_2m_max[i])}°C, ${txt.toLowerCase()}`+(d.daily.precipitation_probability_max[i]>=40?` (${d.daily.precipitation_probability_max[i]}% regn)`:"")});
+}
+// Längre fram än prognosen: hur vädret brukar vara. Tittar på samma vecka förra året.
+function normal(ev){
+ const d=new Date(ev.datum+"T12:00");d.setFullYear(d.getFullYear()-1);
+ if(d>new Date(Date.now()-5*864e5))return Promise.resolve(null);
+ const a=new Date(d-3*864e5),b=new Date(+d+3*864e5),k="n"+ev.lat.toFixed(1)+","+ev.lon.toFixed(1)+iso(a);
+ wCache[k]??=fetch(`https://archive-api.open-meteo.com/v1/archive?latitude=${ev.lat.toFixed(1)}&longitude=${ev.lon.toFixed(1)}&start_date=${iso(a)}&end_date=${iso(b)}&daily=temperature_2m_max,precipitation_sum&timezone=Europe%2FStockholm`).then(r=>r.ok?r.json():null).catch(()=>null);
+ return wCache[k].then(x=>{const t=x?.daily?.temperature_2m_max?.filter(Number.isFinite);if(!t?.length)return null;
+  const regn=x.daily.precipitation_sum.filter(p=>p>=1).length,snitt=Math.round(t.reduce((s,v)=>s+v,0)/t.length);
+  return `${regn>=4?"🌦️":"🌡️"} Brukar vara ca ${snitt}°C${regn>=4?", ofta regn":""}`});
 }
 function fillWeather(root){root.querySelectorAll("[data-w]").forEach(el=>{const ev=EVENTS.find(e=>e.id===el.dataset.w);
  weather(ev).then(w=>{if(w){el.textContent=w;el.hidden=false}})})}
@@ -268,7 +278,7 @@ function openDetail(ev){
  <dl><dt>När</dt><dd>${esc(when(ev))}</dd><dt>Plats</dt><dd>${esc(ev.plats)}</dd><dt>Avstånd</dt><dd>${kmTxt(ev)} från ${esc(me.namn)}</dd><dt>Pris</dt><dd>${ev.pris==null?(ev.url?`<a href="${esc(ev.url)}" target="_blank" rel="noopener">Står på eventets sida ↗</a>`:"Okänt"):priceTxt(ev.pris)}</dd><dt>Väder</dt><dd id="dw">Hämtar…</dd></dl>
  ${ev.url?`<a class="cta ghost" href="${esc(ev.url)}" target="_blank" rel="noopener">Till eventets sida på ${esc(host(ev.url))} ↗</a>`:""}
  <button class="cta" id="save">${saved.includes(ev)?"Sparad ♥":"Spara ♥"}</button>`;
- weather(ev).then(w=>{const el=$("#dw");if(el)el.textContent=w||"Ingen prognos just nu (finns ca 2 veckor framåt)"});
+ weather(ev).then(w=>{const el=$("#dw");if(el)el.textContent=w||"Ingen väderinfo just nu"});
  $("#back").onclick=()=>show(prev);
  $("#save").onclick=()=>{if(!saved.includes(ev)){saved.push(ev);queue=queue.filter(e=>e!==ev);updateCount();renderDeck();note("Sparad ♥")}$("#save").textContent="Sparad ♥"};
  show("detail");

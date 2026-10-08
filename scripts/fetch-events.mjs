@@ -67,6 +67,18 @@ async function ticketmaster() {
     }
     if (page + 1 >= (data.page?.totalPages ?? 0)) break;
   }
+  // Listan saknar ofta pris. Fråga om varje event för sig (API:et tillåter 5 anrop/sekund).
+  let hittade = 0;
+  for (const ev of out.filter(e => e.pris == null).slice(0, 500)) {
+    try {
+      const res = await fetch(`https://app.ticketmaster.com/discovery/v2/events/${ev.id.slice(3)}.json?apikey=${key}&locale=*`);
+      if (res.status === 429) { await sleep(2000); continue; }
+      const pr = res.ok ? (await res.json()).priceRanges?.filter(p => Number.isFinite(p.min)) : null;
+      if (pr?.length) { ev.pris = Math.round(Math.min(...pr.map(p => p.min))); hittade++; }
+    } catch {}
+    await sleep(250);
+  }
+  console.log(`Ticketmaster: pris hittat för ${hittade} event via detalj-anrop.`);
   return out;
 }
 
