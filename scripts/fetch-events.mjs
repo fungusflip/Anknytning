@@ -126,7 +126,7 @@ const unent = s => s.replace(/&(#x?[0-9a-f]+|\w+);/gi, (m, c) =>
 const strip = s => unent(unent(s.replace(/<[^>]+>/g, " "))).replace(/\s+/g, " ").trim();
 const sthlm = (iso, opt) => new Date(iso).toLocaleString("sv-SE", { timeZone: "Europe/Stockholm", ...opt });
 // Riktar sig till unga vuxna, så event bara för seniorer eller små barn hoppas över
-const INTE_FOR_UNGA = /(?<![\wåäö])(senior|seniorer|65\+|55\+|pension|pensionär|bebis|baby|babyrytmik|barnrytmik|sagostund|småbarn|förskola|knytte|[0-9]\s?[-–]\s?(?:[0-9]|1[0-2])\s?år)(?![\wåäö])/i;
+const INTE_FOR_UNGA = /(?<![\wåäö])(senior|seniorer|65\+|55\+|pension|pensionär|bebis|baby|babyrytmik|barnrytmik|sagostund|småbarn|förskola|knytte|(?:[0-9]|1[0-2])\s?[-–]\s?(?:[0-9]|1[0-2])\s?år)(?![\wåäö])/i;
 
 async function nacka() {
   const base = "https://www.nacka.se";
@@ -170,7 +170,63 @@ async function nacka() {
   return out;
 }
 
-const SOURCES = { "Egna event": egnaEvent, Ticketmaster: ticketmaster, "Visit Stockholm": visitStockholm, Nacka: nacka };
+// Kommuner med en vanlig evenemangslista (robots.txt tillåter). Listan ger länk och datum,
+// varje events egen sida ger titel, bild och beskrivning. Platsen sätts till kommunens mitt
+// eftersom sidorna inte har koordinater.
+const KOMMUNER = [
+  { namn: "Haninge", lista: "https://www.haninge.se/evenemang-och-aktiviteter/", sidor: 3,
+    lank: /href="(\/evenemang-och-aktiviteter\/(?!lagg-in)[^"\/?]+\/)\?d=(\d{4}-\d{2}-\d{2})"/g, lat: 59.1684, lon: 18.1440 },
+  { namn: "Lidingö", lista: "https://lidingo.se/kultur-fritid/evenemangskalendern/", sidor: 3,
+    lank: /href="(https:\/\/lidingo\.se\/kultur-fritid\/evenemangskalendern\/(?!om-)[^"\/?]+\/)\?startDate=(\d{4}-\d{2}-\d{2})_(\d{2}:\d{2})"/g, lat: 59.3663, lon: 18.1500 },
+];
+const meta = (html, prop) => html.match(new RegExp(`<meta[^>]+(?:property|name)=["']${prop}["'][^>]*content=["']([^"']*)`, "i"))?.[1]
+  ?? html.match(new RegExp(`<meta[^>]+content=["']([^"']*)["'][^>]*(?:property|name)=["']${prop}["']`, "i"))?.[1];
+
+async function kommunKalender(k) {
+  const traffar = new Map(); // sida -> första datum
+  for (let sida = 1; sida <= k.sidor; sida++) {
+    const url = sida === 1 ? k.lista : `${k.lista}?paged=${sida}&page=${sida}`;
+    const res = await fetch(url, { headers: { "user-agent": UA } });
+    if (!res.ok) { if (sida === 1) throw new Error(`${k.namn} svarade ${res.status}`); break; }
+    const html = await res.text(); let nya = 0;
+    for (const m of html.matchAll(k.lank)) {
+      const sidUrl = new URL(m[1], k.lista).href, nyckel = sidUrl + m[2];
+      if (!traffar.has(nyckel)) { traffar.set(nyckel, { sidUrl, datum: m[2], tid: m[3] ?? null, lankUrl: new URL(m[0].slice(6, -1).replace(/&amp;/g, "&"), k.lista).href }); nya++; }
+    }
+    if (!nya) break;
+    await sleep(1000);
+  }
+  const out = [], sidinfo = new Map();
+  for (const t of [...traffar.values()].slice(0, 150)) {
+    if (!sidinfo.has(t.sidUrl)) {
+      try {
+        const res = await fetch(t.sidUrl, { headers: { "user-agent": UA } });
+        const html = res.ok ? await res.text() : "";
+        sidinfo.set(t.sidUrl, { titel: unent(meta(html, "og:title") ?? html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/)?.[1]?.replace(/<[^>]+>/g, "") ?? "").replace(/\s*[|–-]\s*(Haninge|Lidingö)[^|]*$/i, "").trim(),
+          bild: meta(html, "og:image"), text: strip(meta(html, "og:description") ?? "") + " " + strip(html.match(/<main[\s\S]*?<\/main>/i)?.[0]?.slice(0, 20000) ?? ""),
+          tid: html.match(/(?:kl\.?|klockan|tid:?)\s*(\d{1,2})[.:](\d{2})/i) });
+      } catch { sidinfo.set(t.sidUrl, null); }
+      await sleep(1000);
+    }
+    const info = sidinfo.get(t.sidUrl);
+    if (!info?.titel || INTE_FOR_UNGA.test(info.titel + " " + info.text.slice(0, 600))) continue;
+    out.push({
+      id: `${k.namn.toLowerCase()}-${new URL(t.sidUrl).pathname.split("/").filter(Boolean).at(-1)}-${t.datum}`,
+      t: info.titel, e: "📍",
+      img: info.bild ? new URL(unent(info.bild), t.sidUrl).href : null,
+      datum: t.datum,
+      tid: t.tid ?? (info.tid ? `${info.tid[1].padStart(2, "0")}:${info.tid[2]}` : null),
+      plats: k.namn, lat: k.lat, lon: k.lon,
+      pris: /gratis|fri entré|fritt inträde|kostnadsfri/i.test(info.text) ? 0 : null,
+      tags: [k.namn.toLowerCase()],
+      url: t.lankUrl,
+    });
+  }
+  return out;
+}
+
+const SOURCES = { "Egna event": egnaEvent, Ticketmaster: ticketmaster, "Visit Stockholm": visitStockholm, Nacka: nacka,
+  ...Object.fromEntries(KOMMUNER.map(k => [k.namn, () => kommunKalender(k)])) };
 
 const events = [], used = [];
 for (const [name, fn] of Object.entries(SOURCES)) {
