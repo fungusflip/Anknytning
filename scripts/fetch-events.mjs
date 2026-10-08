@@ -126,7 +126,7 @@ const unent = s => s.replace(/&(#x?[0-9a-f]+|\w+);/gi, (m, c) =>
 const strip = s => unent(unent(s.replace(/<[^>]+>/g, " "))).replace(/\s+/g, " ").trim();
 const sthlm = (iso, opt) => new Date(iso).toLocaleString("sv-SE", { timeZone: "Europe/Stockholm", ...opt });
 // Riktar sig till unga vuxna, så event bara för seniorer eller små barn hoppas över
-const INTE_FOR_UNGA = /\b(senior|seniorer|65\+|55\+|pension|bebis|småbarn|förskola|knytte)\b/i;
+const INTE_FOR_UNGA = /(?<![\wåäö])(senior|seniorer|65\+|55\+|pension|pensionär|bebis|baby|babyrytmik|barnrytmik|sagostund|småbarn|förskola|knytte|[0-9]\s?[-–]\s?(?:[0-9]|1[0-2])\s?år)(?![\wåäö])/i;
 
 async function nacka() {
   const base = "https://www.nacka.se";

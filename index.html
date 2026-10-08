@@ -148,9 +148,9 @@ function when(ev){const d=new Date(ev.datum+"T00:00"),t=new Date();t.setHours(0,
  const diff=Math.round((d-t)/864e5),r=rel(diff),dag=DAG[d.getDay()]+" "+d.getDate()+"/"+(d.getMonth()+1)+(d.getFullYear()!==t.getFullYear()?" "+d.getFullYear():"");
  if(ev.slut&&diff<=0){const s=new Date(ev.slut+"T00:00");return"Pågår till "+s.getDate()+"/"+(s.getMonth()+1)}
  return (diff<=1?r+", "+dag:dag+" ("+r+")")+(ev.tid?" "+ev.tid:"")}
-// Priset saknas hos de flesta källor. Då visas ingen pris-lapp, i stället för en tom "Se pris".
+// Priset hämtas från eventens egna sidor. Saknas det står det "Pris okänt".
 const priceTxt=p=>p===0?"Gratis":p==null?"Okänt pris":p+" kr";
-const price=p=>p===0?'<span class="chip free">Gratis</span>':p==null?"":`<span class="chip">${p} kr</span>`;
+const price=p=>p===0?'<span class="chip free">Gratis</span>':p==null?'<span class="chip">Pris okänt</span>':`<span class="chip">${p} kr</span>`;
 
 // Väder från Open-Meteo (gratis, ingen nyckel). Prognos finns för ca 14 dagar framåt.
 const WMO=[[0,"☀️","Klart"],[2,"🌤️","Lätt molnigt"],[3,"☁️","Mulet"],[48,"🌫️","Dimma"],[57,"🌦️","Duggregn"],[67,"🌧️","Regn"],[77,"🌨️","Snö"],[82,"🌧️","Skurar"],[86,"🌨️","Snöbyar"],[99,"⛈️","Åska"]];
@@ -218,7 +218,7 @@ $("#btn-no").onclick=()=>queue[0]&&decide(queue[0],false,$("#deck .card:last-chi
 document.addEventListener("keydown",e=>{if($("#v-start").hidden)return;if(e.key==="ArrowRight")$("#btn-yes").click();if(e.key==="ArrowLeft")$("#btn-no").click()});
 
 // Lista (Sök + Sparade)
-const row=ev=>`<div class="row" data-id="${esc(ev.id)}">${pic(ev,"e")}<div><b>${esc(ev.t)}</b><small>${esc(when(ev))}${ev.pris!=null?" · "+priceTxt(ev.pris):""} · ${kmTxt(ev)}</small></div></div>`;
+const row=ev=>`<div class="row" data-id="${esc(ev.id)}">${pic(ev,"e")}<div><b>${esc(ev.t)}</b><small>${esc(when(ev))} · ${priceTxt(ev.pris)} · ${kmTxt(ev)}</small></div></div>`;
 function bindRows(el){el.querySelectorAll(".row").forEach(r=>r.onclick=()=>openDetail(EVENTS.find(e=>e.id===r.dataset.id)))}
 // Sök: filter på pris, sortering och "bäst träff"
 let maxPris="",sortBy="near";
