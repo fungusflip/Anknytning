@@ -1,6 +1,6 @@
 // Engångsverktyg: skriver ut en förkortad version av svaret från några adresser.
 const UA = "AnknytningBot/0.1 (+https://github.com/fungusflip/Anknytning)";
-const MAX = +(process.env.PROBE_MAX ?? 5000);
+const MAX = +(process.env.PROBE_MAX ?? 2500);
 for (const url of process.argv.slice(2)) {
   let res;
   try { res = await fetch(url, { headers: { "user-agent": UA, accept: "application/json, text/html, text/plain, */*" } }); }
