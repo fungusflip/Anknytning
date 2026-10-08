@@ -15,4 +15,6 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-      - run: node scripts/probe-sources.mjs ${{ github.event.inputs.urls }}
+      - run: node scripts/probe-sources.mjs $URLS
+        env:
+          URLS: ${{ github.event.inputs.urls }}
