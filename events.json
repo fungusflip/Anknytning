@@ -1,6 +1,6 @@
 {
-  "uppdaterad": "2026-10-08T18:39:33.643Z",
-  "kalla": "Ticketmaster + Visit Stockholm",
+  "uppdaterad": "2026-10-08T19:02:50.138Z",
+  "kalla": "Ticketmaster + Visit Stockholm + Nacka",
   "exempel": false,
   "events": [
     {
@@ -87,7 +87,7 @@
       "plats": "Stallet - Världens Musik, Stockholm",
       "lat": 59.33087750306859,
       "lon": 18.076186663506633,
-      "pris": null,
+      "pris": 190,
       "tags": [
         "musik",
         "traditionell musik, folk & country"
@@ -329,7 +329,7 @@
       "plats": "Nobel Prize Museum, Stockholm",
       "lat": 59.325179108104294,
       "lon": 18.070780084501394,
-      "pris": null,
+      "pris": 0,
       "tags": [
         "familj",
         "festivaler",
@@ -348,7 +348,7 @@
       "plats": "Folkoperan, Stockholm",
       "lat": 59.31845330135826,
       "lon": 18.05817940181967,
-      "pris": null,
+      "pris": 0,
       "tags": [
         "scen & film",
         "opera & show"
@@ -405,7 +405,7 @@
       "plats": "Big Ben Pub, Stockholm",
       "lat": 59.315583295801474,
       "lon": 18.083352436350367,
-      "pris": null,
+      "pris": 0,
       "tags": [
         "scen & film",
         "standup & spoken word"
@@ -597,6 +597,43 @@
       "url": "https://riche.se/events/lojromsdagar-pa-riche/"
     },
     {
+      "id": "nacka-konstruktion-och-bild-2026-09-19",
+      "t": "Konstruktion och bild",
+      "e": "🖼️",
+      "img": "https://www.nacka.se/filtered/308828/rszww400h200-90/matildadominique-1200x600_edited-1980746826-rszww400h200-90.jpg",
+      "datum": "2026-10-08",
+      "slut": "2026-11-15",
+      "tid": "13:00",
+      "plats": "Dieselverkstaden, Nacka",
+      "lat": 59.3052383,
+      "lon": 18.1210463,
+      "pris": 0,
+      "tags": [
+        "nacka",
+        "dieselverkstaden",
+        "konst/utställningar"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/konstruktion-och-bild/?occurrence=202609191100-202611151500"
+    },
+    {
+      "id": "nacka-utstallning-vatten-i-olika-former-maleri-av-christina-asback-2026-09-19",
+      "t": "Utställning: Vatten i olika former – måleri av Christina Åsbäck",
+      "e": "🖼️",
+      "img": "https://www.nacka.se/filtered/311397/rszww400h200-90/img_1866--209647426-rszww400h200-90.jpeg",
+      "datum": "2026-10-08",
+      "slut": "2026-10-12",
+      "tid": "15:00",
+      "plats": "Nacka Forum bibliotek, Nacka",
+      "lat": 59.3088385,
+      "lon": 18.1647532,
+      "pris": null,
+      "tags": [
+        "nacka",
+        "konst/utställningar"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/utstallning-vatten-i-olika-former-maleri-av-christina-asback/?occurrence=202609191300-202610121300"
+    },
+    {
       "id": "vs-14296",
       "t": "Cat Power - 'The Greatest' 20th Anniversary Tour",
       "e": "🎵",
@@ -716,7 +753,7 @@
       "plats": "Stallet - Världens Musik, Stockholm",
       "lat": 59.33087750306859,
       "lon": 18.076186663506633,
-      "pris": null,
+      "pris": 150,
       "tags": [
         "musik",
         "traditionell musik, folk & country"
@@ -772,7 +809,7 @@
       "plats": "Stockholmsmässan, Älvsjö",
       "lat": 59.277487735478964,
       "lon": 18.015170396423326,
-      "pris": null,
+      "pris": 0,
       "tags": [
         "utställningar",
         "mässor",
@@ -1004,6 +1041,25 @@
         "konst & kultur"
       ],
       "url": "https://www.modernamuseet.se/sv/stockholm/program/fria-fredagar/"
+    },
+    {
+      "id": "nacka-barnrytmik-1-4-ar-2026-10-09",
+      "t": "Barnrytmik 1-4 år",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/308861/rszww400h200-90/barnrytmik-1-4-rytmik-1200x600-ht25_edited-1610175830-rszww400h200-90.jpg",
+      "datum": "2026-10-09",
+      "slut": null,
+      "tid": "10:15",
+      "plats": "Dieselverkstaden, Nacka",
+      "lat": 59.3052383,
+      "lon": 18.1210463,
+      "pris": 160,
+      "tags": [
+        "nacka",
+        "barnrytmik",
+        "dieselverkstaden"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/barnrytmik-1-4-ar/?occurrence=202610090815-202610090900"
     },
     {
       "id": "tm-Z698xZq2Z1kkFuZJk",
@@ -1265,7 +1321,7 @@
       "plats": "Historiska museet, Stockholm",
       "lat": 59.333999024179654,
       "lon": 18.09171907714856,
-      "pris": null,
+      "pris": 250,
       "tags": [
         "musik",
         "scen & film",
@@ -1322,7 +1378,7 @@
       "plats": "Panncentralen, Gustavsberg",
       "lat": 59.323065108304405,
       "lon": 18.38427759631736,
-      "pris": null,
+      "pris": 100,
       "tags": [
         "utställningar",
         "musik",
@@ -1360,7 +1416,7 @@
       "plats": "Hökis Visrum, Farsta",
       "lat": 59.25647625199355,
       "lon": 18.081449660510486,
-      "pris": null,
+      "pris": 80,
       "tags": [
         "utställningar",
         "musik",
@@ -1379,7 +1435,7 @@
       "plats": "Stallet - Världens Musik, Stockholm",
       "lat": 59.3307275,
       "lon": 18.0759975,
-      "pris": null,
+      "pris": 270,
       "tags": [
         "musik",
         "traditionell musik, folk & country"
@@ -1397,7 +1453,7 @@
       "plats": "Teater Tre, Stockholm",
       "lat": 59.31769670886811,
       "lon": 18.055081618044085,
-      "pris": null,
+      "pris": 130,
       "tags": [
         "familj",
         "scen & film",
@@ -1436,7 +1492,7 @@
       "plats": "Bromma Musikscen, Stockholm",
       "lat": 59.3468993,
       "lon": 17.9485834,
-      "pris": null,
+      "pris": 150,
       "tags": [
         "musik",
         "jazz & blues"
@@ -1473,7 +1529,7 @@
       "plats": "Karlaplan, runt fontänen, Stockholm",
       "lat": 59.33830818065465,
       "lon": 18.089567445046804,
-      "pris": null,
+      "pris": 500,
       "tags": [
         "mässor",
         "marknader & loppisar"
@@ -1491,7 +1547,7 @@
       "plats": "Skogskyrkogården - Samlingsplats står på biljetten, Stockholm",
       "lat": 59.27124139999999,
       "lon": 18.1027507,
-      "pris": null,
+      "pris": 0,
       "tags": [
         "utställningar",
         "guidade turer & föreläsningar",
@@ -1511,7 +1567,7 @@
       "plats": "Nalen, Stockholm",
       "lat": 59.33707030459172,
       "lon": 18.067513573014878,
-      "pris": null,
+      "pris": 350,
       "tags": [
         "mat & dryck",
         "musik"
@@ -1529,7 +1585,7 @@
       "plats": "Teater Bristol, Sundbyberg",
       "lat": 59.363502929622086,
       "lon": 17.96688245514727,
-      "pris": null,
+      "pris": 195,
       "tags": [
         "familj",
         "scen & film",
@@ -1584,7 +1640,7 @@
       "plats": "Teater Bristol, Sundbyberg",
       "lat": 59.363502929622086,
       "lon": 17.96688245514727,
-      "pris": null,
+      "pris": 195,
       "tags": [
         "familj",
         "scen & film",
@@ -1603,7 +1659,7 @@
       "plats": "Stockholm city, Stockholm",
       "lat": 59.3301476,
       "lon": 18.0582377,
-      "pris": null,
+      "pris": 549,
       "tags": [
         "mat & dryck"
       ],
@@ -1779,7 +1835,7 @@
       "plats": "Kungliga Dramaten, Stockholm",
       "lat": 59.33255457181357,
       "lon": 18.07665526571667,
-      "pris": null,
+      "pris": 500,
       "tags": [
         "guidade turer & föreläsningar"
       ],
@@ -1820,6 +1876,43 @@
       "url": "https://www.operan.se/forestallningar/guided-tour-in-english"
     },
     {
+      "id": "nacka-brodera-blommor-workshop-med-maja-stjarna-2026-10-10",
+      "t": "Brodera blommor - Workshop med Maja Stjärna",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/313193/rszww400h200-90/brodera-blommor-broderi-linnea-1200x600_edited-527863119-rszww400h200-90.jpg",
+      "datum": "2026-10-10",
+      "slut": null,
+      "tid": "10:00",
+      "plats": "Dieselverkstaden, Nacka",
+      "lat": 59.3052383,
+      "lon": 18.1210463,
+      "pris": 400,
+      "tags": [
+        "nacka",
+        "dieselverkstaden",
+        "skapande verksamhet"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/brodera-blommor-workshop-med-maja-stjarna/?occurrence=202610100800-202610101030"
+    },
+    {
+      "id": "nacka-melodikrysset-pa-biblioteket-2026-10-10",
+      "t": "Melodikrysset på biblioteket",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/311755/rszww400h200-90/melodikrysset-evenemang-ext-kal-2026--66844004-rszww400h200-90.png",
+      "datum": "2026-10-10",
+      "slut": null,
+      "tid": "10:04",
+      "plats": "Älta bibliotek, Nacka",
+      "lat": 59.2561243,
+      "lon": 18.1776164,
+      "pris": null,
+      "tags": [
+        "nacka",
+        "träffpunkt/kafé"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/melodikrysset-pa-biblioteket/?occurrence=202610100804-202610100900"
+    },
+    {
       "id": "tm-Z698xZq2Z16v8e-Pua",
       "t": "MAMMA MIA! THE PARTY",
       "e": "🎭",
@@ -1854,6 +1947,25 @@
         "musical"
       ],
       "url": "https://www.ticketmaster.se/event/torka-aldrig-tarar-utan-handskar-biljetter/1179689030"
+    },
+    {
+      "id": "nacka-forfattarbesok-karin-bjorkegren-jones-2026-10-10",
+      "t": "Författarbesök - Karin Björkegren Jones",
+      "e": "📍",
+      "img": null,
+      "datum": "2026-10-10",
+      "slut": null,
+      "tid": "15:00",
+      "plats": "Saltsjöbadens bibliotek, Nacka",
+      "lat": 59.2851167,
+      "lon": 18.2752492,
+      "pris": null,
+      "tags": [
+        "nacka",
+        "föresläsning/samtal",
+        "vuxna"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/forfattarbesok-karin-bjorkegren-jones/?occurrence=202610101300-202610101400"
     },
     {
       "id": "tm-Z698xZq2Z1kF08S_A",
@@ -1944,6 +2056,25 @@
         "jazz"
       ],
       "url": "https://www.ticketmaster.se/event/allhelgonaserien-sthlm-jazz-superstar-orkestar-biljetter/962008099"
+    },
+    {
+      "id": "nacka-vi-var-har-2026-10-10",
+      "t": "Vi var här",
+      "e": "🎭",
+      "img": "https://www.nacka.se/filtered/312877/rszww400h200-90/vivarharnyaffish-1968299435-rszww400h200-90.jpg",
+      "datum": "2026-10-10",
+      "slut": null,
+      "tid": "19:00",
+      "plats": "Dieselverkstaden, Nacka",
+      "lat": 59.3052383,
+      "lon": 18.1210463,
+      "pris": 150,
+      "tags": [
+        "nacka",
+        "teater",
+        "dieselverkstaden"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/vi-var-har/?occurrence=202610101700-202610101815"
     },
     {
       "id": "tm-Z698xZq2Z1k3948Qp",
@@ -2098,7 +2229,7 @@
       "plats": "Berga teater, Åkersberga",
       "lat": 59.48051186719934,
       "lon": 18.300806748820833,
-      "pris": null,
+      "pris": 50,
       "tags": [
         "familj",
         "scen & film",
@@ -2154,7 +2285,7 @@
       "plats": "Nacka Aula, Nacka",
       "lat": 59.31063093212927,
       "lon": 18.152999513853814,
-      "pris": null,
+      "pris": 100,
       "tags": [
         "musik",
         "pop"
@@ -2191,7 +2322,7 @@
       "plats": "Solvalla, Bromma",
       "lat": 59.364234222495575,
       "lon": 17.941450670636165,
-      "pris": null,
+      "pris": 0,
       "tags": [
         "mässor",
         "marknader & loppisar"
@@ -2228,7 +2359,7 @@
       "plats": "Teater Tre, Stockholm",
       "lat": 59.31769670886811,
       "lon": 18.055081618044085,
-      "pris": null,
+      "pris": 130,
       "tags": [
         "familj",
         "scen & film",
@@ -2247,7 +2378,7 @@
       "plats": "Sälstationen, Gålö Haninge",
       "lat": 59.0733136465183,
       "lon": 18.231049197833556,
-      "pris": null,
+      "pris": 230,
       "tags": [
         "familj",
         "guidade turer & föreläsningar",
@@ -2292,6 +2423,61 @@
       "url": "https://www.thecreativityhouse.se/ny-drejning-med-guide"
     },
     {
+      "id": "nacka-brodera-pa-klader-workshop-med-maja-stjarna-2026-10-11",
+      "t": "Brodera på kläder- Workshop med Maja Stjärna",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/313196/rszww400h200-90/broderapaklader-workshop-rosbroderi-1200x600_edited-1817342927-rszww400h200-90.jpg",
+      "datum": "2026-10-11",
+      "slut": null,
+      "tid": "10:00",
+      "plats": "Märtas målarsal, Dieselverkstaden, Nacka",
+      "lat": 59.3052383,
+      "lon": 18.1210463,
+      "pris": 400,
+      "tags": [
+        "nacka",
+        "dieselverkstaden",
+        "skapande verksamhet"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/brodera-pa-klader-workshop-med-maja-stjarna/?occurrence=202610110800-202610111030"
+    },
+    {
+      "id": "nacka-oppet-i-hembygdsgarden2-2026-10-11",
+      "t": "Öppet i hembygdsgården",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/309593/rszww400h200-90/20250723_132312-1473413789-rszww400h200-90.jpg",
+      "datum": "2026-10-11",
+      "slut": null,
+      "tid": "11:00",
+      "plats": "Boo hembygdsgård, Nacka",
+      "lat": 59.327514,
+      "lon": 18.2368726,
+      "pris": 0,
+      "tags": [
+        "nacka"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/oppet-i-hembygdsgarden2/?occurrence=202610110900-202610111300"
+    },
+    {
+      "id": "nacka-vi-var-har-2026-10-11",
+      "t": "Vi var här",
+      "e": "🎭",
+      "img": "https://www.nacka.se/filtered/312877/rszww400h200-90/vivarharnyaffish-1968299435-rszww400h200-90.jpg",
+      "datum": "2026-10-11",
+      "slut": null,
+      "tid": "15:00",
+      "plats": "Dieselverkstaden, Nacka",
+      "lat": 59.3052383,
+      "lon": 18.1210463,
+      "pris": 150,
+      "tags": [
+        "nacka",
+        "teater",
+        "dieselverkstaden"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/vi-var-har/?occurrence=202610111300-202610111415"
+    },
+    {
       "id": "tm-Z698xZq2Z1kQ9QFGd",
       "t": "Djungelboken The Musical",
       "e": "🎭",
@@ -2308,6 +2494,24 @@
         "musical"
       ],
       "url": "https://www.ticketmaster.se/event/djungelboken-the-musical-biljetter/697688303"
+    },
+    {
+      "id": "nacka-pop-i-symfoniorkester-2026-10-11",
+      "t": "Pop i symfoniorkester",
+      "e": "🎵",
+      "img": "https://www.nacka.se/filtered/313787/rszww400h200-90/pop-i-symfoniorkester-a4-affisch-58630056-rszww400h200-90.jpg",
+      "datum": "2026-10-11",
+      "slut": null,
+      "tid": "17:00",
+      "plats": "Nacka Aula, Nacka",
+      "lat": 59.3099054,
+      "lon": 18.1540926,
+      "pris": 100,
+      "tags": [
+        "nacka",
+        "musik/konsert"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/pop-i-symfoniorkester/?occurrence=202610111500-202610111630"
     },
     {
       "id": "tm-Z698xZq2Z16vek4Fp7",
@@ -2392,7 +2596,7 @@
       "plats": "Eric Ericssonhallen, Stockholm",
       "lat": 59.32627579631577,
       "lon": 18.082175700963546,
-      "pris": null,
+      "pris": 320,
       "tags": [
         "musik",
         "klassiskt & konstmusik"
@@ -2536,12 +2740,49 @@
       "plats": "Tekniska museet, Stockholm",
       "lat": 59.332504933389146,
       "lon": 18.11896571801927,
-      "pris": null,
+      "pris": 100,
       "tags": [
         "guidade turer & föreläsningar",
         "vetenskap & it"
       ],
       "url": "https://www.tekniskamuseet.se/program-och-upplevelser/samtal-och-ide/techbolag-eller-politiker-vem-har-makten/"
+    },
+    {
+      "id": "nacka-en-ta-i-det-bla-babymalning-2026-10-13",
+      "t": "En tå i det blå - babymålning",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/308866/rszww400h200-90/entaidetbla-1200x600_edited--978950313-rszww400h200-90.jpg",
+      "datum": "2026-10-13",
+      "slut": null,
+      "tid": "10:00",
+      "plats": "Dieselverkstaden, Nacka",
+      "lat": 59.3052383,
+      "lon": 18.1210463,
+      "pris": 90,
+      "tags": [
+        "nacka",
+        "dieselverkstaden",
+        "skapande verksamhet"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/en-ta-i-det-bla-babymalning/?occurrence=202610130800-202610130900"
+    },
+    {
+      "id": "nacka-attentions-tisdags-drop-in-2026-10-13",
+      "t": "Attentions tisdags-drop in",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/310338/rszww400h200-90/92caa731-5ada-4708-832c-5cdb1fe4dd2d-tisdags-dropin--9175286-rszww400h200-90.png",
+      "datum": "2026-10-13",
+      "slut": null,
+      "tid": "14:00",
+      "plats": "Tillgänglighetsforum, Nacka",
+      "lat": 59.3086691,
+      "lon": 18.1627164,
+      "pris": 0,
+      "tags": [
+        "nacka",
+        "träffpunkt/kafé"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/attentions-tisdags-drop-in/?occurrence=202610131200-202610131400"
     },
     {
       "id": "tm-Z698xZq2Z1kkKjYvx",
@@ -2716,7 +2957,7 @@
       "plats": "Teater Bristol, Sundbyberg",
       "lat": 59.363502929622086,
       "lon": 17.96688245514727,
-      "pris": null,
+      "pris": 195,
       "tags": [
         "musik",
         "jazz & blues"
@@ -2787,7 +3028,7 @@
       "plats": "Lilla Tre, Stockholm",
       "lat": 59.31645170287996,
       "lon": 18.0551376091573,
-      "pris": null,
+      "pris": 130,
       "tags": [
         "familj",
         "scen & film",
@@ -2829,6 +3070,98 @@
         "familj"
       ],
       "url": "https://www.vaxholmsbedandbreakfast.se/se/swedish-baking"
+    },
+    {
+      "id": "nacka-jazziorerna-i-boo-folkets-hus-2026-10-14",
+      "t": "Jazziorerna i Boo Folkets Hus",
+      "e": "🎵",
+      "img": "https://www.nacka.se/filtered/313025/rszww400h200-90/_jazziorerna--2053556378-rszww400h200-90.jpg",
+      "datum": "2026-10-14",
+      "slut": null,
+      "tid": "11:00",
+      "plats": "Boo Folkets Hus, Nacka",
+      "lat": 59.3259819,
+      "lon": 18.2560756,
+      "pris": null,
+      "tags": [
+        "nacka",
+        "musik/konsert"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/jazziorerna-i-boo-folkets-hus/?occurrence=202610140900-202610141100"
+    },
+    {
+      "id": "nacka-lunchkoren-2026-10-14",
+      "t": "Lunchkören",
+      "e": "🎵",
+      "img": "https://www.nacka.se/filtered/311538/rszww400h200-90/lunchkoren-1200x600_edited-307794606-rszww400h200-90.jpg",
+      "datum": "2026-10-14",
+      "slut": null,
+      "tid": "12:00",
+      "plats": "Sveas salong, Dieselverkstaden, Nacka",
+      "lat": 59.3052383,
+      "lon": 18.1210463,
+      "pris": 200,
+      "tags": [
+        "nacka",
+        "dieselverkstaden",
+        "musik/konsert",
+        "vuxna"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/lunchkoren/?occurrence=202610141000-202610141045"
+    },
+    {
+      "id": "nacka-laxhjalp-studiestod-spraktraning-2026-10-14",
+      "t": "Läxhjälp, studiestöd & språkträning",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/311752/rszww400h200-90/laxhjalp-ext-kal-a--440917605-rszww400h200-90.png",
+      "datum": "2026-10-14",
+      "slut": null,
+      "tid": "16:00",
+      "plats": "Älta bibliotek, Nacka",
+      "lat": 59.2561243,
+      "lon": 18.1776164,
+      "pris": null,
+      "tags": [
+        "nacka"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/laxhjalp-studiestod-spraktraning/?occurrence=202610141400-202610141600"
+    },
+    {
+      "id": "nacka-mediyoga-for-anhoriga-2026-10-14",
+      "t": "Mediyoga för anhöriga",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/312089/rszww400h200-90/anhorigcenter-logga-knapp-1404542069-rszww400h200-90.png",
+      "datum": "2026-10-14",
+      "slut": null,
+      "tid": "16:30",
+      "plats": "Träffpunkt Smedjan, nära Nacka Forum, Nacka",
+      "lat": 59.3085377,
+      "lon": 18.1622069,
+      "pris": null,
+      "tags": [
+        "nacka",
+        "motion/hälsa"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/mediyoga-for-anhoriga/?occurrence=202610141430-202610141600"
+    },
+    {
+      "id": "nacka-stockholm-jazzfestival-2026-nacka-konsthall-berggrenstark-project-2026-10-14",
+      "t": "Stockholm jazzfestival 2026 - Nacka konsthall - Berggren/Stark Project",
+      "e": "🎵",
+      "img": "https://www.nacka.se/filtered/313186/rszww400h200-90/berggren-stark-project-facebook_event-1512606286-rszww400h200-90.png",
+      "datum": "2026-10-14",
+      "slut": null,
+      "tid": "18:00",
+      "plats": "Dieselverkstaden, Nacka",
+      "lat": 59.3052383,
+      "lon": 18.1210463,
+      "pris": 0,
+      "tags": [
+        "nacka",
+        "dieselverkstaden",
+        "musik/konsert"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/stockholm-jazzfestival-2026-nacka-konsthall-berggrenstark-project/?occurrence=202610141600-202610141700"
     },
     {
       "id": "tm-Z698xZq2Z16veb8vG6",
@@ -2895,7 +3228,7 @@
       "plats": "Bishops Arms Gamla Stan, Stockholm",
       "lat": 59.3231651044093,
       "lon": 18.0691237366149,
-      "pris": null,
+      "pris": 0,
       "tags": [
         "klubbar & fester",
         "mat & dryck",
@@ -2932,7 +3265,7 @@
       "plats": "Sturehof, Stockholm",
       "lat": 59.33565745099244,
       "lon": 18.073312425088744,
-      "pris": null,
+      "pris": 0,
       "tags": [
         "klubbar & fester",
         "mat & dryck"
@@ -3050,6 +3383,24 @@
       "url": "https://sparvagsmuseet.biljetto.com/evenemang/0004-/"
     },
     {
+      "id": "nacka-vad-hander-i-orminge-2026-10-15",
+      "t": "Vad händer i Orminge?",
+      "e": "📍",
+      "img": null,
+      "datum": "2026-10-15",
+      "slut": null,
+      "tid": "17:30",
+      "plats": "Kyrkans hus, Nacka",
+      "lat": 59.3260154,
+      "lon": 18.2567718,
+      "pris": 0,
+      "tags": [
+        "nacka",
+        "öppet hus"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/vad-hander-i-orminge/?occurrence=202610151530-202610151700"
+    },
+    {
       "id": "tm-Z698xZq2Z1kJ4u309",
       "t": "Svartklubben - Mat & Musik i Mörker",
       "e": "🎭",
@@ -3066,6 +3417,43 @@
         "miscellaneous"
       ],
       "url": "https://www.ticketmaster.se/event/svartklubben-mat--musik-i-morker-biljetter/995352917"
+    },
+    {
+      "id": "nacka-traffa-forfattaren-och-oversattaren-annakarin-thorburn-2026-10-15",
+      "t": "Träffa författaren och översättaren Annakarin Thorburn",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/311828/rszww400h200-90/annakarin--966946328-rszww400h200-90.jpg",
+      "datum": "2026-10-15",
+      "slut": null,
+      "tid": "18:00",
+      "plats": "Nacka Forum bibliotek, Nacka",
+      "lat": 59.3088116,
+      "lon": 18.165319,
+      "pris": 0,
+      "tags": [
+        "nacka",
+        "föreläsning/seminarium"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/traffa-forfattaren-och-oversattaren-annakarin-thorburn/?occurrence=202610151600-202610151700"
+    },
+    {
+      "id": "nacka-stockholm-jazzfestival-2026-nacka-konsthall-titta-en-pyramid-2026-10-15",
+      "t": "Stockholm jazzfestival 2026 - Nacka konsthall - Titta En Pyramid",
+      "e": "🎵",
+      "img": "https://www.nacka.se/filtered/313189/rszww400h200-90/titta-en-pyramid-facebook_event--1077588402-rszww400h200-90.png",
+      "datum": "2026-10-15",
+      "slut": null,
+      "tid": "18:00",
+      "plats": "Dieselverkstaden, Nacka",
+      "lat": 59.3052383,
+      "lon": 18.1210463,
+      "pris": 0,
+      "tags": [
+        "nacka",
+        "dieselverkstaden",
+        "musik/konsert"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/stockholm-jazzfestival-2026-nacka-konsthall-titta-en-pyramid/?occurrence=202610151600-202610151700"
     },
     {
       "id": "tm-Z698xZq2Z16vFouVGs",
@@ -3222,7 +3610,7 @@
       "plats": "Hamburgers Börs, Stockholm",
       "lat": 59.33047307624037,
       "lon": 18.069188528726443,
-      "pris": null,
+      "pris": 745,
       "tags": [
         "klubbar & fester",
         "musik",
@@ -3296,7 +3684,7 @@
       "plats": "PIK Vasastan, Stockholm",
       "lat": 59.34832480000001,
       "lon": 18.0490659,
-      "pris": null,
+      "pris": 260,
       "tags": [
         "scen & film",
         "standup & spoken word"
@@ -3350,7 +3738,7 @@
       "plats": "Långholmens Wärdshus, Stockholm",
       "lat": 59.32129459889666,
       "lon": 18.02670711559557,
-      "pris": null,
+      "pris": 885,
       "tags": [
         "scen & film",
         "teater"
@@ -3413,6 +3801,60 @@
         "guidade turer & föreläsningar"
       ],
       "url": "https://www.postmuseum.se/aktuellt/familjevisning/"
+    },
+    {
+      "id": "nacka-mediyoga-for-anhoriga2-2026-10-16",
+      "t": "MediYoga för anhöriga",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/312280/rszww400h200-90/symbol-anhorigcenter-kalendarium-1444303578-rszww400h200-90.png",
+      "datum": "2026-10-16",
+      "slut": null,
+      "tid": "10:00",
+      "plats": "Träffpunkt Smedjan, Nacka",
+      "lat": 59.3085377,
+      "lon": 18.1622069,
+      "pris": 0,
+      "tags": [
+        "nacka",
+        "motion/hälsa"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/mediyoga-for-anhoriga2/?occurrence=202610160800-202610160930"
+    },
+    {
+      "id": "nacka-barnrytmik-1-4-ar-2026-10-16",
+      "t": "Barnrytmik 1-4 år",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/308861/rszww400h200-90/barnrytmik-1-4-rytmik-1200x600-ht25_edited-1610175830-rszww400h200-90.jpg",
+      "datum": "2026-10-16",
+      "slut": null,
+      "tid": "10:15",
+      "plats": "Dieselverkstaden, Nacka",
+      "lat": 59.3052383,
+      "lon": 18.1210463,
+      "pris": 160,
+      "tags": [
+        "nacka",
+        "barnrytmik",
+        "dieselverkstaden"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/barnrytmik-1-4-ar/?occurrence=202610160815-202610160900"
+    },
+    {
+      "id": "nacka-mogendans-i-boo-folkets-2026-10-16",
+      "t": "Mogendans i Boo Folkets Hus",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/313015/rszww400h200-90/mogendans-m-alla-datum-ht26-1080x1080-616716900-rszww400h200-90.jpg",
+      "datum": "2026-10-16",
+      "slut": null,
+      "tid": "13:00",
+      "plats": "Boo Folkets Hus, Nacka",
+      "lat": 59.3259819,
+      "lon": 18.2560756,
+      "pris": 100,
+      "tags": [
+        "nacka"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/mogendans-i-boo-folkets/?occurrence=202610161100-202610161400"
     },
     {
       "id": "tm-Z698xZq2Z1k7N-4ZY",
@@ -3622,7 +4064,7 @@
       "plats": "Teater Bristol, Sundbyberg",
       "lat": 59.363502929622086,
       "lon": 17.96688245514727,
-      "pris": null,
+      "pris": 195,
       "tags": [
         "musik",
         "jazz & blues"
@@ -3749,7 +4191,7 @@
       "plats": "Bromma Musikscen, Stockholm",
       "lat": 59.34491978927744,
       "lon": 17.95002049671021,
-      "pris": null,
+      "pris": 150,
       "tags": [
         "musik",
         "scen & film",
@@ -3878,7 +4320,7 @@
       "plats": "Pipersgatan 26, Stockholm",
       "lat": 59.331773528518056,
       "lon": 18.046522856711647,
-      "pris": null,
+      "pris": 200,
       "tags": [
         "guidade turer & föreläsningar"
       ],
@@ -3895,7 +4337,7 @@
       "plats": "Södermalm, Stockholm",
       "lat": 59.32663387248238,
       "lon": 18.094767445612806,
-      "pris": null,
+      "pris": 549,
       "tags": [
         "mat & dryck"
       ],
@@ -3912,7 +4354,7 @@
       "plats": "Café Cuvée, Stockholm",
       "lat": 59.315384351329584,
       "lon": 18.062811325333456,
-      "pris": null,
+      "pris": 695,
       "tags": [
         "mat & dryck"
       ],
@@ -3947,12 +4389,68 @@
       "plats": "Ringvägen 117, Stockholm",
       "lat": 59.307793574085366,
       "lon": 18.075422150118015,
-      "pris": null,
+      "pris": 200,
       "tags": [
         "mat & dryck",
         "guidade turer & föreläsningar"
       ],
       "url": "https://guidingstar.se/"
+    },
+    {
+      "id": "nacka-meditativt-broderi-workshop-med-maja-stjarna-2026-10-17",
+      "t": "Meditativt broderi - Workshop med Maja Stjärna",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/313199/rszww400h200-90/meditativt-broderi-1200x600_edited--1052884273-rszww400h200-90.jpg",
+      "datum": "2026-10-17",
+      "slut": null,
+      "tid": "10:00",
+      "plats": "Lamberts hörna, Dieselverkstaden, Nacka",
+      "lat": 59.3052383,
+      "lon": 18.1210463,
+      "pris": 400,
+      "tags": [
+        "nacka",
+        "dieselverkstaden",
+        "skapande verksamhet"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/meditativt-broderi-workshop-med-maja-stjarna/?occurrence=202610170800-202610171030"
+    },
+    {
+      "id": "nacka-keramik-helgkurs-for-vuxna-2026-10-17",
+      "t": "Keramik -helgkurs för vuxna",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/313204/rszww400h200-90/1200x600_keramik-melonmuggar_edited-1074367824-rszww400h200-90.jpg",
+      "datum": "2026-10-17",
+      "slut": null,
+      "tid": "10:00",
+      "plats": "Fritiofs formsal, Dieselverkstaden, Nacka",
+      "lat": 59.3052383,
+      "lon": 18.1210463,
+      "pris": 2995,
+      "tags": [
+        "nacka",
+        "dieselverkstaden",
+        "skapande verksamhet"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/keramik-helgkurs-for-vuxna/?occurrence=202610170800-202610171400"
+    },
+    {
+      "id": "nacka-melodikrysset-pa-biblioteket-2026-10-17",
+      "t": "Melodikrysset på biblioteket",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/311755/rszww400h200-90/melodikrysset-evenemang-ext-kal-2026--66844004-rszww400h200-90.png",
+      "datum": "2026-10-17",
+      "slut": null,
+      "tid": "10:04",
+      "plats": "Älta bibliotek, Nacka",
+      "lat": 59.2561243,
+      "lon": 18.1776164,
+      "pris": null,
+      "tags": [
+        "nacka",
+        "träffpunkt/kafé"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/melodikrysset-pa-biblioteket/?occurrence=202610170804-202610170900"
     },
     {
       "id": "tm-Z698xZq2Z16vAd-op7",
@@ -4216,7 +4714,7 @@
       "plats": "Konserthuset Stockholm, Stockholm",
       "lat": 59.33507609999999,
       "lon": 18.0629987,
-      "pris": null,
+      "pris": 695,
       "tags": [
         "scen & film",
         "opera & show"
@@ -4271,7 +4769,7 @@
       "plats": "Birger Jarls Torg, Stockholm",
       "lat": 59.324569598587466,
       "lon": 18.065215724826036,
-      "pris": null,
+      "pris": 200,
       "tags": [
         "guidade turer & föreläsningar"
       ],
@@ -4288,11 +4786,49 @@
       "plats": "Axel Landquists Park, mittemot Åsögatan 146, Stockholm",
       "lat": 59.31371312556496,
       "lon": 18.08072672136163,
-      "pris": null,
+      "pris": 200,
       "tags": [
         "guidade turer & föreläsningar"
       ],
       "url": "https://guidingstar.se/"
+    },
+    {
+      "id": "nacka-meditativt-broderi-workshop-med-maja-stjarna-2026-10-18",
+      "t": "Meditativt broderi - Workshop med Maja Stjärna",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/313199/rszww400h200-90/meditativt-broderi-1200x600_edited--1052884273-rszww400h200-90.jpg",
+      "datum": "2026-10-18",
+      "slut": null,
+      "tid": "10:00",
+      "plats": "Lamberts hörna, Dieselverkstaden, Nacka",
+      "lat": 59.3052383,
+      "lon": 18.1210463,
+      "pris": 400,
+      "tags": [
+        "nacka",
+        "dieselverkstaden",
+        "skapande verksamhet"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/meditativt-broderi-workshop-med-maja-stjarna/?occurrence=202610180800-202610181030"
+    },
+    {
+      "id": "nacka-keramik-helgkurs-for-vuxna-2026-10-18",
+      "t": "Keramik -helgkurs för vuxna",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/313204/rszww400h200-90/1200x600_keramik-melonmuggar_edited-1074367824-rszww400h200-90.jpg",
+      "datum": "2026-10-18",
+      "slut": null,
+      "tid": "10:00",
+      "plats": "Fritiofs formsal, Dieselverkstaden, Nacka",
+      "lat": 59.3052383,
+      "lon": 18.1210463,
+      "pris": 2995,
+      "tags": [
+        "nacka",
+        "dieselverkstaden",
+        "skapande verksamhet"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/keramik-helgkurs-for-vuxna/?occurrence=202610180800-202610181400"
     },
     {
       "id": "tm-Z698xZq2Z16vobepPk",
@@ -4310,6 +4846,41 @@
         "family"
       ],
       "url": "https://www.ticketmaster.se/event/babblarna--klonks-klapp-kalas-biljetter/1458096946"
+    },
+    {
+      "id": "nacka-oppet-i-hembygdsgarden2-2026-10-18",
+      "t": "Öppet i hembygdsgården",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/309593/rszww400h200-90/20250723_132312-1473413789-rszww400h200-90.jpg",
+      "datum": "2026-10-18",
+      "slut": null,
+      "tid": "11:00",
+      "plats": "Boo hembygdsgård, Nacka",
+      "lat": 59.327514,
+      "lon": 18.2368726,
+      "pris": 0,
+      "tags": [
+        "nacka"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/oppet-i-hembygdsgarden2/?occurrence=202610180900-202610181300"
+    },
+    {
+      "id": "nacka-skridskoskola-i-alta-ishall-2026-10-18",
+      "t": "Skridskoskola i Älta ishall",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/313232/rszww400h200-90/img_9015--1245976993-rszww400h200-90.jpg",
+      "datum": "2026-10-18",
+      "slut": "2026-12-20",
+      "tid": "11:00",
+      "plats": "Älta, Nacka",
+      "lat": 59.25737,
+      "lon": 18.1786579,
+      "pris": 1200,
+      "tags": [
+        "nacka",
+        "motion/hälsa"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/skridskoskola-i-alta-ishall/?occurrence=202610180900-202612201100"
     },
     {
       "id": "tm-Z698xZq2Z16vaxZ-3F",
@@ -4429,7 +5000,7 @@
       "plats": "Börsen (Hamburger Börs), Stockholm",
       "lat": 59.3305489,
       "lon": 18.0695397,
-      "pris": null,
+      "pris": 75,
       "tags": [
         "mässor",
         "sport & hälsa",
@@ -4540,7 +5111,7 @@
       "plats": "Kungliga Operan, Stockholm",
       "lat": 59.329565567583586,
       "lon": 18.069623549501244,
-      "pris": null,
+      "pris": 0,
       "tags": [
         "musik",
         "scen & film",
@@ -4597,13 +5168,67 @@
       "plats": "Teater Tre, Stockholm",
       "lat": 59.31769670886811,
       "lon": 18.055081618044085,
-      "pris": null,
+      "pris": 130,
       "tags": [
         "familj",
         "scen & film",
         "teater"
       ],
       "url": "https://kulturbiljetter.se/evenemang/5542/jag-kan-2-5-%C3%A5r"
+    },
+    {
+      "id": "nacka-en-ta-i-det-bla-babymalning-2026-10-20",
+      "t": "En tå i det blå - babymålning",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/308866/rszww400h200-90/entaidetbla-1200x600_edited--978950313-rszww400h200-90.jpg",
+      "datum": "2026-10-20",
+      "slut": null,
+      "tid": "10:00",
+      "plats": "Dieselverkstaden, Nacka",
+      "lat": 59.3052383,
+      "lon": 18.1210463,
+      "pris": 90,
+      "tags": [
+        "nacka",
+        "dieselverkstaden",
+        "skapande verksamhet"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/en-ta-i-det-bla-babymalning/?occurrence=202610200800-202610200900"
+    },
+    {
+      "id": "nacka-drop-in-syn-och-horselinstruktor-alta-2026-10-20",
+      "t": "Drop-in: Syn- och hörselinstruktör Älta",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/309715/rszww400h200-90/syn-och-horsel-drop-in--1822146363-rszww400h200-90.jpg",
+      "datum": "2026-10-20",
+      "slut": null,
+      "tid": "12:00",
+      "plats": "Kulturhuset Älta, Nacka",
+      "lat": 59.2565739,
+      "lon": 18.1775627,
+      "pris": 0,
+      "tags": [
+        "nacka"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/drop-in-syn-och-horselinstruktor-alta/?occurrence=202610201000-202610201100"
+    },
+    {
+      "id": "nacka-attentions-tisdags-drop-in-2026-10-20",
+      "t": "Attentions tisdags-drop in",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/310338/rszww400h200-90/92caa731-5ada-4708-832c-5cdb1fe4dd2d-tisdags-dropin--9175286-rszww400h200-90.png",
+      "datum": "2026-10-20",
+      "slut": null,
+      "tid": "14:00",
+      "plats": "Tillgänglighetsforum, Nacka",
+      "lat": 59.3086691,
+      "lon": 18.1627164,
+      "pris": 0,
+      "tags": [
+        "nacka",
+        "träffpunkt/kafé"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/attentions-tisdags-drop-in/?occurrence=202610201200-202610201400"
     },
     {
       "id": "tm-Z698xZq2Z16v-dxF17",
@@ -4622,6 +5247,62 @@
         "miscellaneous"
       ],
       "url": "https://www.ticketmaster.se/event/svartklubben-mat--musik-i-morker-biljetter/1843888284"
+    },
+    {
+      "id": "nacka-valkommen-till-en-traff-for-vuxna-med-adhdadd-2026-10-20",
+      "t": "Välkommen till en träff för vuxna med adhd/add",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/310341/rszww400h200-90/f3dae13c-a99f-45f3-a1ce-adhd--814951541-rszww400h200-90.png",
+      "datum": "2026-10-20",
+      "slut": null,
+      "tid": "18:00",
+      "plats": "Tillgänglighetsforum, Nacka",
+      "lat": 59.3086691,
+      "lon": 18.1627164,
+      "pris": null,
+      "tags": [
+        "nacka",
+        "träffpunkt/kafé",
+        "radgivning"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/valkommen-till-en-traff-for-vuxna-med-adhdadd/?occurrence=202610201600-202610201800"
+    },
+    {
+      "id": "nacka-ar-du-mor-eller-farforalder-till-nagon-med-adhd-eller-autism-2026-10-20",
+      "t": "Är du mor- eller farförälder till någon med adhd eller autism?",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/310344/rszww400h200-90/1eb71dec-4829-4014-8bb5-bdd089cbdc2b-mor-o-far--2132349172-rszww400h200-90.png",
+      "datum": "2026-10-20",
+      "slut": null,
+      "tid": "18:00",
+      "plats": "Tillgänglighetsforum, Nacka",
+      "lat": 59.3086691,
+      "lon": 18.1627164,
+      "pris": null,
+      "tags": [
+        "nacka",
+        "träffpunkt/kafé",
+        "radgivning"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/ar-du-mor-eller-farforalder-till-nagon-med-adhd-eller-autism/?occurrence=202610201600-202610201800"
+    },
+    {
+      "id": "nacka-samtalsgrupp-for-anhoriga-2026-10-20",
+      "t": "Samtalsgrupp för anhöriga",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/312086/rszww400h200-90/anhorigcenter-logga-knapp--805249548-rszww400h200-90.png",
+      "datum": "2026-10-20",
+      "slut": null,
+      "tid": "18:30",
+      "plats": "Träffpunkt Smedjan, nära Nacka Forum, Nacka",
+      "lat": 59.3085377,
+      "lon": 18.1622069,
+      "pris": null,
+      "tags": [
+        "nacka",
+        "träffpunkt/kafé"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/samtalsgrupp-for-anhoriga/?occurrence=202610201630-202610201830"
     },
     {
       "id": "tm-Z698xZq2Z16vkaPV4U",
@@ -4790,6 +5471,117 @@
       "url": "http://www.presentmakeriet.se"
     },
     {
+      "id": "nacka-jazziorerna-i-boo-folkets-hus-2026-10-21",
+      "t": "Jazziorerna i Boo Folkets Hus",
+      "e": "🎵",
+      "img": "https://www.nacka.se/filtered/313025/rszww400h200-90/_jazziorerna--2053556378-rszww400h200-90.jpg",
+      "datum": "2026-10-21",
+      "slut": null,
+      "tid": "11:00",
+      "plats": "Boo Folkets Hus, Nacka",
+      "lat": 59.3259819,
+      "lon": 18.2560756,
+      "pris": null,
+      "tags": [
+        "nacka",
+        "musik/konsert"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/jazziorerna-i-boo-folkets-hus/?occurrence=202610210900-202610211100"
+    },
+    {
+      "id": "nacka-lunchkoren-2026-10-21",
+      "t": "Lunchkören",
+      "e": "🎵",
+      "img": "https://www.nacka.se/filtered/311538/rszww400h200-90/lunchkoren-1200x600_edited-307794606-rszww400h200-90.jpg",
+      "datum": "2026-10-21",
+      "slut": null,
+      "tid": "12:00",
+      "plats": "Sveas salong, Dieselverkstaden, Nacka",
+      "lat": 59.3052383,
+      "lon": 18.1210463,
+      "pris": 200,
+      "tags": [
+        "nacka",
+        "dieselverkstaden",
+        "musik/konsert",
+        "vuxna"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/lunchkoren/?occurrence=202610211000-202610211045"
+    },
+    {
+      "id": "nacka-drop-in-anhorigstod-2026-10-21",
+      "t": "Drop-in anhörigstöd",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/312095/rszww400h200-90/anhorigcenter-logga-knapp-898657526-rszww400h200-90.png",
+      "datum": "2026-10-21",
+      "slut": null,
+      "tid": "13:00",
+      "plats": "Tillgänglighetsforum, nära Nacka Forum, Nacka",
+      "lat": 59.3086691,
+      "lon": 18.1627164,
+      "pris": null,
+      "tags": [
+        "nacka",
+        "träffpunkt/kafé"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/drop-in-anhorigstod/?occurrence=202610211100-202610211300"
+    },
+    {
+      "id": "nacka-laxhjalp-studiestod-spraktraning-2026-10-21",
+      "t": "Läxhjälp, studiestöd & språkträning",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/311752/rszww400h200-90/laxhjalp-ext-kal-a--440917605-rszww400h200-90.png",
+      "datum": "2026-10-21",
+      "slut": null,
+      "tid": "16:00",
+      "plats": "Älta bibliotek, Nacka",
+      "lat": 59.2561243,
+      "lon": 18.1776164,
+      "pris": null,
+      "tags": [
+        "nacka"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/laxhjalp-studiestod-spraktraning/?occurrence=202610211400-202610211600"
+    },
+    {
+      "id": "nacka-mediyoga-for-anhoriga-2026-10-21",
+      "t": "Mediyoga för anhöriga",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/312089/rszww400h200-90/anhorigcenter-logga-knapp-1404542069-rszww400h200-90.png",
+      "datum": "2026-10-21",
+      "slut": null,
+      "tid": "16:30",
+      "plats": "Träffpunkt Smedjan, nära Nacka Forum, Nacka",
+      "lat": 59.3085377,
+      "lon": 18.1622069,
+      "pris": null,
+      "tags": [
+        "nacka",
+        "motion/hälsa"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/mediyoga-for-anhoriga/?occurrence=202610211430-202610211600"
+    },
+    {
+      "id": "nacka-stickcafe-2026-10-21",
+      "t": "Stickcafé",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/311747/rszww400h200-90/stickcafe-ext-kal-a--169003494-rszww400h200-90.png",
+      "datum": "2026-10-21",
+      "slut": null,
+      "tid": "18:00",
+      "plats": "Älta bibliotek, Nacka",
+      "lat": 59.2561243,
+      "lon": 18.1776164,
+      "pris": null,
+      "tags": [
+        "nacka",
+        "skapande verksamhet",
+        "träffpunkt/kafé",
+        "vuxna"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/stickcafe/?occurrence=202610211600-202610211730"
+    },
+    {
       "id": "tm-Z698xZq2Z1kGorvA6",
       "t": " Bach / Ranelid / Rydvall / Härenstam - Människan är ett mirakel!",
       "e": "🎵",
@@ -4804,6 +5596,26 @@
         "music"
       ],
       "url": "https://www.ticketmaster.se/event/-bach-ranelid-rydvall-harenstam-manniskan-ar-ett-mirakel-biljetter/311781147"
+    },
+    {
+      "id": "nacka-opa-fashion-med-grind-art-club-2026-10-21",
+      "t": "Opa Fashion med Grind Art Club",
+      "e": "🎵",
+      "img": "https://www.nacka.se/filtered/313208/rszww400h200-90/opa-fashion--504127024-rszww400h200-90.jpg",
+      "datum": "2026-10-21",
+      "slut": null,
+      "tid": "19:00",
+      "plats": "Dieselverkstadens Stora scen, Nacka",
+      "lat": 59.3052383,
+      "lon": 18.1210463,
+      "pris": 250,
+      "tags": [
+        "nacka",
+        "teater",
+        "dieselverkstaden",
+        "musikal"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/opa-fashion-med-grind-art-club/?occurrence=202610211700-202610211750"
     },
     {
       "id": "tm-Z698xZq2Z1kx_axAN",
@@ -4963,7 +5775,7 @@
       "plats": "Söderhöjdskyrkan, Stockholm",
       "lat": 59.31940292907851,
       "lon": 18.063058256201003,
-      "pris": null,
+      "pris": 2150,
       "tags": [
         "musik",
         "indie & punk"
@@ -5016,7 +5828,7 @@
       "plats": "Spårvägsmuseet, Stockholm",
       "lat": 59.35815854433838,
       "lon": 18.091995351990676,
-      "pris": null,
+      "pris": 0,
       "tags": [
         "guidade turer & föreläsningar"
       ],
@@ -5033,7 +5845,7 @@
       "plats": "Dinos Experience, Stockholm",
       "lat": 59.3261457,
       "lon": 18.0814368,
-      "pris": null,
+      "pris": 195,
       "tags": [
         "utställningar",
         "familj",
@@ -5176,7 +5988,7 @@
       "plats": "Avicii Arena, Johanneshov",
       "lat": 59.29353277718874,
       "lon": 18.083555997467027,
-      "pris": null,
+      "pris": 700,
       "tags": [
         "musik",
         "jazz & blues"
@@ -5361,11 +6173,46 @@
       "plats": "Långholmens Fängelsemuseum, Stockholm",
       "lat": 59.32135524196613,
       "lon": 18.025380595599017,
-      "pris": null,
+      "pris": 260,
       "tags": [
         "guidade turer & föreläsningar"
       ],
       "url": "https://langholmen.com/upplev/guidningar/"
+    },
+    {
+      "id": "nacka-mediyoga-for-anhoriga2-2026-10-23",
+      "t": "MediYoga för anhöriga",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/312280/rszww400h200-90/symbol-anhorigcenter-kalendarium-1444303578-rszww400h200-90.png",
+      "datum": "2026-10-23",
+      "slut": "2026-09-23",
+      "tid": "10:00",
+      "plats": "Träffpunkt Smedjan, Nacka",
+      "lat": 59.3085377,
+      "lon": 18.1622069,
+      "pris": 0,
+      "tags": [
+        "nacka",
+        "motion/hälsa"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/mediyoga-for-anhoriga2/?occurrence=202610230800-202609230930"
+    },
+    {
+      "id": "nacka-mogendans-i-boo-folkets-2026-10-23",
+      "t": "Mogendans i Boo Folkets Hus",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/313015/rszww400h200-90/mogendans-m-alla-datum-ht26-1080x1080-616716900-rszww400h200-90.jpg",
+      "datum": "2026-10-23",
+      "slut": null,
+      "tid": "13:00",
+      "plats": "Boo Folkets Hus, Nacka",
+      "lat": 59.3259819,
+      "lon": 18.2560756,
+      "pris": 100,
+      "tags": [
+        "nacka"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/mogendans-i-boo-folkets/?occurrence=202610231100-202610231400"
     },
     {
       "id": "tm-Z698xZq2Z1k400Mk9",
@@ -5613,7 +6460,7 @@
       "plats": "Bromma Musikscen, Stockholm",
       "lat": 59.3468993,
       "lon": 17.9485834,
-      "pris": null,
+      "pris": 150,
       "tags": [
         "musik",
         "scen & film",
@@ -5632,7 +6479,7 @@
       "plats": "Allhelgonakyrkan, Stockholm",
       "lat": 59.31042947308646,
       "lon": 18.07081403120924,
-      "pris": null,
+      "pris": 170,
       "tags": [
         "musik",
         "klassiskt & konstmusik"
@@ -5685,7 +6532,7 @@
       "plats": "Solnahallen, Solna",
       "lat": 59.3589844,
       "lon": 17.9889763,
-      "pris": null,
+      "pris": 180,
       "tags": [
         "mässor",
         "sport & hälsa",
@@ -5705,7 +6552,7 @@
       "plats": "Bartenderlab, Stockholm",
       "lat": 59.313609399513155,
       "lon": 18.069488684679158,
-      "pris": null,
+      "pris": 0,
       "tags": [
         "klubbar & fester",
         "mat & dryck"
@@ -5801,7 +6648,7 @@
       "plats": "Solnahallen, Solna",
       "lat": 59.35888873383351,
       "lon": 17.988275921898094,
-      "pris": null,
+      "pris": 180,
       "tags": [
         "mässor",
         "sport & hälsa",
@@ -5856,7 +6703,7 @@
       "plats": "Kungsholmen, Stockholm",
       "lat": 59.333333,
       "lon": 18.033333,
-      "pris": null,
+      "pris": 549,
       "tags": [
         "mat & dryck"
       ],
@@ -5873,7 +6720,7 @@
       "plats": "Vasastan, Stockholm",
       "lat": 59.345710000000054,
       "lon": 18.04985000000005,
-      "pris": null,
+      "pris": 549,
       "tags": [
         "mat & dryck"
       ],
@@ -5890,7 +6737,7 @@
       "plats": "Nationalmuseum, Stockholm",
       "lat": 59.32829818191394,
       "lon": 18.07773899197474,
-      "pris": null,
+      "pris": 0,
       "tags": [
         "utställningar",
         "familj",
@@ -5910,7 +6757,7 @@
       "plats": "Skansen Open-Air Museum, Stockholm",
       "lat": 59.32442360526156,
       "lon": 18.100980249280553,
-      "pris": null,
+      "pris": 0,
       "tags": [
         "familj"
       ],
@@ -5927,7 +6774,7 @@
       "plats": "Chisel Design AB, Spånga",
       "lat": 59.39304490545442,
       "lon": 17.929084933329875,
-      "pris": null,
+      "pris": 1000,
       "tags": [
         "mat & dryck",
         "nätverkande"
@@ -5998,7 +6845,7 @@
       "plats": "Ekonomiska museet – Kungliga myntkabinettet, Stockholm",
       "lat": 59.33477609387356,
       "lon": 18.09097066432747,
-      "pris": null,
+      "pris": 180,
       "tags": [
         "familj"
       ],
@@ -6032,7 +6879,7 @@
       "plats": "Moderna Museet, Stockholm",
       "lat": 59.32591579357438,
       "lon": 18.084134635554676,
-      "pris": null,
+      "pris": 140,
       "tags": [
         "familj"
       ],
@@ -6055,6 +6902,24 @@
         "familj"
       ],
       "url": "https://www.tekniskamuseet.se/hostlov-pa-tekniska-museet/"
+    },
+    {
+      "id": "nacka-melodikrysset-pa-biblioteket-2026-10-24",
+      "t": "Melodikrysset på biblioteket",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/311755/rszww400h200-90/melodikrysset-evenemang-ext-kal-2026--66844004-rszww400h200-90.png",
+      "datum": "2026-10-24",
+      "slut": null,
+      "tid": "10:04",
+      "plats": "Älta bibliotek, Nacka",
+      "lat": 59.2561243,
+      "lon": 18.1776164,
+      "pris": null,
+      "tags": [
+        "nacka",
+        "träffpunkt/kafé"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/melodikrysset-pa-biblioteket/?occurrence=202610240804-202610240900"
     },
     {
       "id": "tm-Z698xZq2Z16vF4AU_K",
@@ -6334,7 +7199,7 @@
       "plats": "Confidencen, Solna",
       "lat": 59.386462463175974,
       "lon": 18.017660317026976,
-      "pris": null,
+      "pris": 0,
       "tags": [
         "familj",
         "guidade turer & föreläsningar",
@@ -6353,7 +7218,7 @@
       "plats": "Solnahallen, Solna",
       "lat": 59.3589844,
       "lon": 17.9889763,
-      "pris": null,
+      "pris": 180,
       "tags": [
         "mässor",
         "musik",
@@ -6397,6 +7262,23 @@
         "guidade turer & föreläsningar"
       ],
       "url": "https://millesgarden.entryevent.se/ticketshop/events/familjevisning-myter-pa-millesgarden"
+    },
+    {
+      "id": "nacka-oppet-i-hembygdsgarden2-2026-10-25",
+      "t": "Öppet i hembygdsgården",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/309593/rszww400h200-90/20250723_132312-1473413789-rszww400h200-90.jpg",
+      "datum": "2026-10-25",
+      "slut": null,
+      "tid": "11:00",
+      "plats": "Boo hembygdsgård, Nacka",
+      "lat": 59.327514,
+      "lon": 18.2368726,
+      "pris": 0,
+      "tags": [
+        "nacka"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/oppet-i-hembygdsgarden2/?occurrence=202610251000-202610251400"
     },
     {
       "id": "tm-Z698xZq2Z16eZeoP86",
@@ -6518,7 +7400,7 @@
       "plats": "Nobel Prize Museum, Stockholm",
       "lat": 59.325179108104294,
       "lon": 18.070780084501394,
-      "pris": null,
+      "pris": 0,
       "tags": [
         "familj",
         "vetenskap & it"
@@ -6614,6 +7496,150 @@
       "url": "https://www.riksdagen.se/sv/kontakt-och-besok/besok-riksdagen/"
     },
     {
+      "id": "nacka-hostlovslager-hos-nacka-dans-och-teater-kulturskola-2026-10-26",
+      "t": "Höstlovsläger hos Nacka dans och teater Kulturskola",
+      "e": "🎭",
+      "img": "https://www.nacka.se/filtered/313226/rszww400h200-90/ndtk_hostlovslager_1920x1080--1531061804-rszww400h200-90.jpg",
+      "datum": "2026-10-26",
+      "slut": "2026-10-29",
+      "tid": "09:00",
+      "plats": "Boo Folkets Hus, Nacka",
+      "lat": 59.3259819,
+      "lon": 18.2560756,
+      "pris": 995,
+      "tags": [
+        "nacka",
+        "teater",
+        "dans",
+        "unga"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/hostlovslager-hos-nacka-dans-och-teater-kulturskola/?occurrence=202610260800-202610291430"
+    },
+    {
+      "id": "nacka-animation-10-11-ar-hostlovskurs-2026-10-26",
+      "t": "Animation 10-11 år, höstlovskurs",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/313133/rszww400h200-90/animation-hosltov26-10-11-1200x600_edited-25588274-rszww400h200-90.jpg",
+      "datum": "2026-10-26",
+      "slut": null,
+      "tid": "09:30",
+      "plats": "Märtas målarsal, Dieselverkstaden, Nacka",
+      "lat": 59.3055552,
+      "lon": 18.1213083,
+      "pris": 950,
+      "tags": [
+        "nacka",
+        "dieselverkstadens kurser",
+        "barn"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/animation-10-11-ar-hostlovskurs/?occurrence=202610260830-202610261100"
+    },
+    {
+      "id": "nacka-turboteater-10-11ar-hostlovskurs-2026-10-26",
+      "t": "Turboteater 10-11år - Höstlovskurs",
+      "e": "🎭",
+      "img": "https://www.nacka.se/filtered/313211/rszww400h200-90/teater-hosltov26-10-11-1200x600_edited--1649310127-rszww400h200-90.jpg",
+      "datum": "2026-10-26",
+      "slut": null,
+      "tid": "09:30",
+      "plats": "Luigis lokal och Lilla scen, Nacka",
+      "lat": 59.3052383,
+      "lon": 18.1210463,
+      "pris": 950,
+      "tags": [
+        "nacka",
+        "teater",
+        "dieselverkstaden",
+        "dieselverkstadens kurser",
+        "barn"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/turboteater-10-11ar-hostlovskurs/?occurrence=202610260830-202610261100"
+    },
+    {
+      "id": "nacka-keramik-10-11-ar-hostlovskurs-2026-10-26",
+      "t": "Keramik 10-11 år - Höstlovskurs",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/313217/rszww400h200-90/keramik-hosltov26-10-11-1200x600_edited--794666158-rszww400h200-90.jpg",
+      "datum": "2026-10-26",
+      "slut": null,
+      "tid": "09:30",
+      "plats": "Fritiofs formsal, Dieselverkstaden, Nacka",
+      "lat": 59.3052383,
+      "lon": 18.1210463,
+      "pris": 950,
+      "tags": [
+        "nacka",
+        "dieselverkstaden",
+        "dieselverkstadens kurser",
+        "skapande verksamhet",
+        "barn"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/keramik-10-11-ar-hostlovskurs/?occurrence=202610260830-202610261100"
+    },
+    {
+      "id": "nacka-turboteater-12-13-ar-hostlovskurs-2026-10-26",
+      "t": "Turboteater 12-13 år - Höstlovskurs",
+      "e": "🎭",
+      "img": "https://www.nacka.se/filtered/313214/rszww400h200-90/teater-11-13-ht26-1200x600_edited-655490002-rszww400h200-90.jpg",
+      "datum": "2026-10-26",
+      "slut": null,
+      "tid": "13:30",
+      "plats": "Luigis lokal och Lilla scen, Dieselverkstaden, Nacka",
+      "lat": 59.3052383,
+      "lon": 18.1210463,
+      "pris": 950,
+      "tags": [
+        "nacka",
+        "teater",
+        "dieselverkstaden",
+        "dieselverkstadens kurser",
+        "unga",
+        "barn"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/turboteater-12-13-ar-hostlovskurs/?occurrence=202610261230-202610261500"
+    },
+    {
+      "id": "nacka-keramik-12-13-ar-hostlovskurs-2026-10-26",
+      "t": "Keramik 12-13 år - Höstlovskurs",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/313220/rszww400h200-90/keramik-hosltov26-12-13-1200x600_edited--1156938925-rszww400h200-90.jpg",
+      "datum": "2026-10-26",
+      "slut": null,
+      "tid": "13:30",
+      "plats": "Fritiofs formsal, Dieselverkstaden, Nacka",
+      "lat": 59.3052383,
+      "lon": 18.1210463,
+      "pris": 950,
+      "tags": [
+        "nacka",
+        "dieselverkstaden",
+        "dieselverkstadens kurser",
+        "skapande verksamhet",
+        "unga",
+        "barn"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/keramik-12-13-ar-hostlovskurs/?occurrence=202610261230-202610261500"
+    },
+    {
+      "id": "nacka-animation-12-13-ar-hostlovskurs-2026-10-26",
+      "t": "Animation 12-13 år, Höstlovskurs",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/313136/rszww400h200-90/animation-hosltov26-12-13-1200x600_edited-1945021618-rszww400h200-90.jpg",
+      "datum": "2026-10-26",
+      "slut": null,
+      "tid": "13:30",
+      "plats": "Dieselverkstaden, Nacka",
+      "lat": 59.3052383,
+      "lon": 18.1210463,
+      "pris": 950,
+      "tags": [
+        "nacka",
+        "dieselverkstadens kurser",
+        "barn"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/animation-12-13-ar-hostlovskurs/?occurrence=202610261230-202610261500"
+    },
+    {
       "id": "tm-Z698xZq2Z1kuoe383",
       "t": "Deep Purple, Platinum tickets",
       "e": "🎵",
@@ -6696,7 +7722,7 @@
       "plats": "Skärholmen, Stockholm",
       "lat": 59.27591779999999,
       "lon": 17.904494,
-      "pris": null,
+      "pris": 0,
       "tags": [
         "familj",
         "festivaler",
@@ -6734,7 +7760,7 @@
       "plats": "Hägerstensåsens medborgarhus, Hägersten",
       "lat": 59.2971547177514,
       "lon": 17.98396938386557,
-      "pris": null,
+      "pris": 0,
       "tags": [
         "mat & dryck",
         "guidade turer & föreläsningar",
@@ -6754,7 +7780,7 @@
       "plats": "Kulturhuset Stadsteatern, Stockholm",
       "lat": 59.33207279999999,
       "lon": 18.0649222,
-      "pris": null,
+      "pris": 0,
       "tags": [
         "utställningar",
         "familj",
@@ -6773,7 +7799,7 @@
       "plats": "Nordiska museet, Stockholm",
       "lat": 59.32899899395467,
       "lon": 18.09425264701842,
-      "pris": null,
+      "pris": 280,
       "tags": [
         "utställningar",
         "familj"
@@ -6850,6 +7876,24 @@
       "url": "https://artipelag.se/pa-gang/aktivitet/hostlovsverkstad-skapa-din-egen-ansiktsmask/"
     },
     {
+      "id": "nacka-attentions-tisdags-drop-in-2026-10-27",
+      "t": "Attentions tisdags-drop in",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/310338/rszww400h200-90/92caa731-5ada-4708-832c-5cdb1fe4dd2d-tisdags-dropin--9175286-rszww400h200-90.png",
+      "datum": "2026-10-27",
+      "slut": null,
+      "tid": "14:00",
+      "plats": "Tillgänglighetsforum, Nacka",
+      "lat": 59.3086691,
+      "lon": 18.1627164,
+      "pris": 0,
+      "tags": [
+        "nacka",
+        "träffpunkt/kafé"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/attentions-tisdags-drop-in/?occurrence=202610271300-202610271500"
+    },
+    {
       "id": "tm-Z698xZq2Z1ka7ao1K",
       "t": "Svartklubben - Mat & Musik i Mörker",
       "e": "🎭",
@@ -6914,7 +7958,7 @@
       "plats": "Teater Bristol, Sundbyberg",
       "lat": 59.363502929622086,
       "lon": 17.96688245514727,
-      "pris": null,
+      "pris": 195,
       "tags": [
         "scen & film",
         "standup & spoken word"
@@ -6950,7 +7994,7 @@
       "plats": "Södermalm, Stockholm",
       "lat": 59.3186185,
       "lon": 18.0732852,
-      "pris": null,
+      "pris": 150,
       "tags": [
         "familj",
         "guidade turer & föreläsningar"
@@ -6968,13 +8012,49 @@
       "plats": "Artipelag, Gustavsberg",
       "lat": 59.306526942787,
       "lon": 18.346789366727137,
-      "pris": null,
+      "pris": 125,
       "tags": [
         "mat & dryck",
         "utställningar",
         "nätverkande"
       ],
       "url": "https://artipelag.se/pa-gang/aktivitet/after-hours-onsdagskvallar-pa-artipelag/"
+    },
+    {
+      "id": "nacka-boktipstraff-skrack-och-spanning-2026-10-28",
+      "t": "Boktipsträff: Skräck och spänning",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/311979/rszww400h200-90/elg21-halloween-4537430-581053819-rszww400h200-90.jpg",
+      "datum": "2026-10-28",
+      "slut": null,
+      "tid": "16:00",
+      "plats": "Nacka Forum bibliotek, Nacka",
+      "lat": 59.3088385,
+      "lon": 18.1647532,
+      "pris": null,
+      "tags": [
+        "nacka",
+        "träffpunkt/kafé"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/boktipstraff-skrack-och-spanning/?occurrence=202610281500-202610281600"
+    },
+    {
+      "id": "nacka-mediyoga-for-anhoriga-2026-10-28",
+      "t": "Mediyoga för anhöriga",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/312089/rszww400h200-90/anhorigcenter-logga-knapp-1404542069-rszww400h200-90.png",
+      "datum": "2026-10-28",
+      "slut": null,
+      "tid": "16:30",
+      "plats": "Träffpunkt Smedjan, nära Nacka Forum, Nacka",
+      "lat": 59.3085377,
+      "lon": 18.1622069,
+      "pris": null,
+      "tags": [
+        "nacka",
+        "motion/hälsa"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/mediyoga-for-anhoriga/?occurrence=202610281530-202610281700"
     },
     {
       "id": "tm-Z698xZq2Z1kpb1v7M",
@@ -6993,6 +8073,25 @@
         "alternative rock"
       ],
       "url": "https://www.ticketmaster.se/event/dj-krush-biljetter/598281137"
+    },
+    {
+      "id": "nacka-arkivbio-dieselverkstaden-2026-10-28",
+      "t": "Arkivbio Dieselverkstaden",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/313229/rszww400h200-90/arkivbio-ht26-1200x600_edited--794732332-rszww400h200-90.jpg",
+      "datum": "2026-10-28",
+      "slut": null,
+      "tid": "18:30",
+      "plats": "Stora scen, Dieselverkstaden, Nacka",
+      "lat": 59.3052383,
+      "lon": 18.1210463,
+      "pris": 0,
+      "tags": [
+        "nacka",
+        "film",
+        "dieselverkstaden"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/arkivbio-dieselverkstaden/?occurrence=202610281730-202610282100"
     },
     {
       "id": "vs-17494",
@@ -7123,6 +8222,42 @@
         "familj"
       ],
       "url": "https://stadsmuseet.stockholm/aktuellt/kalendarium/2026/10/rollspel-pa-hostlovet/"
+    },
+    {
+      "id": "nacka-rollspel-pa-hostlovet-drakar-och-demoner-2026-10-29",
+      "t": "Rollspel på höstlovet: Drakar och demoner",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/313890/rszww400h200-90/rollspel-ext-kal--1933829435-rszww400h200-90.png",
+      "datum": "2026-10-29",
+      "slut": null,
+      "tid": "10:00",
+      "plats": "Älta bibliotek, Nacka",
+      "lat": 59.2561243,
+      "lon": 18.1776164,
+      "pris": null,
+      "tags": [
+        "nacka",
+        "barn"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/rollspel-pa-hostlovet-drakar-och-demoner/?occurrence=202610290900-202610291100"
+    },
+    {
+      "id": "nacka-torsdagsforelasningar-for-anhoriga-2026-10-29",
+      "t": "Torsdagsföreläsningar för anhöriga",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/310981/rszww400h200-90/symbol-anhorigcenter-kalendarium--441400549-rszww400h200-90.png",
+      "datum": "2026-10-29",
+      "slut": null,
+      "tid": "10:30",
+      "plats": "Träffpunkt Smedjan, Nacka",
+      "lat": 59.3085936,
+      "lon": 18.1625344,
+      "pris": null,
+      "tags": [
+        "nacka",
+        "föresläsning/samtal"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/torsdagsforelasningar-for-anhoriga/?occurrence=202610290930-202610291100"
     },
     {
       "id": "tm-Z698xZq2Z1k40-_7b",
@@ -7694,7 +8829,7 @@
       "plats": "Banan Kompaniet, Stockholm",
       "lat": 59.34161103299894,
       "lon": 18.11852541664547,
-      "pris": null,
+      "pris": 550,
       "tags": [
         "klubbar & fester",
         "festivaler",
@@ -7803,7 +8938,7 @@
       "plats": "Hobo Stockholm, Stockholm",
       "lat": 59.330859062881615,
       "lon": 18.066927929440027,
-      "pris": null,
+      "pris": 0,
       "tags": [
         "klubbar & fester"
       ],
@@ -7820,7 +8955,7 @@
       "plats": "Minnesstenen i Fria Ukrainas plats (Mariebergsparken), Stockholm",
       "lat": 59.3147274,
       "lon": 18.0949018,
-      "pris": null,
+      "pris": 200,
       "tags": [
         "guidade turer & föreläsningar"
       ],
@@ -7861,6 +8996,24 @@
         "guidade turer & föreläsningar"
       ],
       "url": "https://www.riksdagen.se/sv/kontakt-och-besok/besok-riksdagen/"
+    },
+    {
+      "id": "nacka-melodikrysset-pa-biblioteket-2026-10-31",
+      "t": "Melodikrysset på biblioteket",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/311755/rszww400h200-90/melodikrysset-evenemang-ext-kal-2026--66844004-rszww400h200-90.png",
+      "datum": "2026-10-31",
+      "slut": null,
+      "tid": "10:04",
+      "plats": "Älta bibliotek, Nacka",
+      "lat": 59.2561243,
+      "lon": 18.1776164,
+      "pris": null,
+      "tags": [
+        "nacka",
+        "träffpunkt/kafé"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/melodikrysset-pa-biblioteket/?occurrence=202610310904-202610311000"
     },
     {
       "id": "tm-Z698xZq2Z1k47GIpZ",
@@ -7969,6 +9122,26 @@
         "restaurant"
       ],
       "url": "https://www.ticketmaster.se/event/svartklubben-mat--musik-i-morker-biljetter/1433889058"
+    },
+    {
+      "id": "nacka-nux-brux-norrdans-2026-10-31",
+      "t": "Núx brúx - Norrdans",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/308885/rszww400h200-90/dieselverkstaden-nb-1200x600_edited--1872433318-rszww400h200-90.png",
+      "datum": "2026-10-31",
+      "slut": null,
+      "tid": "18:00",
+      "plats": "Dieselverkstaden, Nacka",
+      "lat": 59.3052383,
+      "lon": 18.1210463,
+      "pris": 260,
+      "tags": [
+        "nacka",
+        "dieselverkstaden",
+        "dans",
+        "vuxna"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/nux-brux-norrdans/?occurrence=202610311700-202610311805"
     },
     {
       "id": "tm-Z698xZq2Z16vevG94f",
@@ -8196,7 +9369,7 @@
       "plats": "Minnesstenen i Fria Ukrainas plats (Mariebergsparken), Stockholm",
       "lat": 59.3261364,
       "lon": 18.0118178,
-      "pris": null,
+      "pris": 200,
       "tags": [
         "guidade turer & föreläsningar"
       ],
@@ -8213,7 +9386,7 @@
       "plats": "Hornsbruksgatan 19, Stockholm",
       "lat": 59.31608071984542,
       "lon": 18.03563384247741,
-      "pris": null,
+      "pris": 200,
       "tags": [
         "guidade turer & föreläsningar"
       ],
@@ -8237,6 +9410,23 @@
         "konst & kultur"
       ],
       "url": "http://www.presentmakeriet.se"
+    },
+    {
+      "id": "nacka-oppet-i-hembygdsgarden2-2026-11-01",
+      "t": "Öppet i hembygdsgården",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/309593/rszww400h200-90/20250723_132312-1473413789-rszww400h200-90.jpg",
+      "datum": "2026-11-01",
+      "slut": null,
+      "tid": "11:00",
+      "plats": "Boo hembygdsgård, Nacka",
+      "lat": 59.327514,
+      "lon": 18.2368726,
+      "pris": 0,
+      "tags": [
+        "nacka"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/oppet-i-hembygdsgarden2/?occurrence=202611011000-202611011400"
     },
     {
       "id": "tm-Z698xZq2Z16v4N0yrp",
@@ -8381,6 +9571,43 @@
       "url": "https://jonassodergrenschool.com/"
     },
     {
+      "id": "nacka-en-ta-i-det-bla-babymalning-2026-11-03",
+      "t": "En tå i det blå - babymålning",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/308866/rszww400h200-90/entaidetbla-1200x600_edited--978950313-rszww400h200-90.jpg",
+      "datum": "2026-11-03",
+      "slut": null,
+      "tid": "10:00",
+      "plats": "Dieselverkstaden, Nacka",
+      "lat": 59.3052383,
+      "lon": 18.1210463,
+      "pris": 90,
+      "tags": [
+        "nacka",
+        "dieselverkstaden",
+        "skapande verksamhet"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/en-ta-i-det-bla-babymalning/?occurrence=202611030900-202611031000"
+    },
+    {
+      "id": "nacka-attentions-tisdags-drop-in-2026-11-03",
+      "t": "Attentions tisdags-drop in",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/310338/rszww400h200-90/92caa731-5ada-4708-832c-5cdb1fe4dd2d-tisdags-dropin--9175286-rszww400h200-90.png",
+      "datum": "2026-11-03",
+      "slut": null,
+      "tid": "14:00",
+      "plats": "Tillgänglighetsforum, Nacka",
+      "lat": 59.3086691,
+      "lon": 18.1627164,
+      "pris": 0,
+      "tags": [
+        "nacka",
+        "träffpunkt/kafé"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/attentions-tisdags-drop-in/?occurrence=202611031300-202611031500"
+    },
+    {
       "id": "tm-Z698xZq2Z1kQbatuI",
       "t": "Alice i Underlandet Cirkusshow",
       "e": "🎭",
@@ -8415,6 +9642,24 @@
         "restaurant"
       ],
       "url": "https://www.ticketmaster.se/event/svartklubben-mat--musik-i-morker-biljetter/403771663"
+    },
+    {
+      "id": "nacka-samtalsgrupp-for-anhoriga-2026-11-03",
+      "t": "Samtalsgrupp för anhöriga",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/312086/rszww400h200-90/anhorigcenter-logga-knapp--805249548-rszww400h200-90.png",
+      "datum": "2026-11-03",
+      "slut": null,
+      "tid": "18:30",
+      "plats": "Träffpunkt Smedjan, nära Nacka Forum, Nacka",
+      "lat": 59.3085377,
+      "lon": 18.1622069,
+      "pris": null,
+      "tags": [
+        "nacka",
+        "träffpunkt/kafé"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/samtalsgrupp-for-anhoriga/?occurrence=202611031730-202611031930"
     },
     {
       "id": "vs-15134",
@@ -8524,6 +9769,41 @@
         "klassiskt & konstmusik"
       ],
       "url": "https://stockholmchambermusic.se/"
+    },
+    {
+      "id": "nacka-jazziorerna-i-boo-folkets-hus-2026-11-04",
+      "t": "Jazziorerna i Boo Folkets Hus",
+      "e": "🎵",
+      "img": "https://www.nacka.se/filtered/313025/rszww400h200-90/_jazziorerna--2053556378-rszww400h200-90.jpg",
+      "datum": "2026-11-04",
+      "slut": null,
+      "tid": "11:00",
+      "plats": "Boo Folkets Hus, Nacka",
+      "lat": 59.3259819,
+      "lon": 18.2560756,
+      "pris": null,
+      "tags": [
+        "nacka",
+        "musik/konsert"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/jazziorerna-i-boo-folkets-hus/?occurrence=202611041000-202611041200"
+    },
+    {
+      "id": "nacka-laxhjalp-studiestod-spraktraning-2026-11-04",
+      "t": "Läxhjälp, studiestöd & språkträning",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/311752/rszww400h200-90/laxhjalp-ext-kal-a--440917605-rszww400h200-90.png",
+      "datum": "2026-11-04",
+      "slut": null,
+      "tid": "16:00",
+      "plats": "Älta bibliotek, Nacka",
+      "lat": 59.2561243,
+      "lon": 18.1776164,
+      "pris": null,
+      "tags": [
+        "nacka"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/laxhjalp-studiestod-spraktraning/?occurrence=202611041500-202611041700"
     },
     {
       "id": "tm-Z698xZq2Z1k8V4oFs",
@@ -8986,7 +10266,7 @@
       "plats": "Zätateatern, Stockholm",
       "lat": 59.33876868772262,
       "lon": 18.06013816877274,
-      "pris": null,
+      "pris": 175,
       "tags": [
         "festivaler",
         "musik",
@@ -8994,6 +10274,60 @@
         "opera & show"
       ],
       "url": "https://musikal-30-dagar-kvar.lovable.app/"
+    },
+    {
+      "id": "nacka-mediyoga-for-anhoriga2-2026-11-06",
+      "t": "MediYoga för anhöriga",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/312280/rszww400h200-90/symbol-anhorigcenter-kalendarium-1444303578-rszww400h200-90.png",
+      "datum": "2026-11-06",
+      "slut": null,
+      "tid": "10:00",
+      "plats": "Träffpunkt Smedjan, Nacka",
+      "lat": 59.3085377,
+      "lon": 18.1622069,
+      "pris": 0,
+      "tags": [
+        "nacka",
+        "motion/hälsa"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/mediyoga-for-anhoriga2/?occurrence=202611060900-202611061030"
+    },
+    {
+      "id": "nacka-barnrytmik-1-4-ar-2026-11-06",
+      "t": "Barnrytmik 1-4 år",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/308861/rszww400h200-90/barnrytmik-1-4-rytmik-1200x600-ht25_edited-1610175830-rszww400h200-90.jpg",
+      "datum": "2026-11-06",
+      "slut": null,
+      "tid": "10:15",
+      "plats": "Dieselverkstaden, Nacka",
+      "lat": 59.3052383,
+      "lon": 18.1210463,
+      "pris": 160,
+      "tags": [
+        "nacka",
+        "barnrytmik",
+        "dieselverkstaden"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/barnrytmik-1-4-ar/?occurrence=202611060915-202611061000"
+    },
+    {
+      "id": "nacka-mogendans-i-boo-folkets-2026-11-06",
+      "t": "Mogendans i Boo Folkets Hus",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/313015/rszww400h200-90/mogendans-m-alla-datum-ht26-1080x1080-616716900-rszww400h200-90.jpg",
+      "datum": "2026-11-06",
+      "slut": null,
+      "tid": "13:00",
+      "plats": "Boo Folkets Hus, Nacka",
+      "lat": 59.3259819,
+      "lon": 18.2560756,
+      "pris": 100,
+      "tags": [
+        "nacka"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/mogendans-i-boo-folkets/?occurrence=202611061200-202611061500"
     },
     {
       "id": "tm-Z698xZq2Z16v_YPe1Z",
@@ -9267,6 +10601,24 @@
       "url": "https://www.stockholmopen.se/en"
     },
     {
+      "id": "nacka-melodikrysset-pa-biblioteket-2026-11-07",
+      "t": "Melodikrysset på biblioteket",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/311755/rszww400h200-90/melodikrysset-evenemang-ext-kal-2026--66844004-rszww400h200-90.png",
+      "datum": "2026-11-07",
+      "slut": null,
+      "tid": "10:04",
+      "plats": "Älta bibliotek, Nacka",
+      "lat": 59.2561243,
+      "lon": 18.1776164,
+      "pris": null,
+      "tags": [
+        "nacka",
+        "träffpunkt/kafé"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/melodikrysset-pa-biblioteket/?occurrence=202611070904-202611071000"
+    },
+    {
       "id": "tm-Z698xZq2Z16vAw7KZd",
       "t": "Stadsvandring med Christopher O'Regan - Grändernas hemligheter",
       "e": "✨",
@@ -9300,6 +10652,46 @@
         "miscellaneous"
       ],
       "url": "https://www.ticketmaster.se/event/mamma-mia-the-party-biljetter/1387233237"
+    },
+    {
+      "id": "nacka-familjekeramik-en-keramikworkshop-for-barn-och-vuxna-tillsammans-2026-11-07",
+      "t": "Familjekeramik - En keramikworkshop för barn och vuxna tillsammans!",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/308851/rszww400h200-90/familjekeramik-host-1200x600_edited--1354550444-rszww400h200-90.jpg",
+      "datum": "2026-11-07",
+      "slut": null,
+      "tid": "13:00",
+      "plats": "Dieselverkstaden, Nacka",
+      "lat": 59.3052383,
+      "lon": 18.1210463,
+      "pris": 450,
+      "tags": [
+        "nacka",
+        "dieselverkstaden",
+        "dieselverkstadens kurser",
+        "skapande verksamhet"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/familjekeramik-en-keramikworkshop-for-barn-och-vuxna-tillsammans/?occurrence=202611071200-202611071400"
+    },
+    {
+      "id": "nacka-familjelordag-alea-iacta-est-2026-11-07",
+      "t": "Familjelördag: Alea iacta est",
+      "e": "🎭",
+      "img": "https://www.nacka.se/filtered/313223/rszww400h200-90/alea-iacta-est-1200x600_edited-1695686484-rszww400h200-90.jpg",
+      "datum": "2026-11-07",
+      "slut": null,
+      "tid": "13:00",
+      "plats": "Dieselverkstaden, Nacka",
+      "lat": 59.3052383,
+      "lon": 18.1210463,
+      "pris": 140,
+      "tags": [
+        "nacka",
+        "teater",
+        "dieselverkstaden",
+        "barn"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/familjelordag-alea-iacta-est/?occurrence=202611071200-202611071230"
     },
     {
       "id": "tm-Z698xZq2Z16vjfq9vp",
@@ -9510,7 +10902,7 @@
       "plats": "Långholmens Wärdshus, Stockholm",
       "lat": 59.32129459889666,
       "lon": 18.02670711559557,
-      "pris": null,
+      "pris": 0,
       "tags": [
         "mat & dryck"
       ],
@@ -9617,13 +11009,31 @@
       "plats": "Kungliga Operan, Stockholm",
       "lat": 59.329565567583586,
       "lon": 18.069623549501244,
-      "pris": null,
+      "pris": 0,
       "tags": [
         "musik",
         "scen & film",
         "opera & show"
       ],
       "url": "https://www.operan.se/forestallningar/cosi-fan-tutte"
+    },
+    {
+      "id": "nacka-utstallning-livets-borjan-sedd-med-svepelektronmikroskop-2026-11-09",
+      "t": "Utställning: Livets början – sedd med svepelektronmikroskop",
+      "e": "🖼️",
+      "img": "https://www.nacka.se/filtered/313857/rszww400h200-90/adobe-express-file-534755904-rszww400h200-90.jpg",
+      "datum": "2026-11-09",
+      "slut": "2026-11-29",
+      "tid": null,
+      "plats": "Nacka Forum bibliotek, Nacka",
+      "lat": 59.3088385,
+      "lon": 18.1647532,
+      "pris": null,
+      "tags": [
+        "nacka",
+        "konst/utställningar"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/utstallning-livets-borjan-sedd-med-svepelektronmikroskop/?occurrence=202611082300-202611282300"
     },
     {
       "id": "tm-Z698xZq2Z1k-vaeGt",
@@ -9712,6 +11122,60 @@
         "klassiskt & konstmusik"
       ],
       "url": "https://cameratanordica.com/sv/production/kerson-leong-camerata-nordica-goteborg-stockholm/"
+    },
+    {
+      "id": "nacka-en-ta-i-det-bla-babymalning-2026-11-10",
+      "t": "En tå i det blå - babymålning",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/308866/rszww400h200-90/entaidetbla-1200x600_edited--978950313-rszww400h200-90.jpg",
+      "datum": "2026-11-10",
+      "slut": null,
+      "tid": "10:00",
+      "plats": "Dieselverkstaden, Nacka",
+      "lat": 59.3052383,
+      "lon": 18.1210463,
+      "pris": 90,
+      "tags": [
+        "nacka",
+        "dieselverkstaden",
+        "skapande verksamhet"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/en-ta-i-det-bla-babymalning/?occurrence=202611100900-202611101000"
+    },
+    {
+      "id": "nacka-drop-in-syn-och-horselinstruktor-alta-2026-11-10",
+      "t": "Drop-in: Syn- och hörselinstruktör Älta",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/309715/rszww400h200-90/syn-och-horsel-drop-in--1822146363-rszww400h200-90.jpg",
+      "datum": "2026-11-10",
+      "slut": null,
+      "tid": "12:00",
+      "plats": "Kulturhuset Älta, Nacka",
+      "lat": 59.2565739,
+      "lon": 18.1775627,
+      "pris": 0,
+      "tags": [
+        "nacka"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/drop-in-syn-och-horselinstruktor-alta/?occurrence=202611101100-202611101200"
+    },
+    {
+      "id": "nacka-attentions-tisdags-drop-in-2026-11-10",
+      "t": "Attentions tisdags-drop in",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/310338/rszww400h200-90/92caa731-5ada-4708-832c-5cdb1fe4dd2d-tisdags-dropin--9175286-rszww400h200-90.png",
+      "datum": "2026-11-10",
+      "slut": null,
+      "tid": "14:00",
+      "plats": "Tillgänglighetsforum, Nacka",
+      "lat": 59.3086691,
+      "lon": 18.1627164,
+      "pris": 0,
+      "tags": [
+        "nacka",
+        "träffpunkt/kafé"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/attentions-tisdags-drop-in/?occurrence=202611101300-202611101500"
     },
     {
       "id": "tm-Z698xZq2Z16v3df_vJ",
@@ -9812,7 +11276,7 @@
       "plats": "Avicii Arena, Johanneshov",
       "lat": 59.29353277718874,
       "lon": 18.083555997467027,
-      "pris": null,
+      "pris": 680,
       "tags": [
         "musik",
         "hip hop, soul & rnb"
@@ -9848,7 +11312,7 @@
       "plats": "Teater Bristol, Sundbyberg",
       "lat": 59.363502929622086,
       "lon": 17.96688245514727,
-      "pris": null,
+      "pris": 195,
       "tags": [
         "musik",
         "traditionell musik, folk & country"
@@ -9903,7 +11367,7 @@
       "plats": "Tekniska museet, Stockholm",
       "lat": 59.332504933389146,
       "lon": 18.11896571801927,
-      "pris": null,
+      "pris": 100,
       "tags": [
         "guidade turer & föreläsningar"
       ],
@@ -9929,6 +11393,41 @@
       "url": "http://www.presentmakeriet.se"
     },
     {
+      "id": "nacka-jazziorerna-i-boo-folkets-hus-2026-11-11",
+      "t": "Jazziorerna i Boo Folkets Hus",
+      "e": "🎵",
+      "img": "https://www.nacka.se/filtered/313025/rszww400h200-90/_jazziorerna--2053556378-rszww400h200-90.jpg",
+      "datum": "2026-11-11",
+      "slut": null,
+      "tid": "11:00",
+      "plats": "Boo Folkets Hus, Nacka",
+      "lat": 59.3259819,
+      "lon": 18.2560756,
+      "pris": null,
+      "tags": [
+        "nacka",
+        "musik/konsert"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/jazziorerna-i-boo-folkets-hus/?occurrence=202611111000-202611111200"
+    },
+    {
+      "id": "nacka-laxhjalp-studiestod-spraktraning-2026-11-11",
+      "t": "Läxhjälp, studiestöd & språkträning",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/311752/rszww400h200-90/laxhjalp-ext-kal-a--440917605-rszww400h200-90.png",
+      "datum": "2026-11-11",
+      "slut": null,
+      "tid": "16:00",
+      "plats": "Älta bibliotek, Nacka",
+      "lat": 59.2561243,
+      "lon": 18.1776164,
+      "pris": null,
+      "tags": [
+        "nacka"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/laxhjalp-studiestod-spraktraning/?occurrence=202611111500-202611111700"
+    },
+    {
       "id": "tm-Z698xZq2Z16vGtFOa9",
       "t": "Garderobsavgift - Förköpsrabatt köp nu",
       "e": "🎭",
@@ -9945,6 +11444,26 @@
         "drama"
       ],
       "url": "https://www.ticketmaster.se/event/garderobsavgift-forkopsrabatt-kop-nu-biljetter/1329220257"
+    },
+    {
+      "id": "nacka-stickcafe-2026-11-11",
+      "t": "Stickcafé",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/311747/rszww400h200-90/stickcafe-ext-kal-a--169003494-rszww400h200-90.png",
+      "datum": "2026-11-11",
+      "slut": null,
+      "tid": "18:00",
+      "plats": "Älta bibliotek, Nacka",
+      "lat": 59.2561243,
+      "lon": 18.1776164,
+      "pris": null,
+      "tags": [
+        "nacka",
+        "skapande verksamhet",
+        "träffpunkt/kafé",
+        "vuxna"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/stickcafe/?occurrence=202611111700-202611111830"
     },
     {
       "id": "tm-Z698xZq2Z16vx7-vJf",
@@ -10099,7 +11618,7 @@
       "plats": "Spårvägsmuseet, Stockholm",
       "lat": 59.35815854433838,
       "lon": 18.091995351990676,
-      "pris": null,
+      "pris": 0,
       "tags": [
         "guidade turer & föreläsningar"
       ],
@@ -10332,13 +11851,50 @@
       "plats": "Chisel Studios, Spånga",
       "lat": 59.39314249999999,
       "lon": 17.9291384,
-      "pris": null,
+      "pris": 0,
       "tags": [
         "utställningar",
         "nätverkande",
         "konst & kultur"
       ],
       "url": "https://chiselstudios.confetti.events/"
+    },
+    {
+      "id": "nacka-mediyoga-for-anhoriga2-2026-11-13",
+      "t": "MediYoga för anhöriga",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/312280/rszww400h200-90/symbol-anhorigcenter-kalendarium-1444303578-rszww400h200-90.png",
+      "datum": "2026-11-13",
+      "slut": null,
+      "tid": "10:00",
+      "plats": "Träffpunkt Smedjan, Nacka",
+      "lat": 59.3085377,
+      "lon": 18.1622069,
+      "pris": 0,
+      "tags": [
+        "nacka",
+        "motion/hälsa"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/mediyoga-for-anhoriga2/?occurrence=202611130900-202611131030"
+    },
+    {
+      "id": "nacka-barnrytmik-1-4-ar-2026-11-13",
+      "t": "Barnrytmik 1-4 år",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/308861/rszww400h200-90/barnrytmik-1-4-rytmik-1200x600-ht25_edited-1610175830-rszww400h200-90.jpg",
+      "datum": "2026-11-13",
+      "slut": null,
+      "tid": "10:15",
+      "plats": "Dieselverkstaden, Nacka",
+      "lat": 59.3052383,
+      "lon": 18.1210463,
+      "pris": 160,
+      "tags": [
+        "nacka",
+        "barnrytmik",
+        "dieselverkstaden"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/barnrytmik-1-4-ar/?occurrence=202611130915-202611131000"
     },
     {
       "id": "tm-Z698xZq2Z1k_xOgZ0",
@@ -10549,7 +12105,7 @@
       "plats": "Teater Bristol, Sundbyberg",
       "lat": 59.3633244,
       "lon": 17.9666311,
-      "pris": null,
+      "pris": 195,
       "tags": [
         "familj",
         "scen & film",
@@ -10557,6 +12113,24 @@
         "teater"
       ],
       "url": "https://www.teaterbristol.se/teater/mamma-mu-och-krakans-jul/"
+    },
+    {
+      "id": "nacka-melodikrysset-pa-biblioteket-2026-11-14",
+      "t": "Melodikrysset på biblioteket",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/311755/rszww400h200-90/melodikrysset-evenemang-ext-kal-2026--66844004-rszww400h200-90.png",
+      "datum": "2026-11-14",
+      "slut": null,
+      "tid": "10:04",
+      "plats": "Älta bibliotek, Nacka",
+      "lat": 59.2561243,
+      "lon": 18.1776164,
+      "pris": null,
+      "tags": [
+        "nacka",
+        "träffpunkt/kafé"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/melodikrysset-pa-biblioteket/?occurrence=202611140904-202611141000"
     },
     {
       "id": "tm-Z698xZq2Z1At4yuZ",
@@ -10821,7 +12395,7 @@
       "plats": "Lilla Tre, Stockholm",
       "lat": 59.31645170287996,
       "lon": 18.0551376091573,
-      "pris": null,
+      "pris": 130,
       "tags": [
         "familj",
         "scen & film",
@@ -10928,11 +12502,29 @@
       "plats": "Hotel At Six, Stockholm",
       "lat": 59.33105666624897,
       "lon": 18.066930360191947,
-      "pris": null,
+      "pris": 165,
       "tags": [
         "mat & dryck"
       ],
       "url": "https://hotelatsix.com/christmas-new-years-eve-at-six"
+    },
+    {
+      "id": "nacka-bokcirkel-for-vuxna-pa-kvallstid-2026-11-16",
+      "t": "Bokcirkel för vuxna på kvällstid",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/313569/rszww400h200-90/perrin-ext-1039514646-rszww400h200-90.png",
+      "datum": "2026-11-16",
+      "slut": null,
+      "tid": "18:00",
+      "plats": "Älta bibliotek, Nacka",
+      "lat": 59.2561243,
+      "lon": 18.1776164,
+      "pris": null,
+      "tags": [
+        "nacka",
+        "träffpunkt/kafé"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/bokcirkel-for-vuxna-pa-kvallstid/?occurrence=202611161700-202611161830"
     },
     {
       "id": "tm-Z698xZq2Z16v7duyGS",
@@ -10999,7 +12591,7 @@
       "plats": "Allhelgonakyrkan, Stockholm",
       "lat": 59.310409,
       "lon": 18.0709199,
-      "pris": null,
+      "pris": 170,
       "tags": [
         "musik",
         "klassiskt & konstmusik"
@@ -11078,6 +12670,43 @@
       "url": "https://www.ticketmaster.se/event/dansmassan-2026-biljetter/662320101"
     },
     {
+      "id": "nacka-en-ta-i-det-bla-babymalning-2026-11-17",
+      "t": "En tå i det blå - babymålning",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/308866/rszww400h200-90/entaidetbla-1200x600_edited--978950313-rszww400h200-90.jpg",
+      "datum": "2026-11-17",
+      "slut": null,
+      "tid": "10:00",
+      "plats": "Dieselverkstaden, Nacka",
+      "lat": 59.3052383,
+      "lon": 18.1210463,
+      "pris": 90,
+      "tags": [
+        "nacka",
+        "dieselverkstaden",
+        "skapande verksamhet"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/en-ta-i-det-bla-babymalning/?occurrence=202611170900-202611171000"
+    },
+    {
+      "id": "nacka-attentions-tisdags-drop-in-2026-11-17",
+      "t": "Attentions tisdags-drop in",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/310338/rszww400h200-90/92caa731-5ada-4708-832c-5cdb1fe4dd2d-tisdags-dropin--9175286-rszww400h200-90.png",
+      "datum": "2026-11-17",
+      "slut": null,
+      "tid": "14:00",
+      "plats": "Tillgänglighetsforum, Nacka",
+      "lat": 59.3086691,
+      "lon": 18.1627164,
+      "pris": 0,
+      "tags": [
+        "nacka",
+        "träffpunkt/kafé"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/attentions-tisdags-drop-in/?occurrence=202611171300-202611171500"
+    },
+    {
       "id": "tm-Z698xZq2Z16vos4o3F",
       "t": "Svartklubben - Mat & Musik i Mörker",
       "e": "🎭",
@@ -11094,6 +12723,44 @@
         "miscellaneous"
       ],
       "url": "https://www.ticketmaster.se/event/svartklubben-mat--musik-i-morker-biljetter/1471551488"
+    },
+    {
+      "id": "nacka-valkommen-till-en-traff-for-vuxna-med-adhdadd-2026-11-17",
+      "t": "Välkommen till en träff för vuxna med adhd/add",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/310341/rszww400h200-90/f3dae13c-a99f-45f3-a1ce-adhd--814951541-rszww400h200-90.png",
+      "datum": "2026-11-17",
+      "slut": null,
+      "tid": "18:00",
+      "plats": "Tillgänglighetsforum, Nacka",
+      "lat": 59.3086691,
+      "lon": 18.1627164,
+      "pris": null,
+      "tags": [
+        "nacka",
+        "träffpunkt/kafé",
+        "radgivning"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/valkommen-till-en-traff-for-vuxna-med-adhdadd/?occurrence=202611171700-202611171900"
+    },
+    {
+      "id": "nacka-ar-du-mor-eller-farforalder-till-nagon-med-adhd-eller-autism-2026-11-17",
+      "t": "Är du mor- eller farförälder till någon med adhd eller autism?",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/310344/rszww400h200-90/1eb71dec-4829-4014-8bb5-bdd089cbdc2b-mor-o-far--2132349172-rszww400h200-90.png",
+      "datum": "2026-11-17",
+      "slut": null,
+      "tid": "18:00",
+      "plats": "Tillgänglighetsforum, Nacka",
+      "lat": 59.3086691,
+      "lon": 18.1627164,
+      "pris": null,
+      "tags": [
+        "nacka",
+        "träffpunkt/kafé",
+        "radgivning"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/ar-du-mor-eller-farforalder-till-nagon-med-adhd-eller-autism/?occurrence=202611171700-202611171900"
     },
     {
       "id": "tm-Z698xZq2Z16veFo9Zw",
@@ -11187,6 +12854,59 @@
       "url": "https://apotekarsocieteten.museum/besok-oss/visningar-aktiviteter/"
     },
     {
+      "id": "nacka-jazziorerna-i-boo-folkets-hus-2026-11-18",
+      "t": "Jazziorerna i Boo Folkets Hus",
+      "e": "🎵",
+      "img": "https://www.nacka.se/filtered/313025/rszww400h200-90/_jazziorerna--2053556378-rszww400h200-90.jpg",
+      "datum": "2026-11-18",
+      "slut": null,
+      "tid": "11:00",
+      "plats": "Boo Folkets Hus, Nacka",
+      "lat": 59.3259819,
+      "lon": 18.2560756,
+      "pris": null,
+      "tags": [
+        "nacka",
+        "musik/konsert"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/jazziorerna-i-boo-folkets-hus/?occurrence=202611181000-202611181200"
+    },
+    {
+      "id": "nacka-drop-in-anhorigstod-2026-11-18",
+      "t": "Drop-in anhörigstöd",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/312095/rszww400h200-90/anhorigcenter-logga-knapp-898657526-rszww400h200-90.png",
+      "datum": "2026-11-18",
+      "slut": null,
+      "tid": "13:00",
+      "plats": "Tillgänglighetsforum, nära Nacka Forum, Nacka",
+      "lat": 59.3086691,
+      "lon": 18.1627164,
+      "pris": null,
+      "tags": [
+        "nacka",
+        "träffpunkt/kafé"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/drop-in-anhorigstod/?occurrence=202611181200-202611181400"
+    },
+    {
+      "id": "nacka-laxhjalp-studiestod-spraktraning-2026-11-18",
+      "t": "Läxhjälp, studiestöd & språkträning",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/311752/rszww400h200-90/laxhjalp-ext-kal-a--440917605-rszww400h200-90.png",
+      "datum": "2026-11-18",
+      "slut": null,
+      "tid": "16:00",
+      "plats": "Älta bibliotek, Nacka",
+      "lat": 59.2561243,
+      "lon": 18.1776164,
+      "pris": null,
+      "tags": [
+        "nacka"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/laxhjalp-studiestod-spraktraning/?occurrence=202611181500-202611181700"
+    },
+    {
       "id": "tm-Z698xZq2Z1kQAGf-6",
       "t": "MAMMA MIA! THE PARTY",
       "e": "🎭",
@@ -11221,6 +12941,24 @@
         "comedy"
       ],
       "url": "https://www.ticketmaster.se/event/gota-lejon-comedy-club-biljetter/531328430"
+    },
+    {
+      "id": "nacka-barn-och-unga-med-npf-att-forsta-bemota-och-stotta-i-vardagen-2026-11-18",
+      "t": "Barn och unga med npf - att förstå, bemöta och stötta i vardagen",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/308630/rszww400h200-90/bbba4b04-b41d-483c-91d4-266fe5c70321--1043969987-rszww400h200-90.jpg",
+      "datum": "2026-11-18",
+      "slut": null,
+      "tid": "19:00",
+      "plats": "Nacka kyrka, Nacka",
+      "lat": 59.3072273,
+      "lon": 18.1429376,
+      "pris": 0,
+      "tags": [
+        "nacka",
+        "föresläsning/samtal"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/barn-och-unga-med-npf-att-forsta-bemota-och-stotta-i-vardagen/?occurrence=202611181800-202611181930"
     },
     {
       "id": "tm-Z698xZq2Z16vj-48oo",
@@ -11557,7 +13295,7 @@
       "plats": "BAR15, Stockholm",
       "lat": 59.29266172428274,
       "lon": 18.07785198002955,
-      "pris": null,
+      "pris": 0,
       "tags": [
         "klubbar & fester"
       ],
@@ -11598,6 +13336,42 @@
         "jul & nyår"
       ],
       "url": "https://www.fjaderholmarnaskrog.se/"
+    },
+    {
+      "id": "nacka-barnrytmik-1-4-ar-2026-11-20",
+      "t": "Barnrytmik 1-4 år",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/308861/rszww400h200-90/barnrytmik-1-4-rytmik-1200x600-ht25_edited-1610175830-rszww400h200-90.jpg",
+      "datum": "2026-11-20",
+      "slut": null,
+      "tid": "10:15",
+      "plats": "Dieselverkstaden, Nacka",
+      "lat": 59.3052383,
+      "lon": 18.1210463,
+      "pris": 160,
+      "tags": [
+        "nacka",
+        "barnrytmik",
+        "dieselverkstaden"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/barnrytmik-1-4-ar/?occurrence=202611200915-202611201000"
+    },
+    {
+      "id": "nacka-mogendans-i-boo-folkets-2026-11-20",
+      "t": "Mogendans i Boo Folkets Hus",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/313015/rszww400h200-90/mogendans-m-alla-datum-ht26-1080x1080-616716900-rszww400h200-90.jpg",
+      "datum": "2026-11-20",
+      "slut": null,
+      "tid": "13:00",
+      "plats": "Boo Folkets Hus, Nacka",
+      "lat": 59.3259819,
+      "lon": 18.2560756,
+      "pris": 100,
+      "tags": [
+        "nacka"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/mogendans-i-boo-folkets/?occurrence=202611201200-202611201500"
     },
     {
       "id": "tm-Z698xZq2Z1kpKP38A",
@@ -11806,7 +13580,7 @@
       "plats": "Teater Bristol, Sundbyberg",
       "lat": 59.363502929622086,
       "lon": 17.96688245514727,
-      "pris": null,
+      "pris": 195,
       "tags": [
         "musik",
         "jazz & blues"
@@ -11824,7 +13598,7 @@
       "plats": "Katarina församlingshus, Stockholm",
       "lat": 59.3169611,
       "lon": 18.0759874,
-      "pris": null,
+      "pris": 170,
       "tags": [
         "familj",
         "musik"
@@ -11860,7 +13634,7 @@
       "plats": "Bromma Musikscen, Stockholm",
       "lat": 59.3468993,
       "lon": 17.9485834,
-      "pris": null,
+      "pris": 150,
       "tags": [
         "musik",
         "scen & film",
@@ -11886,6 +13660,24 @@
         "jul & nyår"
       ],
       "url": "https://www.tickster.com/se/p/repliken/julshow"
+    },
+    {
+      "id": "nacka-melodikrysset-pa-biblioteket-2026-11-21",
+      "t": "Melodikrysset på biblioteket",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/311755/rszww400h200-90/melodikrysset-evenemang-ext-kal-2026--66844004-rszww400h200-90.png",
+      "datum": "2026-11-21",
+      "slut": null,
+      "tid": "10:04",
+      "plats": "Älta bibliotek, Nacka",
+      "lat": 59.2561243,
+      "lon": 18.1776164,
+      "pris": null,
+      "tags": [
+        "nacka",
+        "träffpunkt/kafé"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/melodikrysset-pa-biblioteket/?occurrence=202611210904-202611211000"
     },
     {
       "id": "tm-Z698xZq2Z1kOP49q_",
@@ -12095,7 +13887,7 @@
       "plats": "Kollektivet Livet Bar och Scen, Stockholm",
       "lat": 59.31915,
       "lon": 18.078513,
-      "pris": null,
+      "pris": 335,
       "tags": [
         "musik",
         "hårdrock & metal"
@@ -12300,6 +14092,43 @@
       "url": "https://kulturhusetstadsteatern.se/litteratur/nelio-biedermann-schweiz"
     },
     {
+      "id": "nacka-en-ta-i-det-bla-babymalning-2026-11-24",
+      "t": "En tå i det blå - babymålning",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/308866/rszww400h200-90/entaidetbla-1200x600_edited--978950313-rszww400h200-90.jpg",
+      "datum": "2026-11-24",
+      "slut": null,
+      "tid": "10:00",
+      "plats": "Dieselverkstaden, Nacka",
+      "lat": 59.3052383,
+      "lon": 18.1210463,
+      "pris": 90,
+      "tags": [
+        "nacka",
+        "dieselverkstaden",
+        "skapande verksamhet"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/en-ta-i-det-bla-babymalning/?occurrence=202611240900-202611241000"
+    },
+    {
+      "id": "nacka-attentions-tisdags-drop-in-2026-11-24",
+      "t": "Attentions tisdags-drop in",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/310338/rszww400h200-90/92caa731-5ada-4708-832c-5cdb1fe4dd2d-tisdags-dropin--9175286-rszww400h200-90.png",
+      "datum": "2026-11-24",
+      "slut": null,
+      "tid": "14:00",
+      "plats": "Tillgänglighetsforum, Nacka",
+      "lat": 59.3086691,
+      "lon": 18.1627164,
+      "pris": 0,
+      "tags": [
+        "nacka",
+        "träffpunkt/kafé"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/attentions-tisdags-drop-in/?occurrence=202611241300-202611241500"
+    },
+    {
       "id": "tm-Z698xZq2Z1k7-7wxA",
       "t": "Svartklubben - Mat & Musik i Mörker",
       "e": "🎭",
@@ -12400,7 +14229,7 @@
       "plats": "Nalen, Stockholm",
       "lat": 59.33713616442869,
       "lon": 18.067698777770982,
-      "pris": null,
+      "pris": 0,
       "tags": [
         "musik",
         "rock"
@@ -12418,7 +14247,7 @@
       "plats": "Kura Stockholm, Stockholm",
       "lat": 59.334712391409425,
       "lon": 18.0692491298864,
-      "pris": null,
+      "pris": 0,
       "tags": [
         "mat & dryck",
         "jul & nyår"
@@ -12460,6 +14289,41 @@
         "jul & nyår"
       ],
       "url": "https://stockholmstadshotell.com/"
+    },
+    {
+      "id": "nacka-jazziorerna-i-boo-folkets-hus-2026-11-25",
+      "t": "Jazziorerna i Boo Folkets Hus",
+      "e": "🎵",
+      "img": "https://www.nacka.se/filtered/313025/rszww400h200-90/_jazziorerna--2053556378-rszww400h200-90.jpg",
+      "datum": "2026-11-25",
+      "slut": null,
+      "tid": "11:00",
+      "plats": "Boo Folkets Hus, Nacka",
+      "lat": 59.3259819,
+      "lon": 18.2560756,
+      "pris": null,
+      "tags": [
+        "nacka",
+        "musik/konsert"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/jazziorerna-i-boo-folkets-hus/?occurrence=202611251000-202611251200"
+    },
+    {
+      "id": "nacka-laxhjalp-studiestod-spraktraning-2026-11-25",
+      "t": "Läxhjälp, studiestöd & språkträning",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/311752/rszww400h200-90/laxhjalp-ext-kal-a--440917605-rszww400h200-90.png",
+      "datum": "2026-11-25",
+      "slut": null,
+      "tid": "16:00",
+      "plats": "Älta bibliotek, Nacka",
+      "lat": 59.2561243,
+      "lon": 18.1776164,
+      "pris": null,
+      "tags": [
+        "nacka"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/laxhjalp-studiestod-spraktraning/?occurrence=202611251500-202611251700"
     },
     {
       "id": "tm-Z698xZq2Z16vJ6JFr6",
@@ -12544,7 +14408,7 @@
       "plats": "Ellery Beach House, Lidingö",
       "lat": 59.36490408758672,
       "lon": 18.249737990894165,
-      "pris": null,
+      "pris": 1000,
       "tags": [
         "mat & dryck",
         "musik",
@@ -12605,6 +14469,24 @@
         "jul & nyår"
       ],
       "url": "https://luzette.se/"
+    },
+    {
+      "id": "nacka-torsdagsforelasningar-for-anhoriga-2026-11-26",
+      "t": "Torsdagsföreläsningar för anhöriga",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/310981/rszww400h200-90/symbol-anhorigcenter-kalendarium--441400549-rszww400h200-90.png",
+      "datum": "2026-11-26",
+      "slut": null,
+      "tid": "10:30",
+      "plats": "Träffpunkt Smedjan, Nacka",
+      "lat": 59.3085936,
+      "lon": 18.1625344,
+      "pris": null,
+      "tags": [
+        "nacka",
+        "föresläsning/samtal"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/torsdagsforelasningar-for-anhoriga/?occurrence=202611260930-202611261100"
     },
     {
       "id": "tm-Z698xZq2Z16v7yvYoY",
@@ -12844,6 +14726,25 @@
       "url": "https://www.mallcall.se/"
     },
     {
+      "id": "nacka-barnrytmik-1-4-ar-2026-11-27",
+      "t": "Barnrytmik 1-4 år",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/308861/rszww400h200-90/barnrytmik-1-4-rytmik-1200x600-ht25_edited-1610175830-rszww400h200-90.jpg",
+      "datum": "2026-11-27",
+      "slut": null,
+      "tid": "10:15",
+      "plats": "Dieselverkstaden, Nacka",
+      "lat": 59.3052383,
+      "lon": 18.1210463,
+      "pris": 160,
+      "tags": [
+        "nacka",
+        "barnrytmik",
+        "dieselverkstaden"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/barnrytmik-1-4-ar/?occurrence=202611270915-202611271000"
+    },
+    {
       "id": "tm-Z698xZq2Z16v7SPKq9",
       "t": "Svartklubben - Mat & Musik i Mörker",
       "e": "🎭",
@@ -12998,7 +14899,7 @@
       "plats": "Avicii Arena, Johanneshov",
       "lat": 59.29353277718874,
       "lon": 18.083555997467027,
-      "pris": null,
+      "pris": 570,
       "tags": [
         "scen & film",
         "pop"
@@ -13078,6 +14979,24 @@
       "url": "https://polarisolfactive.com/expo"
     },
     {
+      "id": "nacka-melodikrysset-pa-biblioteket-2026-11-28",
+      "t": "Melodikrysset på biblioteket",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/311755/rszww400h200-90/melodikrysset-evenemang-ext-kal-2026--66844004-rszww400h200-90.png",
+      "datum": "2026-11-28",
+      "slut": null,
+      "tid": "10:04",
+      "plats": "Älta bibliotek, Nacka",
+      "lat": 59.2561243,
+      "lon": 18.1776164,
+      "pris": null,
+      "tags": [
+        "nacka",
+        "träffpunkt/kafé"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/melodikrysset-pa-biblioteket/?occurrence=202611280904-202611281000"
+    },
+    {
       "id": "tm-Z698xZq2Z16v0yv8Oz",
       "t": "Stadsvandring med Christopher O'Regan - Grändernas hemligheter",
       "e": "✨",
@@ -13130,6 +15049,27 @@
         "miscellaneous"
       ],
       "url": "https://www.ticketmaster.se/event/mamma-mia-the-party-biljetter/2018501262"
+    },
+    {
+      "id": "nacka-familjelordag-stjarnhimlar-2026-11-28",
+      "t": "Familjelördag: Stjärnhimlar",
+      "e": "🎭",
+      "img": "https://www.nacka.se/filtered/311765/rszww400h200-90/stjarnhimlar-1200x600--206668244-rszww400h200-90.jpg",
+      "datum": "2026-11-28",
+      "slut": null,
+      "tid": "13:00",
+      "plats": "Lilla scen, Nacka",
+      "lat": 59.3055552,
+      "lon": 18.1213083,
+      "pris": 140,
+      "tags": [
+        "nacka",
+        "teater",
+        "dieselverkstaden",
+        "familjelördag",
+        "barn"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/familjelordag-stjarnhimlar/?occurrence=202611281200-202611281230"
     },
     {
       "id": "tm-Z698xZq2Z1k-ybPoz",
@@ -13322,7 +15262,7 @@
       "plats": "Solnahallen, Solna",
       "lat": 59.35888873383351,
       "lon": 17.988275921898094,
-      "pris": null,
+      "pris": 0,
       "tags": [
         "mässor",
         "marknader & loppisar"
@@ -13505,12 +15445,84 @@
       "plats": "Sturehof, Stockholm",
       "lat": 59.33565745099244,
       "lon": 18.073312425088744,
-      "pris": null,
+      "pris": 0,
       "tags": [
         "mat & dryck",
         "jul & nyår"
       ],
       "url": "https://sturehof.com/"
+    },
+    {
+      "id": "nacka-en-ta-i-det-bla-babymalning-2026-12-01",
+      "t": "En tå i det blå - babymålning",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/308866/rszww400h200-90/entaidetbla-1200x600_edited--978950313-rszww400h200-90.jpg",
+      "datum": "2026-12-01",
+      "slut": null,
+      "tid": "10:00",
+      "plats": "Dieselverkstaden, Nacka",
+      "lat": 59.3052383,
+      "lon": 18.1210463,
+      "pris": 90,
+      "tags": [
+        "nacka",
+        "dieselverkstaden",
+        "skapande verksamhet"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/en-ta-i-det-bla-babymalning/?occurrence=202612010900-202612011000"
+    },
+    {
+      "id": "nacka-drop-in-syn-och-horselinstruktor-alta-2026-12-01",
+      "t": "Drop-in: Syn- och hörselinstruktör Älta",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/309715/rszww400h200-90/syn-och-horsel-drop-in--1822146363-rszww400h200-90.jpg",
+      "datum": "2026-12-01",
+      "slut": null,
+      "tid": "12:00",
+      "plats": "Kulturhuset Älta, Nacka",
+      "lat": 59.2565739,
+      "lon": 18.1775627,
+      "pris": 0,
+      "tags": [
+        "nacka"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/drop-in-syn-och-horselinstruktor-alta/?occurrence=202612011100-202612011200"
+    },
+    {
+      "id": "nacka-attentions-tisdags-drop-in-2026-12-01",
+      "t": "Attentions tisdags-drop in",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/310338/rszww400h200-90/92caa731-5ada-4708-832c-5cdb1fe4dd2d-tisdags-dropin--9175286-rszww400h200-90.png",
+      "datum": "2026-12-01",
+      "slut": null,
+      "tid": "14:00",
+      "plats": "Tillgänglighetsforum, Nacka",
+      "lat": 59.3086691,
+      "lon": 18.1627164,
+      "pris": 0,
+      "tags": [
+        "nacka",
+        "träffpunkt/kafé"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/attentions-tisdags-drop-in/?occurrence=202612011300-202612011500"
+    },
+    {
+      "id": "nacka-samtalsgrupp-for-anhoriga-2026-12-01",
+      "t": "Samtalsgrupp för anhöriga",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/312086/rszww400h200-90/anhorigcenter-logga-knapp--805249548-rszww400h200-90.png",
+      "datum": "2026-12-01",
+      "slut": null,
+      "tid": "18:30",
+      "plats": "Träffpunkt Smedjan, nära Nacka Forum, Nacka",
+      "lat": 59.3085377,
+      "lon": 18.1622069,
+      "pris": null,
+      "tags": [
+        "nacka",
+        "träffpunkt/kafé"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/samtalsgrupp-for-anhoriga/?occurrence=202612011730-202612011930"
     },
     {
       "id": "tm-Z698xZq2Z1krAkpOU",
@@ -13640,6 +15652,41 @@
       "url": "https://www.su.se/enheter/fysikum/om-institutionen/samarbeten/fysiktavling-pa-fysikum"
     },
     {
+      "id": "nacka-jazziorerna-i-boo-folkets-hus-2026-12-02",
+      "t": "Jazziorerna i Boo Folkets Hus",
+      "e": "🎵",
+      "img": "https://www.nacka.se/filtered/313025/rszww400h200-90/_jazziorerna--2053556378-rszww400h200-90.jpg",
+      "datum": "2026-12-02",
+      "slut": null,
+      "tid": "11:00",
+      "plats": "Boo Folkets Hus, Nacka",
+      "lat": 59.3259819,
+      "lon": 18.2560756,
+      "pris": null,
+      "tags": [
+        "nacka",
+        "musik/konsert"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/jazziorerna-i-boo-folkets-hus/?occurrence=202612021000-202612021200"
+    },
+    {
+      "id": "nacka-laxhjalp-studiestod-spraktraning-2026-12-02",
+      "t": "Läxhjälp, studiestöd & språkträning",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/311752/rszww400h200-90/laxhjalp-ext-kal-a--440917605-rszww400h200-90.png",
+      "datum": "2026-12-02",
+      "slut": null,
+      "tid": "16:00",
+      "plats": "Älta bibliotek, Nacka",
+      "lat": 59.2561243,
+      "lon": 18.1776164,
+      "pris": null,
+      "tags": [
+        "nacka"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/laxhjalp-studiestod-spraktraning/?occurrence=202612021500-202612021700"
+    },
+    {
       "id": "tm-Z698xZq2Z1kvtofaO",
       "t": "Andersson Dance - ORE",
       "e": "🎭",
@@ -13656,6 +15703,26 @@
         "dance"
       ],
       "url": "https://www.ticketmaster.se/event/andersson-dance-ore-biljetter/69454260"
+    },
+    {
+      "id": "nacka-stickcafe-2026-12-02",
+      "t": "Stickcafé",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/311747/rszww400h200-90/stickcafe-ext-kal-a--169003494-rszww400h200-90.png",
+      "datum": "2026-12-02",
+      "slut": null,
+      "tid": "18:00",
+      "plats": "Älta bibliotek, Nacka",
+      "lat": 59.2561243,
+      "lon": 18.1776164,
+      "pris": null,
+      "tags": [
+        "nacka",
+        "skapande verksamhet",
+        "träffpunkt/kafé",
+        "vuxna"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/stickcafe/?occurrence=202612021700-202612021830"
     },
     {
       "id": "tm-Z698xZq2Z1kP9Q___",
@@ -13856,6 +15923,60 @@
       "url": "https://debaser.se/events/ingenting"
     },
     {
+      "id": "nacka-mediyoga-for-anhoriga2-2026-12-04",
+      "t": "MediYoga för anhöriga",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/312280/rszww400h200-90/symbol-anhorigcenter-kalendarium-1444303578-rszww400h200-90.png",
+      "datum": "2026-12-04",
+      "slut": null,
+      "tid": "10:00",
+      "plats": "Träffpunkt Smedjan, Nacka",
+      "lat": 59.3085377,
+      "lon": 18.1622069,
+      "pris": 0,
+      "tags": [
+        "nacka",
+        "motion/hälsa"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/mediyoga-for-anhoriga2/?occurrence=202612040900-202612041030"
+    },
+    {
+      "id": "nacka-barnrytmik-1-4-ar-2026-12-04",
+      "t": "Barnrytmik 1-4 år",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/308861/rszww400h200-90/barnrytmik-1-4-rytmik-1200x600-ht25_edited-1610175830-rszww400h200-90.jpg",
+      "datum": "2026-12-04",
+      "slut": null,
+      "tid": "10:15",
+      "plats": "Dieselverkstaden, Nacka",
+      "lat": 59.3052383,
+      "lon": 18.1210463,
+      "pris": 160,
+      "tags": [
+        "nacka",
+        "barnrytmik",
+        "dieselverkstaden"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/barnrytmik-1-4-ar/?occurrence=202612040915-202612041000"
+    },
+    {
+      "id": "nacka-mogendans-i-boo-folkets-2026-12-04",
+      "t": "Mogendans i Boo Folkets Hus",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/313015/rszww400h200-90/mogendans-m-alla-datum-ht26-1080x1080-616716900-rszww400h200-90.jpg",
+      "datum": "2026-12-04",
+      "slut": null,
+      "tid": "13:00",
+      "plats": "Boo Folkets Hus, Nacka",
+      "lat": 59.3259819,
+      "lon": 18.2560756,
+      "pris": 100,
+      "tags": [
+        "nacka"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/mogendans-i-boo-folkets/?occurrence=202612041200-202612041500"
+    },
+    {
       "id": "tm-Z698xZq2Z1kQvPI1o",
       "t": "RITSCH RATSCH på Vasan",
       "e": "🎵",
@@ -13990,12 +16111,30 @@
       "plats": "Allhelgonakyrkan, Stockholm",
       "lat": 59.31042947308646,
       "lon": 18.07081403120924,
-      "pris": null,
+      "pris": 170,
       "tags": [
         "musik",
         "klassiskt & konstmusik"
       ],
       "url": "https://kammarmusikens-vanner.se"
+    },
+    {
+      "id": "nacka-melodikrysset-pa-biblioteket-2026-12-05",
+      "t": "Melodikrysset på biblioteket",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/311755/rszww400h200-90/melodikrysset-evenemang-ext-kal-2026--66844004-rszww400h200-90.png",
+      "datum": "2026-12-05",
+      "slut": null,
+      "tid": "10:04",
+      "plats": "Älta bibliotek, Nacka",
+      "lat": 59.2561243,
+      "lon": 18.1776164,
+      "pris": null,
+      "tags": [
+        "nacka",
+        "träffpunkt/kafé"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/melodikrysset-pa-biblioteket/?occurrence=202612050904-202612051000"
     },
     {
       "id": "tm-Z698xZq2Z1k0xpZPg",
@@ -14261,12 +16400,31 @@
       "plats": "Storkyrkan, Stockholm",
       "lat": 59.32570398288112,
       "lon": 18.06986704378849,
-      "pris": null,
+      "pris": 110,
       "tags": [
         "musik",
         "klassiskt & konstmusik"
       ],
       "url": "https://musikstorkyrkanstjacob.com/series/mot-lucia-i-storkyrkan/"
+    },
+    {
+      "id": "nacka-saffransmysteriet-lassemajas-detektivbyra-2026-12-06",
+      "t": "Saffransmysteriet - LasseMajas detektivbyrå",
+      "e": "🎭",
+      "img": "https://www.nacka.se/filtered/307917/rszww400h200-90/lassemaja_biljetter26-2--1981990325-rszww400h200-90.jpg",
+      "datum": "2026-12-06",
+      "slut": null,
+      "tid": "13:00",
+      "plats": "Kulturhuset Dieselverkstaden, Nacka",
+      "lat": 59.3055552,
+      "lon": 18.1213083,
+      "pris": null,
+      "tags": [
+        "nacka",
+        "teater",
+        "dieselverkstaden"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/saffransmysteriet-lassemajas-detektivbyra/?occurrence=202612061200-202612061245"
     },
     {
       "id": "tm-Z698xZq2Z1kPvAvqS",
@@ -14367,7 +16525,7 @@
       "plats": "Intiman, Stockholm",
       "lat": 59.34206269185154,
       "lon": 18.04829261174811,
-      "pris": null,
+      "pris": 495,
       "tags": [
         "musik",
         "jazz & blues"
@@ -14390,6 +16548,43 @@
         "nätverkande"
       ],
       "url": "https://kulturhusetstadsteatern.se/litteratur/arne-lygre-norge"
+    },
+    {
+      "id": "nacka-en-ta-i-det-bla-babymalning-2026-12-08",
+      "t": "En tå i det blå - babymålning",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/308866/rszww400h200-90/entaidetbla-1200x600_edited--978950313-rszww400h200-90.jpg",
+      "datum": "2026-12-08",
+      "slut": null,
+      "tid": "10:00",
+      "plats": "Dieselverkstaden, Nacka",
+      "lat": 59.3052383,
+      "lon": 18.1210463,
+      "pris": 90,
+      "tags": [
+        "nacka",
+        "dieselverkstaden",
+        "skapande verksamhet"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/en-ta-i-det-bla-babymalning/?occurrence=202612080900-202612081000"
+    },
+    {
+      "id": "nacka-attentions-tisdags-drop-in-2026-12-08",
+      "t": "Attentions tisdags-drop in",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/310338/rszww400h200-90/92caa731-5ada-4708-832c-5cdb1fe4dd2d-tisdags-dropin--9175286-rszww400h200-90.png",
+      "datum": "2026-12-08",
+      "slut": null,
+      "tid": "14:00",
+      "plats": "Tillgänglighetsforum, Nacka",
+      "lat": 59.3086691,
+      "lon": 18.1627164,
+      "pris": 0,
+      "tags": [
+        "nacka",
+        "träffpunkt/kafé"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/attentions-tisdags-drop-in/?occurrence=202612081300-202612081500"
     },
     {
       "id": "vs-16109",
@@ -14421,7 +16616,7 @@
       "plats": "Teater Bristol, Sundbyberg",
       "lat": 59.363502929622086,
       "lon": 17.96688245514727,
-      "pris": null,
+      "pris": 195,
       "tags": [
         "musik",
         "jul & nyår",
@@ -14459,7 +16654,7 @@
       "plats": "Skansen, Stockholm",
       "lat": 59.32442360526156,
       "lon": 18.100980249280553,
-      "pris": null,
+      "pris": 0,
       "tags": [
         "musik",
         "jul & nyår"
@@ -14484,6 +16679,77 @@
         "jul & nyår"
       ],
       "url": "https://billetto.se/e/luciashow-2026-simklubben-neptun-biljetter-1993473"
+    },
+    {
+      "id": "nacka-jazziorerna-i-boo-folkets-hus-2026-12-09",
+      "t": "Jazziorerna i Boo Folkets Hus",
+      "e": "🎵",
+      "img": "https://www.nacka.se/filtered/313025/rszww400h200-90/_jazziorerna--2053556378-rszww400h200-90.jpg",
+      "datum": "2026-12-09",
+      "slut": null,
+      "tid": "11:00",
+      "plats": "Boo Folkets Hus, Nacka",
+      "lat": 59.3259819,
+      "lon": 18.2560756,
+      "pris": null,
+      "tags": [
+        "nacka",
+        "musik/konsert"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/jazziorerna-i-boo-folkets-hus/?occurrence=202612091000-202612091200"
+    },
+    {
+      "id": "nacka-drop-in-anhorigstod-2026-12-09",
+      "t": "Drop-in anhörigstöd",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/312095/rszww400h200-90/anhorigcenter-logga-knapp-898657526-rszww400h200-90.png",
+      "datum": "2026-12-09",
+      "slut": null,
+      "tid": "13:00",
+      "plats": "Tillgänglighetsforum, nära Nacka Forum, Nacka",
+      "lat": 59.3086691,
+      "lon": 18.1627164,
+      "pris": null,
+      "tags": [
+        "nacka",
+        "träffpunkt/kafé"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/drop-in-anhorigstod/?occurrence=202612091200-202612091400"
+    },
+    {
+      "id": "nacka-laxhjalp-studiestod-spraktraning-2026-12-09",
+      "t": "Läxhjälp, studiestöd & språkträning",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/311752/rszww400h200-90/laxhjalp-ext-kal-a--440917605-rszww400h200-90.png",
+      "datum": "2026-12-09",
+      "slut": null,
+      "tid": "16:00",
+      "plats": "Älta bibliotek, Nacka",
+      "lat": 59.2561243,
+      "lon": 18.1776164,
+      "pris": null,
+      "tags": [
+        "nacka"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/laxhjalp-studiestod-spraktraning/?occurrence=202612091500-202612091700"
+    },
+    {
+      "id": "nacka-torsdagsforelasningar-for-anhoriga-2026-12-10",
+      "t": "Torsdagsföreläsningar för anhöriga",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/310981/rszww400h200-90/symbol-anhorigcenter-kalendarium--441400549-rszww400h200-90.png",
+      "datum": "2026-12-10",
+      "slut": null,
+      "tid": "10:30",
+      "plats": "Träffpunkt Smedjan, Nacka",
+      "lat": 59.3085936,
+      "lon": 18.1625344,
+      "pris": null,
+      "tags": [
+        "nacka",
+        "föresläsning/samtal"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/torsdagsforelasningar-for-anhoriga/?occurrence=202612100930-202612101100"
     },
     {
       "id": "tm-Z698xZq2Z1k-dbe4J",
@@ -14625,13 +16891,50 @@
       "plats": "Ö2 Scenkonst, Stockholm",
       "lat": 59.311442,
       "lon": 18.0750712,
-      "pris": null,
+      "pris": 460,
       "tags": [
         "musik",
         "scen & film",
         "pop"
       ],
       "url": "https://www.nortic.se/ticket/show/357551?fbclid=IwY2xjawUV1GpwZG9mAWV4dG4DYWVtAjEwAGJyaWQRMTFkYndxUEk4bHFWY3VORkRzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEeb0-dmYdd0HshDVn2pV_wouxdETMx9Vjv27LSsaZW0XKdE1n26o7uExs4CyI_aem_C87KgycO00jsWtNdFqL5Bg"
+    },
+    {
+      "id": "nacka-mediyoga-for-anhoriga2-2026-12-11",
+      "t": "MediYoga för anhöriga",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/312280/rszww400h200-90/symbol-anhorigcenter-kalendarium-1444303578-rszww400h200-90.png",
+      "datum": "2026-12-11",
+      "slut": null,
+      "tid": "10:00",
+      "plats": "Träffpunkt Smedjan, Nacka",
+      "lat": 59.3085377,
+      "lon": 18.1622069,
+      "pris": 0,
+      "tags": [
+        "nacka",
+        "motion/hälsa"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/mediyoga-for-anhoriga2/?occurrence=202612110900-202612111030"
+    },
+    {
+      "id": "nacka-barnrytmik-1-4-ar-2026-12-11",
+      "t": "Barnrytmik 1-4 år",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/308861/rszww400h200-90/barnrytmik-1-4-rytmik-1200x600-ht25_edited-1610175830-rszww400h200-90.jpg",
+      "datum": "2026-12-11",
+      "slut": null,
+      "tid": "10:15",
+      "plats": "Dieselverkstaden, Nacka",
+      "lat": 59.3052383,
+      "lon": 18.1210463,
+      "pris": 160,
+      "tags": [
+        "nacka",
+        "barnrytmik",
+        "dieselverkstaden"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/barnrytmik-1-4-ar/?occurrence=202612110915-202612111000"
     },
     {
       "id": "tm-Z698xZq2Z16v4K1ebk",
@@ -14824,7 +17127,7 @@
       "plats": "Confidencen, Solna",
       "lat": 59.386462463175974,
       "lon": 18.017660317026976,
-      "pris": null,
+      "pris": 0,
       "tags": [
         "musik",
         "jul & nyår"
@@ -14842,7 +17145,7 @@
       "plats": "Engelbrektskyrkan, Stockholm",
       "lat": 59.34429613377168,
       "lon": 18.067667464757193,
-      "pris": null,
+      "pris": 0,
       "tags": [
         "musik",
         "scen & film",
@@ -14868,6 +17171,24 @@
         "jul & nyår"
       ],
       "url": "https://www.graffitisthlm.se"
+    },
+    {
+      "id": "nacka-melodikrysset-pa-biblioteket-2026-12-12",
+      "t": "Melodikrysset på biblioteket",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/311755/rszww400h200-90/melodikrysset-evenemang-ext-kal-2026--66844004-rszww400h200-90.png",
+      "datum": "2026-12-12",
+      "slut": null,
+      "tid": "10:04",
+      "plats": "Älta bibliotek, Nacka",
+      "lat": 59.2561243,
+      "lon": 18.1776164,
+      "pris": null,
+      "tags": [
+        "nacka",
+        "träffpunkt/kafé"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/melodikrysset-pa-biblioteket/?occurrence=202612120904-202612121000"
     },
     {
       "id": "tm-Z698xZq2Z1kxoq38t",
@@ -14903,6 +17224,27 @@
         "christmas music"
       ],
       "url": "https://www.ticketmaster.se/event/stjarnjul-2026-biljetter/695035794"
+    },
+    {
+      "id": "nacka-familjelordag-en-haxas-dagbok-2026-12-12",
+      "t": "Familjelördag: En häxas dagbok",
+      "e": "🎭",
+      "img": "https://www.nacka.se/filtered/311773/rszww400h200-90/enhaxasdagbok-1200x600--749762255-rszww400h200-90.jpg",
+      "datum": "2026-12-12",
+      "slut": null,
+      "tid": "13:00",
+      "plats": "Lilla scen, Nacka",
+      "lat": 59.3055552,
+      "lon": 18.1213083,
+      "pris": 140,
+      "tags": [
+        "nacka",
+        "teater",
+        "dieselverkstaden",
+        "familjelördag",
+        "barn"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/familjelordag-en-haxas-dagbok/?occurrence=202612121200-202612121230"
     },
     {
       "id": "tm-Z698xZq2Z1kFV7Ya_",
@@ -15222,6 +17564,24 @@
       "url": "https://www.postmuseum.se/aktuellt/hurra-hurra-hurra/"
     },
     {
+      "id": "nacka-attentions-tisdags-drop-in-2026-12-15",
+      "t": "Attentions tisdags-drop in",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/310338/rszww400h200-90/92caa731-5ada-4708-832c-5cdb1fe4dd2d-tisdags-dropin--9175286-rszww400h200-90.png",
+      "datum": "2026-12-15",
+      "slut": null,
+      "tid": "14:00",
+      "plats": "Tillgänglighetsforum, Nacka",
+      "lat": 59.3086691,
+      "lon": 18.1627164,
+      "pris": 0,
+      "tags": [
+        "nacka",
+        "träffpunkt/kafé"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/attentions-tisdags-drop-in/?occurrence=202612151300-202612151500"
+    },
+    {
       "id": "tm-Z698xZq2Z16vafuNk3",
       "t": "John Lundvik med Mats Björkes Caravan – Julturné 2026",
       "e": "🎵",
@@ -15256,6 +17616,23 @@
         "jul & nyår"
       ],
       "url": "https://shop.showtic.se/sv/fzevy1rw1fb4mf8/selectevent?c=u8gudpr"
+    },
+    {
+      "id": "nacka-laxhjalp-studiestod-spraktraning-2026-12-16",
+      "t": "Läxhjälp, studiestöd & språkträning",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/311752/rszww400h200-90/laxhjalp-ext-kal-a--440917605-rszww400h200-90.png",
+      "datum": "2026-12-16",
+      "slut": null,
+      "tid": "16:00",
+      "plats": "Älta bibliotek, Nacka",
+      "lat": 59.2561243,
+      "lon": 18.1776164,
+      "pris": null,
+      "tags": [
+        "nacka"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/laxhjalp-studiestod-spraktraning/?occurrence=202612161500-202612161700"
     },
     {
       "id": "tm-Z698xZq2Z1kFP4E43",
@@ -15347,6 +17724,24 @@
       "url": "https://www.svenskacupen.gg"
     },
     {
+      "id": "nacka-mediyoga-for-anhoriga2-2026-12-18",
+      "t": "MediYoga för anhöriga",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/312280/rszww400h200-90/symbol-anhorigcenter-kalendarium-1444303578-rszww400h200-90.png",
+      "datum": "2026-12-18",
+      "slut": null,
+      "tid": "10:00",
+      "plats": "Träffpunkt Smedjan, Nacka",
+      "lat": 59.3085377,
+      "lon": 18.1622069,
+      "pris": 0,
+      "tags": [
+        "nacka",
+        "motion/hälsa"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/mediyoga-for-anhoriga2/?occurrence=202612180900-202612181030"
+    },
+    {
       "id": "tm-Z698xZq2Z16v-YJ7Jf",
       "t": "RITSCH RATSCH på Vasan",
       "e": "🎵",
@@ -15393,13 +17788,31 @@
       "plats": "Teater Bristol, Sundbyberg",
       "lat": 59.363502929622086,
       "lon": 17.96688245514727,
-      "pris": null,
+      "pris": 195,
       "tags": [
         "musik",
         "jul & nyår",
         "jazz & blues"
       ],
       "url": "https://www.teaterbristol.se/musik/knockout-greg-x-mas-special/"
+    },
+    {
+      "id": "nacka-melodikrysset-pa-biblioteket-2026-12-19",
+      "t": "Melodikrysset på biblioteket",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/311755/rszww400h200-90/melodikrysset-evenemang-ext-kal-2026--66844004-rszww400h200-90.png",
+      "datum": "2026-12-19",
+      "slut": null,
+      "tid": "10:04",
+      "plats": "Älta bibliotek, Nacka",
+      "lat": 59.2561243,
+      "lon": 18.1776164,
+      "pris": null,
+      "tags": [
+        "nacka",
+        "träffpunkt/kafé"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/melodikrysset-pa-biblioteket/?occurrence=202612190904-202612191000"
     },
     {
       "id": "tm-Z698xZq2Z16vQaZ_1e",
@@ -16258,6 +18671,24 @@
         "sport & hälsa"
       ],
       "url": "https://www.stockholmadventures.com/nature-adventures-stockholm/snowshoe-adventure/"
+    },
+    {
+      "id": "nacka-skridskoskola-i-alta-ishall-2027-01-03",
+      "t": "Skridskoskola i Älta ishall",
+      "e": "📍",
+      "img": "https://www.nacka.se/filtered/313232/rszww400h200-90/img_9015--1245976993-rszww400h200-90.jpg",
+      "datum": "2027-01-03",
+      "slut": "2027-03-21",
+      "tid": "11:00",
+      "plats": "Älta, Nacka",
+      "lat": 59.25737,
+      "lon": 18.1786579,
+      "pris": 1200,
+      "tags": [
+        "nacka",
+        "motion/hälsa"
+      ],
+      "url": "https://www.nacka.se/pa-gang-i-nacka/skridskoskola-i-alta-ishall/?occurrence=202701031000-202703211100"
     },
     {
       "id": "tm-Z698xZq2Z1kFpk8Jb",
@@ -17450,7 +19881,7 @@
       "plats": "Oscarsteatern, Stockholm",
       "lat": 59.33349462660658,
       "lon": 18.056031706769033,
-      "pris": null,
+      "pris": 495,
       "tags": [
         "scen & film",
         "karriär & ledarskap",
@@ -17704,7 +20135,7 @@
       "plats": "Nalen, Stockholm",
       "lat": 59.3370317,
       "lon": 18.0676434,
-      "pris": null,
+      "pris": 350,
       "tags": [
         "musik",
         "jazz & blues"
@@ -17812,7 +20243,7 @@
       "plats": "Kollektivet Livet Bar och Scen, Stockholm",
       "lat": 59.31915,
       "lon": 18.078513,
-      "pris": null,
+      "pris": 350,
       "tags": [
         "musik",
         "traditionell musik, folk & country"
@@ -18283,7 +20714,7 @@
       "plats": "Glenn Miller Café, Stockholm",
       "lat": 59.3364966,
       "lon": 18.0669203,
-      "pris": null,
+      "pris": 70,
       "tags": [
         "musik",
         "jazz & blues"
