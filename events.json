@@ -1,6 +1,6 @@
 {
-  "uppdaterad": "2026-10-08T19:02:50.138Z",
-  "kalla": "Ticketmaster + Visit Stockholm + Nacka",
+  "uppdaterad": "2026-10-08T19:12:38.157Z",
+  "kalla": "Ticketmaster + Visit Stockholm + Nacka + Haninge + Lidingö",
   "exempel": false,
   "events": [
     {
@@ -597,6 +597,70 @@
       "url": "https://riche.se/events/lojromsdagar-pa-riche/"
     },
     {
+      "id": "haninge-utstallning-forbjudna-nobelpristagare-2026-10-08",
+      "t": "Utställning: Förbjudna nobelpristagare",
+      "e": "📍",
+      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "datum": "2026-10-08",
+      "tid": null,
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": null,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/utstallning-forbjudna-nobelpristagare/?d=2026-10-08"
+    },
+    {
+      "id": "haninge-laxhjalp-2026-10-08",
+      "t": "Läxhjälp",
+      "e": "📍",
+      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "datum": "2026-10-08",
+      "tid": null,
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": null,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/laxhjalp/?d=2026-10-08"
+    },
+    {
+      "id": "lidingö-seniorservice-2026-10-08",
+      "t": "Seniorservice",
+      "e": "📍",
+      "img": "https://lidingo.se/wp-content/uploads/2026/09/Fixarjonas-bild-2026.jpg",
+      "datum": "2026-10-08",
+      "tid": "10:00",
+      "plats": "Lidingö",
+      "lat": 59.3663,
+      "lon": 18.15,
+      "pris": 0,
+      "tags": [
+        "lidingö"
+      ],
+      "url": "https://lidingo.se/kultur-fritid/evenemangskalendern/seniorservice/?startDate=2026-10-08_10:00"
+    },
+    {
+      "id": "haninge-sopplunch-pa-spf-runstenens-traffpunkt--2026-10-08",
+      "t": "Sopplunch på SPF Runstenens träffpunkt",
+      "e": "📍",
+      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "datum": "2026-10-08",
+      "tid": "11:30",
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": 50,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/sopplunch-pa-spf-runstenens-traffpunkt-/?d=2026-10-08"
+    },
+    {
       "id": "nacka-konstruktion-och-bild-2026-09-19",
       "t": "Konstruktion och bild",
       "e": "🖼️",
@@ -632,6 +696,54 @@
         "konst/utställningar"
       ],
       "url": "https://www.nacka.se/pa-gang-i-nacka/utstallning-vatten-i-olika-former-maleri-av-christina-asback/?occurrence=202609191300-202610121300"
+    },
+    {
+      "id": "lidingö-tva-blickar-mots-i-ljuset-ett-samtal-mellan-form-tid-och-stillhet-2026-10-08",
+      "t": "Två blickar möts i ljudet – Ett samtal mellan form, tid och stillhet",
+      "e": "📍",
+      "img": "https://lidingo.se/wp-content/uploads/2026/08/c-uts-scaled-1.jpg",
+      "datum": "2026-10-08",
+      "tid": "15:00",
+      "plats": "Lidingö",
+      "lat": 59.3663,
+      "lon": 18.15,
+      "pris": 0,
+      "tags": [
+        "lidingö"
+      ],
+      "url": "https://lidingo.se/kultur-fritid/evenemangskalendern/tva-blickar-mots-i-ljuset-ett-samtal-mellan-form-tid-och-stillhet/?startDate=2026-10-08_15:00"
+    },
+    {
+      "id": "haninge-hoglasningsdags-2026-10-08",
+      "t": "Högläsningsdags",
+      "e": "📍",
+      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "datum": "2026-10-08",
+      "tid": "16:00",
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": null,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/hoglasningsdags/?d=2026-10-08"
+    },
+    {
+      "id": "lidingö-booktok-bookhype-bokfika-2026-10-08",
+      "t": "#booktok #bookhype #bokfika",
+      "e": "📍",
+      "img": "https://lidingo.se/wp-content/uploads/2026/09/Booktokbokhypebokfika-Grafik-Ev.jpg",
+      "datum": "2026-10-08",
+      "tid": "18:00",
+      "plats": "Lidingö",
+      "lat": 59.3663,
+      "lon": 18.15,
+      "pris": 0,
+      "tags": [
+        "lidingö"
+      ],
+      "url": "https://lidingo.se/kultur-fritid/evenemangskalendern/booktok-bookhype-bokfika/?startDate=2026-10-08_18:00"
     },
     {
       "id": "vs-14296",
@@ -1043,23 +1155,68 @@
       "url": "https://www.modernamuseet.se/sv/stockholm/program/fria-fredagar/"
     },
     {
-      "id": "nacka-barnrytmik-1-4-ar-2026-10-09",
-      "t": "Barnrytmik 1-4 år",
+      "id": "haninge-utstallning-forbjudna-nobelpristagare-2026-10-09",
+      "t": "Utställning: Förbjudna nobelpristagare",
       "e": "📍",
-      "img": "https://www.nacka.se/filtered/308861/rszww400h200-90/barnrytmik-1-4-rytmik-1200x600-ht25_edited-1610175830-rszww400h200-90.jpg",
+      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
       "datum": "2026-10-09",
-      "slut": null,
-      "tid": "10:15",
-      "plats": "Dieselverkstaden, Nacka",
-      "lat": 59.3052383,
-      "lon": 18.1210463,
-      "pris": 160,
+      "tid": null,
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": null,
       "tags": [
-        "nacka",
-        "barnrytmik",
-        "dieselverkstaden"
+        "haninge"
       ],
-      "url": "https://www.nacka.se/pa-gang-i-nacka/barnrytmik-1-4-ar/?occurrence=202610090815-202610090900"
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/utstallning-forbjudna-nobelpristagare/?d=2026-10-09"
+    },
+    {
+      "id": "haninge-konstinvigning-med-lewis-henderson--2026-10-09",
+      "t": "Konstinvigning med Lewis Henderson",
+      "e": "📍",
+      "img": "https://www.haninge.se/contentassets/82b24e673ce54b14aa73b4e6436ec25e/krona-eller-klave_11-crop22.jpg",
+      "datum": "2026-10-09",
+      "tid": null,
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": null,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/konstinvigning-med-lewis-henderson-/?d=2026-10-09"
+    },
+    {
+      "id": "haninge-forhandsvisning-av-scener-ur-damen-i-svart-en-spokhistoria-2026-10-09",
+      "t": "Förhandsvisning av scener ur Damen i svart – en spökhistoria",
+      "e": "📍",
+      "img": "https://www.haninge.se/contentassets/0ac7a75ebdf64d6c8680c234bfd24282/damen-i-svart-ormteatern.jpg",
+      "datum": "2026-10-09",
+      "tid": null,
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": null,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/forhandsvisning-av-scener-ur-damen-i-svart-en-spokhistoria/?d=2026-10-09"
+    },
+    {
+      "id": "haninge-usm-for-pojkar-fodda-2012-2026-10-09",
+      "t": "USM för Pojkar födda 2012",
+      "e": "📍",
+      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "datum": "2026-10-09",
+      "tid": null,
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": 0,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/usm-for-pojkar-fodda-2012/?d=2026-10-09"
     },
     {
       "id": "tm-Z698xZq2Z1kkFuZJk",
@@ -1114,6 +1271,70 @@
         "musical"
       ],
       "url": "https://www.ticketmaster.se/event/mamma-mia-the-party-biljetter/231182296"
+    },
+    {
+      "id": "haninge-gratis-nattfotboll-i-jordbro-for-dig-13-15-ar3-2026-10-09",
+      "t": "Gratis nattfotboll i Jordbro för dig 13–15 år",
+      "e": "📍",
+      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "datum": "2026-10-09",
+      "tid": "18:30",
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": 0,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/gratis-nattfotboll-i-jordbro-for-dig-13-15-ar3/?d=2026-10-09"
+    },
+    {
+      "id": "haninge-gratis-nattfotboll-i-brandbergen-for-dig-13-20-ar3-2026-10-09",
+      "t": "Gratis nattfotboll i Brandbergen",
+      "e": "📍",
+      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "datum": "2026-10-09",
+      "tid": "18:30",
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": 0,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/gratis-nattfotboll-i-brandbergen-for-dig-13-20-ar3/?d=2026-10-09"
+    },
+    {
+      "id": "haninge-gratis-spontaninnebandy-i-handen-for-dig-13-20-ar-2026-10-09",
+      "t": "Gratis spontaninnebandy i Handen",
+      "e": "📍",
+      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "datum": "2026-10-09",
+      "tid": "18:30",
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": 0,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/gratis-spontaninnebandy-i-handen-for-dig-13-20-ar/?d=2026-10-09"
+    },
+    {
+      "id": "haninge-gratis-nattfotboll-i-jordbro-for-dig-16-20-ar-2026-10-09",
+      "t": "Gratis nattfotboll i Jordbro för dig 16–20 år",
+      "e": "📍",
+      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "datum": "2026-10-09",
+      "tid": "18:30",
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": 0,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/gratis-nattfotboll-i-jordbro-for-dig-16-20-ar/?d=2026-10-09"
     },
     {
       "id": "tm-Z698xZq2Z16voF8SQ6",
@@ -1876,6 +2097,118 @@
       "url": "https://www.operan.se/forestallningar/guided-tour-in-english"
     },
     {
+      "id": "haninge-utstallning-forbjudna-nobelpristagare-2026-10-10",
+      "t": "Utställning: Förbjudna nobelpristagare",
+      "e": "📍",
+      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "datum": "2026-10-10",
+      "tid": null,
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": null,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/utstallning-forbjudna-nobelpristagare/?d=2026-10-10"
+    },
+    {
+      "id": "haninge-konstverkstad-varje-lordag2-2026-10-10",
+      "t": "Konstverkstad varje lördag",
+      "e": "📍",
+      "img": "https://www.haninge.se/contentassets/cf4705d0f17442a188dbdab1ba2a96d1/maia-lundblom-web.jpg",
+      "datum": "2026-10-10",
+      "tid": null,
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": 0,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/konstverkstad-varje-lordag2/?d=2026-10-10"
+    },
+    {
+      "id": "haninge-familjelordag-2026-10-10",
+      "t": "Familjelördag i Brandbergen",
+      "e": "📍",
+      "img": "https://www.haninge.se/contentassets/92a3b57ae08e4c3ba6665fbdeb481617/familjelordag---molly-bergstrom.jpg",
+      "datum": "2026-10-10",
+      "tid": null,
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": null,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/familjelordag/?d=2026-10-10"
+    },
+    {
+      "id": "haninge-hostkonsert-i-dalaro-kyrka2-2026-10-10",
+      "t": "Höstkonsert i Dalarö kyrka",
+      "e": "📍",
+      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "datum": "2026-10-10",
+      "tid": null,
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": null,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/hostkonsert-i-dalaro-kyrka2/?d=2026-10-10"
+    },
+    {
+      "id": "haninge-danskvall-med-micke-ahlgrens-2026-10-10",
+      "t": "Danskväll med Micke Ahlgrens",
+      "e": "📍",
+      "img": "https://www.haninge.se/contentassets/33992c43ef3849bdb410eea3c13f232a/micke-ahlgrens-2024-pressbild-kal.jpg",
+      "datum": "2026-10-10",
+      "tid": null,
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": 230,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/danskvall-med-micke-ahlgrens/?d=2026-10-10"
+    },
+    {
+      "id": "haninge-usm-for-pojkar-fodda-2012-2026-10-10",
+      "t": "USM för Pojkar födda 2012",
+      "e": "📍",
+      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "datum": "2026-10-10",
+      "tid": null,
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": 0,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/usm-for-pojkar-fodda-2012/?d=2026-10-10"
+    },
+    {
+      "id": "lidingö-orgelutflykt-till-oxelosund-2026-10-10",
+      "t": "Orgelutflykt till Oxelösund",
+      "e": "📍",
+      "img": "https://lidingo.se/wp-content/uploads/2026/09/Bild-Utflykt-Oxelesund-St-Botvid-fran-berget-Foto-Lotta-Wiss-print-scaled-1.jpeg",
+      "datum": "2026-10-10",
+      "tid": "09:00",
+      "plats": "Lidingö",
+      "lat": 59.3663,
+      "lon": 18.15,
+      "pris": 0,
+      "tags": [
+        "lidingö"
+      ],
+      "url": "https://lidingo.se/kultur-fritid/evenemangskalendern/orgelutflykt-till-oxelosund/?startDate=2026-10-10_09:00"
+    },
+    {
       "id": "nacka-brodera-blommor-workshop-med-maja-stjarna-2026-10-10",
       "t": "Brodera blommor - Workshop med Maja Stjärna",
       "e": "📍",
@@ -1986,6 +2319,22 @@
       "url": "https://www.ticketmaster.se/event/garderobsavgift-forkopsrabatt-kop-nu-biljetter/224433645"
     },
     {
+      "id": "lidingö-lidingo-rock-deltavling-1-2026-10-10",
+      "t": "Lidingö Rock – deltävling 1",
+      "e": "📍",
+      "img": "https://lidingo.se/wp-content/uploads/2026/09/LR26_01.webp",
+      "datum": "2026-10-10",
+      "tid": "17:30",
+      "plats": "Lidingö",
+      "lat": 59.3663,
+      "lon": 18.15,
+      "pris": 40,
+      "tags": [
+        "lidingö"
+      ],
+      "url": "https://lidingo.se/kultur-fritid/evenemangskalendern/lidingo-rock-deltavling-1/?startDate=2026-10-10_17:30"
+    },
+    {
       "id": "tm-Z698xZq2Z16vjkCKZg",
       "t": "Labero's Magic World",
       "e": "🎭",
@@ -2020,6 +2369,54 @@
         "miscellaneous"
       ],
       "url": "https://www.ticketmaster.se/event/svartklubben-mat--musik-i-morker-biljetter/218303206"
+    },
+    {
+      "id": "haninge-gratis-nattfotboll-i-jordbro-for-dig-13-15-ar3-2026-10-10",
+      "t": "Gratis nattfotboll i Jordbro för dig 13–15 år",
+      "e": "📍",
+      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "datum": "2026-10-10",
+      "tid": "18:30",
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": 0,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/gratis-nattfotboll-i-jordbro-for-dig-13-15-ar3/?d=2026-10-10"
+    },
+    {
+      "id": "haninge-gratis-nattfotboll-i-brandbergen-for-dig-13-20-ar3-2026-10-10",
+      "t": "Gratis nattfotboll i Brandbergen",
+      "e": "📍",
+      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "datum": "2026-10-10",
+      "tid": "18:30",
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": 0,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/gratis-nattfotboll-i-brandbergen-for-dig-13-20-ar3/?d=2026-10-10"
+    },
+    {
+      "id": "haninge-gratis-nattfotboll-i-jordbro-for-dig-16-20-ar-2026-10-10",
+      "t": "Gratis nattfotboll i Jordbro för dig 16–20 år",
+      "e": "📍",
+      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "datum": "2026-10-10",
+      "tid": "18:30",
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": 0,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/gratis-nattfotboll-i-jordbro-for-dig-16-20-ar/?d=2026-10-10"
     },
     {
       "id": "tm-Z698xZq2Z1kk8p8Qk",
@@ -2423,6 +2820,86 @@
       "url": "https://www.thecreativityhouse.se/ny-drejning-med-guide"
     },
     {
+      "id": "haninge-andas-med-sandra--prova-pa-breathwork-i-haninge-2026-10-11",
+      "t": "Andas med Sandra – Prova på breathwork i Haninge",
+      "e": "📍",
+      "img": "https://www.haninge.se/contentassets/b5a9a3c4f4764fd2958757e354c606ee/andas-med-sandra-medium.jpg",
+      "datum": "2026-10-11",
+      "tid": null,
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": 0,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/andas-med-sandra--prova-pa-breathwork-i-haninge/?d=2026-10-11"
+    },
+    {
+      "id": "haninge-sportsondag-i-vega-2026-10-11",
+      "t": "Sportsöndag i Vega",
+      "e": "📍",
+      "img": "https://www.haninge.se/contentassets/5b02307128f94191ae905cbdeebe7718/sportiga-barn-foto-mostphotos.jpg",
+      "datum": "2026-10-11",
+      "tid": null,
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": 0,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/sportsondag-i-vega/?d=2026-10-11"
+    },
+    {
+      "id": "haninge-utstallning-forbjudna-nobelpristagare-2026-10-11",
+      "t": "Utställning: Förbjudna nobelpristagare",
+      "e": "📍",
+      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "datum": "2026-10-11",
+      "tid": null,
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": null,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/utstallning-forbjudna-nobelpristagare/?d=2026-10-11"
+    },
+    {
+      "id": "haninge-knatteridning2-2026-10-11",
+      "t": "Knatteridning",
+      "e": "📍",
+      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "datum": "2026-10-11",
+      "tid": null,
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": 40,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/knatteridning2/?d=2026-10-11"
+    },
+    {
+      "id": "haninge-usm-for-pojkar-fodda-2012-2026-10-11",
+      "t": "USM för Pojkar födda 2012",
+      "e": "📍",
+      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "datum": "2026-10-11",
+      "tid": null,
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": 0,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/usm-for-pojkar-fodda-2012/?d=2026-10-11"
+    },
+    {
       "id": "nacka-brodera-pa-klader-workshop-med-maja-stjarna-2026-10-11",
       "t": "Brodera på kläder- Workshop med Maja Stjärna",
       "e": "📍",
@@ -2457,6 +2934,22 @@
         "nacka"
       ],
       "url": "https://www.nacka.se/pa-gang-i-nacka/oppet-i-hembygdsgarden2/?occurrence=202610110900-202610111300"
+    },
+    {
+      "id": "haninge--potatislov---vad-ar-det-hitta-svaret-pa-skolmuseet--2-2026-10-11",
+      "t": "Potatislov – vad är det? Hitta svaret på skolmuseet",
+      "e": "📍",
+      "img": "https://www.haninge.se/contentassets/f9a564efd4d8441d94bd164cd4acae53/potatis-potatislovet-skord-hostlovet.jpg",
+      "datum": "2026-10-11",
+      "tid": "13:00",
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": null,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/-potatislov---vad-ar-det-hitta-svaret-pa-skolmuseet--2/?d=2026-10-11"
     },
     {
       "id": "nacka-vi-var-har-2026-10-11",
@@ -2604,6 +3097,134 @@
       "url": "https://tickets.nortic.se/ticket/event/82967"
     },
     {
+      "id": "haninge-stolthet-och-gemenskap--unga-romer-berattar-2026-10-12",
+      "t": "Utställningen Stolthet och gemenskap – unga romer berättar",
+      "e": "📍",
+      "img": "https://www.haninge.se/contentassets/cf9b5d2f3fba40aea6e7e5dbf3d2d6e1/stolthet-och-gemenskap_jpg.jpg",
+      "datum": "2026-10-12",
+      "tid": null,
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": null,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/stolthet-och-gemenskap--unga-romer-berattar/?d=2026-10-12"
+    },
+    {
+      "id": "haninge-det-tysta-arvet-2026-10-12",
+      "t": "Utställningen Det tysta arvet",
+      "e": "📍",
+      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "datum": "2026-10-12",
+      "tid": null,
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": null,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/det-tysta-arvet/?d=2026-10-12"
+    },
+    {
+      "id": "haninge-skolbio-for-ak-9-och-gymnasiet--taikon-2026-10-12",
+      "t": "Skolbio för åk 9 och gymnasiet – Taikon",
+      "e": "📍",
+      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "datum": "2026-10-12",
+      "tid": null,
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": null,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/skolbio-for-ak-9-och-gymnasiet--taikon/?d=2026-10-12"
+    },
+    {
+      "id": "haninge-parlpyssel-i-brandbergen-2026-10-12",
+      "t": "Pärlpyssel i Brandbergen",
+      "e": "📍",
+      "img": "https://www.haninge.se/contentassets/ea2ec53094e84181bc158524cb2babd4/nationella-minoriteter---fotograf-susanne-kronholm.jpg",
+      "datum": "2026-10-12",
+      "tid": null,
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": null,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/parlpyssel-i-brandbergen/?d=2026-10-12"
+    },
+    {
+      "id": "haninge-after-foris-2026-10-12",
+      "t": "After föris",
+      "e": "📍",
+      "img": "https://www.haninge.se/contentassets/e7007e1ae769475a814babcdb7f6d070/after-foris---800-x-450---janna-berg.jpg",
+      "datum": "2026-10-12",
+      "tid": null,
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": null,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/after-foris/?d=2026-10-12"
+    },
+    {
+      "id": "haninge-kommunfullmaktige-sammantrader6-2026-10-12",
+      "t": "Kommunfullmäktige sammanträder",
+      "e": "📍",
+      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "datum": "2026-10-12",
+      "tid": null,
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": null,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/kommunfullmaktige-sammantrader6/?d=2026-10-12"
+    },
+    {
+      "id": "haninge-forelasning-judarnas-historia-i-sverige-2026-10-12",
+      "t": "Föreläsning: Judarnas historia i Sverige",
+      "e": "📍",
+      "img": "https://www.haninge.se/contentassets/24ae3e46277441eca2654da25405ecd6/carl-henrik-carlsson_fotograf-david-naylor.jpg",
+      "datum": "2026-10-12",
+      "tid": null,
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": null,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/forelasning-judarnas-historia-i-sverige/?d=2026-10-12"
+    },
+    {
+      "id": "haninge-minoritetsveckan-12-17-oktober-2026-10-12",
+      "t": "Minoritetsveckan 12–17 oktober",
+      "e": "📍",
+      "img": "https://intranet.haninge.se/contentassets/35df34d6aa334c448fe8db52f7ca0674/nationella-minoriteter-flagga-800x450.jpg",
+      "datum": "2026-10-12",
+      "tid": "12:15",
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": null,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/minoritetsveckan-12-17-oktober/?d=2026-10-12"
+    },
+    {
       "id": "tm-Z698xZq2Z1kb9Q97P",
       "t": "HAKEN",
       "e": "🎵",
@@ -2748,6 +3369,150 @@
       "url": "https://www.tekniskamuseet.se/program-och-upplevelser/samtal-och-ide/techbolag-eller-politiker-vem-har-makten/"
     },
     {
+      "id": "haninge-stolthet-och-gemenskap--unga-romer-berattar-2026-10-13",
+      "t": "Utställningen Stolthet och gemenskap – unga romer berättar",
+      "e": "📍",
+      "img": "https://www.haninge.se/contentassets/cf9b5d2f3fba40aea6e7e5dbf3d2d6e1/stolthet-och-gemenskap_jpg.jpg",
+      "datum": "2026-10-13",
+      "tid": null,
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": null,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/stolthet-och-gemenskap--unga-romer-berattar/?d=2026-10-13"
+    },
+    {
+      "id": "haninge-det-tysta-arvet-2026-10-13",
+      "t": "Utställningen Det tysta arvet",
+      "e": "📍",
+      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "datum": "2026-10-13",
+      "tid": null,
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": null,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/det-tysta-arvet/?d=2026-10-13"
+    },
+    {
+      "id": "haninge-samisk-kultur-och-det-samiska-sprakets-historia-2026-10-13",
+      "t": "Samisk kultur och det samiska språkets historia",
+      "e": "📍",
+      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "datum": "2026-10-13",
+      "tid": null,
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": null,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/samisk-kultur-och-det-samiska-sprakets-historia/?d=2026-10-13"
+    },
+    {
+      "id": "haninge-bakworkshop-med-nikanna-marak2-2026-10-13",
+      "t": "Bakworkshop med NikAnnika Märak",
+      "e": "📍",
+      "img": "https://www.haninge.se/contentassets/3a9e8dd50c4e46ca9dd2874a8ec6ffc8/nikannika-marak-bild-nikannika-marak.jpeg",
+      "datum": "2026-10-13",
+      "tid": null,
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": null,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/bakworkshop-med-nikanna-marak2/?d=2026-10-13"
+    },
+    {
+      "id": "haninge-invigningstal-minoritetsveckan-2026-10-13",
+      "t": "Invigningstal minoritetsveckan",
+      "e": "📍",
+      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "datum": "2026-10-13",
+      "tid": null,
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": null,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/invigningstal-minoritetsveckan/?d=2026-10-13"
+    },
+    {
+      "id": "haninge-lunch--och-invigningskonsert-med-kizelo-mleko---klezmermusik-och-balkanos-2026-10-13",
+      "t": "Lunch- och invigningskonsert med Kizelo Mleko – klezmermusik och balkanös",
+      "e": "📍",
+      "img": "https://www.haninge.se/contentassets/32298204096646b28d284d549add381a/kizelo-mleko-ratt-stl.jpg",
+      "datum": "2026-10-13",
+      "tid": null,
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": null,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/lunch--och-invigningskonsert-med-kizelo-mleko---klezmermusik-och-balkanos/?d=2026-10-13"
+    },
+    {
+      "id": "haninge-samhallshjalp-2026-10-13",
+      "t": "Samhällshjälp",
+      "e": "📍",
+      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "datum": "2026-10-13",
+      "tid": null,
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": null,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/samhallshjalp/?d=2026-10-13"
+    },
+    {
+      "id": "haninge-forfattarbesok-med-nina-waha-2026-10-13",
+      "t": "Författarbesök med Nina Wähä",
+      "e": "📍",
+      "img": "https://www.haninge.se/contentassets/afb6ca6ad78742618bd8de2a20b11687/nina-waha-foto-kajsa-goransson-ratt-stl.jpg",
+      "datum": "2026-10-13",
+      "tid": null,
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": null,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/forfattarbesok-med-nina-waha/?d=2026-10-13"
+    },
+    {
+      "id": "haninge-handarbetscafe-i-vega-2026-10-13",
+      "t": "Handarbetscafé i Vega",
+      "e": "📍",
+      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "datum": "2026-10-13",
+      "tid": null,
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": null,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/handarbetscafe-i-vega/?d=2026-10-13"
+    },
+    {
       "id": "nacka-en-ta-i-det-bla-babymalning-2026-10-13",
       "t": "En tå i det blå - babymålning",
       "e": "📍",
@@ -2765,6 +3530,22 @@
         "skapande verksamhet"
       ],
       "url": "https://www.nacka.se/pa-gang-i-nacka/en-ta-i-det-bla-babymalning/?occurrence=202610130800-202610130900"
+    },
+    {
+      "id": "haninge-minoritetsveckan-12-17-oktober-2026-10-13",
+      "t": "Minoritetsveckan 12–17 oktober",
+      "e": "📍",
+      "img": "https://intranet.haninge.se/contentassets/35df34d6aa334c448fe8db52f7ca0674/nationella-minoriteter-flagga-800x450.jpg",
+      "datum": "2026-10-13",
+      "tid": "12:15",
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": null,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/minoritetsveckan-12-17-oktober/?d=2026-10-13"
     },
     {
       "id": "nacka-attentions-tisdags-drop-in-2026-10-13",
@@ -3072,6 +3853,182 @@
       "url": "https://www.vaxholmsbedandbreakfast.se/se/swedish-baking"
     },
     {
+      "id": "haninge-stolthet-och-gemenskap--unga-romer-berattar-2026-10-14",
+      "t": "Utställningen Stolthet och gemenskap – unga romer berättar",
+      "e": "📍",
+      "img": "https://www.haninge.se/contentassets/cf9b5d2f3fba40aea6e7e5dbf3d2d6e1/stolthet-och-gemenskap_jpg.jpg",
+      "datum": "2026-10-14",
+      "tid": null,
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": null,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/stolthet-och-gemenskap--unga-romer-berattar/?d=2026-10-14"
+    },
+    {
+      "id": "haninge-det-tysta-arvet-2026-10-14",
+      "t": "Utställningen Det tysta arvet",
+      "e": "📍",
+      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "datum": "2026-10-14",
+      "tid": null,
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": null,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/det-tysta-arvet/?d=2026-10-14"
+    },
+    {
+      "id": "haninge-skolbio-vinski-och-vikingaskatten-2026-10-14",
+      "t": "Skolbio: Vinski och vikingaskatten",
+      "e": "📍",
+      "img": "https://www.haninge.se/contentassets/0af482f2026f450eab381fd516422293/vinski-och-vikingaskatten.jpg",
+      "datum": "2026-10-14",
+      "tid": null,
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": null,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/skolbio-vinski-och-vikingaskatten/?d=2026-10-14"
+    },
+    {
+      "id": "haninge-samisk-kultur-och-det-samiska-sprakets-historia-2026-10-14",
+      "t": "Samisk kultur och det samiska språkets historia",
+      "e": "📍",
+      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "datum": "2026-10-14",
+      "tid": null,
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": null,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/samisk-kultur-och-det-samiska-sprakets-historia/?d=2026-10-14"
+    },
+    {
+      "id": "haninge-filmvisning-pa-tallhojden--kalevala-2026-10-14",
+      "t": "Filmvisning på Tallhöjden – ”Kalevala”",
+      "e": "📍",
+      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "datum": "2026-10-14",
+      "tid": null,
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": null,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/filmvisning-pa-tallhojden--kalevala/?d=2026-10-14"
+    },
+    {
+      "id": "haninge-pyssel-med-samiskt-tema-2026-10-14",
+      "t": "Pyssel med samiskt tema",
+      "e": "📍",
+      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "datum": "2026-10-14",
+      "tid": null,
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": null,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/pyssel-med-samiskt-tema/?d=2026-10-14"
+    },
+    {
+      "id": "haninge-konstlab-2026-10-14",
+      "t": "Konstlab",
+      "e": "📍",
+      "img": "https://www.haninge.se/contentassets/2a3a1ad91e2a4756915233e2a01c4237/maia-lundblom-konstlab-.jpg",
+      "datum": "2026-10-14",
+      "tid": null,
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": 0,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/konstlab/?d=2026-10-14"
+    },
+    {
+      "id": "haninge-bibblans-vip-klubb---for-dig-pa-lagstadiet-2026-10-14",
+      "t": "Bibblans VIP-klubb - för dig på lågstadiet.",
+      "e": "📍",
+      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "datum": "2026-10-14",
+      "tid": null,
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": null,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/bibblans-vip-klubb---for-dig-pa-lagstadiet/?d=2026-10-14"
+    },
+    {
+      "id": "haninge-starta-eget-kurs-del-1-av-2-2026-10-14",
+      "t": "Starta eget-kurs (del 1 av 2)",
+      "e": "📍",
+      "img": "https://www.haninge.se/contentassets/b12ac7f5d8694ec98095aa2506892d93/csaba-balazs-q9ursedw330-unsplash.jpg",
+      "datum": "2026-10-14",
+      "tid": null,
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": 0,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/starta-eget-kurs-del-1-av-2/?d=2026-10-14"
+    },
+    {
+      "id": "haninge-forfattarbesok-med-ann-helen-laestadius-2026-10-14",
+      "t": "Författarbesök med Ann-Helén Laestadius",
+      "e": "📍",
+      "img": "https://www.haninge.se/contentassets/1952bf4f33344a4c98b4230290b452b3/bild-ann-helene-laestadius-foto-carl-johan-utsi-ratt-stl.jpg",
+      "datum": "2026-10-14",
+      "tid": null,
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": 50,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/forfattarbesok-med-ann-helen-laestadius/?d=2026-10-14"
+    },
+    {
+      "id": "haninge-gratis-kvallsklattring-i-brandbergen-for-dig-13-20-ar2-2026-10-14",
+      "t": "Gratis kvällsklättring i Brandbergen",
+      "e": "📍",
+      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "datum": "2026-10-14",
+      "tid": null,
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": 0,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/gratis-kvallsklattring-i-brandbergen-for-dig-13-20-ar2/?d=2026-10-14"
+    },
+    {
       "id": "nacka-jazziorerna-i-boo-folkets-hus-2026-10-14",
       "t": "Jazziorerna i Boo Folkets Hus",
       "e": "🎵",
@@ -3108,6 +4065,38 @@
         "vuxna"
       ],
       "url": "https://www.nacka.se/pa-gang-i-nacka/lunchkoren/?occurrence=202610141000-202610141045"
+    },
+    {
+      "id": "haninge-minoritetsveckan-12-17-oktober-2026-10-14",
+      "t": "Minoritetsveckan 12–17 oktober",
+      "e": "📍",
+      "img": "https://intranet.haninge.se/contentassets/35df34d6aa334c448fe8db52f7ca0674/nationella-minoriteter-flagga-800x450.jpg",
+      "datum": "2026-10-14",
+      "tid": "12:15",
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": null,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/minoritetsveckan-12-17-oktober/?d=2026-10-14"
+    },
+    {
+      "id": "haninge-skrivarklubben-2026-10-14",
+      "t": "Skrivarklubben",
+      "e": "📍",
+      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "datum": "2026-10-14",
+      "tid": "15:00",
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": null,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/skrivarklubben/?d=2026-10-14"
     },
     {
       "id": "nacka-laxhjalp-studiestod-spraktraning-2026-10-14",
@@ -3381,6 +4370,182 @@
         "konst & kultur"
       ],
       "url": "https://sparvagsmuseet.biljetto.com/evenemang/0004-/"
+    },
+    {
+      "id": "haninge-stolthet-och-gemenskap--unga-romer-berattar-2026-10-15",
+      "t": "Utställningen Stolthet och gemenskap – unga romer berättar",
+      "e": "📍",
+      "img": "https://www.haninge.se/contentassets/cf9b5d2f3fba40aea6e7e5dbf3d2d6e1/stolthet-och-gemenskap_jpg.jpg",
+      "datum": "2026-10-15",
+      "tid": null,
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": null,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/stolthet-och-gemenskap--unga-romer-berattar/?d=2026-10-15"
+    },
+    {
+      "id": "haninge-det-tysta-arvet-2026-10-15",
+      "t": "Utställningen Det tysta arvet",
+      "e": "📍",
+      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "datum": "2026-10-15",
+      "tid": null,
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": null,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/det-tysta-arvet/?d=2026-10-15"
+    },
+    {
+      "id": "haninge-kalevalaskapet-med-teater-slava-2026-10-15",
+      "t": "”Kalevalaskåpet” med Teater Sláva",
+      "e": "📍",
+      "img": "https://www.haninge.se/contentassets/db8dcc49282b4c26a5b9aa58122923cb/kalevalaskapet-fotograf-hjalmar-af-klintberg.jpg",
+      "datum": "2026-10-15",
+      "tid": null,
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": null,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/kalevalaskapet-med-teater-slava/?d=2026-10-15"
+    },
+    {
+      "id": "haninge-samisk-kultur-och-det-samiska-sprakets-historia-2026-10-15",
+      "t": "Samisk kultur och det samiska språkets historia",
+      "e": "📍",
+      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "datum": "2026-10-15",
+      "tid": null,
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": null,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/samisk-kultur-och-det-samiska-sprakets-historia/?d=2026-10-15"
+    },
+    {
+      "id": "haninge-naringslivsdagen-2026-2026-10-15",
+      "t": "Näringslivsdagen 2026",
+      "e": "📍",
+      "img": "https://www.haninge.se/contentassets/9a7eb4ca6de54161aea747fa7dc1d977/vimmel-4.jpg",
+      "datum": "2026-10-15",
+      "tid": null,
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": null,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/naringslivsdagen-2026/?d=2026-10-15"
+    },
+    {
+      "id": "haninge-laxhjalp-2026-10-15",
+      "t": "Läxhjälp",
+      "e": "📍",
+      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "datum": "2026-10-15",
+      "tid": null,
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": null,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/laxhjalp/?d=2026-10-15"
+    },
+    {
+      "id": "haninge-starta-eget-kurs-del-2-av-2-2026-10-15",
+      "t": "Starta eget-kurs (del 2 av 2)",
+      "e": "📍",
+      "img": "https://www.haninge.se/contentassets/503c64d8513845f49bc2d78a81c7f20c/csaba-balazs-q9ursedw330-unsplash.jpg",
+      "datum": "2026-10-15",
+      "tid": null,
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": 0,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/starta-eget-kurs-del-2-av-2/?d=2026-10-15"
+    },
+    {
+      "id": "haninge-ivar-lo-museet-pa-mariaberget-i-stockholm-visas---valkommen-att-hanga-med-2026-10-15",
+      "t": "Ivar Lo-museet på Mariaberget i Stockholm visas - välkommen att hänga med",
+      "e": "📍",
+      "img": "https://www.haninge.se/contentassets/aa15d4df964e4189bfd9125db6768663/ivar-statyn--forminskad.jpg",
+      "datum": "2026-10-15",
+      "tid": null,
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": null,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/ivar-lo-museet-pa-mariaberget-i-stockholm-visas---valkommen-att-hanga-med/?d=2026-10-15"
+    },
+    {
+      "id": "haninge-sopplunch-pa-spf-runstenens-traffpunkt--2026-10-15",
+      "t": "Sopplunch på SPF Runstenens träffpunkt",
+      "e": "📍",
+      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "datum": "2026-10-15",
+      "tid": "11:30",
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": 50,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/sopplunch-pa-spf-runstenens-traffpunkt-/?d=2026-10-15"
+    },
+    {
+      "id": "haninge-minoritetsveckan-12-17-oktober-2026-10-15",
+      "t": "Minoritetsveckan 12–17 oktober",
+      "e": "📍",
+      "img": "https://intranet.haninge.se/contentassets/35df34d6aa334c448fe8db52f7ca0674/nationella-minoriteter-flagga-800x450.jpg",
+      "datum": "2026-10-15",
+      "tid": "12:15",
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": null,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/minoritetsveckan-12-17-oktober/?d=2026-10-15"
+    },
+    {
+      "id": "haninge-hoglasningsdags-2026-10-15",
+      "t": "Högläsningsdags",
+      "e": "📍",
+      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "datum": "2026-10-15",
+      "tid": "16:00",
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": null,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/hoglasningsdags/?d=2026-10-15"
     },
     {
       "id": "nacka-vad-hander-i-orminge-2026-10-15",
@@ -3803,6 +4968,118 @@
       "url": "https://www.postmuseum.se/aktuellt/familjevisning/"
     },
     {
+      "id": "haninge-stolthet-och-gemenskap--unga-romer-berattar-2026-10-16",
+      "t": "Utställningen Stolthet och gemenskap – unga romer berättar",
+      "e": "📍",
+      "img": "https://www.haninge.se/contentassets/cf9b5d2f3fba40aea6e7e5dbf3d2d6e1/stolthet-och-gemenskap_jpg.jpg",
+      "datum": "2026-10-16",
+      "tid": null,
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": null,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/stolthet-och-gemenskap--unga-romer-berattar/?d=2026-10-16"
+    },
+    {
+      "id": "haninge-det-tysta-arvet-2026-10-16",
+      "t": "Utställningen Det tysta arvet",
+      "e": "📍",
+      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "datum": "2026-10-16",
+      "tid": null,
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": null,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/det-tysta-arvet/?d=2026-10-16"
+    },
+    {
+      "id": "haninge-karelska-piroger-till-forsaljning-pa-brandbergens-seniorcentrum-2026-10-16",
+      "t": "Karelska piroger till försäljning på Brandbergens seniorcentrum",
+      "e": "📍",
+      "img": "https://www.haninge.se/contentassets/b7012c827e874873a5491e797f8a1c8b/karelska-piroger.jpg",
+      "datum": "2026-10-16",
+      "tid": null,
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": null,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/karelska-piroger-till-forsaljning-pa-brandbergens-seniorcentrum/?d=2026-10-16"
+    },
+    {
+      "id": "haninge-samisk-kultur-och-det-samiska-sprakets-historia-2026-10-16",
+      "t": "Samisk kultur och det samiska språkets historia",
+      "e": "📍",
+      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "datum": "2026-10-16",
+      "tid": null,
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": null,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/samisk-kultur-och-det-samiska-sprakets-historia/?d=2026-10-16"
+    },
+    {
+      "id": "haninge-fredagssaga-pa-brandbergens-bibliotek-2026-10-16",
+      "t": "Fredagssaga på Brandbergens bibliotek",
+      "e": "📍",
+      "img": "https://www.haninge.se/contentassets/ac783da6f8394fa7b1d2d43c866f9353/sagostund-fotograf-susanne-kronholm.jpg",
+      "datum": "2026-10-16",
+      "tid": null,
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": null,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/fredagssaga-pa-brandbergens-bibliotek/?d=2026-10-16"
+    },
+    {
+      "id": "haninge-lunchkonsert-med-ingrid-enckell-band-2026-10-16",
+      "t": "Lunchkonsert med Ingrid Enckell band",
+      "e": "📍",
+      "img": "https://www.haninge.se/contentassets/f5511a2b98c74c38a8ed2d081a10ed76/ingrid-enkell-ratt-stl.jpg",
+      "datum": "2026-10-16",
+      "tid": null,
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": null,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/lunchkonsert-med-ingrid-enckell-band/?d=2026-10-16"
+    },
+    {
+      "id": "haninge-filmvisning-sverigefinska-kortfilmer-2026-10-16",
+      "t": "Filmvisning: Sverigefinska kortfilmer",
+      "e": "📍",
+      "img": "https://www.haninge.se/contentassets/ef13b271970742caa7c0dfb45f43ed9a/sommarfilmen.jpg",
+      "datum": "2026-10-16",
+      "tid": null,
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": 0,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/filmvisning-sverigefinska-kortfilmer/?d=2026-10-16"
+    },
+    {
       "id": "nacka-mediyoga-for-anhoriga2-2026-10-16",
       "t": "MediYoga för anhöriga",
       "e": "📍",
@@ -3821,23 +5098,36 @@
       "url": "https://www.nacka.se/pa-gang-i-nacka/mediyoga-for-anhoriga2/?occurrence=202610160800-202610160930"
     },
     {
-      "id": "nacka-barnrytmik-1-4-ar-2026-10-16",
-      "t": "Barnrytmik 1-4 år",
+      "id": "haninge-bio-tittelitut-tittar-pa-minoriteter-fran-3-ar-2026-10-16",
+      "t": "Bio Tittelitut tittar på minoriteter (från 3 år)",
       "e": "📍",
-      "img": "https://www.nacka.se/filtered/308861/rszww400h200-90/barnrytmik-1-4-rytmik-1200x600-ht25_edited-1610175830-rszww400h200-90.jpg",
+      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
       "datum": "2026-10-16",
-      "slut": null,
-      "tid": "10:15",
-      "plats": "Dieselverkstaden, Nacka",
-      "lat": 59.3052383,
-      "lon": 18.1210463,
-      "pris": 160,
+      "tid": "10:00",
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": null,
       "tags": [
-        "nacka",
-        "barnrytmik",
-        "dieselverkstaden"
+        "haninge"
       ],
-      "url": "https://www.nacka.se/pa-gang-i-nacka/barnrytmik-1-4-ar/?occurrence=202610160815-202610160900"
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/bio-tittelitut-tittar-pa-minoriteter-fran-3-ar/?d=2026-10-16"
+    },
+    {
+      "id": "haninge-minoritetsveckan-12-17-oktober-2026-10-16",
+      "t": "Minoritetsveckan 12–17 oktober",
+      "e": "📍",
+      "img": "https://intranet.haninge.se/contentassets/35df34d6aa334c448fe8db52f7ca0674/nationella-minoriteter-flagga-800x450.jpg",
+      "datum": "2026-10-16",
+      "tid": "12:15",
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": null,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/minoritetsveckan-12-17-oktober/?d=2026-10-16"
     },
     {
       "id": "nacka-mogendans-i-boo-folkets-2026-10-16",
@@ -3891,6 +5181,70 @@
         "miscellaneous"
       ],
       "url": "https://www.ticketmaster.se/event/mamma-mia-the-party-biljetter/1973519028"
+    },
+    {
+      "id": "haninge-gratis-nattfotboll-i-jordbro-for-dig-13-15-ar3-2026-10-16",
+      "t": "Gratis nattfotboll i Jordbro för dig 13–15 år",
+      "e": "📍",
+      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "datum": "2026-10-16",
+      "tid": "18:30",
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": 0,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/gratis-nattfotboll-i-jordbro-for-dig-13-15-ar3/?d=2026-10-16"
+    },
+    {
+      "id": "haninge-gratis-nattfotboll-i-brandbergen-for-dig-13-20-ar3-2026-10-16",
+      "t": "Gratis nattfotboll i Brandbergen",
+      "e": "📍",
+      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "datum": "2026-10-16",
+      "tid": "18:30",
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": 0,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/gratis-nattfotboll-i-brandbergen-for-dig-13-20-ar3/?d=2026-10-16"
+    },
+    {
+      "id": "haninge-gratis-spontaninnebandy-i-handen-for-dig-13-20-ar-2026-10-16",
+      "t": "Gratis spontaninnebandy i Handen",
+      "e": "📍",
+      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "datum": "2026-10-16",
+      "tid": "18:30",
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": 0,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/gratis-spontaninnebandy-i-handen-for-dig-13-20-ar/?d=2026-10-16"
+    },
+    {
+      "id": "haninge-gratis-nattfotboll-i-jordbro-for-dig-16-20-ar-2026-10-16",
+      "t": "Gratis nattfotboll i Jordbro för dig 16–20 år",
+      "e": "📍",
+      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "datum": "2026-10-16",
+      "tid": "18:30",
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": 0,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/gratis-nattfotboll-i-jordbro-for-dig-16-20-ar/?d=2026-10-16"
     },
     {
       "id": "tm-Z698xZq2Z1ka8CK7M",
@@ -4397,6 +5751,166 @@
       "url": "https://guidingstar.se/"
     },
     {
+      "id": "haninge-stolthet-och-gemenskap--unga-romer-berattar-2026-10-17",
+      "t": "Utställningen Stolthet och gemenskap – unga romer berättar",
+      "e": "📍",
+      "img": "https://www.haninge.se/contentassets/cf9b5d2f3fba40aea6e7e5dbf3d2d6e1/stolthet-och-gemenskap_jpg.jpg",
+      "datum": "2026-10-17",
+      "tid": null,
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": null,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/stolthet-och-gemenskap--unga-romer-berattar/?d=2026-10-17"
+    },
+    {
+      "id": "haninge-det-tysta-arvet-2026-10-17",
+      "t": "Utställningen Det tysta arvet",
+      "e": "📍",
+      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "datum": "2026-10-17",
+      "tid": null,
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": null,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/det-tysta-arvet/?d=2026-10-17"
+    },
+    {
+      "id": "haninge-samisk-kultur-och-det-samiska-sprakets-historia-2026-10-17",
+      "t": "Samisk kultur och det samiska språkets historia",
+      "e": "📍",
+      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "datum": "2026-10-17",
+      "tid": null,
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": null,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/samisk-kultur-och-det-samiska-sprakets-historia/?d=2026-10-17"
+    },
+    {
+      "id": "haninge-konstverkstad-varje-lordag2-2026-10-17",
+      "t": "Konstverkstad varje lördag",
+      "e": "📍",
+      "img": "https://www.haninge.se/contentassets/cf4705d0f17442a188dbdab1ba2a96d1/maia-lundblom-web.jpg",
+      "datum": "2026-10-17",
+      "tid": null,
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": 0,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/konstverkstad-varje-lordag2/?d=2026-10-17"
+    },
+    {
+      "id": "haninge-kom-och-pyssla-och-gor-samiska-kator-pa-jordbro-bibliotek2-2026-10-17",
+      "t": "Kom och pyssla och gör samiska kåtor på Brandbergens bibliotek",
+      "e": "📍",
+      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "datum": "2026-10-17",
+      "tid": null,
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": null,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/kom-och-pyssla-och-gor-samiska-kator-pa-jordbro-bibliotek2/?d=2026-10-17"
+    },
+    {
+      "id": "haninge-familjelordag-2026-10-17",
+      "t": "Familjelördag i Brandbergen",
+      "e": "📍",
+      "img": "https://www.haninge.se/contentassets/92a3b57ae08e4c3ba6665fbdeb481617/familjelordag---molly-bergstrom.jpg",
+      "datum": "2026-10-17",
+      "tid": null,
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": null,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/familjelordag/?d=2026-10-17"
+    },
+    {
+      "id": "haninge-temadag-om-vara-nationella-minoriteter-2026-10-17",
+      "t": "Temadag om våra nationella minoriteter",
+      "e": "📍",
+      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "datum": "2026-10-17",
+      "tid": null,
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": null,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/temadag-om-vara-nationella-minoriteter/?d=2026-10-17"
+    },
+    {
+      "id": "haninge-rojteatern-presenterar-limbo-av-margareta-garpe--2026-10-17",
+      "t": "RoJteatern presenterar Limbo av Margareta Garpe",
+      "e": "📍",
+      "img": "https://www.haninge.se/contentassets/326083a5a26e4f70bc38738fd3654bcc/rojteatern-limbo.jpg",
+      "datum": "2026-10-17",
+      "tid": null,
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": null,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/rojteatern-presenterar-limbo-av-margareta-garpe-/?d=2026-10-17"
+    },
+    {
+      "id": "haninge-fodens-band-ger-en-barnkonsert-2026-10-17",
+      "t": "Foden",
+      "e": "📍",
+      "img": "https://www.haninge.se/contentassets/01e7a7a8aa6f42c4ac4f35f1cf576ac8/forslag-1.jpg",
+      "datum": "2026-10-17",
+      "tid": null,
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": null,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/fodens-band-ger-en-barnkonsert/?d=2026-10-17"
+    },
+    {
+      "id": "haninge-konsert-med-fodens-band-och-sodertorns-brass-2026-10-17",
+      "t": "Konsert med Foden",
+      "e": "📍",
+      "img": "https://www.haninge.se/contentassets/2ec0e4b788a8478d8d21a16ce0885441/forslag-1.jpg",
+      "datum": "2026-10-17",
+      "tid": null,
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": 0,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/konsert-med-fodens-band-och-sodertorns-brass/?d=2026-10-17"
+    },
+    {
       "id": "nacka-meditativt-broderi-workshop-med-maja-stjarna-2026-10-17",
       "t": "Meditativt broderi - Workshop med Maja Stjärna",
       "e": "📍",
@@ -4488,6 +6002,22 @@
       "url": "https://www.ticketmaster.se/event/babblarna--klonks-klapp-kalas-biljetter/1746010787"
     },
     {
+      "id": "haninge-minoritetsveckan-12-17-oktober-2026-10-17",
+      "t": "Minoritetsveckan 12–17 oktober",
+      "e": "📍",
+      "img": "https://intranet.haninge.se/contentassets/35df34d6aa334c448fe8db52f7ca0674/nationella-minoriteter-flagga-800x450.jpg",
+      "datum": "2026-10-17",
+      "tid": "12:15",
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": null,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/minoritetsveckan-12-17-oktober/?d=2026-10-17"
+    },
+    {
       "id": "tm-Z698xZq2Z1k0N4-fO",
       "t": "MAMMA MIA! THE PARTY",
       "e": "🎭",
@@ -4540,6 +6070,54 @@
         "miscellaneous"
       ],
       "url": "https://www.ticketmaster.se/event/svartklubben-mat--musik-i-morker-biljetter/1827216467"
+    },
+    {
+      "id": "haninge-gratis-nattfotboll-i-jordbro-for-dig-13-15-ar3-2026-10-17",
+      "t": "Gratis nattfotboll i Jordbro för dig 13–15 år",
+      "e": "📍",
+      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "datum": "2026-10-17",
+      "tid": "18:30",
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": 0,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/gratis-nattfotboll-i-jordbro-for-dig-13-15-ar3/?d=2026-10-17"
+    },
+    {
+      "id": "haninge-gratis-nattfotboll-i-brandbergen-for-dig-13-20-ar3-2026-10-17",
+      "t": "Gratis nattfotboll i Brandbergen",
+      "e": "📍",
+      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "datum": "2026-10-17",
+      "tid": "18:30",
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": 0,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/gratis-nattfotboll-i-brandbergen-for-dig-13-20-ar3/?d=2026-10-17"
+    },
+    {
+      "id": "haninge-gratis-nattfotboll-i-jordbro-for-dig-16-20-ar-2026-10-17",
+      "t": "Gratis nattfotboll i Jordbro för dig 16–20 år",
+      "e": "📍",
+      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "datum": "2026-10-17",
+      "tid": "18:30",
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": 0,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/gratis-nattfotboll-i-jordbro-for-dig-16-20-ar/?d=2026-10-17"
     },
     {
       "id": "tm-Z698xZq2Z16vv74peF",
@@ -4793,6 +6371,70 @@
       "url": "https://guidingstar.se/"
     },
     {
+      "id": "haninge-stolthet-och-gemenskap--unga-romer-berattar-2026-10-18",
+      "t": "Utställningen Stolthet och gemenskap – unga romer berättar",
+      "e": "📍",
+      "img": "https://www.haninge.se/contentassets/cf9b5d2f3fba40aea6e7e5dbf3d2d6e1/stolthet-och-gemenskap_jpg.jpg",
+      "datum": "2026-10-18",
+      "tid": null,
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": null,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/stolthet-och-gemenskap--unga-romer-berattar/?d=2026-10-18"
+    },
+    {
+      "id": "haninge-andas-med-sandra--prova-pa-breathwork-i-haninge-2026-10-18",
+      "t": "Andas med Sandra – Prova på breathwork i Haninge",
+      "e": "📍",
+      "img": "https://www.haninge.se/contentassets/b5a9a3c4f4764fd2958757e354c606ee/andas-med-sandra-medium.jpg",
+      "datum": "2026-10-18",
+      "tid": null,
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": 0,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/andas-med-sandra--prova-pa-breathwork-i-haninge/?d=2026-10-18"
+    },
+    {
+      "id": "haninge-sportsondag-i-vega-2026-10-18",
+      "t": "Sportsöndag i Vega",
+      "e": "📍",
+      "img": "https://www.haninge.se/contentassets/5b02307128f94191ae905cbdeebe7718/sportiga-barn-foto-mostphotos.jpg",
+      "datum": "2026-10-18",
+      "tid": null,
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": 0,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/sportsondag-i-vega/?d=2026-10-18"
+    },
+    {
+      "id": "haninge-mojangen-pa-skargardsturne-dalaro-2026-10-18",
+      "t": "Mojängen på skärgårdsturné på Dalarö",
+      "e": "📍",
+      "img": "https://www.haninge.se/contentassets/154bdaacbcb14ec2a7e09a0bd0513398/mojangen-foto-christer-blum-ratt-storlek.jpg",
+      "datum": "2026-10-18",
+      "tid": null,
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": 0,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/mojangen-pa-skargardsturne-dalaro/?d=2026-10-18"
+    },
+    {
       "id": "nacka-meditativt-broderi-workshop-med-maja-stjarna-2026-10-18",
       "t": "Meditativt broderi - Workshop med Maja Stjärna",
       "e": "📍",
@@ -5028,6 +6670,22 @@
       "url": "https://www.capitolbio.se/filmfeber?utm_source=meta&utm_medium=cpc&utm_campaign=filmfeber&fbclid=IwYW9leAUoq7hleHRuA2FlbQEwAHBkb2YFZmRpZBZQ9V6knHcrZJUBsSWDcEgs2m5naOxLYWRpZAGrN40obS1Hc3J0YwZhcHBfaWQKNjYyODU2ODM3OQABHpO8EYuPCXsWI4cBfDu9carCMRwH43OipzPavefMqHi_1q2JFPsHVbWhemfE_aem_smn9sBKx-EB5-x9ptlqqeg&utm_id=120243445412260183&utm_content=120250894340390183&utm_term=120243445412300183"
     },
     {
+      "id": "haninge-after-foris-2026-10-19",
+      "t": "After föris",
+      "e": "📍",
+      "img": "https://www.haninge.se/contentassets/e7007e1ae769475a814babcdb7f6d070/after-foris---800-x-450---janna-berg.jpg",
+      "datum": "2026-10-19",
+      "tid": null,
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": null,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/after-foris/?d=2026-10-19"
+    },
+    {
       "id": "tm-Z698xZq2Z1kv8aYj-",
       "t": "Slutspelat – Ett komiskt sorgearbete",
       "e": "🎭",
@@ -5177,6 +6835,54 @@
       "url": "https://kulturbiljetter.se/evenemang/5542/jag-kan-2-5-%C3%A5r"
     },
     {
+      "id": "haninge-bibliotekarierna-boktipsar2-2026-10-20",
+      "t": "Bibliotekarierna boktipsar",
+      "e": "📍",
+      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "datum": "2026-10-20",
+      "tid": null,
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": null,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/bibliotekarierna-boktipsar2/?d=2026-10-20"
+    },
+    {
+      "id": "haninge-samhallshjalp-2026-10-20",
+      "t": "Samhällshjälp",
+      "e": "📍",
+      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "datum": "2026-10-20",
+      "tid": null,
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": null,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/samhallshjalp/?d=2026-10-20"
+    },
+    {
+      "id": "haninge-handarbetscafe-i-vega-2026-10-20",
+      "t": "Handarbetscafé i Vega",
+      "e": "📍",
+      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "datum": "2026-10-20",
+      "tid": null,
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": null,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/handarbetscafe-i-vega/?d=2026-10-20"
+    },
+    {
       "id": "nacka-en-ta-i-det-bla-babymalning-2026-10-20",
       "t": "En tå i det blå - babymålning",
       "e": "📍",
@@ -5196,23 +6902,6 @@
       "url": "https://www.nacka.se/pa-gang-i-nacka/en-ta-i-det-bla-babymalning/?occurrence=202610200800-202610200900"
     },
     {
-      "id": "nacka-drop-in-syn-och-horselinstruktor-alta-2026-10-20",
-      "t": "Drop-in: Syn- och hörselinstruktör Älta",
-      "e": "📍",
-      "img": "https://www.nacka.se/filtered/309715/rszww400h200-90/syn-och-horsel-drop-in--1822146363-rszww400h200-90.jpg",
-      "datum": "2026-10-20",
-      "slut": null,
-      "tid": "12:00",
-      "plats": "Kulturhuset Älta, Nacka",
-      "lat": 59.2565739,
-      "lon": 18.1775627,
-      "pris": 0,
-      "tags": [
-        "nacka"
-      ],
-      "url": "https://www.nacka.se/pa-gang-i-nacka/drop-in-syn-och-horselinstruktor-alta/?occurrence=202610201000-202610201100"
-    },
-    {
       "id": "nacka-attentions-tisdags-drop-in-2026-10-20",
       "t": "Attentions tisdags-drop in",
       "e": "📍",
@@ -5229,6 +6918,22 @@
         "träffpunkt/kafé"
       ],
       "url": "https://www.nacka.se/pa-gang-i-nacka/attentions-tisdags-drop-in/?occurrence=202610201200-202610201400"
+    },
+    {
+      "id": "haninge-prova-skrivande---pa-ett-lekfullt-och-kreativt-satt-2026-10-20",
+      "t": "Prova skrivande - på ett lekfullt och kreativt sätt",
+      "e": "📍",
+      "img": "https://www.haninge.se/contentassets/763d260f9cc8424f8b5b837c8af5de82/this-is-a-permanent-poem-elina-birkehag-9_for-web.jpg",
+      "datum": "2026-10-20",
+      "tid": "16:00",
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": 0,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/prova-skrivande---pa-ett-lekfullt-och-kreativt-satt/?d=2026-10-20"
     },
     {
       "id": "tm-Z698xZq2Z16v-dxF17",
@@ -5471,6 +7176,38 @@
       "url": "http://www.presentmakeriet.se"
     },
     {
+      "id": "haninge-konstlab-2026-10-21",
+      "t": "Konstlab",
+      "e": "📍",
+      "img": "https://www.haninge.se/contentassets/2a3a1ad91e2a4756915233e2a01c4237/maia-lundblom-konstlab-.jpg",
+      "datum": "2026-10-21",
+      "tid": null,
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": 0,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/konstlab/?d=2026-10-21"
+    },
+    {
+      "id": "haninge-gratis-kvallsklattring-i-brandbergen-for-dig-13-20-ar2-2026-10-21",
+      "t": "Gratis kvällsklättring i Brandbergen",
+      "e": "📍",
+      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "datum": "2026-10-21",
+      "tid": null,
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": 0,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/gratis-kvallsklattring-i-brandbergen-for-dig-13-20-ar2/?d=2026-10-21"
+    },
+    {
       "id": "nacka-jazziorerna-i-boo-folkets-hus-2026-10-21",
       "t": "Jazziorerna i Boo Folkets Hus",
       "e": "🎵",
@@ -5525,6 +7262,22 @@
         "träffpunkt/kafé"
       ],
       "url": "https://www.nacka.se/pa-gang-i-nacka/drop-in-anhorigstod/?occurrence=202610211100-202610211300"
+    },
+    {
+      "id": "haninge-skrivarklubben-2026-10-21",
+      "t": "Skrivarklubben",
+      "e": "📍",
+      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "datum": "2026-10-21",
+      "tid": "15:00",
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": null,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/skrivarklubben/?d=2026-10-21"
     },
     {
       "id": "nacka-laxhjalp-studiestod-spraktraning-2026-10-21",
@@ -5854,6 +7607,86 @@
       "url": "https://dinos.se/products/dinos-stockholm-tickets"
     },
     {
+      "id": "haninge-laxhjalp-2026-10-22",
+      "t": "Läxhjälp",
+      "e": "📍",
+      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "datum": "2026-10-22",
+      "tid": null,
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": null,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/laxhjalp/?d=2026-10-22"
+    },
+    {
+      "id": "haninge-forfattarbesok-av-malin-haawind-2026-10-22",
+      "t": "Författarbesök av Malin Haawind",
+      "e": "📍",
+      "img": "https://www.haninge.se/contentassets/8d376a18cfb44288bb100fda07de21ee/malin-haawind-fotograf-anna-lena-ahlstrom.jpg",
+      "datum": "2026-10-22",
+      "tid": null,
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": null,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/forfattarbesok-av-malin-haawind/?d=2026-10-22"
+    },
+    {
+      "id": "haninge-sopplunch-pa-spf-runstenens-traffpunkt--2026-10-22",
+      "t": "Sopplunch på SPF Runstenens träffpunkt",
+      "e": "📍",
+      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "datum": "2026-10-22",
+      "tid": "11:30",
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": 50,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/sopplunch-pa-spf-runstenens-traffpunkt-/?d=2026-10-22"
+    },
+    {
+      "id": "haninge-hoglasningsdags-2026-10-22",
+      "t": "Högläsningsdags",
+      "e": "📍",
+      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "datum": "2026-10-22",
+      "tid": "16:00",
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": null,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/hoglasningsdags/?d=2026-10-22"
+    },
+    {
+      "id": "haninge-prova-skrivande---pa-ett-lekfullt-och-kreativt-satt-2026-10-22",
+      "t": "Prova skrivande - på ett lekfullt och kreativt sätt",
+      "e": "📍",
+      "img": "https://www.haninge.se/contentassets/763d260f9cc8424f8b5b837c8af5de82/this-is-a-permanent-poem-elina-birkehag-9_for-web.jpg",
+      "datum": "2026-10-22",
+      "tid": "16:00",
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": 0,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/prova-skrivande---pa-ett-lekfullt-och-kreativt-satt/?d=2026-10-22"
+    },
+    {
       "id": "tm-Z698xZq2Z1k8y0YZa",
       "t": "Work in Progress – Jesper Rönndahl och Marie Agerhäll",
       "e": "🎭",
@@ -5888,6 +7721,22 @@
         "restaurant"
       ],
       "url": "https://www.ticketmaster.se/event/svartklubben-mat--musik-i-morker-biljetter/370517306"
+    },
+    {
+      "id": "haninge-soppa--surr5-2026-10-22",
+      "t": "Soppa & Surr",
+      "e": "📍",
+      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "datum": "2026-10-22",
+      "tid": "18:00",
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": null,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/soppa--surr5/?d=2026-10-22"
     },
     {
       "id": "tm-Z698xZq2Z1kvbO7Zb",
@@ -6249,6 +8098,22 @@
         "musical"
       ],
       "url": "https://www.ticketmaster.se/event/mamma-mia-the-party-biljetter/479603535"
+    },
+    {
+      "id": "haninge-gratis-nattfotboll-i-jordbro-for-dig-13-15-ar3-2026-10-23",
+      "t": "Gratis nattfotboll i Jordbro för dig 13–15 år",
+      "e": "📍",
+      "img": "https://www.haninge.se/Static/Images/Haninge-logo-large.png",
+      "datum": "2026-10-23",
+      "tid": "18:30",
+      "plats": "Haninge",
+      "lat": 59.1684,
+      "lon": 18.144,
+      "pris": 0,
+      "tags": [
+        "haninge"
+      ],
+      "url": "https://www.haninge.se/evenemang-och-aktiviteter/gratis-nattfotboll-i-jordbro-for-dig-13-15-ar3/?d=2026-10-23"
     },
     {
       "id": "tm-Z698xZq2Z16vbp4-18",
@@ -7514,67 +9379,6 @@
         "unga"
       ],
       "url": "https://www.nacka.se/pa-gang-i-nacka/hostlovslager-hos-nacka-dans-och-teater-kulturskola/?occurrence=202610260800-202610291430"
-    },
-    {
-      "id": "nacka-animation-10-11-ar-hostlovskurs-2026-10-26",
-      "t": "Animation 10-11 år, höstlovskurs",
-      "e": "📍",
-      "img": "https://www.nacka.se/filtered/313133/rszww400h200-90/animation-hosltov26-10-11-1200x600_edited-25588274-rszww400h200-90.jpg",
-      "datum": "2026-10-26",
-      "slut": null,
-      "tid": "09:30",
-      "plats": "Märtas målarsal, Dieselverkstaden, Nacka",
-      "lat": 59.3055552,
-      "lon": 18.1213083,
-      "pris": 950,
-      "tags": [
-        "nacka",
-        "dieselverkstadens kurser",
-        "barn"
-      ],
-      "url": "https://www.nacka.se/pa-gang-i-nacka/animation-10-11-ar-hostlovskurs/?occurrence=202610260830-202610261100"
-    },
-    {
-      "id": "nacka-turboteater-10-11ar-hostlovskurs-2026-10-26",
-      "t": "Turboteater 10-11år - Höstlovskurs",
-      "e": "🎭",
-      "img": "https://www.nacka.se/filtered/313211/rszww400h200-90/teater-hosltov26-10-11-1200x600_edited--1649310127-rszww400h200-90.jpg",
-      "datum": "2026-10-26",
-      "slut": null,
-      "tid": "09:30",
-      "plats": "Luigis lokal och Lilla scen, Nacka",
-      "lat": 59.3052383,
-      "lon": 18.1210463,
-      "pris": 950,
-      "tags": [
-        "nacka",
-        "teater",
-        "dieselverkstaden",
-        "dieselverkstadens kurser",
-        "barn"
-      ],
-      "url": "https://www.nacka.se/pa-gang-i-nacka/turboteater-10-11ar-hostlovskurs/?occurrence=202610260830-202610261100"
-    },
-    {
-      "id": "nacka-keramik-10-11-ar-hostlovskurs-2026-10-26",
-      "t": "Keramik 10-11 år - Höstlovskurs",
-      "e": "📍",
-      "img": "https://www.nacka.se/filtered/313217/rszww400h200-90/keramik-hosltov26-10-11-1200x600_edited--794666158-rszww400h200-90.jpg",
-      "datum": "2026-10-26",
-      "slut": null,
-      "tid": "09:30",
-      "plats": "Fritiofs formsal, Dieselverkstaden, Nacka",
-      "lat": 59.3052383,
-      "lon": 18.1210463,
-      "pris": 950,
-      "tags": [
-        "nacka",
-        "dieselverkstaden",
-        "dieselverkstadens kurser",
-        "skapande verksamhet",
-        "barn"
-      ],
-      "url": "https://www.nacka.se/pa-gang-i-nacka/keramik-10-11-ar-hostlovskurs/?occurrence=202610260830-202610261100"
     },
     {
       "id": "nacka-turboteater-12-13-ar-hostlovskurs-2026-10-26",
@@ -10294,25 +12098,6 @@
       "url": "https://www.nacka.se/pa-gang-i-nacka/mediyoga-for-anhoriga2/?occurrence=202611060900-202611061030"
     },
     {
-      "id": "nacka-barnrytmik-1-4-ar-2026-11-06",
-      "t": "Barnrytmik 1-4 år",
-      "e": "📍",
-      "img": "https://www.nacka.se/filtered/308861/rszww400h200-90/barnrytmik-1-4-rytmik-1200x600-ht25_edited-1610175830-rszww400h200-90.jpg",
-      "datum": "2026-11-06",
-      "slut": null,
-      "tid": "10:15",
-      "plats": "Dieselverkstaden, Nacka",
-      "lat": 59.3052383,
-      "lon": 18.1210463,
-      "pris": 160,
-      "tags": [
-        "nacka",
-        "barnrytmik",
-        "dieselverkstaden"
-      ],
-      "url": "https://www.nacka.se/pa-gang-i-nacka/barnrytmik-1-4-ar/?occurrence=202611060915-202611061000"
-    },
-    {
       "id": "nacka-mogendans-i-boo-folkets-2026-11-06",
       "t": "Mogendans i Boo Folkets Hus",
       "e": "📍",
@@ -11143,23 +12928,6 @@
       "url": "https://www.nacka.se/pa-gang-i-nacka/en-ta-i-det-bla-babymalning/?occurrence=202611100900-202611101000"
     },
     {
-      "id": "nacka-drop-in-syn-och-horselinstruktor-alta-2026-11-10",
-      "t": "Drop-in: Syn- och hörselinstruktör Älta",
-      "e": "📍",
-      "img": "https://www.nacka.se/filtered/309715/rszww400h200-90/syn-och-horsel-drop-in--1822146363-rszww400h200-90.jpg",
-      "datum": "2026-11-10",
-      "slut": null,
-      "tid": "12:00",
-      "plats": "Kulturhuset Älta, Nacka",
-      "lat": 59.2565739,
-      "lon": 18.1775627,
-      "pris": 0,
-      "tags": [
-        "nacka"
-      ],
-      "url": "https://www.nacka.se/pa-gang-i-nacka/drop-in-syn-och-horselinstruktor-alta/?occurrence=202611101100-202611101200"
-    },
-    {
       "id": "nacka-attentions-tisdags-drop-in-2026-11-10",
       "t": "Attentions tisdags-drop in",
       "e": "📍",
@@ -11876,25 +13644,6 @@
         "motion/hälsa"
       ],
       "url": "https://www.nacka.se/pa-gang-i-nacka/mediyoga-for-anhoriga2/?occurrence=202611130900-202611131030"
-    },
-    {
-      "id": "nacka-barnrytmik-1-4-ar-2026-11-13",
-      "t": "Barnrytmik 1-4 år",
-      "e": "📍",
-      "img": "https://www.nacka.se/filtered/308861/rszww400h200-90/barnrytmik-1-4-rytmik-1200x600-ht25_edited-1610175830-rszww400h200-90.jpg",
-      "datum": "2026-11-13",
-      "slut": null,
-      "tid": "10:15",
-      "plats": "Dieselverkstaden, Nacka",
-      "lat": 59.3052383,
-      "lon": 18.1210463,
-      "pris": 160,
-      "tags": [
-        "nacka",
-        "barnrytmik",
-        "dieselverkstaden"
-      ],
-      "url": "https://www.nacka.se/pa-gang-i-nacka/barnrytmik-1-4-ar/?occurrence=202611130915-202611131000"
     },
     {
       "id": "tm-Z698xZq2Z1k_xOgZ0",
@@ -13338,25 +15087,6 @@
       "url": "https://www.fjaderholmarnaskrog.se/"
     },
     {
-      "id": "nacka-barnrytmik-1-4-ar-2026-11-20",
-      "t": "Barnrytmik 1-4 år",
-      "e": "📍",
-      "img": "https://www.nacka.se/filtered/308861/rszww400h200-90/barnrytmik-1-4-rytmik-1200x600-ht25_edited-1610175830-rszww400h200-90.jpg",
-      "datum": "2026-11-20",
-      "slut": null,
-      "tid": "10:15",
-      "plats": "Dieselverkstaden, Nacka",
-      "lat": 59.3052383,
-      "lon": 18.1210463,
-      "pris": 160,
-      "tags": [
-        "nacka",
-        "barnrytmik",
-        "dieselverkstaden"
-      ],
-      "url": "https://www.nacka.se/pa-gang-i-nacka/barnrytmik-1-4-ar/?occurrence=202611200915-202611201000"
-    },
-    {
       "id": "nacka-mogendans-i-boo-folkets-2026-11-20",
       "t": "Mogendans i Boo Folkets Hus",
       "e": "📍",
@@ -14726,25 +16456,6 @@
       "url": "https://www.mallcall.se/"
     },
     {
-      "id": "nacka-barnrytmik-1-4-ar-2026-11-27",
-      "t": "Barnrytmik 1-4 år",
-      "e": "📍",
-      "img": "https://www.nacka.se/filtered/308861/rszww400h200-90/barnrytmik-1-4-rytmik-1200x600-ht25_edited-1610175830-rszww400h200-90.jpg",
-      "datum": "2026-11-27",
-      "slut": null,
-      "tid": "10:15",
-      "plats": "Dieselverkstaden, Nacka",
-      "lat": 59.3052383,
-      "lon": 18.1210463,
-      "pris": 160,
-      "tags": [
-        "nacka",
-        "barnrytmik",
-        "dieselverkstaden"
-      ],
-      "url": "https://www.nacka.se/pa-gang-i-nacka/barnrytmik-1-4-ar/?occurrence=202611270915-202611271000"
-    },
-    {
       "id": "tm-Z698xZq2Z16v7SPKq9",
       "t": "Svartklubben - Mat & Musik i Mörker",
       "e": "🎭",
@@ -15472,23 +17183,6 @@
       "url": "https://www.nacka.se/pa-gang-i-nacka/en-ta-i-det-bla-babymalning/?occurrence=202612010900-202612011000"
     },
     {
-      "id": "nacka-drop-in-syn-och-horselinstruktor-alta-2026-12-01",
-      "t": "Drop-in: Syn- och hörselinstruktör Älta",
-      "e": "📍",
-      "img": "https://www.nacka.se/filtered/309715/rszww400h200-90/syn-och-horsel-drop-in--1822146363-rszww400h200-90.jpg",
-      "datum": "2026-12-01",
-      "slut": null,
-      "tid": "12:00",
-      "plats": "Kulturhuset Älta, Nacka",
-      "lat": 59.2565739,
-      "lon": 18.1775627,
-      "pris": 0,
-      "tags": [
-        "nacka"
-      ],
-      "url": "https://www.nacka.se/pa-gang-i-nacka/drop-in-syn-och-horselinstruktor-alta/?occurrence=202612011100-202612011200"
-    },
-    {
       "id": "nacka-attentions-tisdags-drop-in-2026-12-01",
       "t": "Attentions tisdags-drop in",
       "e": "📍",
@@ -15939,25 +17633,6 @@
         "motion/hälsa"
       ],
       "url": "https://www.nacka.se/pa-gang-i-nacka/mediyoga-for-anhoriga2/?occurrence=202612040900-202612041030"
-    },
-    {
-      "id": "nacka-barnrytmik-1-4-ar-2026-12-04",
-      "t": "Barnrytmik 1-4 år",
-      "e": "📍",
-      "img": "https://www.nacka.se/filtered/308861/rszww400h200-90/barnrytmik-1-4-rytmik-1200x600-ht25_edited-1610175830-rszww400h200-90.jpg",
-      "datum": "2026-12-04",
-      "slut": null,
-      "tid": "10:15",
-      "plats": "Dieselverkstaden, Nacka",
-      "lat": 59.3052383,
-      "lon": 18.1210463,
-      "pris": 160,
-      "tags": [
-        "nacka",
-        "barnrytmik",
-        "dieselverkstaden"
-      ],
-      "url": "https://www.nacka.se/pa-gang-i-nacka/barnrytmik-1-4-ar/?occurrence=202612040915-202612041000"
     },
     {
       "id": "nacka-mogendans-i-boo-folkets-2026-12-04",
@@ -16916,25 +18591,6 @@
         "motion/hälsa"
       ],
       "url": "https://www.nacka.se/pa-gang-i-nacka/mediyoga-for-anhoriga2/?occurrence=202612110900-202612111030"
-    },
-    {
-      "id": "nacka-barnrytmik-1-4-ar-2026-12-11",
-      "t": "Barnrytmik 1-4 år",
-      "e": "📍",
-      "img": "https://www.nacka.se/filtered/308861/rszww400h200-90/barnrytmik-1-4-rytmik-1200x600-ht25_edited-1610175830-rszww400h200-90.jpg",
-      "datum": "2026-12-11",
-      "slut": null,
-      "tid": "10:15",
-      "plats": "Dieselverkstaden, Nacka",
-      "lat": 59.3052383,
-      "lon": 18.1210463,
-      "pris": 160,
-      "tags": [
-        "nacka",
-        "barnrytmik",
-        "dieselverkstaden"
-      ],
-      "url": "https://www.nacka.se/pa-gang-i-nacka/barnrytmik-1-4-ar/?occurrence=202612110915-202612111000"
     },
     {
       "id": "tm-Z698xZq2Z16v4K1ebk",
