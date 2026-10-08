@@ -12,6 +12,8 @@ for (const url of process.argv.slice(2)) {
     else if (j.namespaces) out = JSON.stringify({ namespaces: j.namespaces, routes: Object.keys(j.routes ?? {}).filter(r => /event|kurs|aktiv|arrang|kalend/i.test(r)) });
     else { const list = j.results ?? j.items ?? j.data ?? j; out = JSON.stringify({ keys: Object.keys(j), count: j.count ?? j.total, next: j.next, n: Array.isArray(list) ? list.length : null, first: Array.isArray(list) ? list[0] : null }); }
   } catch {}
+  if (!out && process.env.PROBE_FROM) { const i = text.indexOf(process.env.PROBE_FROM); if (i > 0) text = text.slice(i); }
+  else if (!out) { const i = text.search(/<main[\s>]/i); if (i > 0) text = text.slice(i); }
   if (!out) out = text
     .replace(/<(script|style|svg|noscript)[\s\S]*?<\/\1>/gi, "")
     .replace(/\s(srcset|sizes|class|style|data-[\w-]+)="[^"]*"/gi, "")
