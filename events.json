@@ -1,5 +1,5 @@
 {
-  "uppdaterad": "2026-10-08T19:23:24.202Z",
+  "uppdaterad": "2026-10-08T19:41:04.007Z",
   "kalla": "Ticketmaster + Visit Stockholm + Nacka + Haninge + Lidingö",
   "exempel": false,
   "events": [
@@ -7683,7 +7683,7 @@
       "plats": "Ulriksdals slott, Solna",
       "lat": 59.3904254,
       "lon": 18.0168168,
-      "pris": null,
+      "pris": 0,
       "tags": [
         "mässor",
         "familj",
