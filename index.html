@@ -63,7 +63,7 @@ nav .n{display:inline-block;min-width:18px;padding:0 5px;border-radius:9px;backg
 .detail dt{color:var(--muted)}
 .detail dd{margin:0;font-weight:600}
 .back{background:none;border:0;color:var(--accent2);font:600 15px var(--font);cursor:pointer;padding:4px 0}
-.cta{width:100%;padding:14px;border:0;border-radius:14px;background:var(--accent);color:#fff;font:700 16px var(--font);cursor:pointer}
+.cta{display:block;text-align:center;text-decoration:none;margin-bottom:10px;width:100%;padding:14px;border:0;border-radius:14px;background:var(--accent);color:#fff;font:700 16px var(--font);cursor:pointer}
 .note{position:absolute;left:16px;right:16px;top:64px;z-index:5;background:var(--fg);color:var(--phone);padding:10px 14px;border-radius:12px;font-size:14px;opacity:0;transition:opacity .2s;pointer-events:none}
 .note.show{opacity:1}
 .where{background:var(--chip);border:0;border-radius:999px;padding:6px 12px;color:var(--fg);font:600 13px var(--font);cursor:pointer}
@@ -73,7 +73,7 @@ nav .n{display:inline-block;min-width:18px;padding:0 5px;border-radius:9px;backg
 .card .img img,.detail .pic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .detail .pic{position:relative;overflow:hidden;border-radius:16px;margin:10px 0;aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;font-size:72px}
 .detail .hero{width:100%;border-radius:16px;margin:10px 0;aspect-ratio:16/9;object-fit:cover}
-.link{display:block;text-align:center;margin:0 0 12px;color:var(--accent2);font-weight:600}
+.cta.ghost{background:none;border:2px solid var(--accent2);color:var(--accent2)}
 @media (prefers-reduced-motion: reduce){*{transition:none!important}}
 </style>
 </head>
@@ -108,16 +108,6 @@ nav .n{display:inline-block;min-width:18px;padding:0 5px;border-radius:9px;backg
   <div class="note" id="note"></div>
 </div>
 <script>
-// Inbyggda exempel används om events.json inte går att läsa (t.ex. när filen öppnas direkt från datorn)
-const FALLBACK={exempel:true,kalla:"Exempel",events:[
- {id:"x1",t:"LAN-kväll på biblioteket",e:"🎮",om_dagar:1,tid:"18:00",plats:"Kungsängens bibliotek",lat:59.4777,lon:17.7516,pris:0,tags:["gaming","spel"]},
- {id:"x2",t:"Pumpkin patch",e:"🎃",om_dagar:2,tid:"11:00",plats:"Bro gård, Bro",lat:59.515,lon:17.628,pris:60,tags:["natur","höst","foto"]},
- {id:"x3",t:"Prova på klättring",e:"🧗",om_dagar:3,tid:"14:00",plats:"Klätterverket, Sundbyberg",lat:59.3632,lon:17.9692,pris:120,tags:["sport","träning"]},
- {id:"x4",t:"Open mic för unga",e:"🎤",om_dagar:4,tid:"19:00",plats:"Kulturhuset, Stockholm",lat:59.3326,lon:18.0649,pris:0,tags:["musik","scen"]},
- {id:"x5",t:"Frisbeegolf-meetup",e:"🥏",om_dagar:2,tid:"13:00",plats:"Görvälns slottspark, Järfälla",lat:59.4183,lon:17.7444,pris:0,tags:["sport","natur"]},
- {id:"x6",t:"Kreativ kväll: zines",e:"🎨",om_dagar:5,tid:"17:30",plats:"Fryshuset, Stockholm",lat:59.301,lon:18.0954,pris:40,tags:["konst","skapa"]},
- {id:"x7",t:"Matmarknad i centrum",e:"🍜",om_dagar:3,tid:"12:00",plats:"Bro centrum, Bro",lat:59.5113,lon:17.635,pris:0,tags:["mat"]}
-]};
 const BRO={lat:59.5113,lon:17.635,namn:"Bro"};
 let EVENTS=[],queue=[],saved=[],prev="start",me={...BRO},meta={};
 const $=s=>document.querySelector(s);
@@ -131,9 +121,13 @@ const kmTxt=ev=>{const d=km(me,ev);return d<1?"< 1 km":d.toFixed(d<10?1:0).repla
 
 // Datum
 const DAG=["sön","mån","tis","ons","tor","fre","lör"];
+function rel(diff){
+ if(diff===0)return"Idag";if(diff===1)return"Imorgon";if(diff<7)return`om ${diff} dagar`;
+ if(diff<31){const w=Math.round(diff/7);return`om ${w} ${w===1?"vecka":"veckor"}`}
+ const m=Math.round(diff/30.4);return`om ${m} ${m===1?"månad":"månader"}`}
 function when(ev){const d=new Date(ev.datum+"T00:00"),t=new Date();t.setHours(0,0,0,0);
- const diff=Math.round((d-t)/864e5),day=diff===0?"Idag":diff===1?"Imorgon":DAG[d.getDay()][0].toUpperCase()+DAG[d.getDay()].slice(1)+" "+d.getDate()+"/"+(d.getMonth()+1);
- return day+(ev.tid?" "+ev.tid:"")}
+ const diff=Math.round((d-t)/864e5),r=rel(diff),dag=DAG[d.getDay()]+" "+d.getDate()+"/"+(d.getMonth()+1)+(d.getFullYear()!==t.getFullYear()?" "+d.getFullYear():"");
+ return (diff<=1?r+", "+dag:dag+" ("+r+")")+(ev.tid?" "+ev.tid:"")}
 const priceTxt=p=>p===0?"Gratis":p==null?"Se pris":p+" kr";
 const price=p=>p===0?'<span class="chip free">Gratis</span>':`<span class="chip">${priceTxt(p)}</span>`;
 
@@ -154,6 +148,7 @@ function fillWeather(root){root.querySelectorAll("[data-w]").forEach(el=>{const 
 const PALETT=[["#ff7a59","#ff3d71"],["#7b61ff","#3b5bdb"],["#00b4d8","#0077b6"],["#2bb673","#0b8a5f"],["#ffb347","#ff7a00"],["#ff6fb5","#b5179e"],["#5ad1c8","#2a9d8f"]];
 function art(ev){const k=(ev.tags[0]||ev.t);let h=0;for(const ch of k)h=(h*31+ch.charCodeAt(0))>>>0;
  const [a,b]=PALETT[h%PALETT.length];return `background:linear-gradient(135deg,${a},${b})`}
+const host=u=>{try{return new URL(u).hostname.replace(/^www\./,"")}catch{return"webben"}};
 const pic=(ev,cls)=>`<div class="${cls}" style="${art(ev)}">${ev.e}${ev.img?`<img src="${esc(ev.img)}" alt="" loading="lazy" onerror="this.remove()">`:""}</div>`;
 
 const facts=ev=>`<div class="facts">${price(ev.pris)}<span class="chip">🕒 ${esc(when(ev))}</span><span class="chip">📍 ${esc(ev.plats)} · ${kmTxt(ev)}</span><span class="chip" data-w="${esc(ev.id)}" hidden></span></div>`;
@@ -174,6 +169,7 @@ function sortNear(list){return [...list].sort((a,b)=>Math.round(km(me,a)/5)-Math
 // Start: swipe-kort
 function renderDeck(){
  const d=$("#deck");d.innerHTML="";
+ if(!EVENTS.length){d.innerHTML='<div class="empty">Inga event att visa just nu.<br>Nya event hämtas varje måndag.</div>';return}
  if(!queue.length){d.innerHTML='<div class="empty">Inga fler event just nu.<br><br><button class="back" id="again">Visa igen</button></div>';$("#again").onclick=()=>{queue=sortNear(EVENTS.filter(e=>!saved.includes(e)));renderDeck()};return}
  queue.slice(0,2).reverse().forEach((ev,i,arr)=>{
   const c=document.createElement("div");c.className="card";
@@ -206,7 +202,7 @@ function search(){
  const q=$("#q").value.trim().toLowerCase();
  const hits=sortNear(q?EVENTS.filter(e=>e.tags.some(t=>t.includes(q))||e.t.toLowerCase().includes(q)||e.plats.toLowerCase().includes(q)):EVENTS);
  const r=$("#results");
- r.innerHTML=hits.length?hits.slice(0,60).map(row).join(""):'<p class="hint">Inga träffar. Här är närmaste event:</p>'+row(sortNear(EVENTS)[0]);
+ r.innerHTML=hits.length?hits.slice(0,60).map(row).join(""):EVENTS.length?'<p class="hint">Inga träffar. Här är närmaste event:</p>'+row(sortNear(EVENTS)[0]):'<p class="hint">Inga event att söka bland just nu.</p>';
  bindRows(r);
 }
 $("#q").oninput=search;
@@ -224,7 +220,7 @@ function openDetail(ev){
  const d=$("#v-detail");
  d.innerHTML=`<button class="back" id="back">‹ Tillbaka</button>${pic(ev,"pic")}<h2>${esc(ev.t)}</h2>
  <dl><dt>När</dt><dd>${esc(when(ev))}</dd><dt>Plats</dt><dd>${esc(ev.plats)}</dd><dt>Avstånd</dt><dd>${kmTxt(ev)} från ${esc(me.namn)}</dd><dt>Pris</dt><dd>${priceTxt(ev.pris)}</dd><dt>Väder</dt><dd id="dw">Hämtar…</dd></dl>
- ${ev.url?`<a class="link" href="${esc(ev.url)}" target="_blank" rel="noopener">Mer info och biljetter ↗</a>`:""}
+ ${ev.url?`<a class="cta ghost" href="${esc(ev.url)}" target="_blank" rel="noopener">Till eventets sida på ${esc(host(ev.url))} ↗</a>`:""}
  <button class="cta" id="save">${saved.includes(ev)?"Sparad ♥":"Jag är intresserad ♥"}</button>`;
  weather(ev).then(w=>{const el=$("#dw");if(el)el.textContent=w||"Ingen prognos just nu (finns ca 2 veckor framåt)"});
  $("#back").onclick=()=>show(prev);
@@ -245,13 +241,12 @@ $("#where").onclick=locate;
 // Start
 (async()=>{
  let data;
- try{const r=await fetch("events.json",{cache:"no-cache"});data=r.ok?await r.json():FALLBACK}catch{data=FALLBACK}
+ try{const r=await fetch("events.json",{cache:"no-cache"});data=r.ok?await r.json():{events:[]}}catch{data={events:[]}}
  const today=new Date();today.setHours(0,0,0,0);
- EVENTS=data.events.map(e=>({img:null,url:null,tags:[],e:"✨",...e,
-   datum:e.datum??iso(new Date(today.getTime()+(e.om_dagar||0)*864e5+12*36e5))}))
-  .filter(e=>e.datum>=iso(today)&&Number.isFinite(e.lat));
+ EVENTS=(data.exempel?[]:data.events).map(e=>({img:null,url:null,tags:[],e:"✨",...e}))
+  .filter(e=>e.datum&&e.datum>=iso(today)&&Number.isFinite(e.lat));
  meta=data;
- $("#source").textContent=data.exempel?"Exempel-event":`${EVENTS.length} event · ${data.kalla}`;
+ $("#source").textContent=EVENTS.length?`${EVENTS.length} event · ${data.kalla}`:"";
  renderTags();refresh();
  locate();
 })();

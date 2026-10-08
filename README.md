@@ -10,7 +10,7 @@ UX-case i kursen UI/UX & Frontendutveckling, Lexicon, hösten 2026.
 **https://fungusflip.github.io/Anknytning/** (när GitHub Pages är påslaget)
 
 Appen frågar efter din plats och sorterar event efter avstånd. Nekar du visas event nära Bro.
-Vädret hämtas från [Open-Meteo](https://open-meteo.com) för eventets dag och plats.
+Varje event länkar till sin egen sida (Ticketmaster, Facebook, arrangörens webb). Vädret hämtas från [Open-Meteo](https://open-meteo.com) för eventets dag och plats.
 
 - **Start:** dra kortet åt höger (intresserad) eller vänster (nästa).
 - **Sök:** sök med intresseord.
@@ -22,7 +22,7 @@ Vädret hämtas från [Open-Meteo](https://open-meteo.com) för eventets dag och
 En GitHub Action ([update-events.yml](.github/workflows/update-events.yml)) kör
 [scripts/fetch-events.mjs](scripts/fetch-events.mjs) varje måndag. Den samlar event från alla källor
 inom 50 km från Stockholm–Bro och sparar dem i `events.json`, som appen läser.
-Tills någon källa ger riktiga event visar appen exempel-event.
+Appen visar bara riktiga event. Tills en källa är påslagen är listan tom.
 
 | Källa | Hur du slår på den |
 |---|---|

@@ -12,6 +12,7 @@ const today = new Date().toISOString().slice(0, 10);
 
 async function egnaEvent() {
   const list = JSON.parse(await readFile(new URL("egna-event.json", ROOT), "utf8"));
+  for (const e of list) if (!e.url) console.warn(`Egna event: "${e.t}" saknar url till eventets egen sida.`);
   return list.map((e, i) => ({ id: `egen-${i}`, e: "📌", img: null, url: null, tags: [], ...e }));
 }
 

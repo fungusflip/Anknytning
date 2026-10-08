@@ -1,14 +1,6 @@
 {
   "uppdaterad": null,
-  "kalla": "Exempel",
-  "exempel": true,
-  "events": [
-    {"id":"x1","t":"LAN-kväll på biblioteket","e":"🎮","img":null,"om_dagar":1,"tid":"18:00","plats":"Kungsängens bibliotek","lat":59.4777,"lon":17.7516,"pris":0,"tags":["gaming","spel"],"url":null},
-    {"id":"x2","t":"Pumpkin patch","e":"🎃","img":null,"om_dagar":2,"tid":"11:00","plats":"Bro gård, Bro","lat":59.5150,"lon":17.6280,"pris":60,"tags":["natur","höst","foto"],"url":null},
-    {"id":"x3","t":"Prova på klättring","e":"🧗","img":null,"om_dagar":3,"tid":"14:00","plats":"Klätterverket, Sundbyberg","lat":59.3632,"lon":17.9692,"pris":120,"tags":["sport","träning"],"url":null},
-    {"id":"x4","t":"Open mic för unga","e":"🎤","img":null,"om_dagar":4,"tid":"19:00","plats":"Kulturhuset, Stockholm","lat":59.3326,"lon":18.0649,"pris":0,"tags":["musik","scen"],"url":null},
-    {"id":"x5","t":"Frisbeegolf-meetup","e":"🥏","img":null,"om_dagar":2,"tid":"13:00","plats":"Görvälns slottspark, Järfälla","lat":59.4183,"lon":17.7444,"pris":0,"tags":["sport","natur"],"url":null},
-    {"id":"x6","t":"Kreativ kväll: zines","e":"🎨","img":null,"om_dagar":5,"tid":"17:30","plats":"Fryshuset, Stockholm","lat":59.3010,"lon":18.0954,"pris":40,"tags":["konst","skapa"],"url":null},
-    {"id":"x7","t":"Matmarknad i centrum","e":"🍜","img":null,"om_dagar":3,"tid":"12:00","plats":"Bro centrum, Bro","lat":59.5113,"lon":17.6350,"pris":0,"tags":["mat"],"url":null}
-  ]
+  "kalla": "",
+  "exempel": false,
+  "events": []
 }
