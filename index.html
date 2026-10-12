@@ -42,6 +42,7 @@ nav .n{position:absolute;top:2px;left:calc(50% + 6px);min-width:16px;padding:0 4
 .card .info{position:relative;margin-top:auto;padding:60px 14px 48px;display:grid;gap:8px;color:#fff;background:linear-gradient(transparent,rgba(0,0,0,.55) 35%,rgba(0,0,0,.8))}
 .card .info .chip{background:rgba(255,255,255,.18);backdrop-filter:blur(6px);flex:1 1 auto;text-align:center;padding:8px 10px;font-size:14px;font-weight:600}
 .card .info{text-align:center}
+.card .info .sub{font-size:14px;opacity:.85}
 .card .info .facts{justify-content:center}
 .card .info .chip.free{background:var(--ok)}
 .card h2{margin:0;font-size:20px;text-shadow:0 1px 4px rgba(0,0,0,.4)}
@@ -236,7 +237,7 @@ function renderDeck(){
  if(!queue.length){d.innerHTML='<div class="empty">Inga fler event här.<br><br><button class="back" id="again">Visa alla event</button></div>';$("#again").onclick=()=>$("#mode-clear").onclick();return}
  queue.slice(0,2).reverse().forEach((ev,i,arr)=>{
   const c=document.createElement("div");c.className="card";
-  c.innerHTML=`<div class="stamp yes">GÅ DIT</div><div class="stamp no">NÄSTA</div>${pic(ev,"img")}<div class="info">${facts(ev)}<h2>${esc(ev.t)}</h2></div>`;
+  c.innerHTML=`<div class="stamp yes">GÅ DIT</div><div class="stamp no">NÄSTA</div>${pic(ev,"img")}<div class="info"><div class="facts"><span class="chip" data-w="${esc(ev.id)}" hidden></span>${price(ev.pris)}<span class="chip">${kmTxt(ev)}</span></div><h2>${esc(ev.t)}</h2><div class="sub">${esc(when(ev))}, ${esc(ev.plats)}</div></div>`;
   if(i===arr.length-1)drag(c,ev);
   d.appendChild(c);
  });
