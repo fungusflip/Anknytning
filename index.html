@@ -39,7 +39,7 @@ nav .n{position:absolute;top:2px;left:calc(50% + 6px);min-width:16px;padding:0 4
 .card{position:absolute;inset:0;border-radius:18px;overflow:hidden;background:#222;box-shadow:0 8px 24px rgba(0,0,0,.12);touch-action:none;user-select:none;cursor:grab;display:flex;flex-direction:column}
 .card img{pointer-events:none;-webkit-user-drag:none;user-select:none}
 .card .img{position:absolute!important;inset:0;display:flex;align-items:center;justify-content:center;font-size:84px;padding-bottom:30%}
-.card .info{position:relative;margin-top:auto;padding:60px 14px 14px;display:grid;gap:8px;color:#fff;background:linear-gradient(transparent,rgba(0,0,0,.55) 35%,rgba(0,0,0,.8))}
+.card .info{position:relative;margin-top:auto;padding:60px 14px 48px;display:grid;gap:8px;color:#fff;background:linear-gradient(transparent,rgba(0,0,0,.55) 35%,rgba(0,0,0,.8))}
 .card .info .chip{background:rgba(255,255,255,.18);backdrop-filter:blur(6px)}
 .card .info .chip.free{background:var(--ok)}
 .card h2{margin:0;font-size:20px;text-shadow:0 1px 4px rgba(0,0,0,.4)}
@@ -48,8 +48,8 @@ nav .n{position:absolute;top:2px;left:calc(50% + 6px);min-width:16px;padding:0 4
 .chip.free{background:var(--ok);color:#fff;font-weight:700}
 .stamp{z-index:2;position:absolute;top:20px;padding:6px 12px;border:3px solid;border-radius:8px;font-weight:800;font-size:20px;opacity:0;transform:rotate(-12deg)}
 .stamp.yes{left:20px;color:var(--ok)} .stamp.no{right:20px;color:var(--accent);transform:rotate(12deg)}
-.actions{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:10px 16px 0;flex:none}
-.actions button:not(.where){width:72px;height:72px;color:var(--fg);border-radius:50%;border:1px solid var(--line);background:var(--phone);font-size:32px;cursor:pointer;box-shadow:0 4px 12px rgba(0,0,0,.08)}
+.actions{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:0 24px;margin-top:-36px;position:relative;z-index:3;flex:none;pointer-events:none}.actions button{pointer-events:auto}
+.actions button:not(.where){width:72px;height:72px;color:var(--fg);border-radius:50%;border:1px solid var(--line);background:var(--phone);font-size:32px;cursor:pointer;box-shadow:0 6px 18px rgba(0,0,0,.2)}
 .empty{text-align:center;color:var(--muted);padding-top:120px}
 /* list */
 .search{width:100%;padding:12px 14px;border-radius:12px;border:1px solid var(--line);background:var(--chip);color:var(--fg);font:16px var(--font)}
@@ -103,7 +103,7 @@ nav .n{position:absolute;top:2px;left:calc(50% + 6px);min-width:16px;padding:0 4
 .cta{display:block;text-align:center;text-decoration:none;margin-bottom:10px;width:100%;padding:14px;border:0;border-radius:14px;background:var(--accent);color:#fff;font:700 16px var(--font);cursor:pointer}
 .note{position:absolute;left:16px;right:16px;top:64px;z-index:5;background:var(--fg);color:var(--phone);padding:10px 14px;border-radius:12px;font-size:14px;opacity:0;transition:opacity .2s;pointer-events:none}
 .note.show{opacity:1}
-.where{background:var(--chip);border:0;border-radius:999px;padding:6px 12px;color:var(--fg);font:600 13px var(--font);cursor:pointer}
+.where{background:var(--phone);box-shadow:0 4px 14px rgba(0,0,0,.18);border:0;border-radius:999px;padding:6px 12px;color:var(--fg);font:600 13px var(--font);cursor:pointer}
 .where::before{content:"📍 "}
 .source{margin:16px 0 0;color:var(--muted);font-size:12px}
 .card .img{position:relative;overflow:hidden;color:#fff;text-shadow:0 4px 18px rgba(0,0,0,.25)}
