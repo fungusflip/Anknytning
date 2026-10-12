@@ -27,9 +27,10 @@ main{flex:1;position:relative;overflow:hidden}
 #v-start{padding:4px 6px 8px}
 .view[hidden]{display:none}
 nav{display:flex;border-top:1px solid var(--line)}
-nav button{flex:1;padding:12px 4px 14px;background:none;border:0;color:var(--muted);font:600 13px var(--font);cursor:pointer}
+nav button{flex:1;padding:8px 4px 10px;background:none;border:0;color:var(--muted);font:600 11px var(--font);cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:3px;position:relative}
+nav svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 nav button.on{color:var(--accent)}
-nav .n{display:inline-block;min-width:18px;padding:0 5px;border-radius:9px;background:var(--accent);color:#fff;font-size:11px;margin-left:4px}
+nav .n{position:absolute;top:2px;left:calc(50% + 6px);min-width:16px;padding:0 4px;border-radius:8px;background:var(--accent);color:#fff;font-size:10px;line-height:16px}
 /* swipe */
 #v-start{display:flex;flex-direction:column}
 #v-start[hidden]{display:none}
@@ -52,12 +53,18 @@ nav .n{display:inline-block;min-width:18px;padding:0 5px;border-radius:9px;backg
 /* list */
 .search{width:100%;padding:12px 14px;border-radius:12px;border:1px solid var(--line);background:var(--chip);color:var(--fg);font:16px var(--font)}
 .tags{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0}
+.tags button.on{background:var(--fg);color:var(--phone);border-color:var(--fg)}
 .tags button{border:1px solid var(--line);background:none;color:var(--fg);border-radius:999px;padding:4px 10px;cursor:pointer;font:13px var(--font)}
 .row{display:flex;gap:12px;align-items:center;padding:10px;border-radius:14px;cursor:pointer}
-.row:hover{background:var(--chip)}
+.row:hover{filter:brightness(.97)}
 .row .e{position:relative;overflow:hidden;font-size:30px;width:52px;height:52px;border-radius:12px;background:var(--chip);display:flex;align-items:center;justify-content:center;flex:none}
 .row b{display:block}
 .row small{color:var(--muted)}
+.mini{display:flex;flex-wrap:wrap;gap:4px;margin-top:4px}
+.mini span{background:var(--phone);border-radius:999px;padding:2px 8px;font-size:12px;color:var(--muted)}
+.row{background:var(--chip)}
+.row+.row{margin-top:8px}
+.row .e{background:var(--phone)}
 .hint{color:var(--muted);font-size:13px}
 .filter{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin:8px 0}
 .filter b{font-size:12px;color:var(--muted);width:48px}
@@ -65,6 +72,7 @@ nav .n{display:inline-block;min-width:18px;padding:0 5px;border-radius:9px;backg
 .seg.on{background:var(--accent);border-color:var(--accent);color:#fff}
 .go{width:100%;margin:6px 0 4px;padding:12px;border:0;border-radius:12px;background:var(--accent);color:#fff;font:600 15px var(--font);cursor:pointer}
 .go:disabled{opacity:.4;cursor:default}
+.go.ghost{background:none;border:2px solid var(--line);color:var(--fg);margin-top:0}
 .mode{display:flex;justify-content:space-between;align-items:center;gap:8px;background:var(--chip);border-radius:12px;padding:6px 12px;margin-bottom:8px;font-size:13px}
 .mode[hidden]{display:none}
 /* detail */
@@ -79,7 +87,7 @@ nav .n{display:inline-block;min-width:18px;padding:0 5px;border-radius:9px;backg
 .note.show{opacity:1}
 .where{background:var(--chip);border:0;border-radius:999px;padding:6px 12px;color:var(--fg);font:600 13px var(--font);cursor:pointer}
 .where::before{content:"📍 "}
-.source{margin:0;padding:0 14px 2px;color:var(--muted);font-size:12px}
+.source{margin:16px 0 0;color:var(--muted);font-size:12px}
 .card .img{position:relative;overflow:hidden;color:#fff;text-shadow:0 4px 18px rgba(0,0,0,.25)}
 .card .img img,.detail .pic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .detail .pic{position:relative;overflow:hidden;border-radius:16px;margin:10px 0;aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;font-size:72px}
@@ -91,7 +99,6 @@ nav .n{display:inline-block;min-width:18px;padding:0 5px;border-radius:9px;backg
 <body>
 <div class="phone">
   <header><h1>anknytning</h1><button class="where" id="where" title="Använd min plats">Nära Bro</button></header>
-  <p class="source" id="source"></p>
   <main>
     <section class="view" id="v-start">
       <div class="mode" id="mode" hidden><span id="mode-txt"></span><button class="back" id="mode-clear">Visa alla</button></div>
@@ -103,15 +110,18 @@ nav .n{display:inline-block;min-width:18px;padding:0 5px;border-radius:9px;backg
     </section>
     <section class="view" id="v-sok" hidden>
       <input class="search" id="q" placeholder="Sök med intresseord, t.ex. gaming" autocomplete="off">
-      <div class="tags" id="tags"></div>
+      <div class="tags" id="tags" role="group" aria-label="Vad gillar du?"></div>
       <div class="filter" id="f-pris"><b>Pris</b>
         <button class="seg on" data-max="">Alla</button><button class="seg" data-max="0">Gratis</button><button class="seg" data-max="200">Max 200 kr</button><button class="seg" data-max="500">Max 500 kr</button>
       </div>
       <div class="filter" id="f-sort"><b>Sortera</b>
         <button class="seg on" data-s="near">Närmast</button><button class="seg" data-s="best">Bäst träff</button><button class="seg" data-s="soon">Snarast</button>
       </div>
+      <p class="hint" id="count-hits"></p>
       <button class="go" id="swipe-hits">Swipea träffarna</button>
-      <div id="results"></div>
+      <button class="go ghost" id="list-hits">Visa som lista</button>
+      <div id="results" hidden></div>
+      <p class="source" id="source"></p>
     </section>
     <section class="view" id="v-int" hidden>
       <p class="hint">Event du swipeat höger på.</p>
@@ -120,9 +130,9 @@ nav .n{display:inline-block;min-width:18px;padding:0 5px;border-radius:9px;backg
     <section class="view detail" id="v-detail" hidden></section>
   </main>
   <nav>
-    <button data-v="start" class="on">Start</button>
-    <button data-v="sok">Sök</button>
-    <button data-v="int">Sparade<span class="n" id="count" hidden>0</span></button>
+    <button data-v="start" class="on"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-7 9 7v9h-6v-6H9v6H3z"/></svg>Start</button>
+    <button data-v="sok"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5"/></svg>Sök</button>
+    <button data-v="int"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.5-7-10a4 4 0 0 1 7-2.5A4 4 0 0 1 19 10c0 5.5-7 10-7 10z"/></svg>Sparade<span class="n" id="count" hidden>0</span></button>
   </nav>
   <div class="note" id="note"></div>
 </div>
@@ -182,7 +192,7 @@ function art(ev){const k=(ev.tags[0]||ev.t);let h=0;for(const ch of k)h=(h*31+ch
 const host=u=>{try{return new URL(u).hostname.replace(/^www\./,"")}catch{return"webben"}};
 const pic=(ev,cls)=>`<div class="${cls}" style="${art(ev)}">${ev.e}${ev.img?`<img src="${esc(ev.img)}" alt="" loading="lazy" draggable="false" onerror="this.remove()">`:""}</div>`;
 
-const facts=ev=>`<div class="facts">${price(ev.pris)}<span class="chip">🕒 ${esc(when(ev))}</span><span class="chip">📍 ${esc(ev.plats)} · ${kmTxt(ev)}</span><span class="chip" data-w="${esc(ev.id)}" hidden></span></div>`;
+const facts=ev=>`<div class="facts">${price(ev.pris)}<span class="chip">🕒 ${esc(when(ev))}</span><span class="chip">📍 ${esc(ev.plats)}</span><span class="chip">${kmTxt(ev)}</span><span class="chip" data-w="${esc(ev.id)}" hidden></span></div>`;
 
 function note(msg){const n=$("#note");n.textContent=msg;n.classList.add("show");clearTimeout(n._t);n._t=setTimeout(()=>n.classList.remove("show"),1600)}
 function show(v){
@@ -228,15 +238,15 @@ $("#btn-no").onclick=()=>queue[0]&&decide(queue[0],false,$("#deck .card:last-chi
 document.addEventListener("keydown",e=>{if($("#v-start").hidden)return;if(e.key==="ArrowRight")$("#btn-yes").click();if(e.key==="ArrowLeft")$("#btn-no").click()});
 
 // Lista (Sök + Sparade)
-const row=ev=>`<div class="row" data-id="${esc(ev.id)}">${pic(ev,"e")}<div><b>${esc(ev.t)}</b><small>${esc(when(ev))} · ${priceTxt(ev.pris)} · ${kmTxt(ev)}</small></div></div>`;
+const row=ev=>`<div class="row" data-id="${esc(ev.id)}">${pic(ev,"e")}<div><b>${esc(ev.t)}</b><div class="mini"><span>${esc(when(ev))}</span><span>${priceTxt(ev.pris)}</span><span>${kmTxt(ev)}</span></div></div></div>`;
 function bindRows(el){el.querySelectorAll(".row").forEach(r=>r.onclick=()=>openDetail(EVENTS.find(e=>e.id===r.dataset.id)))}
 // Sök: filter på pris, sortering och "bäst träff"
-let maxPris="",sortBy="near";
+let maxPris="",sortBy="near",chosen=new Set();
 function score(e,words){let p=0;const t=e.t.toLowerCase(),pl=e.plats.toLowerCase();
  for(const w of words){if(t.includes(w))p+=3;if(e.tags.some(x=>x===w))p+=3;else if(e.tags.some(x=>x.includes(w)))p+=2;if(pl.includes(w))p+=1}
  return p}
 function hitsNow(){
- const q=$("#q").value.trim().toLowerCase(),words=q.split(/\s+/).filter(Boolean);
+ const q=[$("#q").value.trim().toLowerCase(),...chosen].filter(Boolean).join(" "),words=q.split(/\s+/).filter(Boolean);
  let list=EVENTS.map(e=>({e,p:words.length?score(e,words):1})).filter(x=>x.p>0);
  if(maxPris!=="")list=list.filter(x=>x.e.pris!=null&&x.e.pris<=+maxPris);
  const near=(a,b)=>km(me,a.e)-km(me,b.e),soon=(a,b)=>(a.e.datum+(a.e.tid||"")).localeCompare(b.e.datum+(b.e.tid||""));
@@ -244,8 +254,9 @@ function hitsNow(){
  return {q,hits:list.map(x=>x.e)};
 }
 function search(){
- const {q,hits}=hitsNow(),r=$("#results"),b=$("#swipe-hits");
- b.textContent=hits.length?`Swipea ${hits.length} ${hits.length===1?"träff":"träffar"} →`:"Inga träffar att swipea";b.disabled=!hits.length;
+ const {q,hits}=hitsNow(),r=$("#results"),b=$("#swipe-hits"),l=$("#list-hits");
+ $("#count-hits").textContent=`${hits.length} ${hits.length===1?"event matchar":"events matchar"}`;
+ b.textContent="Swipea";l.textContent=r.hidden?"Visa som lista":"Dölj listan";b.disabled=l.disabled=!hits.length;
  const unknown=maxPris!==""?EVENTS.filter(e=>e.pris==null).length:0;
  r.innerHTML=(hits.length?hits.slice(0,60).map(row).join(""):EVENTS.length?'<p class="hint">Inga träffar. Här är närmaste event:</p>'+row(sortNear(EVENTS)[0]):'<p class="hint">Inga event att söka bland just nu.</p>')
   +(unknown?`<p class="hint">${unknown} event saknar pris från arrangören och visas inte med prisfilter.</p>`:"");
@@ -258,15 +269,16 @@ $("#swipe-hits").onclick=()=>{const {q,hits}=hitsNow();
  queue=hits.filter(e=>!saved.includes(e));
  const pris=maxPris===""?"":maxPris==="0"?"gratis":`max ${maxPris} kr`;
  const sort={near:"närmast först",best:"bäst träff först",soon:"snarast först"}[sortBy];
- $("#mode-txt").textContent=[q&&`"${q}"`,pris,sort].filter(Boolean).join(" · ");
+ $("#mode-txt").textContent=[q&&`"${q}"`,pris,sort].filter(Boolean).join(", ");
  $("#mode").hidden=false;renderDeck();show("start")};
 $("#mode-clear").onclick=()=>{$("#mode").hidden=true;queue=sortNear(EVENTS.filter(e=>!saved.includes(e)));renderDeck()};
+$("#list-hits").onclick=()=>{const r=$("#results");r.hidden=!r.hidden;search()};
 $("#q").oninput=search;
 function renderTags(){
  const count={};EVENTS.forEach(e=>e.tags.forEach(t=>count[t]=(count[t]||0)+1));
  const top=Object.entries(count).sort((a,b)=>b[1]-a[1]).slice(0,10).map(([t])=>t);
  $("#tags").innerHTML=top.map(t=>`<button>${esc(t)}</button>`).join("");
- $("#tags").querySelectorAll("button").forEach(b=>b.onclick=()=>{$("#q").value=b.textContent;search()});
+ $("#tags").querySelectorAll("button").forEach(b=>b.onclick=()=>{const t=b.textContent;chosen.has(t)?chosen.delete(t):chosen.add(t);b.classList.toggle("on",chosen.has(t));b.setAttribute("aria-pressed",chosen.has(t));search()});
 }
 function renderSaved(){const s=$("#saved");s.innerHTML=saved.length?saved.map(row).join(""):'<p class="hint">Inget sparat än. Swipea höger på Start.</p>';bindRows(s)}
 function updateCount(){const c=$("#count");c.textContent=saved.length;c.hidden=!saved.length}
@@ -302,7 +314,7 @@ $("#where").onclick=locate;
  EVENTS=(data.exempel?[]:data.events).map(e=>({img:null,url:null,tags:[],e:"✨",...e}))
   .filter(e=>e.datum&&e.datum>=iso(today)&&Number.isFinite(e.lat));
  meta=data;
- $("#source").textContent=EVENTS.length?`${EVENTS.length} event · ${data.kalla}`:"";
+ $("#source").textContent=EVENTS.length?`Källor: ${data.kalla}`:"";
  renderTags();refresh();
  locate();
 })();
