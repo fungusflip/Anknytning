@@ -68,6 +68,14 @@ nav .n{position:absolute;top:2px;left:calc(50% + 6px);min-width:16px;padding:0 4
 .sq .sqimg{position:absolute!important;inset:0;display:flex;align-items:center;justify-content:center;font-size:48px;padding-bottom:30%}
 .sq .sqimg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .sq .sqt{position:relative;padding:36px 10px 10px;background:linear-gradient(transparent,rgba(0,0,0,.75));font-size:13px;font-weight:700;line-height:1.25}
+.card.flipped{background:var(--phone);color:var(--fg);cursor:default;overflow-y:auto;display:block}
+.card .bimg{position:relative;overflow:hidden;height:48%;display:flex;align-items:center;justify-content:center;font-size:80px;color:#fff}
+.card .bimg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.card .bi{padding:12px 14px 14px;display:grid;gap:10px}
+.card .bi h2{margin:0;font-size:20px;text-shadow:none}
+.card .bi .chip{background:var(--chip)}
+.card .bi .cta{margin:0}
+.card .bi .back{text-align:center;justify-self:center}
 .sq .sqt small{display:block;font-weight:400;font-size:11px;opacity:.85;margin-top:2px}
 .mini{display:flex;flex-wrap:wrap;gap:4px;margin-top:4px}
 .mini span{background:var(--phone);border-radius:999px;padding:2px 8px;font-size:12px;color:var(--muted)}
@@ -240,11 +248,35 @@ function drag(c,ev){
  c.ondragstart=e=>e.preventDefault();
  c.onpointerdown=e=>{e.preventDefault();x0=e.clientX;moved=false;c.setPointerCapture(e.pointerId)};
  c.onpointermove=e=>{if(x0===null)return;dx=e.clientX-x0;if(Math.abs(dx)>5)moved=true;c.style.transform=`translateX(${dx}px) rotate(${dx/15}deg)`;c.querySelector(".yes").style.opacity=Math.max(0,dx/100);c.querySelector(".no").style.opacity=Math.max(0,-dx/100)};
- c.onpointerup=()=>{if(x0===null)return;x0=null;if(dx>100)decide(ev,true,c);else if(dx<-100)decide(ev,false,c);else{c.style.transition="transform .2s";c.style.transform="";c.querySelectorAll(".stamp").forEach(s=>s.style.opacity=0);setTimeout(()=>c.style.transition="",200);if(!moved)openDetail(ev)}dx=0};
+ c.onpointerup=()=>{if(x0===null)return;x0=null;if(dx>100)decide(ev,true,c);else if(dx<-100)decide(ev,false,c);else{c.style.transition="transform .2s";c.style.transform="";c.querySelectorAll(".stamp").forEach(s=>s.style.opacity=0);setTimeout(()=>c.style.transition="",200);if(!moved)flipCard(c,ev)}dx=0};
 }
 $("#btn-yes").onclick=()=>queue[0]&&decide(queue[0],true,$("#deck .card:last-child"));
 $("#btn-no").onclick=()=>queue[0]&&decide(queue[0],false,$("#deck .card:last-child"));
 document.addEventListener("keydown",e=>{if($("#v-start").hidden)return;if(e.key==="ArrowRight")$("#btn-yes").click();if(e.key==="ArrowLeft")$("#btn-no").click()});
+
+// Vänd kortet: info på baksidan i stället för en ny sida
+function shareEvent(ev){
+ const data={title:ev.t,text:`Ska vi gå på ${ev.t}? ${when(ev)}, ${ev.plats}`,url:ev.url||location.href};
+ if(navigator.share)navigator.share(data).catch(()=>{});
+ else if(navigator.clipboard)navigator.clipboard.writeText(`${data.text} ${data.url}`).then(()=>note("Länk kopierad, skicka den till en kompis"),()=>note("Kunde inte kopiera"));
+}
+function flipCard(c,ev){
+ c.style.transition="transform .18s";c.style.transform="rotateY(90deg)";
+ setTimeout(()=>{
+  c.onpointerdown=c.onpointermove=c.onpointerup=null;c.classList.add("flipped");
+  c.innerHTML=`${pic(ev,"bimg")}<div class="bi"><h2>${esc(ev.t)}</h2>${facts(ev)}
+   <button class="cta" data-a="share">Skicka till kompis</button>
+   <button class="cta ghost" data-a="save">${saved.includes(ev)?"Sparad ♥":"Spara ♥"}</button>
+   ${ev.url?`<a class="cta ghost" href="${esc(ev.url)}" target="_blank" rel="noopener">Eventets sida på ${esc(host(ev.url))} ↗</a>`:""}
+   <button class="back" data-a="flip">↻ Vänd tillbaka</button></div>`;
+  c.querySelector('[data-a=share]').onclick=()=>shareEvent(ev);
+  c.querySelector('[data-a=save]').onclick=e=>{if(!saved.includes(ev)){saved.push(ev);updateCount();note("Sparad ♥")}e.target.textContent="Sparad ♥"};
+  c.querySelector('[data-a=flip]').onclick=()=>renderDeck();
+  fillWeather(c);
+  c.style.transition="none";c.style.transform="rotateY(-90deg)";
+  requestAnimationFrame(()=>requestAnimationFrame(()=>{c.style.transition="transform .18s";c.style.transform="rotateY(0)"}));
+ },180);
+}
 
 // Lista (Sök + Sparade)
 const row=ev=>`<div class="row" data-id="${esc(ev.id)}">${pic(ev,"e")}<div><b>${esc(ev.t)}</b><div class="mini"><span>${esc(when(ev))}</span><span>${priceTxt(ev.pris)}</span><span>${kmTxt(ev)}</span></div></div></div>`;
