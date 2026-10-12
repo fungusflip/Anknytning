@@ -19,6 +19,7 @@
 html,body{height:100%;margin:0}
 body{background:var(--bg);color:var(--fg);font-family:var(--font);display:flex;justify-content:center;align-items:center;padding:16px}
 .phone{width:100%;max-width:390px;height:min(800px,100%);background:var(--phone);border-radius:28px;box-shadow:0 20px 60px rgba(0,0,0,.18);display:flex;flex-direction:column;overflow:hidden;position:relative}
+header[hidden]{display:none}
 header{padding:12px 14px 4px;display:flex;justify-content:space-between;align-items:center}
 header h1{font-size:15px;font-weight:600;margin:0}
 header small{color:var(--muted)}
@@ -26,10 +27,10 @@ main{flex:1;position:relative;overflow:hidden}
 .view{position:absolute;inset:0;padding:8px 16px 16px;overflow-y:auto}
 #v-start{padding:4px 6px 8px}
 .view[hidden]{display:none}
-nav{display:flex;border-top:1px solid var(--line)}
-nav button{flex:1;padding:8px 4px 10px;background:none;border:0;color:var(--muted);font:600 11px var(--font);cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:3px;position:relative}
+nav{display:flex;margin:6px 16px 14px;padding:5px;gap:4px;border-radius:999px;background:var(--phone);box-shadow:0 6px 20px rgba(0,0,0,.14);border:1px solid var(--line)}
+nav button{flex:1;padding:7px 4px 8px;border-radius:999px;background:none;border:0;color:var(--muted);font:600 11px var(--font);cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:3px;position:relative}
 nav svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-nav button.on{color:var(--accent)}
+nav button.on{color:var(--accent);background:var(--chip)}
 nav .n{position:absolute;top:2px;left:calc(50% + 6px);min-width:16px;padding:0 4px;border-radius:8px;background:var(--accent);color:#fff;font-size:10px;line-height:16px}
 /* swipe */
 #v-start{display:flex;flex-direction:column}
@@ -38,8 +39,10 @@ nav .n{position:absolute;top:2px;left:calc(50% + 6px);min-width:16px;padding:0 4
 .card{position:absolute;inset:0;border-radius:18px;overflow:hidden;background:#222;box-shadow:0 8px 24px rgba(0,0,0,.12);touch-action:none;user-select:none;cursor:grab;display:flex;flex-direction:column}
 .card img{pointer-events:none;-webkit-user-drag:none;user-select:none}
 .card .img{position:absolute!important;inset:0;display:flex;align-items:center;justify-content:center;font-size:84px;padding-bottom:30%}
-.card .info{position:relative;margin-top:auto;padding:60px 14px 14px;display:grid;gap:8px;color:#fff;background:linear-gradient(transparent,rgba(0,0,0,.55) 35%,rgba(0,0,0,.8))}
-.card .info .chip{background:rgba(255,255,255,.18);backdrop-filter:blur(6px)}
+.card .info{position:relative;margin-top:auto;padding:60px 14px 48px;display:grid;gap:8px;color:#fff;background:linear-gradient(transparent,rgba(0,0,0,.55) 35%,rgba(0,0,0,.8))}
+.card .info .chip{background:rgba(255,255,255,.18);backdrop-filter:blur(6px);flex:1 1 auto;text-align:center;padding:8px 10px;font-size:14px;font-weight:600}
+.card .info{text-align:center}
+.card .info .facts{justify-content:center}
 .card .info .chip.free{background:var(--ok)}
 .card h2{margin:0;font-size:20px;text-shadow:0 1px 4px rgba(0,0,0,.4)}
 .facts{display:flex;flex-wrap:wrap;gap:6px}
@@ -47,8 +50,8 @@ nav .n{position:absolute;top:2px;left:calc(50% + 6px);min-width:16px;padding:0 4
 .chip.free{background:var(--ok);color:#fff;font-weight:700}
 .stamp{z-index:2;position:absolute;top:20px;padding:6px 12px;border:3px solid;border-radius:8px;font-weight:800;font-size:20px;opacity:0;transform:rotate(-12deg)}
 .stamp.yes{left:20px;color:var(--ok)} .stamp.no{right:20px;color:var(--accent);transform:rotate(12deg)}
-.actions{display:flex;justify-content:center;gap:24px;padding-top:8px;flex:none}
-.actions button{width:50px;height:50px;color:var(--fg);border-radius:50%;border:1px solid var(--line);background:var(--phone);font-size:24px;cursor:pointer;box-shadow:0 4px 12px rgba(0,0,0,.08)}
+.actions{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:0 24px;margin-top:-36px;position:relative;z-index:3;flex:none;pointer-events:none}.actions button{pointer-events:auto}
+.actions button:not(.where){width:72px;height:72px;color:var(--fg);border-radius:50%;border:1px solid var(--line);background:var(--phone);font-size:32px;cursor:pointer;box-shadow:0 6px 18px rgba(0,0,0,.2)}
 .empty{text-align:center;color:var(--muted);padding-top:120px}
 /* list */
 .search{width:100%;padding:12px 14px;border-radius:12px;border:1px solid var(--line);background:var(--chip);color:var(--fg);font:16px var(--font)}
@@ -102,7 +105,7 @@ nav .n{position:absolute;top:2px;left:calc(50% + 6px);min-width:16px;padding:0 4
 .cta{display:block;text-align:center;text-decoration:none;margin-bottom:10px;width:100%;padding:14px;border:0;border-radius:14px;background:var(--accent);color:#fff;font:700 16px var(--font);cursor:pointer}
 .note{position:absolute;left:16px;right:16px;top:64px;z-index:5;background:var(--fg);color:var(--phone);padding:10px 14px;border-radius:12px;font-size:14px;opacity:0;transition:opacity .2s;pointer-events:none}
 .note.show{opacity:1}
-.where{background:var(--chip);border:0;border-radius:999px;padding:6px 12px;color:var(--fg);font:600 13px var(--font);cursor:pointer}
+.where{background:var(--phone);box-shadow:0 4px 14px rgba(0,0,0,.18);border:0;border-radius:999px;padding:6px 12px;color:var(--fg);font:600 13px var(--font);cursor:pointer}
 .where::before{content:"📍 "}
 .source{margin:16px 0 0;color:var(--muted);font-size:12px}
 .card .img{position:relative;overflow:hidden;color:#fff;text-shadow:0 4px 18px rgba(0,0,0,.25)}
@@ -115,13 +118,14 @@ nav .n{position:absolute;top:2px;left:calc(50% + 6px);min-width:16px;padding:0 4
 </head>
 <body>
 <div class="phone">
-  <header><h1>anknytning</h1><button class="where" id="where" title="Använd min plats">Nära Bro</button></header>
+  <header><h1>anknytning</h1></header>
   <main>
     <section class="view" id="v-start">
       <div class="mode" id="mode" hidden><span id="mode-txt"></span><button class="back" id="mode-clear">Visa alla</button></div>
       <div class="deck" id="deck"></div>
       <div class="actions">
         <button id="btn-no" aria-label="Nästa">✕</button>
+        <button class="where" id="where" title="Använd min plats">Nära Bro</button>
         <button id="btn-yes" aria-label="Intresserad">♥</button>
       </div>
     </section>
@@ -216,6 +220,7 @@ function show(v){
  document.querySelectorAll(".view").forEach(x=>x.hidden=true);
  $("#v-"+v).hidden=false;
  document.querySelectorAll("nav button").forEach(b=>b.classList.toggle("on",b.dataset.v===v));
+ document.querySelector("header").hidden=v!=="start";
  if(v!=="detail")prev=v;
  if(v==="int")renderSaved();
 }
@@ -231,7 +236,7 @@ function renderDeck(){
  if(!queue.length){d.innerHTML='<div class="empty">Inga fler event här.<br><br><button class="back" id="again">Visa alla event</button></div>';$("#again").onclick=()=>$("#mode-clear").onclick();return}
  queue.slice(0,2).reverse().forEach((ev,i,arr)=>{
   const c=document.createElement("div");c.className="card";
-  c.innerHTML=`<div class="stamp yes">GÅ DIT</div><div class="stamp no">NÄSTA</div>${pic(ev,"img")}<div class="info"><h2>${esc(ev.t)}</h2>${facts(ev)}</div>`;
+  c.innerHTML=`<div class="stamp yes">GÅ DIT</div><div class="stamp no">NÄSTA</div>${pic(ev,"img")}<div class="info">${facts(ev)}<h2>${esc(ev.t)}</h2></div>`;
   if(i===arr.length-1)drag(c,ev);
   d.appendChild(c);
  });
