@@ -26,10 +26,10 @@ main{flex:1;position:relative;overflow:hidden}
 .view{position:absolute;inset:0;padding:8px 16px 16px;overflow-y:auto}
 #v-start{padding:4px 6px 8px}
 .view[hidden]{display:none}
-nav{display:flex;border-top:1px solid var(--line)}
-nav button{flex:1;padding:8px 4px 10px;background:none;border:0;color:var(--muted);font:600 11px var(--font);cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:3px;position:relative}
+nav{display:flex;margin:6px 16px 14px;padding:5px;gap:4px;border-radius:999px;background:var(--phone);box-shadow:0 6px 20px rgba(0,0,0,.14);border:1px solid var(--line)}
+nav button{flex:1;padding:7px 4px 8px;border-radius:999px;background:none;border:0;color:var(--muted);font:600 11px var(--font);cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:3px;position:relative}
 nav svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-nav button.on{color:var(--accent)}
+nav button.on{color:var(--accent);background:var(--chip)}
 nav .n{position:absolute;top:2px;left:calc(50% + 6px);min-width:16px;padding:0 4px;border-radius:8px;background:var(--accent);color:#fff;font-size:10px;line-height:16px}
 /* swipe */
 #v-start{display:flex;flex-direction:column}
