@@ -48,8 +48,8 @@ nav .n{position:absolute;top:2px;left:calc(50% + 6px);min-width:16px;padding:0 4
 .chip.free{background:var(--ok);color:#fff;font-weight:700}
 .stamp{z-index:2;position:absolute;top:20px;padding:6px 12px;border:3px solid;border-radius:8px;font-weight:800;font-size:20px;opacity:0;transform:rotate(-12deg)}
 .stamp.yes{left:20px;color:var(--ok)} .stamp.no{right:20px;color:var(--accent);transform:rotate(12deg)}
-.actions{display:flex;justify-content:center;gap:24px;padding-top:8px;flex:none}
-.actions button{width:50px;height:50px;color:var(--fg);border-radius:50%;border:1px solid var(--line);background:var(--phone);font-size:24px;cursor:pointer;box-shadow:0 4px 12px rgba(0,0,0,.08)}
+.actions{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:10px 16px 0;flex:none}
+.actions button:not(.where){width:72px;height:72px;color:var(--fg);border-radius:50%;border:1px solid var(--line);background:var(--phone);font-size:32px;cursor:pointer;box-shadow:0 4px 12px rgba(0,0,0,.08)}
 .empty{text-align:center;color:var(--muted);padding-top:120px}
 /* list */
 .search{width:100%;padding:12px 14px;border-radius:12px;border:1px solid var(--line);background:var(--chip);color:var(--fg);font:16px var(--font)}
@@ -116,13 +116,14 @@ nav .n{position:absolute;top:2px;left:calc(50% + 6px);min-width:16px;padding:0 4
 </head>
 <body>
 <div class="phone">
-  <header><h1>anknytning</h1><button class="where" id="where" title="Använd min plats">Nära Bro</button></header>
+  <header><h1>anknytning</h1></header>
   <main>
     <section class="view" id="v-start">
       <div class="mode" id="mode" hidden><span id="mode-txt"></span><button class="back" id="mode-clear">Visa alla</button></div>
       <div class="deck" id="deck"></div>
       <div class="actions">
         <button id="btn-no" aria-label="Nästa">✕</button>
+        <button class="where" id="where" title="Använd min plats">Nära Bro</button>
         <button id="btn-yes" aria-label="Intresserad">♥</button>
       </div>
     </section>
@@ -233,7 +234,7 @@ function renderDeck(){
  if(!queue.length){d.innerHTML='<div class="empty">Inga fler event här.<br><br><button class="back" id="again">Visa alla event</button></div>';$("#again").onclick=()=>$("#mode-clear").onclick();return}
  queue.slice(0,2).reverse().forEach((ev,i,arr)=>{
   const c=document.createElement("div");c.className="card";
-  c.innerHTML=`<div class="stamp yes">GÅ DIT</div><div class="stamp no">NÄSTA</div>${pic(ev,"img")}<div class="info"><h2>${esc(ev.t)}</h2>${facts(ev)}</div>`;
+  c.innerHTML=`<div class="stamp yes">GÅ DIT</div><div class="stamp no">NÄSTA</div>${pic(ev,"img")}<div class="info">${facts(ev)}<h2>${esc(ev.t)}</h2></div>`;
   if(i===arr.length-1)drag(c,ev);
   d.appendChild(c);
  });
