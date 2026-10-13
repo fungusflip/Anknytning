@@ -227,7 +227,7 @@ function art(ev){const k=(ev.tags[0]||ev.t);let h=0;for(const ch of k)h=(h*31+ch
 const host=u=>{try{return new URL(u).hostname.replace(/^www\./,"")}catch{return"webben"}};
 const pic=(ev,cls)=>`<div class="${cls}" style="${art(ev)}">${ev.e}${ev.img?`<img src="${esc(ev.img)}" alt="" loading="lazy" draggable="false" onerror="this.remove()">`:""}</div>`;
 
-const facts=ev=>`<div class="facts">${price(ev.pris)}<span class="chip">🕒 ${esc(when(ev))}</span><span class="chip">📍 ${esc(ev.plats)}</span><span class="chip">${kmTxt(ev)}</span><span class="chip" data-w="${esc(ev.id)}" hidden></span></div>`;
+const facts=ev=>`<div class="facts">${price(ev.pris)}<span class="chip">🕒 ${esc(when(ev))}</span><span class="chip">${kmTxt(ev)}</span><span class="chip" data-w="${esc(ev.id)}" hidden></span></div>`;
 
 function note(msg){const n=$("#note");n.textContent=msg;n.classList.add("show");clearTimeout(n._t);n._t=setTimeout(()=>n.classList.remove("show"),1600)}
 function show(v){
@@ -284,7 +284,7 @@ function flipCard(c,ev){
  c.style.transition="transform .18s";c.style.transform="rotateY(90deg)";$(".actions").style.visibility="hidden";
  setTimeout(()=>{
   c.onpointerdown=c.onpointermove=c.onpointerup=null;c.classList.add("flipped");
-  c.innerHTML=`${pic(ev,"bimg").replace(/<\/div>$/,'<button class="flipb" data-a="flip">↻ Vänd tillbaka</button></div>')}<div class="bi"><h2>${esc(ev.t)}</h2>${facts(ev)}
+  c.innerHTML=`${pic(ev,"bimg").replace(/<\/div>$/,'<button class="flipb" data-a="flip">↻ Vänd tillbaka</button></div>')}<div class="bi"><h2>${esc(ev.t)}</h2><p style="margin:2px 0 8px;color:var(--muted);font-size:14px">${esc(ev.plats)}</p>${facts(ev)}
    <button class="cta" data-a="share">Skicka till kompis</button>
    <button class="cta ghost" data-a="save">${saved.includes(ev)?"Sparad ♥":"Spara ♥"}</button>
    ${ev.url?`<a class="cta ghost" href="${esc(ev.url)}" target="_blank" rel="noopener">Eventets sida på ${esc(host(ev.url))} ↗</a>`:""}</div>`;
@@ -337,6 +337,13 @@ $("#mode-clear").onclick=()=>{$("#mode").hidden=true;queue=sortNear(EVENTS.filte
 $("#list-hits").onclick=()=>{search();sokPage(true)};
 $("#list-back").onclick=()=>sokPage(false);
 $("#q").oninput=search;
+// Samma sak ska bara vara en tagg (music = musik), och platser är inga taggar
+const TAG_ALIAS={"music":"musik","musik/konsert":"musik","theatre":"teater","arts & theatre":"scen & film","dance":"dans","dance/electronic":"dans & elektroniskt","food & drink":"mat & dryck","motion/hälsa":"sport & hälsa","fairs & festivals":"festivaler"};
+const TAG_SKIP=new Set(["miscellaneous","spectacular","holiday","alternative","stockholm","nacka","haninge","lidingö","dieselverkstaden"]);
+function cleanTags(list){
+ const places=new Set();list.forEach(e=>{const p=(e.plats||"").toLowerCase();places.add(p);p.split(",").forEach(x=>places.add(x.trim()))});
+ list.forEach(e=>{e.tags=[...new Set(e.tags.map(t=>t.toLowerCase()).map(t=>TAG_ALIAS[t]||t).filter(t=>t&&!TAG_SKIP.has(t)&&!places.has(t)))]});
+}
 function renderTags(){
  const count={};EVENTS.forEach(e=>e.tags.forEach(t=>count[t]=(count[t]||0)+1));
  const top=Object.entries(count).sort((a,b)=>b[1]-a[1]).slice(0,10).map(([t])=>t);
@@ -383,6 +390,7 @@ $("#where").onclick=locate;
  const today=new Date();today.setHours(0,0,0,0);
  EVENTS=(data.exempel?[]:data.events).map(e=>({img:null,url:null,tags:[],e:"✨",...e}))
   .filter(e=>e.datum&&e.datum>=iso(today)&&Number.isFinite(e.lat));
+ cleanTags(EVENTS);
  meta=data;
  $("#source").textContent=EVENTS.length?`Källor: ${data.kalla}`:"";
  renderTags();refresh();
