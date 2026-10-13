@@ -7,12 +7,13 @@
 <style>
 /* Layout: one phone-sized app column, centered on desktop, full width on phones */
 :root{
-  --bg:#eef0f6; --phone:#ffffff; --fg:#1b1d2a; --muted:#6b6f84; --line:#dfe2ec;
-  --accent:#ff5a5f; --accent2:#3b5bdb; --ok:#2f9e44; --chip:#f1f3fa;
+  --bg:#f1ede6; --phone:#fffdf9; --fg:#1c1b22; --muted:#77727d; --line:#e6e1da;
+  --accent:#ff4f64; --accent2:#1f7a74; --ok:#1f9d6b; --chip:#f3efe8;
+  --grad:linear-gradient(135deg,#ff4f64,#ff8a5b);
   --font:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
 }
 @media (prefers-color-scheme: dark){
-  :root{--bg:#0f1016; --phone:#181a24; --fg:#eef0f8; --muted:#9a9eb3; --line:#2b2e3d; --chip:#232634; color-scheme:dark}
+  :root{--bg:#0d0c11; --phone:#17161d; --fg:#f4f1f8; --muted:#a29fb0; --line:#2c2a36; --chip:#23212c; --accent:#ff6b7e; --accent2:#4fc3b9; --ok:#3fcf94; color-scheme:dark}
 }
 *{box-sizing:border-box}
 [hidden]{display:none!important}
@@ -20,12 +21,12 @@ html,body{height:100%;margin:0}
 body{background:var(--bg);color:var(--fg);font-family:var(--font);display:flex;justify-content:center;align-items:center;padding:16px}
 .phone{width:100%;max-width:390px;height:min(800px,100%);background:var(--phone);border-radius:28px;box-shadow:0 20px 60px rgba(0,0,0,.18);display:flex;flex-direction:column;overflow:hidden;position:relative}
 header[hidden]{display:none}
-header{padding:12px 14px 4px;display:flex;justify-content:space-between;align-items:center}
-header h1{font-size:15px;font-weight:600;margin:0}
+header{position:absolute;top:0;left:0;right:0;z-index:4;padding:16px 20px 36px;display:flex;justify-content:space-between;align-items:center;color:#fff;background:linear-gradient(rgba(0,0,0,.5),transparent);pointer-events:none}
+header h1{font-size:20px;font-weight:800;letter-spacing:-.01em;margin:0;text-shadow:0 1px 6px rgba(0,0,0,.35)}
 header small{color:var(--muted)}
 main{flex:1;position:relative;overflow:hidden}
 .view{position:absolute;inset:0;padding:8px 16px 16px;overflow-y:auto}
-#v-start{padding:4px 6px 8px}
+#v-start{padding:0 0 4px}
 .view[hidden]{display:none}
 nav{display:flex;margin:6px 16px 14px;padding:5px;gap:4px;border-radius:999px;background:var(--phone);box-shadow:0 6px 20px rgba(0,0,0,.14);border:1px solid var(--line)}
 nav button{flex:1;padding:7px 4px 8px;border-radius:999px;background:none;border:0;color:var(--muted);font:600 11px var(--font);cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:3px;position:relative}
@@ -36,7 +37,7 @@ nav .n{position:absolute;top:2px;left:calc(50% + 6px);min-width:16px;padding:0 4
 #v-start{display:flex;flex-direction:column}
 #v-start[hidden]{display:none}
 .deck{position:relative;flex:1;min-height:0}
-.card{position:absolute;inset:0;border-radius:18px;overflow:hidden;background:#222;box-shadow:0 8px 24px rgba(0,0,0,.12);touch-action:none;user-select:none;cursor:grab;display:flex;flex-direction:column}
+.card{position:absolute;inset:0;border-radius:0 0 28px 28px;overflow:hidden;background:#222;box-shadow:0 8px 24px rgba(0,0,0,.12);touch-action:none;user-select:none;cursor:grab;display:flex;flex-direction:column}
 .card img{pointer-events:none;-webkit-user-drag:none;user-select:none}
 .card .img{position:absolute!important;inset:0;display:flex;align-items:center;justify-content:center;font-size:84px;padding-bottom:30%}
 .card .info{position:relative;margin-top:auto;padding:60px 14px 48px;display:grid;gap:8px;color:#fff;background:linear-gradient(transparent,rgba(0,0,0,.55) 35%,rgba(0,0,0,.8))}
@@ -52,7 +53,8 @@ nav .n{position:absolute;top:2px;left:calc(50% + 6px);min-width:16px;padding:0 4
 .stamp{z-index:2;position:absolute;top:20px;padding:6px 12px;border:3px solid;border-radius:8px;font-weight:800;font-size:20px;opacity:0;transform:rotate(-12deg)}
 .stamp.yes{left:20px;color:var(--ok)} .stamp.no{right:20px;color:var(--accent);transform:rotate(12deg)}
 .actions{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:0 24px 16px;margin-top:-36px;position:relative;z-index:3;flex:none;pointer-events:none}.actions button{pointer-events:auto}
-.actions button:not(.where){width:72px;height:72px;color:var(--fg);border-radius:50%;border:1px solid var(--line);background:var(--phone);font-size:32px;cursor:pointer;box-shadow:0 6px 18px rgba(0,0,0,.2)}
+.actions button:not(.where){width:72px;height:72px;color:var(--muted);border-radius:50%;border:1px solid var(--line);background:var(--phone);font-size:32px;cursor:pointer;box-shadow:0 6px 18px rgba(0,0,0,.2)}
+.actions #btn-yes{color:var(--accent)}
 .empty{text-align:center;color:var(--muted);padding-top:120px}
 /* list */
 .search{width:100%;padding:12px 14px;border-radius:12px;border:1px solid var(--line);background:var(--chip);color:var(--fg);font:16px var(--font)}
@@ -89,14 +91,17 @@ nav .n{position:absolute;top:2px;left:calc(50% + 6px);min-width:16px;padding:0 4
 .row+.row{margin-top:8px}
 .row .e{background:var(--phone)}
 .hint{color:var(--muted);font-size:13px}
+.sh{margin:18px 0 6px;font-size:15px;display:flex;justify-content:space-between;align-items:baseline}.sh b{color:var(--accent);font-size:14px}
+#pris{width:100%;accent-color:var(--accent);margin:4px 0 8px}
+#sok-list .back{margin-bottom:6px}
 .filter{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin:8px 0}
 .filter b{font-size:12px;color:var(--muted);width:48px}
 .seg{border:1px solid var(--line);background:none;color:var(--fg);border-radius:999px;padding:4px 10px;cursor:pointer;font:13px var(--font)}
 .seg.on{background:var(--accent);border-color:var(--accent);color:#fff}
-.go{width:100%;margin:6px 0 4px;padding:12px;border:0;border-radius:12px;background:var(--accent);color:#fff;font:600 15px var(--font);cursor:pointer}
+.go{width:100%;margin:6px 0 4px;padding:14px;border:0;border-radius:14px;background:var(--grad);color:#fff;font:600 15px var(--font);cursor:pointer}
 .go:disabled{opacity:.4;cursor:default}
 .go.ghost{background:none;border:2px solid var(--line);color:var(--fg);margin-top:0}
-.mode{display:flex;justify-content:space-between;align-items:center;gap:8px;background:var(--chip);border-radius:12px;padding:6px 12px;margin-bottom:8px;font-size:13px}
+.mode{position:absolute;top:50px;left:14px;right:14px;z-index:4;display:flex;justify-content:space-between;align-items:center;gap:8px;background:var(--phone);box-shadow:0 4px 14px rgba(0,0,0,.18);border-radius:12px;padding:6px 12px;font-size:13px}
 .mode[hidden]{display:none}
 /* detail */
 .detail .big{font-size:96px;text-align:center;padding:16px 0}
@@ -105,7 +110,7 @@ nav .n{position:absolute;top:2px;left:calc(50% + 6px);min-width:16px;padding:0 4
 .detail dt{color:var(--muted)}
 .detail dd{margin:0;font-weight:600}
 .back{background:none;border:0;color:var(--accent2);font:600 15px var(--font);cursor:pointer;padding:4px 0}
-.cta{display:block;text-align:center;text-decoration:none;margin-bottom:10px;width:100%;padding:14px;border:0;border-radius:14px;background:var(--accent);color:#fff;font:700 16px var(--font);cursor:pointer}
+.cta{display:block;text-align:center;text-decoration:none;margin-bottom:10px;width:100%;padding:14px;border:0;border-radius:14px;background:var(--grad);color:#fff;font:700 16px var(--font);cursor:pointer}
 .note{position:absolute;left:16px;right:16px;top:64px;z-index:5;background:var(--fg);color:var(--phone);padding:10px 14px;border-radius:12px;font-size:14px;opacity:0;transition:opacity .2s;pointer-events:none}
 .note.show{opacity:1}
 .where{background:var(--phone);box-shadow:0 4px 14px rgba(0,0,0,.18);border:0;border-radius:999px;padding:6px 12px;color:var(--fg);font:600 13px var(--font);cursor:pointer}
@@ -133,19 +138,25 @@ nav .n{position:absolute;top:2px;left:calc(50% + 6px);min-width:16px;padding:0 4
       </div>
     </section>
     <section class="view" id="v-sok" hidden>
-      <input class="search" id="q" placeholder="Sök med intresseord, t.ex. gaming" autocomplete="off">
-      <div class="tags" id="tags" role="group" aria-label="Vad gillar du?"></div>
-      <div class="filter" id="f-pris"><b>Pris</b>
-        <button class="seg on" data-max="">Alla</button><button class="seg" data-max="0">Gratis</button><button class="seg" data-max="200">Max 200 kr</button><button class="seg" data-max="500">Max 500 kr</button>
+      <div id="sok-pick">
+        <input class="search" id="q" placeholder="Sök med intresseord, t.ex. gaming" autocomplete="off">
+        <h3 class="sh">Vad gillar du?</h3>
+        <div class="tags" id="tags" role="group" aria-label="Vad gillar du?"></div>
+        <h3 class="sh">Max pris <b id="pris-txt">Alla priser</b></h3>
+        <input type="range" id="pris" min="0" max="500" step="50" value="500" aria-label="Max pris">
+        <p class="hint" id="count-hits"></p>
+        <button class="go" id="swipe-hits">Swipea</button>
+        <button class="go ghost" id="list-hits">Visa som lista</button>
+        <p class="source" id="source"></p>
       </div>
-      <div class="filter" id="f-sort"><b>Sortera</b>
-        <button class="seg on" data-s="near">Närmast</button><button class="seg" data-s="best">Bäst träff</button><button class="seg" data-s="soon">Snarast</button>
+      <div id="sok-list" hidden>
+        <button class="back" id="list-back">‹ Ändra val</button>
+        <p class="hint" id="list-sum"></p>
+        <div class="filter" id="f-sort"><b>Sortera</b>
+          <button class="seg" data-s="near">Närmast</button><button class="seg" data-s="soon">Snarast</button><button class="seg" data-s="price">Billigast</button>
+        </div>
+        <div id="results"></div>
       </div>
-      <p class="hint" id="count-hits"></p>
-      <button class="go" id="swipe-hits">Swipea träffarna</button>
-      <button class="go ghost" id="list-hits">Visa som lista</button>
-      <div id="results" hidden></div>
-      <p class="source" id="source"></p>
     </section>
     <section class="view" id="v-int" hidden>
       <p class="hint">Event du swipeat höger på.</p>
@@ -290,38 +301,41 @@ function flipCard(c,ev){
 const row=ev=>`<div class="row" data-id="${esc(ev.id)}">${pic(ev,"e")}<div><b>${esc(ev.t)}</b><div class="mini"><span>${esc(when(ev))}</span><span>${priceTxt(ev.pris)}</span><span>${kmTxt(ev)}</span></div></div></div>`;
 function bindRows(el){el.querySelectorAll(".row").forEach(r=>r.onclick=()=>openDetail(EVENTS.find(e=>e.id===r.dataset.id)))}
 // Sök: filter på pris, sortering och "bäst träff"
-let maxPris="",sortBy="near",chosen=new Set();
+let maxPris="",sortBy="match",chosen=new Set();
 function score(e,words){let p=0;const t=e.t.toLowerCase(),pl=e.plats.toLowerCase();
  for(const w of words){if(t.includes(w))p+=3;if(e.tags.some(x=>x===w))p+=3;else if(e.tags.some(x=>x.includes(w)))p+=2;if(pl.includes(w))p+=1}
  return p}
+// Bäst träff är alltid grunden. Närmast, Snarast och Billigast är val man kan lägga ovanpå.
 function hitsNow(){
  const q=[$("#q").value.trim().toLowerCase(),...chosen].filter(Boolean).join(" "),words=q.split(/\s+/).filter(Boolean);
  let list=EVENTS.map(e=>({e,p:words.length?score(e,words):1})).filter(x=>x.p>0);
  if(maxPris!=="")list=list.filter(x=>x.e.pris!=null&&x.e.pris<=+maxPris);
- const near=(a,b)=>km(me,a.e)-km(me,b.e),soon=(a,b)=>(a.e.datum+(a.e.tid||"")).localeCompare(b.e.datum+(b.e.tid||""));
- list.sort(sortBy==="best"?(a,b)=>b.p-a.p||near(a,b):sortBy==="soon"?(a,b)=>soon(a,b)||near(a,b):(a,b)=>near(a,b)||soon(a,b));
+ const near=(a,b)=>km(me,a.e)-km(me,b.e),soon=(a,b)=>(a.e.datum+(a.e.tid||"")).localeCompare(b.e.datum+(b.e.tid||"")),cheap=(a,b)=>(a.e.pris??1e9)-(b.e.pris??1e9);
+ list.sort(sortBy==="soon"?(a,b)=>soon(a,b)||near(a,b):sortBy==="near"?(a,b)=>near(a,b)||soon(a,b):sortBy==="price"?(a,b)=>cheap(a,b)||near(a,b):(a,b)=>b.p-a.p||near(a,b));
  return {q,hits:list.map(x=>x.e)};
 }
+const prisTxt=()=>maxPris===""?"":maxPris==="0"?"gratis":`max ${maxPris} kr`;
 function search(){
  const {q,hits}=hitsNow(),r=$("#results"),b=$("#swipe-hits"),l=$("#list-hits");
- $("#count-hits").textContent=`${hits.length} ${hits.length===1?"event matchar":"events matchar"}`;
- b.textContent="Swipea";l.textContent=r.hidden?"Visa som lista":"Dölj listan";b.disabled=l.disabled=!hits.length;
+ const n=`${hits.length} ${hits.length===1?"event matchar":"events matchar"}`;
+ $("#count-hits").textContent=n;$("#list-sum").textContent=[n,q&&`"${q}"`,prisTxt()].filter(Boolean).join(", ");
+ b.disabled=l.disabled=!hits.length;
  const unknown=maxPris!==""?EVENTS.filter(e=>e.pris==null).length:0;
  r.innerHTML=(hits.length?hits.slice(0,60).map(row).join(""):EVENTS.length?'<p class="hint">Inga träffar. Här är närmaste event:</p>'+row(sortNear(EVENTS)[0]):'<p class="hint">Inga event att söka bland just nu.</p>')
   +(unknown?`<p class="hint">${unknown} event saknar pris från arrangören och visas inte med prisfilter.</p>`:"");
  bindRows(r);
 }
-function segs(id,cb){document.querySelectorAll(`#${id} .seg`).forEach(b=>b.onclick=()=>{document.querySelectorAll(`#${id} .seg`).forEach(x=>x.classList.toggle("on",x===b));cb(b);search()})}
-segs("f-pris",b=>maxPris=b.dataset.max);
-segs("f-sort",b=>sortBy=b.dataset.s);
+document.querySelectorAll("#f-sort .seg").forEach(b=>b.onclick=()=>{sortBy=sortBy===b.dataset.s?"match":b.dataset.s;document.querySelectorAll("#f-sort .seg").forEach(x=>x.classList.toggle("on",x.dataset.s===sortBy));search()});
+$("#pris").oninput=()=>{const v=+$("#pris").value;maxPris=v>=500?"":String(v);$("#pris-txt").textContent=v>=500?"Alla priser":v===0?"Gratis":`${v} kr`;search()};
+function sokPage(list){$("#sok-pick").hidden=list;$("#sok-list").hidden=!list;$("#v-sok").scrollTop=0}
 $("#swipe-hits").onclick=()=>{const {q,hits}=hitsNow();
  queue=hits.filter(e=>!saved.includes(e));
- const pris=maxPris===""?"":maxPris==="0"?"gratis":`max ${maxPris} kr`;
- const sort={near:"närmast först",best:"bäst träff först",soon:"snarast först"}[sortBy];
- $("#mode-txt").textContent=[q&&`"${q}"`,pris,sort].filter(Boolean).join(", ");
+ const sort={near:"närmast först",soon:"snarast först",price:"billigast först"}[sortBy];
+ $("#mode-txt").textContent=[q&&`"${q}"`,prisTxt(),sort].filter(Boolean).join(", ")||"Dina val";
  $("#mode").hidden=false;renderDeck();show("start")};
 $("#mode-clear").onclick=()=>{$("#mode").hidden=true;queue=sortNear(EVENTS.filter(e=>!saved.includes(e)));renderDeck()};
-$("#list-hits").onclick=()=>{const r=$("#results");r.hidden=!r.hidden;search()};
+$("#list-hits").onclick=()=>{search();sokPage(true)};
+$("#list-back").onclick=()=>sokPage(false);
 $("#q").oninput=search;
 function renderTags(){
  const count={};EVENTS.forEach(e=>e.tags.forEach(t=>count[t]=(count[t]||0)+1));
